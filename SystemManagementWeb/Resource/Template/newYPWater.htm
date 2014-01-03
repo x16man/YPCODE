@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{$Title}</title>
+    <link href="/aspnet_client/Shmzh.Web.UI/CSS/Common.css" type="text/css" rel="stylesheet" />
+    <link href="/aspnet_client/Shmzh.Web.UI/CSS/Ocean.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/aspnet_client/Shmzh.Web.UI/jquery-1.2.6.pack.js"></script>
+
+    <script type="text/javascript" src="/aspnet_client/Shmzh.Web.UI/ui/ui.core.js"></script>
+
+    <script type="text/javascript" src="/aspnet_client/Shmzh.Web.UI/ui/ui.accordion.js"></script>
+
+    <script type="text/javascript" src="/aspnet_client/Shmzh.Web.UI/PopupWindow.js"></script>
+
+    <script type="text/javascript" src="/aspnet_client/Shmzh.Web.UI/css.js"></script>
+
+    <!--[if lt IE 7.]>
+    <script defer type="text/javascript" src="/aspnet_client/Shmzh.Web.UI/pngfix.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        $(function() {
+            $('#sidebar.outlookMenu').accordion({
+                active: 0,
+                header: 'h4.drawer-handle',
+                navigation: true,
+                selectedClass: 'open',
+                fillSpace: true,
+                alwaysOpen: false,
+                animated: 'slide',
+                autoHeight: true,
+                event: 'click'
+            });
+        });
+        var popupWindow = new PopupWindow();
+        popupWindow.autoHide();
+    </script>
+
+</head>
+<body>
+    <!--[if IE 6]>
+<!-- ReSharper disable Html.TagNotClosed -->
+<div id="ie6only">
+<!-- ReSharper restore Html.TagNotClosed -->
+<![endif]-->
+    <div id="doc3">
+        <div id="top">
+            &nbsp;</div>
+        <div id="hd">
+            <div id="sysinfo" class="clear">
+                <div id="enterpriseinfo">
+                    {$LogoInfo}</div>
+                <div id="rootProduct">
+                    <span><a href="/OAWeb/" target="_self">个人办公</a> |<a href="/PMWeb/" target="_blank">项目</a>|
+                        <a href="/produceQuery/" target="_blank">生产</a> |<a href="/Kmsuit/Workflow/default_fee.aspx"
+                            target="_blank">费用</a>| <a href="/WebMM/" target="_blank">物资</a> |<a href="/DevWeb/"
+                                target="_blank">设备</a> |<a href="/CRMWeb/" target="_blank">供应商</a> |<a href="//10.1.20.106/waterhr/login.aspx"
+                                    target="_blank">人事</a> |<a href="/NetDoorWeb/" target="_blank">巡检</a>|
+                        <a href="/WebKM/" target="_blank">知识库</a>| <a href="//192.168.160.2/jsdweb/core/aspcode/index.asp"
+                            target="_blank">档案</a>| <a href="/WSAdmin/" target="_blank">网站后台</a> </span>
+                </div>
+                <!--{$EnterpriseInfo}<img src=\"Images/Logo.png\" />-->
+                <div id="userinfo" class="clear">
+                    {$UserInfo}</div>
+                <div id="productinfo">
+                </div>
+                <!--{$ProductInfo}<img src=\"Images/Product.gif\" />-->
+            </div>
+            <div id="logininfo" class="clear">
+                <div id="rootmenu">
+                    <div id="product">
+                        <b>{$ProductName}</b></div>
+                    {$RootMenu}</div>
+            </div>
+        </div>
+        <div id="bd">
+            <div id="sidebar" class="outlookMenu">
+                {$ChildMenu}
+            </div>
+            <div id="sidebar-toggler" onclick="toggleSideBar(this);">
+            </div>
+            <div id="mainContent">
+                <div id="frameWrapper" class="clear">
+                    <div id="title" class="hidden">
+                        this is title zone.</div>
+                    <iframe id="mainFrame" name="mainFrame" frameborder="0" scrolling="auto" src="{$DefaultPage}">
+                    </iframe>
+                </div>
+            </div>
+            <div class="hidden">
+                <asp:textbox id="curLevel1ID" value=""></asp:textbox>
+            </div>
+        </div>
+        <div id="ft" class="clear">
+            <ul class="left clear">
+                <li><a href="#">© 2008 {$Company}</a></li>
+            </ul>
+            <ul style="float: right">
+                <li><a href="#">帮助</a> | </li>
+                <li><a href="mailto:feedback@shmzh.com">反馈</a></li></ul>
+        </div>
+    </div>
+    <!--[if IE 6]>
+	</div>
+<![endif]-->
+</body>
+
+<script type="text/javascript">
+    function popup(elmId, url) {
+        popupWindow.setUrl(url);
+        popupWindow.showPopup(elmId, false);
+    }
+    //pop up the change password window.
+    function showChangePWD(elmId) {
+        popupWindow.setSize(420, 300);
+        popupWindow.setUrl("/SystemManagementWeb/Login/ChangePassword.aspx");
+        popupWindow.showPopup(elmId, false);
+    }
+    //pop up the chage self infomation window.
+    function showMe(elmId) {
+        popupWindow.setURL("");
+        popupWindow.showPopup(elmId, false);
+    }
+    function toggleSideBar(elm) {
+        var leftSideBar = document.getElementById("sidebar");
+        var rightMain = document.getElementById("mainContent");
+
+        if (hasClass(leftSideBar, "collapse")) {
+            removeClass(rightMain, "expand");
+            removeClass(leftSideBar, "collapse");
+            removeClass(elm, "hide");
+        }
+        else {
+            addClass(leftSideBar, "collapse");
+            addClass(rightMain, "expand");
+            addClass(elm, "hide");
+        }
+    }
+    /*
+    * 递归获取frameset的总的高度。
+    */
+    function getFramesetTotalHeight(iwindow) {
+        var frameset = iwindow.document.getElementsByTagName("frameset");
+        var totalHeight = 0;
+        if (frameset[0].rows) {
+            var ss = frameset[0].rows.split(",");
+            for (var i = 0; i < ss.length; i++) {
+                if (ss[i] != "*" && ss[i].indexOf("%") == -1) {
+                    totalHeight += parseInt(ss[i]);
+                }
+                else if (ss[i] == "*") {
+                    var innerWindow = iwindow.frames[i].window;
+                    var innerFrameset = innerWindow.document.getElementsByTagName("frameset");
+
+                    //totalHeight += innerFrameset.length > 0 ? getFramesetTotalHeight(innerWindow) : //innerWindow.document.body.scrollHeight;					
+                    if (innerFrameset.length > 0)
+                        totalHeight += getFramesetTotalHeight(innerWindow);
+                    else {
+                        if (innerWindow.document.body) {
+                            totalHeight += innerWindow.document.body.scrollHeight;
+                        }
+                    }
+                }
+            }
+        }
+        else if (frameset[0].cols) {
+            for (var i = 0; i < iwindow.frames.length; i++) {
+                var innerFrameWindow = iwindow.frames[i].window;
+                var innerFrameset = innerFrameWindow.document.getElementsByTagName("frameset");
+                var tempHeight = 0;
+                //var tempHeight = innerFrameset.length > 0 ? getFramesetTotalHeight(innerFrameWindow) : //iwindow.frames[i].document.body.scrollHeight;
+
+                if (innerFrameset.length > 0)
+                    tempHeight = getFramesetTotalHeight(innerFrameWindow);
+                else {
+                    if (iwindow.frames[i].document.body) {
+                        tempHeight = iwindow.frames[i].document.body.scrollHeight;
+                    }
+                }
+                totalHeight = tempHeight > totalHeight ? tempHeight : totalHeight;
+            }
+        }
+        return totalHeight;
+    }
+    /*
+    * 根据IFrame中页面的本身高度来自动设置iframe的高度。
+    */
+    function autoAdjustHeight(frameId) {
+        iframe = document.getElementById(frameId);
+        iframeWindow = iframe.contentWindow;
+        iframeDoc = iframe.contentDocument ? iframe.contentDocument : iframe.contentWindow.document;
+        var frameset = iframeWindow.document.getElementsByTagName("frameset");
+        var tempHeight = 0;
+        if (frameset.length > 0 && iframeWindow.document.body)
+            var tempHeight = getFramesetTotalHeight(iframeWindow);
+        else if (iframeDoc.body)
+            var tempHeight = iframeDoc.body.scrollHeight;
+
+        iframe.height = tempHeight < 500 ? 500 : tempHeight;
+    }
+
+    setInterval("autoAdjustHeight('mainFrame')", 100);
+	
+	
+</script>
+
+</html>

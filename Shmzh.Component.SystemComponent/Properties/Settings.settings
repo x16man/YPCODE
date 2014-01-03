@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Shmzh.Components.SystemComponent.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Shmzh_Components_SystemComponent_UserService_User" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/User.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Components_SystemComponent_OwnedRoleService_OwnedRole" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/OwnedRole.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Components_SystemComponent_RoleRightService_RoleRight" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/RoleRight.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Components_SystemComponent_OnlineStatusService_OnlineStatus" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/OnlineStatus.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Components_SystemComponent_CompanyService_Company" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/Company.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Components_SystemComponent_HistoryService_History" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/History.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Components_SystemComponent_GroupUserService_GroupUser" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/GroupUser.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Components_SystemComponent_RoleService_Role" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/Role.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Components_SystemComponent_DeptService_Dept" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/Dept.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Components_SystemComponent_GroupCatService_GroupCat" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/GroupCat.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Components_SystemComponent_GroupService_Group" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/Group.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Components_SystemComponent_GroupRoleService_GroupRole" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/GroupRole.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Components_SystemComponent_UserRoleService_UserRole" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.SystemComponent.WebService/UserRole.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

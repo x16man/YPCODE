@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{$Title} local Normal</title>
+    <link href="CSS/Common.css" type="text/css" rel="stylesheet"/>
+    <link href="CSS/WebUIFrame.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="/aspnet_client/Shmzh.Web.UI/jquery-1.2.6.pack.js"></script>
+	<script type="text/javascript" src="/aspnet_client/Shmzh.Web.UI/ui/ui.core.js"></script>
+	<script type="text/javascript" src="/aspnet_client/Shmzh.Web.UI/ui/ui.accordion.js"></script>
+	<script type="text/javascript" src="/aspnet_client/Shmzh.Web.UI/PopupWindow.js"></script>
+	<script type="text/javascript" src="/aspnet_client/Shmzh.Web.UI/css.js"></script>
+	<!--[if lt IE 7.]>
+    <script defer type="text/javascript" src="/aspnet_client/Shmzh.Web.UI/pngfix.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+		$(function () {
+			$('#sidebar.outlookMenu').accordion({
+	            active: 0,
+	            header: 'h4.drawer-handle',
+	            navigation: true,
+	            selectedClass: 'open',
+	            fillSpace: true,
+	            alwaysOpen: false,
+	            animated: 'slide',
+	            autoHeight: true,
+	            event: 'click'
+	        });
+	    });
+	    var popupWindow = new PopupWindow();
+	    popupWindow.autoHide();
+	</script>
+</head>
+<body>
+<!--[if IE 6]>
+<div id="ie6only">
+<![endif]-->
+<div id="doc3">
+    <div id="top"></div>
+    <div id="hd">
+        <div id="sysinfo" class="clear">
+            <div id="enterpriseinfo">
+                {$LogoInfo}</div>
+            <!--{$EnterpriseInfo}<img src=\"Images/Logo.png\" />-->
+            <div id="userinfo">
+                {$UserInfo}</div>
+            <div id="productinfo">
+            </div>
+            <!--{$ProductInfo}<img src=\"Images/Product.gif\" />-->
+        </div>
+        <div id="logininfo" class="clear">
+            <div id="rootmenu"><div id="product">{$ProductName}</div>{$RootMenu}</div>
+        </div>
+    </div>
+    <div id="bd" >
+        <div id="sidebar" class="outlookMenu">
+           {$ChildMenu}
+        </div>
+        <div id="sidebar-toggler" onclick="toggleSideBar(this);"></div>
+        
+        <div id="mainContent">
+            <div id="frameWrapper" class="clear">
+                <div id="title" class="hidden">this is title zone.</div>
+			    <iframe id="mainFrame" name="mainFrame" frameborder="0" scrolling= "auto" src="{$DefaultPage}"></iframe>
+			</div>
+        </div>
+        
+        <div class="hidden"><asp:textbox id="curLevel1ID" value=""></asp:textbox>
+        </div>
+    </div>
+    <div id="ft" class="clear">
+        <ul class="left clear">
+            <li ><a href="#">© 2008 {$Company}</a></li>
+        </ul>
+        <ul style="float:right">
+            <li ><a href="#" >帮助</a> | </li>
+            <li ><a href="mailto:feedback@shmzh.com">反馈</a></li></ul>
+    </div>
+</div>
+
+<!--[if IE 6]>
+	</div>
+<![endif]-->
+</body>
+<script type="text/javascript">
+    function popup(elmId,url) {
+        popupWindow.setUrl(url);
+        popupWindow.showPopup(elmId, false);
+    }
+    //pop up the change password window.
+    function showChangePWD(elmId) {
+        popupWindow.setSize(420, 300);
+        popupWindow.setUrl("/SystemManagementWeb/Login/ChangePassword.aspx");
+        popupWindow.showPopup(elmId, false);
+    }
+    //pop up the chage self infomation window.
+    function showMe(elmId) {
+        popupWindow.setURL("");
+        popupWindow.showPopup(elmId, false);
+    }
+    function toggleSideBar(elm) {
+        var leftSideBar = document.getElementById("sidebar");
+        var rightMain = document.getElementById("mainContent");
+        
+        if (hasClass(leftSideBar, "collapse")) {
+            removeClass(rightMain, "expand");
+            removeClass(leftSideBar, "collapse");
+            removeClass(elm, "hide");
+        }
+        else {
+            addClass(leftSideBar, "collapse");
+            addClass(rightMain, "expand");
+            addClass(elm, "hide");
+        }
+    }
+    /*
+     * 递归获取frameset的总的高度。
+     */
+    function getFramesetTotalHeight(iwindow) {
+        var frameset = iwindow.document.getElementsByTagName("frameset");
+        var totalHeight = 0;
+        if (frameset[0].rows) {
+            var ss = frameset[0].rows.split(",");
+            for (var i = 0; i < ss.length; i++) {
+                if (ss[i] != "*" && ss[i].indexOf("%") == -1) {
+                    totalHeight += parseInt(ss[i]);
+                }
+                else if (ss[i] == "*") {
+                    var innerWindow = iwindow.frames[i].window;
+                    var innerFrameset = innerWindow.document.getElementsByTagName("frameset");
+
+                    totalHeight += innerFrameset.length > 0 ? getFramesetTotalHeight(innerWindow) : innerWindow.document.body.scrollHeight;
+                }
+            }
+        }
+        else if (frameset[0].cols) {
+            for (var i = 0; i < iwindow.frames.length; i++) {
+                var innerFrameWindow = iwindow.frames[i].window;
+                var innerFrameset = innerFrameWindow.document.getElementsByTagName("frameset");
+                var tempHeight = innerFrameset.length > 0 ? getFramesetTotalHeight(innerFrameWindow) : iwindow.frames[i].document.body.scrollHeight;
+
+                totalHeight = tempHeight > totalHeight ? tempHeight : totalHeight;
+            }
+        }
+        return totalHeight;
+    }
+    /*
+     * 根据IFrame中页面的本身高度来自动设置iframe的高度。
+     */
+    function autoAdjustHeight(frameId) {
+        iframe = document.getElementById(frameId);
+        iframeWindow = iframe.contentWindow;
+        iframeDoc = iframe.contentDocument?iframe.contentDocument:iframe.contentWindow.document;
+        var frameset = iframeWindow.document.getElementsByTagName("frameset");
+        var tempHeight = 0;
+        if (frameset.length > 0)
+            var tempHeight = getFramesetTotalHeight(iframeWindow);
+        else if (iframeDoc.body)
+            var tempHeight = iframeDoc.body.scrollHeight;
+                    
+        iframe.height = tempHeight < 500 ? 500 : tempHeight;
+    }
+    setInterval("autoAdjustHeight('mainFrame')", 100);
+</script>
+</html>

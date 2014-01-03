@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userRoleInfo" type="tns:UserRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserRoleInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RoleCode" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="CheckCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Insert1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNames" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleCodes" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="productCode" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Insert1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Insert1Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CopyTo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sourceUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="targetUserName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="productCode" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CopyToResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CopyToResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Insert2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNames" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="roleCodes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="checkCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Insert2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Insert2Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userRoleInfo" type="tns:UserRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Delete1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNames" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="productCode" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Delete1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Delete1Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Delete2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userNames" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="checkCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Delete2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Delete2Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearAccess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="checkCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearAccessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClearAccessResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByUserNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByUserNameResult" type="tns:ArrayOfUserRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUserRoleInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UserRoleInfo" nillable="true" type="tns:UserRoleInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetByProductCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productCode" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByProductCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByProductCodeResult" type="tns:ArrayOfUserRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByRoleCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="roleCode" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByRoleCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByRoleCodeResult" type="tns:ArrayOfUserRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByProductCodeAndName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productCode" type="s:short" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByProductCodeAndNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByProductCodeAndNameResult" type="tns:ArrayOfUserRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByProductCodeAndUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productCode" type="s:short" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByProductCodeAndUserNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByProductCodeAndUserNameResult" type="tns:ArrayOfUserRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByProductCodeAndUserNameAndCheckCodeAndType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productCode" type="s:short" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="checkCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByProductCodeAndUserNameAndCheckCodeAndTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByProductCodeAndUserNameAndCheckCodeAndTypeResult" type="tns:ArrayOfUserRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByCheckCodeAndType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="checkCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByCheckCodeAndTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByCheckCodeAndTypeResult" type="tns:ArrayOfUserRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByCheckCodeAndTypeAndUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="checkCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByCheckCodeAndTypeAndUserNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByCheckCodeAndTypeAndUserNameResult" type="tns:ArrayOfUserRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNoAccessObj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="rightCode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="productcode" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNoAccessObjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNoAccessObjResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertSoapIn">
+    <wsdl:part name="parameters" element="tns:Insert" />
+  </wsdl:message>
+  <wsdl:message name="InsertSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="Insert1SoapIn">
+    <wsdl:part name="parameters" element="tns:Insert1" />
+  </wsdl:message>
+  <wsdl:message name="Insert1SoapOut">
+    <wsdl:part name="parameters" element="tns:Insert1Response" />
+  </wsdl:message>
+  <wsdl:message name="CopyToSoapIn">
+    <wsdl:part name="parameters" element="tns:CopyTo" />
+  </wsdl:message>
+  <wsdl:message name="CopyToSoapOut">
+    <wsdl:part name="parameters" element="tns:CopyToResponse" />
+  </wsdl:message>
+  <wsdl:message name="Insert2SoapIn">
+    <wsdl:part name="parameters" element="tns:Insert2" />
+  </wsdl:message>
+  <wsdl:message name="Insert2SoapOut">
+    <wsdl:part name="parameters" element="tns:Insert2Response" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSoapIn">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Delete1SoapIn">
+    <wsdl:part name="parameters" element="tns:Delete1" />
+  </wsdl:message>
+  <wsdl:message name="Delete1SoapOut">
+    <wsdl:part name="parameters" element="tns:Delete1Response" />
+  </wsdl:message>
+  <wsdl:message name="Delete2SoapIn">
+    <wsdl:part name="parameters" element="tns:Delete2" />
+  </wsdl:message>
+  <wsdl:message name="Delete2SoapOut">
+    <wsdl:part name="parameters" element="tns:Delete2Response" />
+  </wsdl:message>
+  <wsdl:message name="ClearAccessSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearAccess" />
+  </wsdl:message>
+  <wsdl:message name="ClearAccessSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByUserNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByUserName" />
+  </wsdl:message>
+  <wsdl:message name="GetByUserNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByProductCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByProductCode" />
+  </wsdl:message>
+  <wsdl:message name="GetByProductCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByProductCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByRoleCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByRoleCode" />
+  </wsdl:message>
+  <wsdl:message name="GetByRoleCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByRoleCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByProductCodeAndNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByProductCodeAndName" />
+  </wsdl:message>
+  <wsdl:message name="GetByProductCodeAndNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByProductCodeAndNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByProductCodeAndUserNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByProductCodeAndUserName" />
+  </wsdl:message>
+  <wsdl:message name="GetByProductCodeAndUserNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByProductCodeAndUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByProductCodeAndUserNameAndCheckCodeAndTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByProductCodeAndUserNameAndCheckCodeAndType" />
+  </wsdl:message>
+  <wsdl:message name="GetByProductCodeAndUserNameAndCheckCodeAndTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByProductCodeAndUserNameAndCheckCodeAndTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByCheckCodeAndTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByCheckCodeAndType" />
+  </wsdl:message>
+  <wsdl:message name="GetByCheckCodeAndTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByCheckCodeAndTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByCheckCodeAndTypeAndUserNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByCheckCodeAndTypeAndUserName" />
+  </wsdl:message>
+  <wsdl:message name="GetByCheckCodeAndTypeAndUserNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByCheckCodeAndTypeAndUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNoAccessObjSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNoAccessObj" />
+  </wsdl:message>
+  <wsdl:message name="GetNoAccessObjSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNoAccessObjResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UserRoleSoap">
+    <wsdl:operation name="Insert">
+      <wsdl:input message="tns:InsertSoapIn" />
+      <wsdl:output message="tns:InsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert1">
+      <wsdl:input message="tns:Insert1SoapIn" />
+      <wsdl:output message="tns:Insert1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CopyTo">
+      <wsdl:input message="tns:CopyToSoapIn" />
+      <wsdl:output message="tns:CopyToSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert2">
+      <wsdl:input message="tns:Insert2SoapIn" />
+      <wsdl:output message="tns:Insert2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input message="tns:DeleteSoapIn" />
+      <wsdl:output message="tns:DeleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete1">
+      <wsdl:input message="tns:Delete1SoapIn" />
+      <wsdl:output message="tns:Delete1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete2">
+      <wsdl:input message="tns:Delete2SoapIn" />
+      <wsdl:output message="tns:Delete2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearAccess">
+      <wsdl:input message="tns:ClearAccessSoapIn" />
+      <wsdl:output message="tns:ClearAccessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByUserName">
+      <wsdl:input message="tns:GetByUserNameSoapIn" />
+      <wsdl:output message="tns:GetByUserNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductCode">
+      <wsdl:input message="tns:GetByProductCodeSoapIn" />
+      <wsdl:output message="tns:GetByProductCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByRoleCode">
+      <wsdl:input message="tns:GetByRoleCodeSoapIn" />
+      <wsdl:output message="tns:GetByRoleCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductCodeAndName">
+      <wsdl:input message="tns:GetByProductCodeAndNameSoapIn" />
+      <wsdl:output message="tns:GetByProductCodeAndNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductCodeAndUserName">
+      <wsdl:input message="tns:GetByProductCodeAndUserNameSoapIn" />
+      <wsdl:output message="tns:GetByProductCodeAndUserNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductCodeAndUserNameAndCheckCodeAndType">
+      <wsdl:input message="tns:GetByProductCodeAndUserNameAndCheckCodeAndTypeSoapIn" />
+      <wsdl:output message="tns:GetByProductCodeAndUserNameAndCheckCodeAndTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByCheckCodeAndType">
+      <wsdl:input message="tns:GetByCheckCodeAndTypeSoapIn" />
+      <wsdl:output message="tns:GetByCheckCodeAndTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByCheckCodeAndTypeAndUserName">
+      <wsdl:input message="tns:GetByCheckCodeAndTypeAndUserNameSoapIn" />
+      <wsdl:output message="tns:GetByCheckCodeAndTypeAndUserNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNoAccessObj">
+      <wsdl:input message="tns:GetNoAccessObjSoapIn" />
+      <wsdl:output message="tns:GetNoAccessObjSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UserRoleSoap" type="tns:UserRoleSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Insert">
+      <soap:operation soapAction="http://tempuri.org/Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert1">
+      <soap:operation soapAction="http://tempuri.org/Insert1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyTo">
+      <soap:operation soapAction="http://tempuri.org/CopyTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert2">
+      <soap:operation soapAction="http://tempuri.org/Insert2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete1">
+      <soap:operation soapAction="http://tempuri.org/Delete1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete2">
+      <soap:operation soapAction="http://tempuri.org/Delete2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearAccess">
+      <soap:operation soapAction="http://tempuri.org/ClearAccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByUserName">
+      <soap:operation soapAction="http://tempuri.org/GetByUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductCode">
+      <soap:operation soapAction="http://tempuri.org/GetByProductCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByRoleCode">
+      <soap:operation soapAction="http://tempuri.org/GetByRoleCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductCodeAndName">
+      <soap:operation soapAction="http://tempuri.org/GetByProductCodeAndName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductCodeAndUserName">
+      <soap:operation soapAction="http://tempuri.org/GetByProductCodeAndUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductCodeAndUserNameAndCheckCodeAndType">
+      <soap:operation soapAction="http://tempuri.org/GetByProductCodeAndUserNameAndCheckCodeAndType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByCheckCodeAndType">
+      <soap:operation soapAction="http://tempuri.org/GetByCheckCodeAndType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByCheckCodeAndTypeAndUserName">
+      <soap:operation soapAction="http://tempuri.org/GetByCheckCodeAndTypeAndUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNoAccessObj">
+      <soap:operation soapAction="http://tempuri.org/GetNoAccessObj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UserRoleSoap12" type="tns:UserRoleSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Insert">
+      <soap12:operation soapAction="http://tempuri.org/Insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert1">
+      <soap12:operation soapAction="http://tempuri.org/Insert1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyTo">
+      <soap12:operation soapAction="http://tempuri.org/CopyTo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert2">
+      <soap12:operation soapAction="http://tempuri.org/Insert2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap12:operation soapAction="http://tempuri.org/Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete1">
+      <soap12:operation soapAction="http://tempuri.org/Delete1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete2">
+      <soap12:operation soapAction="http://tempuri.org/Delete2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearAccess">
+      <soap12:operation soapAction="http://tempuri.org/ClearAccess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByUserName">
+      <soap12:operation soapAction="http://tempuri.org/GetByUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductCode">
+      <soap12:operation soapAction="http://tempuri.org/GetByProductCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByRoleCode">
+      <soap12:operation soapAction="http://tempuri.org/GetByRoleCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductCodeAndName">
+      <soap12:operation soapAction="http://tempuri.org/GetByProductCodeAndName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductCodeAndUserName">
+      <soap12:operation soapAction="http://tempuri.org/GetByProductCodeAndUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductCodeAndUserNameAndCheckCodeAndType">
+      <soap12:operation soapAction="http://tempuri.org/GetByProductCodeAndUserNameAndCheckCodeAndType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByCheckCodeAndType">
+      <soap12:operation soapAction="http://tempuri.org/GetByCheckCodeAndType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByCheckCodeAndTypeAndUserName">
+      <soap12:operation soapAction="http://tempuri.org/GetByCheckCodeAndTypeAndUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNoAccessObj">
+      <soap12:operation soapAction="http://tempuri.org/GetNoAccessObj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserRole">
+    <wsdl:port name="UserRoleSoap" binding="tns:UserRoleSoap">
+      <soap:address location="http://localhost/Shmzh.SystemComponent.WebService/UserRole.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UserRoleSoap12" binding="tns:UserRoleSoap12">
+      <soap12:address location="http://localhost/Shmzh.SystemComponent.WebService/UserRole.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

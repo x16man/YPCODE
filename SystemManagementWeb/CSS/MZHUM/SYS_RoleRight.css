@@ -1,0 +1,44 @@
+﻿#main{width:100%}
+
+#left
+{
+    width:200px;
+    text-align:left;
+    border-color:#E5E5E5;
+    border-style:solid;
+    border-width:0px 1px 0px 0px;
+    background-color:#F9F9F9;
+}
+ #left .TreeView{min-height:462px;max-height:462px;height:462px;}
+#seperator{width:1px !important;width:18px;}
+
+#right
+{
+    text-align:left;
+}
+#right div.rightCategory
+{
+    background-color:#f4f7fc;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 25px;
+    border-color: #DBE2E8 #DBE2E8 #DBE2E8 #CAD5DB;
+    border-style: solid none;
+    border-width: 1px;
+}
+
+#right div#rightWrapper
+{
+    border-style: none solid solid none;
+    border-width: 1px;
+    border-color: #DBE2E8 #DBE2E8 #CAD5DB;
+}
+#right div.right
+{
+    margin-bottom: 0px;
+}
+#right div.right table td
+{
+    padding: 5px 10px;
+}

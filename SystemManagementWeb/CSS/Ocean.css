@@ -1,0 +1,237 @@
+a:link,a:visited{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a,a:visited,a:link{color:#000000;outline-style:none;}
+li,ul li{ list-style-type:none;}
+
+#top
+{
+    border-color:#DBE2E8 #DBE2E8 #CAD5DB;
+    border-style:solid;
+    border-width:1px 1px 1px;
+    background:#EEF3F6 url(../images/grd-1px_1.4.gif) repeat-x 0 -1036px;
+    background-color:#ffffff;
+    line-height:2px;
+}
+#ie6only #top
+{
+    display:none;
+}
+#hd
+{
+    border-color:#DBE2E8 #DBE2E8 #CAD5DB;
+    border-style:solid;
+    border-width:1px 1px 1px;
+    background-color:#E9F2FA;
+}
+#bd
+{
+    margin-top:5px;
+}
+#hd #sysinfo
+{
+    height: 46px;
+    position:relative;
+}
+#hd #sysinfo #rootProduct
+{
+	text-align:right;
+	margin-right:100px;
+	font-weight :normal;
+	padding-top:5px;
+}
+#hd #sysinfo #rootProduct span
+{
+    
+}
+#hd #sysinfo #rootProduct a
+{
+    margin:0 5px;
+    color:#555555;
+}
+#hd  #enterpriseinfo{float: left; padding-top:5px;padding-left:10px;}
+#hd  #productinfo{	float: right;}
+
+#hd #logininfo{
+	margin-top:2px;
+	background:#A0C9EB url(../images/WebUIFrame/menu_level1_bg.jpg) repeat-x scroll 0 0;
+	border-top:solid 1px #CAD5DB;
+	font-family:simsun;
+	font-size: 100%;
+	font-weight:normal;
+	line-height:31px;
+	height:31px;
+	margin-bottom:1px;
+}
+
+#hd #userinfo 
+{
+	float: right;
+	text-align:right;
+	padding-top:3px;
+	font-weight:bold;
+	font-size:12px;
+	color:#333333;
+}
+#hd #userinfo #pwd
+{
+	position:absolute;
+	right:40px;
+	top:0px;
+	margin:5px;
+}
+#hd #userinfo #pwd a,#hd #userinfo #logoff a{color:#0066CC;font-weight:normal;}
+#hd #userinfo #logoff
+{
+	position:absolute;
+	right:0px;
+	top:0px;
+	margin:5px 5px 5px 0;
+	padding-left:8px;
+	border-style:none none none solid;
+	border-width:1px;
+	border-color:gray;
+}
+#hd #userinfo #welcome
+{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    padding:3px 5px;
+    color:#0066CC;
+    }
+
+#hd  #rootmenu
+{
+	padding:0;
+	float: left;
+	text-align:left;
+	color:#666666;
+	color:#223661;
+}
+#hd  #rootmenu #product
+{
+    float:left;
+    font-weight:bold;
+    color:#6B7D94;
+    padding-left:10px;
+    padding-right:20px;
+    background:transparent url(../images/YPWater_breadcrumb_sep.png) no-repeat scroll 100% 1px;
+}
+#hd #rootmenu .rootmenu_sep
+{
+    color:#93a6b4;
+    /*float:left;
+    position:relative;
+    height:20px;
+    width:5px;
+    background:transparent url(../images/breadcrumb_sep.png) no-repeat scroll 100% -5px;
+    margin-top:5px;*/
+}
+#sidebar
+{
+	float: left;
+	min-height:500px;
+	height:500px;
+	border-color:#DBE2E8 #DBE2E8 #CAD5DB;
+	border-style:solid;
+	border-width:1px;
+	margin:0 0 0 1px;
+	width: 148px;
+	*width:150px;
+}
+#sidebar.collapse{width:0px;border-style:none;display:none;}
+
+#sidebar-toggler
+{
+    float:left;
+    min-height:500px;
+    height:502px;
+    background:transparent url(../Images/arrow-left.gif) no-repeat scroll center center;
+    width:6px;
+    border-style:none;
+    cursor:pointer;
+}
+#sidebar-toggler.hide
+{
+    height:500px;
+    border-style:solid none;
+    border-width:1px;
+    border-color:#DBE2E8 #DBE2E8 #CAD5DB;
+    background:#CAD5DB url(../Images/arrow-right.gif) no-repeat scroll center center;
+}
+#mainContent
+{
+	padding-right:0px;
+	text-align:left;
+	margin-left:157px;
+}
+#mainContent.expand{margin-left:7px;}
+#frameWrapper
+{
+    background-color:#ffffff;
+	border-color:#DBE2E8 #DBE2E8 #CAD5DB;
+	border-style:solid;
+	border-width:1px;
+	min-height:500px;
+	zoom:1;
+}
+#ie6only #frameWrapper{height:500px;}
+#mainFrame
+{
+    min-height:500px;
+	width:100%;
+	padding:0px;
+}
+.clear_float
+{
+	float: none;
+	clear: both;
+}
+.Level1Menu
+{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.veticalSeparator
+{
+    float: left;
+    margin-left: 2px;
+    margin-right: 2px;
+    }
+.outlookMenu { overflow:hidden; background-color: #FFFFEE; width:180px; margin:0; padding:0; font-size:10pt; font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif; }
+.outlookMenu h4 
+{
+    text-align:left;
+    background:url("../images/WebUIFrame/menu_level2_bg_left.jpg") no-repeat 0 0;
+    padding-left:28px;
+    margin:0;
+    line-height:25px;
+}
+.outlookMenu li{color:#333333;margin:0;text-align:left;}
+.outlookMenu ul{background-color:#F9F9F9;}
+.outlookMenu ul{background-color:#E9F2FA;}
+.outlookMenu ul,.outlookMenu ul li{ width:100%; margin:0; padding:0 0 0 15px;}
+.outlookMenu ul li { color:#333333;text-align:left; margin:2px; padding:0; }
+
+.outlookMenu h4 a,.outlookMenu h4 a:hover   
+{
+    text-decoration:none; 
+}
+#ft
+{
+    margin-top:5px;
+    padding:0 5px;
+    background-color:#EEF3F6;
+    background-color:#E9F2FA;
+    background:url(../images/WebUIFrame/menu_level1_bg.jpg) repeat-x 0 0;
+    border-color:#DBE2E8 #DBE2E8 #CAD5DB;
+    border-style:solid;
+    border-width:1px;
+    height:31px;
+    line-height:31px;
+    }
+#ft ul.left,#ft ul li {float:left;}
+#ft ul li {display:block;}
+#ft ul.right{float:right;}
+

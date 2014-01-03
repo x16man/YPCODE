@@ -1,0 +1,251 @@
+/*body {background-color:#E8F1F8;}*/
+/*body{background-color:#E9F2FA;}*/
+a:link,a:visited{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a,a:visited,a:link{color:#16387C;outline-style:none;}
+a,a:visited,a:link{color:#666666;outline-style:none;}
+li,ul li{ list-style-type:none;}
+#top
+{
+    border-color:#DBE2E8 #DBE2E8 #CAD5DB;
+    border-style:solid;
+    border-width:1px 1px 1px;
+    background:#EEF3F6 url(../images/grd-1px_1.4.gif) repeat-x 0 -1036px;
+    background-color:#ffffff;
+    height:2px;
+}
+#hd
+{
+    border-color:#DBE2E8 #DBE2E8 #CAD5DB;
+    border-style:solid;
+    border-width:1px 1px 1px;
+    /*background:#EEF3F6 url(../images/sitelogo.jpg) no-repeat; */
+    background:#EEF3F6 url(../images/grd-1px_1.4.gif) repeat-x 0 -1036px;
+    background-color:#E9F2FA;
+}
+#bd
+{
+    margin-top:5px;
+}
+#hd #sysinfo
+{
+    height: 46px;
+    /*background:#A0C9EB url(../images/background.gif) repeat-x scroll 0 -950px;*/
+}
+#hd  #enterpriseinfo{float: left; padding-top:5px;padding-left:10px;}
+#hd  #productinfo{	float: right;}
+
+#hd #logininfo{
+	/*background:url("../images/WebUIFrame/Level1MenuItemBG.gif") repeat-x;*/
+	/*background:#1B5FA8 url("../images/WebUIFrame/HeaderGradientImageType.png") repeat-x 0 -6px;*/
+	/*background-color:#2B5FA8;*/
+	margin-top:2px;
+	background:#A0C9EB url(../images/grd-1px_1.4.gif) repeat-x scroll 0 -1336px;
+	/*background:#A0C9EB url(../images/background.gif) repeat-x scroll 0 -950px;*/
+	/*border-top:solid 1px #99AABD;*/
+	font-family:simsun;
+	/*font-size-adjust:none;*/
+	font-size: 100%;
+	/*color:#FFFFFF;*/
+	line-height:28px;
+	font-weight: bold;
+	/*border-top:solid 1px #99AABD;
+	border-bottom:solid 1px #B3B6B0 ;*/
+	margin-bottom:1px;
+}
+
+#hd #userinfo 
+{
+	padding:0;
+	float: right;
+	/*width:197px;
+	*width:199px;*/
+	text-align:right;
+	padding-top:3px;
+	font-weight:bold;
+	font-size:11px;
+	/*color:#16387C;*/
+	color:#333333;
+}
+#hd #userinfo #logoff
+{
+    display:block;
+    float:right;
+    margin:0 5px;
+    padding-left:5px;
+    border:solid 1px #CAD5DB;    
+    border-top:none;
+    border-right:none;
+    border-bottom:none;
+}
+#hd #userinfo #welcome
+{
+    display:block;
+    float:right;
+    padding-bottom:2px;
+    border:none;
+    }
+
+#hd  #rootmenu
+{
+	padding:0;
+	float: left;
+	text-align:left;
+	color:#666666;
+}
+#hd  #rootmenu #product
+{
+    float:left;
+    font-weight:normal;
+    color:#6B7D94;
+    padding-left:10px;
+    padding-right:10px;
+    background:transparent url(../images/breadcrumb_sep.png) no-repeat scroll 100% -2px;
+}
+#hd #rootmenu .rootmenu_sep
+{
+    color:#93a6b4;
+    /*float:left;
+    position:relative;
+    height:20px;
+    width:5px;
+    background:transparent url(../images/breadcrumb_sep.png) no-repeat scroll 100% -5px;
+    margin-top:5px;*/
+}
+#sidebar
+{
+	float: left;
+	min-height:500px;
+	height:500px;
+	border-color:#DBE2E8 #DBE2E8 #CAD5DB;
+	border-style:solid;
+	border-width:1px;
+	margin:0 0 0 1px;
+	width: 148px;
+	*width:150px;
+}
+#sidebar.collapse{width:0px;border-style:none;display:none;}
+
+#sidebar-toggler
+{
+    float:left;
+    min-height:500px;
+    height:502px;
+    background-color:#F9F9F9;
+    background:#FFFFFF url(../Images/arrow-left.gif) no-repeat scroll center center;
+    width:6px;
+    border-style:none;
+    cursor:pointer;
+}
+#sidebar-toggler.hide
+{
+    height:500px;
+    border-style:solid none;
+    border-width:1px;
+    border-color:#DBE2E8 #DBE2E8 #CAD5DB;
+    background:#CAD5DB url(../Images/arrow-right.gif) no-repeat scroll center center;
+}
+#mainContent
+{
+	padding-right:0px;
+	text-align:left;
+	margin-left:157px;
+}
+#mainContent.expand{margin-left:7px;}
+#frameWrapper
+{
+    background-color:#ffffff;
+	border-color:#DBE2E8 #DBE2E8 #CAD5DB;
+	border-style:solid;
+	border-width:1px;
+	min-height:500px;
+	zoom:1;
+}
+#ie6only #frameWrapper{height:500px;}
+#mainFrame
+{
+    min-height:500px;
+	width:100%;
+	padding:0px;
+}
+.clear_float
+{
+	float: none;
+	clear: both;
+}
+.Level1Menu
+{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.veticalSeparator
+{
+    float: left;
+    margin-left: 2px;
+    margin-right: 2px;
+    }
+/*.Level1Menu a
+{
+    text-decoration:none; 
+}
+
+.Level1Menu a:hover
+{
+    text-decoration:none; 
+}*/
+
+.Level2Menu
+{
+    background: url("../images/WebUIFrame/menu2.png") no-repeat 0 -2px;
+}
+.Level2Menu_A
+{
+    margin-left: 25px;
+}
+.Level3Menu
+{
+    /*background: url("../images/WebUIFrame/Leve3MenuItemFlag.gif") no-repeat;
+    background-position: 0 4px;*/
+}
+.highlight
+{
+    background-color: Red;
+}
+.MenuIconBlock
+{
+    width: 5px;
+}
+.outlookMenu { overflow:hidden; background-color: #FFFFEE; width:180px; margin:0; padding:0; font-size:10pt; font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif; }
+.outlookMenu h4 
+{
+    text-align:left;
+    color:#333333;
+    background:url("../images/grd-1px_1.4.gif") repeat-x 0 -914px;
+    color:#FFFFCC; 
+    margin:0; 
+    padding:3px 3px; 
+    /*border-color:#B0BEC7 #B0BEC7 #93A6B4;*/
+    border-bottom-color:#93A6B4;
+    border-style:solid;
+    border-width:1px;
+    /*border-bottom:1px solid #B3B6B0;*/
+}
+.outlookMenu li{color:#333333;margin:0;text-align:left;}
+.outlookMenu li h4{border:solid 1px;}
+.outlookMenu ul{background-color:#F9F9F9;}
+.outlookMenu ul, .outlookMenu ul li{ width:100%; margin:0; padding:0 0 0 15px;}
+.outlookMenu ul li { color:#333333;text-align:left; margin:2px; padding:0; }
+.outlookMenu h4 a  { text-decoration:none; color:#333333;display:block; }
+#ft
+{
+    margin-top:5px;
+    padding:5px;
+    background-color:#EEF3F6;
+    border-color:#DBE2E8 #DBE2E8 #CAD5DB;
+    border-style:solid;
+    border-width:1px;}
+#ft ul.left,#ft ul li {float:left;}
+#ft ul li {display:block;}
+#ft ul.right{float:right;}
+

@@ -1,0 +1,14 @@
+﻿html{background: #C9EDFF url(../Images/ypwaterbg.jpg) repeat-x scroll top left;}
+body{margin: 0;padding: 0;background: #003466 url(../Images/ypwaterbg1.jpg) repeat scroll 0 0;}
+#bd{height: 330px;padding-top: 52px;}
+#login{margin: 0 auto;height: 686px;width: 1000px;background:transparent url(../Images/login.jpg) no-repeat scroll 0 0;}
+#login #content{position: relative;top: 120px;left: 0px;width: 750px;text-align:center;font-size:12px;}
+#login #content #account {}
+#login #content #password {margin-left:5px;}
+#login #content #txtUser,#login #content #txtPassword{background-color:#95DEF1;border:1px solid #0474B6;}
+#login #content img {border:none;}
+#login input{font-weight:bold;}
+#login #btnLogin{padding-top:4px;}
+#ft{text-align:center;margin-top:30px;height:0px;}
+#ft img{margin:0 auto;}
+#ft p{margin-left:auto;margin-right:auto;text-align:left;width:330px;position:relative;top:-90px;left:30px;font-size:12px;}

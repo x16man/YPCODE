@@ -1,0 +1,63 @@
+﻿#main
+{
+    width:100%;
+    height: 500px;
+    margin-top:-1px;
+}
+#sidebar
+{
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+    border-color:#E5E5E5;
+    border-style:solid;
+    border-width:0px 1px 0px 0px;
+    vertical-align:top;
+    text-align:left;
+}
+#sidebar .TreeView{min-height:496px;height:100%;}
+#seperator{width:1px !important;width:18px;}
+#content
+{
+    vertical-align:top;
+    text-align:left;
+}
+.fieldWrapper
+{
+    background-position: 0 0;
+    background: transparent url(../../images/left-top-corner-box.jpg) no-repeat 0 0;
+    background-attachment: inherit;
+    padding:10px 10px 0px 10px;
+    color:#666666;
+}
+fieldset {border-style:solid;height:400px;text-align:left;padding-left:15px;}
+fieldset legend{color:#666666;font-weight:bold;font-size:14px;margin-bottom:20px;}
+fieldset #leftColumn
+{
+    float: left; 
+    position: relative; 
+    border-width: 0px 1px 0px 0px;
+    border-color: #D5DFE5; 
+    width: 220px; 
+    height: 400px; 
+    margin-right: 20px;
+}
+fieldset #rightColumn
+{
+    float:right;width:100%;margin-left:-240px;
+}
+fieldset #rightColumn .content
+{
+    margin-left:240px;
+}
+fieldset label {font-weight:bold;margin-top:10px;}
+fieldset input{width:200px;padding:1px 0px;}
+fieldset input[type="text"]{width:200px;}
+fieldset #txtDeptMgrName{width:180px;}
+fieldset #btnUserChooser{width:20px;}
+fieldset input[type="checkbox"]{width:30px;}
+fieldset select{width:202px;}
+fieldset textarea{width:200px;overflow:auto;}
+#chkShowInOtherSys{width:30px;}
+#chkIsValid{width:30px;}
+span.required {	color: #BE5028;}

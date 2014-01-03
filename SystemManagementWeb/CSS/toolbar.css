@@ -1,0 +1,342 @@
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.clearfix{
+	zoom:1;
+}
+body,table{
+	font-size:12px;
+}
+/*Toolbar Wrap*/
+.paneToolbar{
+	padding:4px 0pt;
+	position:relative;
+	visibility:visible;
+	width:100%;
+	min-width:100px;
+	z-index:3;
+	background:#A0C9EB url(../images/bar_bg.gif) repeat-x scroll 0pt -950px;
+	background: url(../images/grd-1px_1.4.gif) repeat-x scroll 0 -1336px;
+	margin:1 0 1px;
+	/*height:26px;*/
+	/*border-left:solid 0px #99AABD;*/
+	/*border-right:solid 0px #99AABD;*/
+}
+/*paneToolbarLeftCap*/
+.paneToolbarLeftCap{
+	height:25px;
+	left:0px;
+	float:left;
+	top:0px;
+	width:3px;
+}
+.toolbar
+{
+    height:26px;
+}
+/*paneToolbarRightCap*/
+.paneToolbarRightCap{
+	height:25px;
+	left:0px;
+	position:absolute;
+	top:0px;
+	width:3px;
+}
+.QueryContainer
+{
+    background: #99AABD url(../images/grd-1px_1.4.gif) repeat-x scroll 0 -1350px;
+    text-align:left;
+    padding:3px 3px;
+}
+.QueryContainer .QueryTableLayOut td.querycell
+{
+    padding-left:10px;
+    padding-right:3px;
+}
+.QueryContainer .QueryTableLayOut td.queryCommand
+{
+    padding-left:20px;
+    }
+.QueryContainer .QueryTableLayOut td.querycell .textbox
+{
+    height:16px;
+    padding:3px 0px 1px 0px;
+    }
+.QueryContainer .QueryTableLayOut td.querycell .checkbox
+{
+    }
+.QueryContainer .QueryTableLayOut td.querycell .dropdownlist
+{
+    }
+.QueryContainer .QueryTableLayOut td.querycell .calendarTable
+{
+    
+    }    
+/*Toolbar Item Table*/
+.buttonTable,.labelTable{
+	border-collapse:collapse;
+	cursor:pointer;
+	float:left;
+	height:26px;
+	margin:0px;
+	border:none 0px;
+	/*border:dotted 1px;*/
+}
+.labelTable{cursor:default;}
+.buttonTable-Right,.labelTable-Right{float:right;border-collapse:collapse;cursor:pointer;height:26px;margin:0px;border:none 0px;}
+.labelTable-Right{cursor:default;}
+.buttonTable>td,.labelTable>td{
+	padding:0px;
+	margin:0px;
+	border:none 0px transparent;
+}
+/*.buttonTable td{
+	border:dotted 1px;	
+}*/
+.leftCap,.rightCap{
+	background:transparent url(../images/icon_edge.gif) repeat scroll -1770px -34px;
+}
+.leftCapOver{
+	background-position:-720px -34px;/*-720px roundcorner*//*not roundcorner-780px*//*blue*/
+	
+}
+.leftCapDown{
+	background-position:-840px -34px;/**/
+}
+.rightCapOver{
+	background-position:-750px -34px;/*-750px roundcorner*//*not roundcorner-810pxpx*/
+}
+.rightCapDown{
+	background-position:-870px -34px;
+}
+.buttonIconCell{
+	background:transparent url(../images/bar_bg.gif) repeat-x scroll 0pt -540px;
+	padding:1px;
+}
+.buttonIconCellOver{
+	background-position:0pt -300px;
+}
+.buttonIconCellDown{
+	background-position:0pt -350px;
+	padding:2px 0px 0px 2px;
+}
+.button{
+	background-image:url(../images/icon_edge.gif);
+	/*background-position:-1581px 0px;*/
+	background-repeat:no-repeat;
+	height:24px;
+	overflow:hidden;
+	width:24px;
+	margin:0px;
+	padding:0px;
+	border:none 0px;
+	/*border:dotted 1px;*/
+}
+/*--------------------------------------Begin OF ToolBar Icon --------------------------------------------------------*/
+.icon{background-position:-1670px 0px		}
+.addRoot{background-position:-2753px 0px;}
+.add{background-position:-2062px 0px}
+.edit{background-position:-2002px 0px}
+.present{background-position:-2091px 0px}
+.cancel{background-position:-2690px 0px}
+.delete{background-position:-1881px 0px}
+.save{background-position:-2185px 0px;}
+.view{background-position:-2662px 0px}
+.query{background-position:-509px -60px}
+.audit{background-position:-1582px -20px;}
+.dateIcon{background-position:-766px 0px;	}
+.close{background-position:-460px 3px;}
+.pre{background-position:-562px -58px; }
+.next{background-position:-590px -58px;} 
+.key{background-position:-532px -60px;}
+.addUser{background-position:-379px -60px;}  
+.editUser{background-position:-436px -60px;}
+.deleteUser{background-position:-408px -60px;}
+.move{background-position:-2570px 0px;}
+.config{background-position:-621px -60px;}
+.audit1{background-position:-2032px 0px}
+.audit2{background-position:-1582px 0px;}
+.audit3{background-position:-1582px -20px;}
+.expand{background-position:-786px -58px;}
+.collapse{background-position:-815px -59px;}
+.red{background-position:-1616px -25px;}
+.up{background-position:-2514px 0px;}
+.down{background-position:-2544px 0px;}
+.in{background-position:-1582px -49px;}
+.out{background-position:-1612px -49px;}
+.group{background-position:-1642px -49px;}
+.groupAdd{background-position:-1672px -49px;}
+.groupEdit{background-position:-1701px -49px;}
+.groupDelete{background-position:-1728px -50px;}
+.user{background-position:-1753px -49px;}
+.userAdd{background-position:-1775px -49px;}
+.userEdit{background-position:-1799px -49px;}
+.userDelete{background-position:-1825px -49px;}
+.folder{background-position:-1854px -49px;}
+.folderAdd{background-position:-1878px -50px;}
+.folderEdit{background-position:-1903px -50px;}
+.folderDelete{background-position:-1931px -50px;}
+.return{background-position:-1957px -52px;}
+.go{background-position:-1987px -52px;}
+.refresh{background-position:-2014px -52px;}
+/*-------------------------------------------------------End OF Toolbar ICON--------------------------------------------------------*/
+
+.buttonOver{
+	
+}
+.buttonDown{
+	
+}
+.labelCell{
+	background:transparent url(../images/bar_bg.gif) repeat-x scroll 0pt -540px;
+	padding:1px 1px 1px 0px;
+	*padding:2px 1px 0px 0px;
+}
+
+.labelCellOver{
+	background-position:0pt -300px;
+}
+.labelCellDown{
+	background-position:0pt -350px;
+	padding:2px 0px 0px 2px;
+	padding-left:1px;
+}
+.nakedLabelCell{
+	background:transparent url(../images/bar_bg.gif) repeat-x scroll 0pt -540px;
+	padding:1px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.nakedLabelCellOver{
+	background-position:0pt -300px;
+}
+.nakedLabelCellDown{
+	background-position:0pt -350px;
+	padding:2px 0px 0px 2px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.toolbarIconDivider{
+	background:transparent url(../images/icon_edge.gif) repeat-x scroll -1260px -34px;/*-1179px*/
+	float:left;
+	height:22px;
+	margin:2px 3px;
+	width:1px;
+}
+.dropDownLeftCap{
+	background:transparent url(../images/icon_edge.gif) repeat scroll -1770px -34px;
+	width:2px;
+}
+.dropDownLeftCapOver{
+	background-position:-780px -34px;
+}
+.dropDownLeftCapDown{
+	background-position:-900px -34px;
+}
+.dropDownIconCell{
+	padding:0px;
+	background:transparent url(../images/bar_bg.gif) repeat-x scroll 0pt -540px;
+}
+.dropDownIconCellOver{
+	background-position:0pt -300px;
+}
+.dropDownIconCellDown{
+	padding:2px 0px 0px;
+	background-position:0pt -350px;
+}
+.comboArrow{
+	background:transparent url(../images/icon_edge.gif) repeat scroll -1449px 3px;
+	height:23px;
+	padding:0px 0px;
+	overflow:hidden;
+	width:8px;
+}
+.toolbarCheckBox input{margin-top:0px;}
+.toolbarText{
+	color:#000000;
+	font-size:12px;
+	height:16px;
+	*height:16px;
+	
+	padding:3px 2px 1px 4px;
+	border:1px solid #99AABD;
+}
+.toolbarSelect
+{
+	color:#000000;
+	font-size:12px;
+	height:22px;
+	padding:1px 2px 1px 4px;
+	border:1px solid #99AABD;
+}
+.calendarDate{
+	cursor:default;
+	color:#000000;
+	font-size:12px;
+	width:65px !important;
+	height:16px !important;
+	*height:16px !important;
+	padding:3px 2px 1px 4px !important;
+	border:1px solid #99AABD !important;
+	border-right:0px none !important;
+	position:relative;
+	/*float:left;*/
+}
+
+.datePicker {
+	color:#F2F9FF;
+	background-color:#FFFFFF;
+	border:solid 1px #99AABD;
+	border-left:0px none;
+	cursor:pointer;
+	/*float:left;*/
+	position:relative;
+	height:16px;
+	width:16px;
+	padding:2px;
+}
+
+.datePickerIcon{
+	background:transparent url(../images/icon_edge.gif) repeat scroll -765px -1px;
+	height:16px;
+	width:16px;
+	position:static;
+	cursor:pointer;
+}
+.chooserTextBox
+{
+    cursor:default;
+	color:#000000;
+	font-size:12px;
+	width:140px !important;
+	height:16px !important;
+	*height:16px !important;
+	padding:3px 2px 1px 4px !important;
+	border:1px solid #99AABD !important;
+	border-right:0px none !important;
+	position:relative;
+}
+.chooserPicker {
+	color:#F2F9FF;
+	background-color:#FFFFFF;
+	border:solid 1px #99AABD;
+	border-left:0px none;
+	cursor:pointer;
+	/*float:left;*/
+	position:relative;
+	height:16px;
+	width:16px;
+	padding:2px;
+}
+.chooserPickerIcon{
+	background:transparent url(../images/icon_edge.gif) repeat scroll -765px -1px;
+	background-position:-512px -63px;
+	height:16px;
+	width:16px;
+	position:static;
+	cursor:pointer;
+}

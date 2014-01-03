@@ -1,0 +1,21 @@
+﻿body
+{
+    text-align: left;
+    vertical-align:top;
+}
+#main{width:100%}
+
+#left
+{
+    width:200px;
+    border-color:#E5E5E5;
+    border-style:solid;
+    border-width:0px 1px 0px 0px;
+    background-color:#f9f9f9;
+}
+#left .TreeView{min-height:462px;max-height:462px;height:462px;}
+#seperator{width:1px;}
+#right
+{
+    
+}

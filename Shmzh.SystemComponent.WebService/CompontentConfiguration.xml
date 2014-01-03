@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<!--组件配置文件-->
+<Components>
+	<Component Name="PubData" Version="V1.0">
+		<Purpose>PubData数据库</Purpose>
+		<DatabaseConnectionString>data source=.;initial catalog=PubData;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+</Components>
+

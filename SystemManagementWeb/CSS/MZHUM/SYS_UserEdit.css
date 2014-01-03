@@ -1,0 +1,8 @@
+﻿fieldset input#btn_ChooseDept{width:40px;padding:0px 2px;}
+fieldset input[type="text"]#tb_OfficeCall{width:100px; }
+
+fieldset input[type="text"]#tb_OfficeSubCall{width:50px;}
+fieldset input[type="text"]#tb_DeptCnName{width:155px;}
+fieldset select#ddw_Gender1{width:40px;}
+
+

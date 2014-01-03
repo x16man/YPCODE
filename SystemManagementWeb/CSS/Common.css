@@ -1,0 +1,26 @@
+﻿@import url("reset.css");
+@import url("fonts.css");
+@import url("grids.css");
+@import url("toolbar.css");
+@import url("DataGrid.css");
+
+/*
+    -------------------                Standard Style              ---------------
+*/
+#main{margin-top:-1px;}
+table{text-align:left;}
+a:link{color:#223661;text-decoration:none;}
+span.required {	color: #BE5028;}
+.mzhTitle
+        {
+            padding:5px 5px;
+	        position:relative;
+	        background:#A0C9EB url(../images/bar_bg.gif) repeat-x scroll 0pt -950px;
+	        background: url(../images/grd-1px_1.4.gif) repeat-x scroll 0 -1338px;
+	        margin:0;
+	        font-weight:bold;
+	        text-align:left;
+	        font-size:13.3px;
+	        color:#6B7D94;
+	        color:#003366;
+        }

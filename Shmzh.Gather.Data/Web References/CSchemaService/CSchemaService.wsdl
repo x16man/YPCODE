@@ -1,0 +1,1767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.ypwater.com/WQService/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.ypwater.com/WQService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.ypwater.com/WQService/">
+      <s:element name="GetConnectionString">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetConnectionStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetConnectionStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportSchemaXML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reprotCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportSchemaXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReportSchemaXMLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetZipedReportSchemaXML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetZipedReportSchemaXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetZipedReportSchemaXMLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportSchemaData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="currentDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="canModify" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReportSchemaDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReportSchemaDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetZipedReportSchemaData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="currentDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="canModify" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetZipedReportSchemaDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetZipedReportSchemaDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReportSchemaData1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="currentDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="newXMLData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldXMLData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReportSchemaData1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveReportSchemaData1Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReportSchemaZipedData1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="currentDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="newZipedData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldZipedData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReportSchemaZipedData1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveReportSchemaZipedData1Result" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReportSchemaZipedData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="currentDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="newZipedXMLData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldZipedXMLData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userIP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReportSchemaZipedDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveReportSchemaZipedDataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReportSchemaData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="currentDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="newXMLData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldXMLData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userIP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveReportSchemaDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveReportSchemaDataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SureReportSchemaData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="operateCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operateName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operateIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="aDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SureReportSchemaDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SureReportSchemaDataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelReportSchemaData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="operateCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operateName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operateIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="aDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelReportSchemaDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CancelReportSchemaDataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddReportSchema">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="schemaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="schemaName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="schemaType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="schemaXML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cycleType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddReportSchemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddReportSchemaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddZipedReportSchema">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="schemaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="schemaName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="schemaType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zipedSchemaXML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cycleType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddZipedReportSchemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddZipedReportSchemaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateReportSchema">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="schemaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="schemaName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="schemaType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="schemaXML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cycleType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateReportSchemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateReportSchemaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateZipedReportSchema">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="schemaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="schemaName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="schemaType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zipedSchemaXML" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cycleType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateZipedReportSchemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateZipedReportSchemaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOperateInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="operateCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operateName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="operateIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="operateType" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="aDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="modifyInfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOperateInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddOperateInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOperationInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:OperationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OperationInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="OperateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorIp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReportCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OperateType" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="CycleId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModifyInfo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OldXml" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddOperationInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddOperationInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastOperate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="aDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastOperateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetLastOperateResult" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOperationInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="aDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOperationInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOperationInfoResult" type="tns:ArrayOfOperationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOperationInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OperationInfo" nillable="true" type="tns:OperationInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetOperationByReportCodeAndCycleId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cycleId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOperationByReportCodeAndCycleIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOperationByReportCodeAndCycleIdResult" type="tns:ArrayOfOperationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOperationById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOperationByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOperationByIdResult" type="tns:OperationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLatestOperation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reportCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cycleId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLatestOperationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLatestOperationResult" type="tns:OperationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:CategoryInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CategoryInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ParentId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sort" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertCategoryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:CategoryInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCategoryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteCategoryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllCategory">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllCategoryResult" type="tns:ArrayOfCategoryInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCategoryInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CategoryInfo" nillable="true" type="tns:CategoryInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCategoryById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCategoryByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCategoryByIdResult" type="tns:CategoryInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertRelation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:RelationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RelationInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CategoryId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SchemaId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SchemaName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SchemaType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SchemaCycle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SchemaUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sort" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertRelationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertRelationResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRelation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:RelationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRelationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateRelationResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteRelation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteRelationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteRelationResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllRelation">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllRelationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllRelationResult" type="tns:ArrayOfRelationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRelationInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RelationInfo" nillable="true" type="tns:RelationInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetRelationByCategoryId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRelationByCategoryIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRelationByCategoryIdResult" type="tns:ArrayOfRelationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRelationBySchemaId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="schemaId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRelationBySchemaIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRelationBySchemaIdResult" type="tns:ArrayOfRelationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRelationById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRelationByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRelationByIdResult" type="tns:RelationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSchema">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:SchemaInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SchemaInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Xml" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CycleType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Url" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertSchemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertSchemaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSchema">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:SchemaInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSchemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateSchemaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSchema">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSchemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteSchemaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllSchema">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllSchemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllSchemaResult" type="tns:ArrayOfSchemaInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSchemaInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SchemaInfo" nillable="true" type="tns:SchemaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSchemaById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSchemaByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSchemaByIdResult" type="tns:SchemaInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetConnectionStringSoapIn">
+    <wsdl:part name="parameters" element="tns:GetConnectionString" />
+  </wsdl:message>
+  <wsdl:message name="GetConnectionStringSoapOut">
+    <wsdl:part name="parameters" element="tns:GetConnectionStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReportSchemaXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReportSchemaXML" />
+  </wsdl:message>
+  <wsdl:message name="GetReportSchemaXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReportSchemaXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetZipedReportSchemaXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetZipedReportSchemaXML" />
+  </wsdl:message>
+  <wsdl:message name="GetZipedReportSchemaXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetZipedReportSchemaXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReportSchemaDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReportSchemaData" />
+  </wsdl:message>
+  <wsdl:message name="GetReportSchemaDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReportSchemaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetZipedReportSchemaDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetZipedReportSchemaData" />
+  </wsdl:message>
+  <wsdl:message name="GetZipedReportSchemaDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetZipedReportSchemaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveReportSchemaData1SoapIn">
+    <wsdl:part name="parameters" element="tns:SaveReportSchemaData1" />
+  </wsdl:message>
+  <wsdl:message name="SaveReportSchemaData1SoapOut">
+    <wsdl:part name="parameters" element="tns:SaveReportSchemaData1Response" />
+  </wsdl:message>
+  <wsdl:message name="SaveReportSchemaZipedData1SoapIn">
+    <wsdl:part name="parameters" element="tns:SaveReportSchemaZipedData1" />
+  </wsdl:message>
+  <wsdl:message name="SaveReportSchemaZipedData1SoapOut">
+    <wsdl:part name="parameters" element="tns:SaveReportSchemaZipedData1Response" />
+  </wsdl:message>
+  <wsdl:message name="SaveReportSchemaZipedDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveReportSchemaZipedData" />
+  </wsdl:message>
+  <wsdl:message name="SaveReportSchemaZipedDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveReportSchemaZipedDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveReportSchemaDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveReportSchemaData" />
+  </wsdl:message>
+  <wsdl:message name="SaveReportSchemaDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveReportSchemaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SureReportSchemaDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SureReportSchemaData" />
+  </wsdl:message>
+  <wsdl:message name="SureReportSchemaDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SureReportSchemaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelReportSchemaDataSoapIn">
+    <wsdl:part name="parameters" element="tns:CancelReportSchemaData" />
+  </wsdl:message>
+  <wsdl:message name="CancelReportSchemaDataSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelReportSchemaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddReportSchemaSoapIn">
+    <wsdl:part name="parameters" element="tns:AddReportSchema" />
+  </wsdl:message>
+  <wsdl:message name="AddReportSchemaSoapOut">
+    <wsdl:part name="parameters" element="tns:AddReportSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddZipedReportSchemaSoapIn">
+    <wsdl:part name="parameters" element="tns:AddZipedReportSchema" />
+  </wsdl:message>
+  <wsdl:message name="AddZipedReportSchemaSoapOut">
+    <wsdl:part name="parameters" element="tns:AddZipedReportSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateReportSchemaSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateReportSchema" />
+  </wsdl:message>
+  <wsdl:message name="UpdateReportSchemaSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateReportSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateZipedReportSchemaSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateZipedReportSchema" />
+  </wsdl:message>
+  <wsdl:message name="UpdateZipedReportSchemaSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateZipedReportSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOperateInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOperateInfo" />
+  </wsdl:message>
+  <wsdl:message name="AddOperateInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOperateInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOperationInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOperationInfo" />
+  </wsdl:message>
+  <wsdl:message name="AddOperationInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOperationInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLastOperateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastOperate" />
+  </wsdl:message>
+  <wsdl:message name="GetLastOperateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastOperateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOperationInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOperationInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationByReportCodeAndCycleIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOperationByReportCodeAndCycleId" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationByReportCodeAndCycleIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOperationByReportCodeAndCycleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOperationById" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOperationByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLatestOperationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLatestOperation" />
+  </wsdl:message>
+  <wsdl:message name="GetLatestOperationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLatestOperationResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:InsertCategory" />
+  </wsdl:message>
+  <wsdl:message name="InsertCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCategory" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCategory" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllCategory" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCategoryByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCategoryById" />
+  </wsdl:message>
+  <wsdl:message name="GetCategoryByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCategoryByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertRelationSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertRelation" />
+  </wsdl:message>
+  <wsdl:message name="InsertRelationSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertRelationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRelationSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRelation" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRelationSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRelationResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRelationSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteRelation" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRelationSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteRelationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRelationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllRelation" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRelationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllRelationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRelationByCategoryIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRelationByCategoryId" />
+  </wsdl:message>
+  <wsdl:message name="GetRelationByCategoryIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRelationByCategoryIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRelationBySchemaIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRelationBySchemaId" />
+  </wsdl:message>
+  <wsdl:message name="GetRelationBySchemaIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRelationBySchemaIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRelationByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRelationById" />
+  </wsdl:message>
+  <wsdl:message name="GetRelationByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRelationByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSchemaSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertSchema" />
+  </wsdl:message>
+  <wsdl:message name="InsertSchemaSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSchemaSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSchema" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSchemaSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSchemaSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSchema" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSchemaSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSchemaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllSchema" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSchemaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllSchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSchemaByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSchemaById" />
+  </wsdl:message>
+  <wsdl:message name="GetSchemaByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSchemaByIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CSchemaServiceSoap">
+    <wsdl:operation name="GetConnectionString">
+      <wsdl:input message="tns:GetConnectionStringSoapIn" />
+      <wsdl:output message="tns:GetConnectionStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportSchemaXML">
+      <wsdl:input message="tns:GetReportSchemaXMLSoapIn" />
+      <wsdl:output message="tns:GetReportSchemaXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZipedReportSchemaXML">
+      <wsdl:input message="tns:GetZipedReportSchemaXMLSoapIn" />
+      <wsdl:output message="tns:GetZipedReportSchemaXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReportSchemaData">
+      <wsdl:input message="tns:GetReportSchemaDataSoapIn" />
+      <wsdl:output message="tns:GetReportSchemaDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZipedReportSchemaData">
+      <wsdl:input message="tns:GetZipedReportSchemaDataSoapIn" />
+      <wsdl:output message="tns:GetZipedReportSchemaDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveReportSchemaData1">
+      <wsdl:input message="tns:SaveReportSchemaData1SoapIn" />
+      <wsdl:output message="tns:SaveReportSchemaData1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveReportSchemaZipedData1">
+      <wsdl:input message="tns:SaveReportSchemaZipedData1SoapIn" />
+      <wsdl:output message="tns:SaveReportSchemaZipedData1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveReportSchemaZipedData">
+      <wsdl:input message="tns:SaveReportSchemaZipedDataSoapIn" />
+      <wsdl:output message="tns:SaveReportSchemaZipedDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveReportSchemaData">
+      <wsdl:input message="tns:SaveReportSchemaDataSoapIn" />
+      <wsdl:output message="tns:SaveReportSchemaDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SureReportSchemaData">
+      <wsdl:input message="tns:SureReportSchemaDataSoapIn" />
+      <wsdl:output message="tns:SureReportSchemaDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelReportSchemaData">
+      <wsdl:input message="tns:CancelReportSchemaDataSoapIn" />
+      <wsdl:output message="tns:CancelReportSchemaDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddReportSchema">
+      <wsdl:input message="tns:AddReportSchemaSoapIn" />
+      <wsdl:output message="tns:AddReportSchemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddZipedReportSchema">
+      <wsdl:input message="tns:AddZipedReportSchemaSoapIn" />
+      <wsdl:output message="tns:AddZipedReportSchemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReportSchema">
+      <wsdl:input message="tns:UpdateReportSchemaSoapIn" />
+      <wsdl:output message="tns:UpdateReportSchemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateZipedReportSchema">
+      <wsdl:input message="tns:UpdateZipedReportSchemaSoapIn" />
+      <wsdl:output message="tns:UpdateZipedReportSchemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOperateInfo">
+      <wsdl:input message="tns:AddOperateInfoSoapIn" />
+      <wsdl:output message="tns:AddOperateInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOperationInfo">
+      <wsdl:input message="tns:AddOperationInfoSoapIn" />
+      <wsdl:output message="tns:AddOperationInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastOperate">
+      <wsdl:input message="tns:GetLastOperateSoapIn" />
+      <wsdl:output message="tns:GetLastOperateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationInfo">
+      <wsdl:input message="tns:GetOperationInfoSoapIn" />
+      <wsdl:output message="tns:GetOperationInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationByReportCodeAndCycleId">
+      <wsdl:input message="tns:GetOperationByReportCodeAndCycleIdSoapIn" />
+      <wsdl:output message="tns:GetOperationByReportCodeAndCycleIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationById">
+      <wsdl:input message="tns:GetOperationByIdSoapIn" />
+      <wsdl:output message="tns:GetOperationByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestOperation">
+      <wsdl:input message="tns:GetLatestOperationSoapIn" />
+      <wsdl:output message="tns:GetLatestOperationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCategory">
+      <wsdl:input message="tns:InsertCategorySoapIn" />
+      <wsdl:output message="tns:InsertCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCategory">
+      <wsdl:input message="tns:UpdateCategorySoapIn" />
+      <wsdl:output message="tns:UpdateCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategory">
+      <wsdl:input message="tns:DeleteCategorySoapIn" />
+      <wsdl:output message="tns:DeleteCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCategory">
+      <wsdl:input message="tns:GetAllCategorySoapIn" />
+      <wsdl:output message="tns:GetAllCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryById">
+      <wsdl:input message="tns:GetCategoryByIdSoapIn" />
+      <wsdl:output message="tns:GetCategoryByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRelation">
+      <wsdl:input message="tns:InsertRelationSoapIn" />
+      <wsdl:output message="tns:InsertRelationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRelation">
+      <wsdl:input message="tns:UpdateRelationSoapIn" />
+      <wsdl:output message="tns:UpdateRelationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRelation">
+      <wsdl:input message="tns:DeleteRelationSoapIn" />
+      <wsdl:output message="tns:DeleteRelationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRelation">
+      <wsdl:input message="tns:GetAllRelationSoapIn" />
+      <wsdl:output message="tns:GetAllRelationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationByCategoryId">
+      <wsdl:input message="tns:GetRelationByCategoryIdSoapIn" />
+      <wsdl:output message="tns:GetRelationByCategoryIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationBySchemaId">
+      <wsdl:input message="tns:GetRelationBySchemaIdSoapIn" />
+      <wsdl:output message="tns:GetRelationBySchemaIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationById">
+      <wsdl:input message="tns:GetRelationByIdSoapIn" />
+      <wsdl:output message="tns:GetRelationByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSchema">
+      <wsdl:input message="tns:InsertSchemaSoapIn" />
+      <wsdl:output message="tns:InsertSchemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSchema">
+      <wsdl:input message="tns:UpdateSchemaSoapIn" />
+      <wsdl:output message="tns:UpdateSchemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSchema">
+      <wsdl:input message="tns:DeleteSchemaSoapIn" />
+      <wsdl:output message="tns:DeleteSchemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSchema">
+      <wsdl:input message="tns:GetAllSchemaSoapIn" />
+      <wsdl:output message="tns:GetAllSchemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchemaById">
+      <wsdl:input message="tns:GetSchemaByIdSoapIn" />
+      <wsdl:output message="tns:GetSchemaByIdSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CSchemaServiceSoap" type="tns:CSchemaServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetConnectionString">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetConnectionString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportSchemaXML">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetReportSchemaXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZipedReportSchemaXML">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetZipedReportSchemaXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportSchemaData">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetReportSchemaData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZipedReportSchemaData">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetZipedReportSchemaData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReportSchemaData1">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/SaveReportSchemaData1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReportSchemaZipedData1">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/SaveReportSchemaZipedData1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReportSchemaZipedData">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/SaveReportSchemaZipedData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReportSchemaData">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/SaveReportSchemaData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SureReportSchemaData">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/SureReportSchemaData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelReportSchemaData">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/CancelReportSchemaData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddReportSchema">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/AddReportSchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddZipedReportSchema">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/AddZipedReportSchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReportSchema">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/UpdateReportSchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateZipedReportSchema">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/UpdateZipedReportSchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOperateInfo">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/AddOperateInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOperationInfo">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/AddOperationInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastOperate">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetLastOperate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationInfo">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetOperationInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationByReportCodeAndCycleId">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetOperationByReportCodeAndCycleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationById">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetOperationById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestOperation">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetLatestOperation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCategory">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/InsertCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCategory">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/UpdateCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategory">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/DeleteCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCategory">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetAllCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryById">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetCategoryById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRelation">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/InsertRelation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRelation">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/UpdateRelation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRelation">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/DeleteRelation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRelation">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetAllRelation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationByCategoryId">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetRelationByCategoryId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationBySchemaId">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetRelationBySchemaId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationById">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetRelationById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSchema">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/InsertSchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSchema">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/UpdateSchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSchema">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/DeleteSchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSchema">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetAllSchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchemaById">
+      <soap:operation soapAction="http://www.ypwater.com/WQService/GetSchemaById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CSchemaServiceSoap12" type="tns:CSchemaServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetConnectionString">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetConnectionString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportSchemaXML">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetReportSchemaXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZipedReportSchemaXML">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetZipedReportSchemaXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReportSchemaData">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetReportSchemaData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZipedReportSchemaData">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetZipedReportSchemaData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReportSchemaData1">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/SaveReportSchemaData1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReportSchemaZipedData1">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/SaveReportSchemaZipedData1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReportSchemaZipedData">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/SaveReportSchemaZipedData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveReportSchemaData">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/SaveReportSchemaData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SureReportSchemaData">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/SureReportSchemaData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelReportSchemaData">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/CancelReportSchemaData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddReportSchema">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/AddReportSchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddZipedReportSchema">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/AddZipedReportSchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReportSchema">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/UpdateReportSchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateZipedReportSchema">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/UpdateZipedReportSchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOperateInfo">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/AddOperateInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOperationInfo">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/AddOperationInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastOperate">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetLastOperate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationInfo">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetOperationInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationByReportCodeAndCycleId">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetOperationByReportCodeAndCycleId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationById">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetOperationById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLatestOperation">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetLatestOperation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCategory">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/InsertCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCategory">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/UpdateCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategory">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/DeleteCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCategory">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetAllCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryById">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetCategoryById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRelation">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/InsertRelation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRelation">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/UpdateRelation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRelation">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/DeleteRelation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRelation">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetAllRelation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationByCategoryId">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetRelationByCategoryId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationBySchemaId">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetRelationBySchemaId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRelationById">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetRelationById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSchema">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/InsertSchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSchema">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/UpdateSchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSchema">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/DeleteSchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSchema">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetAllSchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchemaById">
+      <soap12:operation soapAction="http://www.ypwater.com/WQService/GetSchemaById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CSchemaService">
+    <wsdl:port name="CSchemaServiceSoap" binding="tns:CSchemaServiceSoap">
+      <soap:address location="http://116.236.252.117/Shmzh.Gather.WebService/CSchemaService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CSchemaServiceSoap12" binding="tns:CSchemaServiceSoap12">
+      <soap12:address location="http://116.236.252.117/Shmzh.Gather.WebService/CSchemaService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

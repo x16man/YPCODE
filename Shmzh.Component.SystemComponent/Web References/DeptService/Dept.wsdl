@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="deptInfo" type="tns:DeptInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DeptInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DeptCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeptCo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeptCnName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeptEnName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParentDept" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParentDeptName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeptMgr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeptMgrName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeptLevel" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="Serial" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CostCenter" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsValid" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShowInOtherSys" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="deptInfo" type="tns:DeptInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deptCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Disable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deptCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DisableResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Enable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deptCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EnableResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsExistDeptCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deptCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsExistDeptCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsExistDeptCodeResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsExistDeptName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deptName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsExistDeptNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsExistDeptNameResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HasChildDept">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deptCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HasChildDeptResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="HasChildDeptResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HasUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deptCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HasUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="HasUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllByCompanyCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllByCompanyCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllByCompanyCodeResult" type="tns:ArrayOfDeptInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDeptInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DeptInfo" nillable="true" type="tns:DeptInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllAvalibleCompanyCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllAvalibleCompanyCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllAvalibleCompanyCodeResult" type="tns:ArrayOfDeptInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByCompanyAndManager">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="manager" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByCompanyAndManagerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByCompanyAndManagerResult" type="tns:ArrayOfDeptInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByCompanyCodeAndDeptCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deptCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByCompanyCodeAndDeptCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByCompanyCodeAndDeptCodeResult" type="tns:DeptInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParentDeptByCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="deptCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParentDeptByCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParentDeptByCodeResult" type="tns:DeptInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertSoapIn">
+    <wsdl:part name="parameters" element="tns:Insert" />
+  </wsdl:message>
+  <wsdl:message name="InsertSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSoapIn">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisableSoapIn">
+    <wsdl:part name="parameters" element="tns:Disable" />
+  </wsdl:message>
+  <wsdl:message name="DisableSoapOut">
+    <wsdl:part name="parameters" element="tns:DisableResponse" />
+  </wsdl:message>
+  <wsdl:message name="EnableSoapIn">
+    <wsdl:part name="parameters" element="tns:Enable" />
+  </wsdl:message>
+  <wsdl:message name="EnableSoapOut">
+    <wsdl:part name="parameters" element="tns:EnableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsExistDeptCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:IsExistDeptCode" />
+  </wsdl:message>
+  <wsdl:message name="IsExistDeptCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:IsExistDeptCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsExistDeptNameSoapIn">
+    <wsdl:part name="parameters" element="tns:IsExistDeptName" />
+  </wsdl:message>
+  <wsdl:message name="IsExistDeptNameSoapOut">
+    <wsdl:part name="parameters" element="tns:IsExistDeptNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="HasChildDeptSoapIn">
+    <wsdl:part name="parameters" element="tns:HasChildDept" />
+  </wsdl:message>
+  <wsdl:message name="HasChildDeptSoapOut">
+    <wsdl:part name="parameters" element="tns:HasChildDeptResponse" />
+  </wsdl:message>
+  <wsdl:message name="HasUserSoapIn">
+    <wsdl:part name="parameters" element="tns:HasUser" />
+  </wsdl:message>
+  <wsdl:message name="HasUserSoapOut">
+    <wsdl:part name="parameters" element="tns:HasUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllByCompanyCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllByCompanyCode" />
+  </wsdl:message>
+  <wsdl:message name="GetAllByCompanyCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllByCompanyCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllAvalibleCompanyCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllAvalibleCompanyCode" />
+  </wsdl:message>
+  <wsdl:message name="GetAllAvalibleCompanyCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllAvalibleCompanyCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByCompanyAndManagerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByCompanyAndManager" />
+  </wsdl:message>
+  <wsdl:message name="GetByCompanyAndManagerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByCompanyAndManagerResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByCompanyCodeAndDeptCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByCompanyCodeAndDeptCode" />
+  </wsdl:message>
+  <wsdl:message name="GetByCompanyCodeAndDeptCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByCompanyCodeAndDeptCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParentDeptByCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParentDeptByCode" />
+  </wsdl:message>
+  <wsdl:message name="GetParentDeptByCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParentDeptByCodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DeptSoap">
+    <wsdl:operation name="Insert">
+      <wsdl:input message="tns:InsertSoapIn" />
+      <wsdl:output message="tns:InsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input message="tns:UpdateSoapIn" />
+      <wsdl:output message="tns:UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input message="tns:DeleteSoapIn" />
+      <wsdl:output message="tns:DeleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Disable">
+      <wsdl:input message="tns:DisableSoapIn" />
+      <wsdl:output message="tns:DisableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Enable">
+      <wsdl:input message="tns:EnableSoapIn" />
+      <wsdl:output message="tns:EnableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsExistDeptCode">
+      <wsdl:input message="tns:IsExistDeptCodeSoapIn" />
+      <wsdl:output message="tns:IsExistDeptCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsExistDeptName">
+      <wsdl:input message="tns:IsExistDeptNameSoapIn" />
+      <wsdl:output message="tns:IsExistDeptNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HasChildDept">
+      <wsdl:input message="tns:HasChildDeptSoapIn" />
+      <wsdl:output message="tns:HasChildDeptSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HasUser">
+      <wsdl:input message="tns:HasUserSoapIn" />
+      <wsdl:output message="tns:HasUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllByCompanyCode">
+      <wsdl:input message="tns:GetAllByCompanyCodeSoapIn" />
+      <wsdl:output message="tns:GetAllByCompanyCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAvalibleCompanyCode">
+      <wsdl:input message="tns:GetAllAvalibleCompanyCodeSoapIn" />
+      <wsdl:output message="tns:GetAllAvalibleCompanyCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByCompanyAndManager">
+      <wsdl:input message="tns:GetByCompanyAndManagerSoapIn" />
+      <wsdl:output message="tns:GetByCompanyAndManagerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByCompanyCodeAndDeptCode">
+      <wsdl:input message="tns:GetByCompanyCodeAndDeptCodeSoapIn" />
+      <wsdl:output message="tns:GetByCompanyCodeAndDeptCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParentDeptByCode">
+      <wsdl:input message="tns:GetParentDeptByCodeSoapIn" />
+      <wsdl:output message="tns:GetParentDeptByCodeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DeptSoap" type="tns:DeptSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Insert">
+      <soap:operation soapAction="http://tempuri.org/Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap:operation soapAction="http://tempuri.org/Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Disable">
+      <soap:operation soapAction="http://tempuri.org/Disable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Enable">
+      <soap:operation soapAction="http://tempuri.org/Enable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsExistDeptCode">
+      <soap:operation soapAction="http://tempuri.org/IsExistDeptCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsExistDeptName">
+      <soap:operation soapAction="http://tempuri.org/IsExistDeptName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HasChildDept">
+      <soap:operation soapAction="http://tempuri.org/HasChildDept" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HasUser">
+      <soap:operation soapAction="http://tempuri.org/HasUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllByCompanyCode">
+      <soap:operation soapAction="http://tempuri.org/GetAllByCompanyCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAvalibleCompanyCode">
+      <soap:operation soapAction="http://tempuri.org/GetAllAvalibleCompanyCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByCompanyAndManager">
+      <soap:operation soapAction="http://tempuri.org/GetByCompanyAndManager" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByCompanyCodeAndDeptCode">
+      <soap:operation soapAction="http://tempuri.org/GetByCompanyCodeAndDeptCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParentDeptByCode">
+      <soap:operation soapAction="http://tempuri.org/GetParentDeptByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DeptSoap12" type="tns:DeptSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Insert">
+      <soap12:operation soapAction="http://tempuri.org/Insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap12:operation soapAction="http://tempuri.org/Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap12:operation soapAction="http://tempuri.org/Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Disable">
+      <soap12:operation soapAction="http://tempuri.org/Disable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Enable">
+      <soap12:operation soapAction="http://tempuri.org/Enable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsExistDeptCode">
+      <soap12:operation soapAction="http://tempuri.org/IsExistDeptCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsExistDeptName">
+      <soap12:operation soapAction="http://tempuri.org/IsExistDeptName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HasChildDept">
+      <soap12:operation soapAction="http://tempuri.org/HasChildDept" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HasUser">
+      <soap12:operation soapAction="http://tempuri.org/HasUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllByCompanyCode">
+      <soap12:operation soapAction="http://tempuri.org/GetAllByCompanyCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAvalibleCompanyCode">
+      <soap12:operation soapAction="http://tempuri.org/GetAllAvalibleCompanyCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByCompanyAndManager">
+      <soap12:operation soapAction="http://tempuri.org/GetByCompanyAndManager" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByCompanyCodeAndDeptCode">
+      <soap12:operation soapAction="http://tempuri.org/GetByCompanyCodeAndDeptCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParentDeptByCode">
+      <soap12:operation soapAction="http://tempuri.org/GetParentDeptByCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Dept">
+    <wsdl:port name="DeptSoap" binding="tns:DeptSoap">
+      <soap:address location="http://localhost/Shmzh.SystemComponent.WebService/Dept.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DeptSoap12" binding="tns:DeptSoap12">
+      <soap12:address location="http://localhost/Shmzh.SystemComponent.WebService/Dept.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

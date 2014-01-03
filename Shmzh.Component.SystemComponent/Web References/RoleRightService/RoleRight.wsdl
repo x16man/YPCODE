@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">系统管理中角色权限的WebService接口.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetAllAvalible">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllAvalibleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllAvalibleResult" type="tns:ArrayOfRoleRightInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRoleRightInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RoleRightInfo" nillable="true" type="tns:RoleRightInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RoleRightInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RoleCode" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="RightCode" type="s:short" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllAvalibleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllAvalible" />
+  </wsdl:message>
+  <wsdl:message name="GetAllAvalibleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllAvalibleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RoleRightSoap">
+    <wsdl:operation name="GetAllAvalible">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取所有有效的角色权限关系。</wsdl:documentation>
+      <wsdl:input message="tns:GetAllAvalibleSoapIn" />
+      <wsdl:output message="tns:GetAllAvalibleSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RoleRightSoap" type="tns:RoleRightSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllAvalible">
+      <soap:operation soapAction="http://tempuri.org/GetAllAvalible" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RoleRightSoap12" type="tns:RoleRightSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllAvalible">
+      <soap12:operation soapAction="http://tempuri.org/GetAllAvalible" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RoleRight">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">系统管理中角色权限的WebService接口.</wsdl:documentation>
+    <wsdl:port name="RoleRightSoap" binding="tns:RoleRightSoap">
+      <soap:address location="http://localhost/Shmzh.SystemComponent.WebService/RoleRight.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RoleRightSoap12" binding="tns:RoleRightSoap12">
+      <soap12:address location="http://localhost/Shmzh.SystemComponent.WebService/RoleRight.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

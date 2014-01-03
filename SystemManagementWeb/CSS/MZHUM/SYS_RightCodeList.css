@@ -1,0 +1,30 @@
+@import url("../Common.css");
+
+
+body
+{
+	margin-top:2px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.datagrid
+{
+	border-right: #b5b8c8 1px solid;
+	border-top: #b5b8c8 1px solid;
+	border-left: #b5b8c8 1px solid;
+	border-bottom: #b5b8c8 1px solid;
+	font-size:12px;
+}
+
+.datagrid td
+{
+	border-right: #b5b8c8 1px solid;
+	border-top: #b5b8c8 1px solid;
+	border-left: #b5b8c8 1px solid;
+	border-bottom: #b5b8c8 1px solid;
+}
+H3
+{
+	margin: 0px 0px 0px 5px; 
+	text-align: left
+}

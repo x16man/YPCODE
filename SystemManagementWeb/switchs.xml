@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Configs>
+	<Messages>
+		<Message name="NoRight" value="无操作权限"/>
+    
+		<Message name="ProductInsertSuccess" value="产品添加成功！"/>
+		<Message name="ProductInsertFailed" value="产品添加失败！"/>
+		<Message name="ProductUpdateSuccess" value="产品修改成功！"/>
+		<Message name="ProductUpdateFailed" value="产品修改失败！" />
+		<Message name="ProductCodeNonUnique" value="产品编码不能重复！"/>
+    <Message name="ProductNameNonUnique" value="产品名称不能重复！"/>
+		<Message name="ProductCodeNoEmpty" value="产品编码不能为空！"/>
+		<Message name="ProductNameNoEmpty" value="产品名称不能为空！"/>
+		<Message name="ProductIsUsing" value="产品被其他系统使用！"/>
+		<Message name="ProductDeleteSuccess" value="产品删除成功 ！"/>
+    <Message name="ProductDeleteFailed" value="产品删除失败！"/>
+		<Message name="ProductCodeFormatError" value="产品编码格式有问题！"/>
+		
+    <Message name="RightCodeInsertSuccess" value="产品权限码添加成功！"/>
+		<Message name="RightCodeInsertFailed" value="产品权限码添加失败！"/>
+		<Message name="RightCodeUpdateSuccess" value="产品权限码修改成功！"/>
+		<Message name="RightCodeUpdateFailed" value="产品权限码修改失败！" />
+		<Message name="RightCodeNonUnique" value="权限编码重复！" />
+		<Message name="RightCodeNameNonUnique" value="权限分组名称重复！" />
+		<Message name="RightCodeIsUsing" value="此产品权限有关联项无法删除！"/>
+		<Message name="RightCodeDeleteSuccess" value="产品权限删除成功！"/>
+    <Message name="RightCodeDeleteFailed" value="产品权限删除失败！ "/>
+    <Message name="RightCodeNoCat" value="产品权限关联的分组不存在！ "/>
+    
+		<Message name="RightCatInsertSuccess" value="权限分组添加成功！"/>
+		<Message name="RightCatInsertFailed" value="权限分组添加失败！"/>
+		<Message name="RightCatUpdateSuccess" value="权限分组修改成功！"/>
+		<Message name="RightCatUpdateFailed" value="权限分组修改失败！" />
+    <Message name="RightCatDeleteSuccess" value="权限分组删除成功！"/>
+    <Message name="RightCatDeleteFailed" value="权限分组删除失败！"/>
+		<Message name="RightCatCodeNonUnique" value="权限分组编码重复！" />
+		<Message name="RightCatNameNonUnique" value="权限分组名称重复！" />
+		<Message name="RightCatIsUsing" value="此权限分组有关联项无法删除！"/>
+    <Message name="RightCatNoProduct" value="所属产品不存在！" />
+
+    <Message name="CompanyInsertSuccess" value="企业信息添加成功！"/>
+		<Message name="CompanyInsertFailed" value="企业信息添加失败！"/>
+		<Message name="CompanyDeleteSuccess" value="企业信息删除成功！"/>
+		<Message name="CompanyDeleteFailed" value="企业信息删除失败！"/>
+		<Message name="CompanyUpdateSuccess" value="企业信息修改成功！"/>
+		<Message name="CompanyUpdateFailed" value="企业信息修改失败！" />
+		<Message name="CompanyCodeNoEmpty" value="企业编号不能为空！" />
+		<Message name="CompanyNameNoEmpty" value="企业中文名称不能为空！" />
+		
+    <Message name="OrgTypeInsertSuccess" value="组织机构类型添加成功！"/>
+		<Message name="OrgTypeInsertFailed" value="组织机构类型添加失败！"/>
+		<Message name="OrgTypeUpdateSuccess" value="组织机构类型修改成功！"/>
+		<Message name="OrgTypeUpdateFailed" value="组织机构类型修改失败！" />
+		<Message name="OrgTypeCodeNonUnique" value="组织机构类型编码重复！" />
+		<Message name="OrgTypeDeleteSuccess" value="组织机构类型删除成功！"/>
+		<Message name="OrgTypeDeleteFailed" value="组织机构类型信息删除失败！"/>
+    <Message name="OrgTypeIsUsing" value="组织机构类型被引用！不能删除。"/>
+    
+    <Message name="OrgInsertFailed" value="部门新增失败！"/>
+    <Message name="OrgInsertSuccess" value="部门新增成功！"/>
+    <Message name="OrgUpdateFailed" value="部门修改失败！"/>
+    <Message name="OrgUpdateSuccess" value="部门修改成功！"/>
+    <Message name="OrgDeleteFailed" value="部门删除失败！"/>
+    <Message name="OrgDeleteSuccess" value="部门删除成功！"/>
+    <Message name="OrgCodeNonUnique" value="部门编号不唯一！"/>
+    <Message name="OrgNameNonUnique" value="部门名称不唯一！"/>
+		
+    <Message name="DutyInsertSuccess" value="职位信息添加成功！"/>
+		<Message name="DutyInsertFailed" value="职位信息添加失败！"/>
+		<Message name="DutyUpdateSuccess" value="职位信息修改成功！"/>
+		<Message name="DutyUpdateFailed" value="职位信息修改失败！" />
+    <Message name="DutyCodeNonUnique" value="职位编号有重复！"/>
+    <Message name="DutyNameNonUnique" value="职位名称有重复！"/>
+		
+    <Message name="UserInsertSuccess" value="人员信息添加成功！"/>
+		<Message name="UserInsertFailed" value="人员信息添加失败！"/>
+		<Message name="UserUpdateSuccess" value="人员信息修改成功！"/>
+		<Message name="UserUpdateFailed" value="人员信息修改失败！" />
+		<Message name="UserNoFind" value="获得用户信息失败！请尝试刷新页面！" />
+    <Message name="UserDeleteFailed" value="用户信息删除失败！"/>
+		<Message name="UserNotActive" value="该用户未被启用过，请先编辑用户信息！" />
+		<Message name="UserNoRight" value="您没有权限进行此项操作！" />
+    <Message name="UserNoLoginName" value="人员还没有设定登录名！"/>
+
+    <Message name="GroupCatInsertSuccess" value="组分类信息添加成功！"/>
+    <Message name="GroupCatInsertFailed" value="组分类信息添加失败！"/>
+    <Message name="GroupCatUpdateSuccess" value="组分类信息修改成功！"/>
+    <Message name="GroupCatUpdateFailed" value="组分类信息修改失败！" />
+    <Message name="GroupCatDeleteSuccess" value="组分类信息删除成功！"/>
+    <Message name="GroupCatDeleteFailed" value="组分类信息删除失败！"/>
+    <Message name="GroupCatNameNonUnique" value="组分类名称不唯一！"/>
+    
+    <Message name="GroupInsertSuccess" value="组信息添加成功！"/>
+    <Message name="GroupInsertFailed" value="组信息添加失败！"/>
+    <Message name="GroupUpdateSuccess" value="组信息修改成功！"/>
+		<Message name="GroupUpdateFailed" value="组信息修改失败！" />
+    <Message name="GroupDeleteSuccess" value="组信息删除成功！"/>
+    <Message name="GroupDeleteFailed" value="组信息删除失败！"/>
+    <Message name="GroupNameNonUnique" value="组名称不唯一！"/>
+
+    <Message name="GroupUserInsertFailed" value="组用户添加失败！"/>
+    <Message name="GroupUserInsertSuccess" value="组用户添加成功！"/>
+    <Message name="GroupUserDeleteFailed" value="组用户移除失败！"/>
+    <Message name="GroupUserDeleteSuccess" value="组用户移除成功！"/>
+    <Message name="GroupNoChooseUser" value="请先在所有用户列表(右)中选中至少一个用户！" />
+
+    <Message name="MenuTypeInsertSuccess" value="菜单类型信息添加成功！"/>
+    <Message name="MenuTypeInsertFailed" value="菜单类型信息添加失败！"/>
+    <Message name="MenuTypeUpdateSuccess" value="菜单类型信息修改成功！"/>
+    <Message name="MenuTypeUpdateFailed" value="菜单类型信息修改失败！" />
+    <Message name="MenuTypeIdNonUnique" value="菜单类型ID不唯一！" />
+    <Message name="MenuTypeNameNonUnique" value="菜单类型名称不唯一！" />
+    
+    <Message name="MenuInsertSuccess" value="菜单信息添加成功！"/>
+		<Message name="MenuInsertFailed" value="菜单信息添加失败！"/>
+		<Message name="MenuUpdateSuccess" value="菜单信息修改成功！"/>
+		<Message name="MenuUpdateFailed" value="菜单信息修改失败！" />
+		<Message name="MenuRightCodeFormatError" value="权限编码必须为数字！" />
+		<Message name="MenuOrderFormatError" value="顺序号必须为数字！" />
+		
+    <Message name="RoleRightInsertSuccess" value="角色权限绑定成功！"/>
+		<Message name="RoleRightInsertFailed" value="角色权限绑定失败！"/>
+		<Message name="RoleRightUpdateSuccess" value="角色权限绑定成功！"/>
+		<Message name="RoleRightUpdateFailed" value="角色权限绑定失败！" />
+		<Message name="RoleRightDeleteSuccess" value="角色权限删除成功！"/>
+		<Message name="RoleRightDeleteFailed" value="角色权限删除失败！" />
+    
+    <Message name="RoleRightNoRole" value="必须指定角色！" />
+    <Message name="RoleRightNoRight" value="必须选择权限项！" />
+    <Message name="RoleInsertSuccess" value="角色添加成功！"/>
+    <Message name="RoleInsertFailed" value="角色添加失败！"/>
+    <Message name="RoleUpdateSuccess" value="角色修改成功！"/>
+    <Message name="RoleUpdateFailed" value="角色修改失败！"/>
+    <Message name="RoleDeleteSuccess" value="角色删除成功！"/>
+    <Message name="RoleDeleteFailed" value="角色删除失败！"/>
+
+    <Message name="TemplateInsertSuccess" value="模板添加成功！"/>
+    <Message name="TemplateInsertFailed" value="模板添加失败！"/>
+    <Message name="TemplateUpdateSuccess" value="模板修改成功！"/>
+    <Message name="TemplateUpdateFailed" value="模板修改失败！"/>
+    <Message name="TemplateDeleteSuccess" value="模板删除成功！"/>
+    <Message name="TemplateDeleteFailed" value="模板删除失败！"/>
+    <Message name="TemplateCodeNonUnique" value="模板编号不唯一！"/>
+
+    <Message name="SEModuleInsertSuccess" value="查询模块添加成功！"/>
+    <Message name="SEModuleInsertFailed" value="查询模块添加失败！"/>
+    <Message name="SEModuleUpdateSuccess" value="查询模块更新成功！"/>
+    <Message name="SEModuleUpdateFailed" value="查询模块更新失败！"/>
+    <Message name="SEModuleDeleteSuccess" value="查询模块删除成功！"/>
+    <Message name="SEModuleDeleteFailed" value="查询模块删除失败！"/>
+    <Message name="SEModuleIdNonUnique" value="查询模块ID不唯一！"/>
+
+    <Message name="SESchemaInsertSuccess" value="查询方案添加成功！"/>
+    <Message name="SESchemaInsertFailed" value="查询方案添加失败！"/>
+    <Message name="SESchemaUpdateSuccess" value="查询方案更新成功！"/>
+    <Message name="SESchemaUpdateFailed" value="查询方案更新失败！"/>
+    <Message name="SESchemaDeleteSuccess" value="查询方案删除成功！"/>
+    <Message name="SESchemaDeleteFailed" value="查询方案删除失败！"/>
+    <Message name="SESchemaNameNonUnique" value="查询方案名称不唯一！"/>
+
+    <Message name="SEControlInsertSuccess" value="查询模块控件添加成功！"/>
+    <Message name="SEControlInsertFailed" value="查询模块控件添加失败！"/>
+    <Message name="SEControlUpdateSuccess" value="查询模块控件更新成功！"/>
+    <Message name="SEControlUpdateFailed" value="查询模块控件更新失败！"/>
+    <Message name="SEControlDeleteSuccess" value="查询模块控件删除成功！"/>
+    <Message name="SEControlDeleteFailed" value="查询模块控件删除失败！"/>
+    <Message name="SEControlNoModuleId" value="没有指定查询模块！"/>
+    
+    <Message name="SEDataTypeInsertSuccess" value="数据类型添加成功！"/>
+    <Message name="SEDataTypeInsertFailed" value="数据类型添加失败！"/>
+    <Message name="SEDataTypeUpdateSuccess" value="数据类型更新成功！"/>
+    <Message name="SEDataTypeUpdateFailed" value="数据类型更新失败！"/>
+    <Message name="SEDataTypeDeleteSuccess" value="数据类型删除成功！"/>
+    <Message name="SEDataTypeDeleteFailed" value="数据类型删除失败！"/>
+    <Message name="SEDataTypeIdNonUnique" value="数据类型ID不唯一！"/>
+    <Message name="SEDataTypeNameNonUnique" value="数据类型名称不唯一！"/>
+
+    <Message name="SEControlTypeInsertSuccess" value="控件类型添加成功！"/>
+    <Message name="SEControlTypeInsertFailed" value="控件类型添加失败！"/>
+    <Message name="SEControlTypeUpdateSuccess" value="控件类型更新成功！"/>
+    <Message name="SEControlTypeUpdateFailed" value="控件类型更新失败！"/>
+    <Message name="SEControlTypeDeleteSuccess" value="控件类型删除成功！"/>
+    <Message name="SEControlTypeDeleteFailed" value="控件类型删除失败！"/>
+    <Message name="SEControlTypeIdNonUnique" value="控件类型ID不唯一！"/>
+    <Message name="SEControlTypeNameNonUnique" value="控件类型名称不唯一！"/>
+	</Messages>
+	<Switchs>
+		<Switch name="IsNeedAudit" value="1"/>
+		<Switch name="switchName2" value="switchValue2"/>
+	</Switchs>
+</Configs>

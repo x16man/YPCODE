@@ -1,0 +1,766 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6FEE0F13-3DC0-42DA-B8EC-2E322C56D5C0}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Shmzh.Components.SystemComponent</AssemblyName>
+    <AssemblyOriginatorKeyFile>Shmzh.Components.SystemComponent.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Shmzh.Components.SystemComponent</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Shmzh.Components.SystemComponent/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>Shmzh.Components.SystemComponent.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>Shmzh.Components.SystemComponent.xml</DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net20-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcessDAL\Company.cs" />
+    <Compile Include="AcessDAL\Dept.cs" />
+    <Compile Include="AcessDAL\Duty.cs" />
+    <Compile Include="AcessDAL\EmpState.cs" />
+    <Compile Include="AcessDAL\Grant.cs" />
+    <Compile Include="AcessDAL\Group.cs" />
+    <Compile Include="AcessDAL\GroupRole.cs" />
+    <Compile Include="AcessDAL\GroupUser.cs" />
+    <Compile Include="AcessDAL\Menu.cs" />
+    <Compile Include="AcessDAL\MenuType.cs" />
+    <Compile Include="AcessDAL\OrgType.cs" />
+    <Compile Include="AcessDAL\OwnedRole.cs" />
+    <Compile Include="AcessDAL\Product.cs" />
+    <Compile Include="AcessDAL\Right.cs" />
+    <Compile Include="AcessDAL\RightCat.cs" />
+    <Compile Include="AcessDAL\Role.cs" />
+    <Compile Include="AcessDAL\RoleRight.cs" />
+    <Compile Include="AcessDAL\SEControl.cs" />
+    <Compile Include="AcessDAL\SEControlParam.cs" />
+    <Compile Include="AcessDAL\SEControlType.cs" />
+    <Compile Include="AcessDAL\SEDataType.cs" />
+    <Compile Include="AcessDAL\SEModule.cs" />
+    <Compile Include="AcessDAL\SESchema.cs" />
+    <Compile Include="AcessDAL\Setting.cs" />
+    <Compile Include="AcessDAL\Template.cs" />
+    <Compile Include="AcessDAL\User.cs" />
+    <Compile Include="AcessDAL\UserRole.cs" />
+    <Compile Include="AppCode\System\CPUInfo.cs" />
+    <Compile Include="AppCode\System\MemoryInfo.cs" />
+    <Compile Include="AppCode\System\SystemInfo.cs" />
+    <Compile Include="AppCode\System\SystemTimeInfo.cs" />
+    <Compile Include="Authorization.cs" />
+    <Compile Include="DALFactory\DataProvider.cs" />
+    <Compile Include="Enum\AccessControlObjectType.cs" />
+    <Compile Include="Enum\TaskTypeEnum.cs" />
+    <Compile Include="Enum\UserStateEnum.cs" />
+    <Compile Include="Enum\PriorityEnum.cs" />
+    <Compile Include="Enum\ProductEnum.cs" />
+    <Compile Include="Enum\OpTypeEnum.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="Helper\AccessHelper.cs" />
+    <Compile Include="Helper\SqlHelperParameterCache.cs" />
+    <Compile Include="IDAL\DLFloDB\ITB_ORGLDLNK.cs" />
+    <Compile Include="IDAL\DLFloDB\ITB_SYSLDTP.cs" />
+    <Compile Include="IDAL\DLFloDB\ITB_SYSORGTP.cs" />
+    <Compile Include="IDAL\DLFloDB\ITB_UserCat.cs" />
+    <Compile Include="IDAL\DLFloDB\ITB_ORGMEMLK.cs" />
+    <Compile Include="IDAL\DLFloDB\IUserDetail.cs" />
+    <Compile Include="IDAL\DLFloDB\ITB_SYN.cs" />
+    <Compile Include="IDAL\IGroup.cs" />
+    <Compile Include="IDAL\IGroupRole.cs" />
+    <Compile Include="IDAL\IHistory.cs" />
+    <Compile Include="IDAL\IMenu.cs" />
+    <Compile Include="IDAL\IOnlineStatus.cs" />
+    <Compile Include="IDAL\DLFloDB\ITB_ORGTREE.cs" />
+    <Compile Include="IDAL\IOperationLog.cs" />
+    <Compile Include="IDAL\IOwnedRole.cs" />
+    <Compile Include="IDAL\ISEControl.cs" />
+    <Compile Include="IDAL\ISEControlType.cs" />
+    <Compile Include="IDAL\ISEDataType.cs" />
+    <Compile Include="IDAL\DLFloDB\ITB_Users.cs" />
+    <Compile Include="IDAL\ITemplate.cs" />
+    <Compile Include="IDAL\IUser.cs" />
+    <Compile Include="IDAL\I_SD_Message.cs" />
+    <Compile Include="IDAL\I_SD_MessageType.cs" />
+    <Compile Include="IDAL\IRole.cs" />
+    <Compile Include="IDAL\IUserRole.cs" />
+    <Compile Include="IDAL\IRoleRight.cs" />
+    <Compile Include="IDAL\IGrant.cs" />
+    <Compile Include="IDAL\IRightCat.cs" />
+    <Compile Include="IDAL\IRight.cs" />
+    <Compile Include="IDAL\ICompany.cs" />
+    <Compile Include="IDAL\IDuty.cs" />
+    <Compile Include="IDAL\IDept.cs" />
+    <Compile Include="IDAL\IOrgType.cs" />
+    <Compile Include="IDAL\IGroupUser.cs" />
+    <Compile Include="IDAL\IEmpState.cs" />
+    <Compile Include="IDAL\IProduct.cs" />
+    <Compile Include="IDAL\ISetting.cs" />
+    <Compile Include="IDAL\IMenuType.cs" />
+    <Compile Include="IDAL\ISEModule.cs" />
+    <Compile Include="IDAL\ISEControlParam.cs" />
+    <Compile Include="IDAL\ISESchema.cs" />
+    <Compile Include="IDAL\IGroupCat.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="ITransactionManager.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>TransactionManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBase.cs" />
+    <Compile Include="Model\DLFloDB\TB_ORGLDLNKInfo.cs" />
+    <Compile Include="Model\DLFloDB\TB_ORGMEMLKInfo.cs" />
+    <Compile Include="Model\DLFloDB\TB_SYNInfo.cs" />
+    <Compile Include="Model\DLFloDB\TB_SYSLDTPInfo.cs" />
+    <Compile Include="Model\DLFloDB\TB_SYSORGTPInfo.cs" />
+    <Compile Include="Model\DLFloDB\TB_UserCatInfo.cs" />
+    <Compile Include="Model\DLFloDB\UserDetailInfo.cs" />
+    <Compile Include="Model\HelpInfo.cs" />
+    <Compile Include="Model\GroupCatInfo.cs" />
+    <Compile Include="Model\GroupUserInfo.cs" />
+    <Compile Include="Model\GroupRoleInfo.cs" />
+    <Compile Include="Model\HistoryInfo.cs" />
+    <Compile Include="Model\OperationLogInfo.cs" />
+    <Compile Include="Model\ProductInfo.cs" />
+    <Compile Include="Model\RightInfo.cs" />
+    <Compile Include="Model\OnlineStatusInfo.cs" />
+    <Compile Include="Model\MenuInfo.cs" />
+    <Compile Include="Model\SDTransferInfo.cs" />
+    <Compile Include="Model\SD_MessageInfo.cs" />
+    <Compile Include="Model\DLFloDB\TB_UserInfo.cs" />
+    <Compile Include="Model\DLFloDB\TB_ORGTREEInfo.cs" />
+    <Compile Include="Model\TemplateInfo.cs" />
+    <Compile Include="Model\SD_MessageTypeInfo.cs" />
+    <Compile Include="Model\DeptInfo.cs" />
+    <Compile Include="Model\RoleInfo.cs" />
+    <Compile Include="Model\UserRoleInfo.cs" />
+    <Compile Include="Model\RoleRightInfo.cs" />
+    <Compile Include="Model\GrantInfo.cs" />
+    <Compile Include="Model\RightCatInfo.cs" />
+    <Compile Include="Model\OrgTypeInfo.cs" />
+    <Compile Include="Model\EmpStateInfo.cs" />
+    <Compile Include="Model\MenuTypeInfo.cs" />
+    <Compile Include="Model\OwnedRoleInfo.cs" />
+    <Compile Include="Model\SEModuleInfo.cs" />
+    <Compile Include="Model\SEDataTypeInfo.cs" />
+    <Compile Include="Model\SEControlTypeInfo.cs" />
+    <Compile Include="Model\SEControlInfo.cs" />
+    <Compile Include="Model\SEControlParamInfo.cs" />
+    <Compile Include="Model\SESchemaInfo.cs" />
+    <Compile Include="Model\GroupInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Provider.cs" />
+    <Compile Include="ProviderBase.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Provider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderCollection.cs" />
+    <Compile Include="Section.cs" />
+    <Compile Include="SQLServerDAL\Company.cs" />
+    <Compile Include="SQLServerDAL\Dept.cs" />
+    <Compile Include="SQLServerDAL\DLFloDB\TB_ORGLDLNK.cs" />
+    <Compile Include="SQLServerDAL\DLFloDB\TB_ORGMEMLK.cs" />
+    <Compile Include="SQLServerDAL\DLFloDB\TB_SYSLDTP.cs" />
+    <Compile Include="SQLServerDAL\DLFloDB\TB_SYSORGTP.cs" />
+    <Compile Include="SQLServerDAL\DLFloDB\TB_UserCat.cs" />
+    <Compile Include="SQLServerDAL\DLFloDB\UserDetail.cs" />
+    <Compile Include="SQLServerDAL\DLFloDB\TB_SYN.cs" />
+    <Compile Include="SQLServerDAL\Duty.cs" />
+    <Compile Include="SQLServerDAL\EmpState.cs" />
+    <Compile Include="SQLServerDAL\Group.cs" />
+    <Compile Include="SQLServerDAL\GroupCat.cs" />
+    <Compile Include="SQLServerDAL\GroupUser.cs" />
+    <Compile Include="SQLServerDAL\History.cs" />
+    <Compile Include="SQLServerDAL\MenuType.cs" />
+    <Compile Include="SQLServerDAL\OnlineStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComponentConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConnectionString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\CompanyInfo.cs">
+    </Compile>
+    <Compile Include="Model\DutyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HelpDA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helper\EntityHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helper\SQLHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SQLServerDAL\Menu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\SettingInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SQLServerDAL\DLFloDB\TB_ORGTREE.cs" />
+    <Compile Include="SQLServerDAL\OwnedRole.cs" />
+    <Compile Include="SQLServerDAL\Product.cs" />
+    <Compile Include="SQLServerDAL\SD_Message.cs" />
+    <Compile Include="SQLServerDAL\SD_MessageType.cs" />
+    <Compile Include="SQLServerDAL\SEControlParam.cs" />
+    <Compile Include="SQLServerDAL\SEDataType.cs" />
+    <Compile Include="SQLServerDAL\SEModule.cs" />
+    <Compile Include="SQLServerDAL\SESchema.cs" />
+    <Compile Include="SQLServerDAL\Setting.cs" />
+    <Compile Include="SQLServerDAL\DLFloDB\TB_Users.cs" />
+    <Compile Include="SQLServerDAL\Template.cs" />
+    <Compile Include="SQLServerDAL\User.cs" />
+    <Compile Include="SQLServerDAL\Role.cs" />
+    <Compile Include="SQLServerDAL\UserRole.cs" />
+    <Compile Include="SQLServerDAL\RoleRight.cs" />
+    <Compile Include="SQLServerDAL\Grant.cs" />
+    <Compile Include="SQLServerDAL\GroupRole.cs" />
+    <Compile Include="SQLServerDAL\RightCat.cs" />
+    <Compile Include="SQLServerDAL\Right.cs" />
+    <Compile Include="SQLServerDAL\OrgType.cs" />
+    <Compile Include="SQLServerDAL\SEControlType.cs" />
+    <Compile Include="SQLServerDAL\SEControl.cs" />
+    <Compile Include="SQLServerDAL\OperationLog.cs" />
+    <Compile Include="ToDoList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ToDoListProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionManager.cs" />
+    <Compile Include="User.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Model\UserInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web References\CompanyService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\DeptService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GroupCatService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GroupRoleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GroupService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GroupUserService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\HistoryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\OnlineStatusService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\OwnedRoleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RoleRightService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RoleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\UserRoleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\UserService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WSDAL\Company.cs" />
+    <Compile Include="WSDAL\Dept.cs" />
+    <Compile Include="WSDAL\Group.cs" />
+    <Compile Include="WSDAL\GroupCat.cs" />
+    <Compile Include="WSDAL\GroupRole.cs" />
+    <Compile Include="WSDAL\GroupUser.cs" />
+    <Compile Include="WSDAL\History.cs" />
+    <Compile Include="WSDAL\OnlineStatus.cs" />
+    <Compile Include="WSDAL\OwnedRole.cs" />
+    <Compile Include="WSDAL\Role.cs" />
+    <Compile Include="WSDAL\RoleRight.cs" />
+    <Compile Include="WSDAL\User.cs" />
+    <Compile Include="WSDAL\UserRole.cs" />
+    <Content Include="CompontentConfiguration.xml" />
+    <None Include="packages.config" />
+    <None Include="Web References\UserRoleService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\UserRoleService\UserRole.disco" />
+    <None Include="Web References\GroupRoleService\GroupRole.disco" />
+    <None Include="Web References\GroupRoleService\GroupRole.wsdl" />
+    <None Include="Web References\GroupRoleService\GroupRoleInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GroupRoleService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\GroupService\Group.disco" />
+    <None Include="Web References\GroupCatService\GroupCat.disco" />
+    <None Include="Web References\DeptService\Dept.disco" />
+    <None Include="Web References\DeptService\Dept.wsdl" />
+    <None Include="Web References\DeptService\DeptInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DeptService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\GroupCatService\GroupCat.wsdl" />
+    <None Include="Web References\GroupCatService\GroupCatInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GroupCatService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\GroupService\Group.wsdl" />
+    <None Include="Web References\GroupService\GroupInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GroupService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RoleService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RoleService\Role.disco" />
+    <None Include="Web References\GroupUserService\GroupUser.disco" />
+    <None Include="Web References\GroupUserService\GroupUser.wsdl" />
+    <None Include="Web References\GroupUserService\GroupUserInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GroupUserService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HistoryService\History.disco" />
+    <None Include="Web References\CompanyService\Company.disco" />
+    <None Include="Web References\OnlineStatusService\OnlineStatus.disco" />
+    <None Include="Web References\RoleRightService\RoleRight.disco" />
+    <None Include="Web References\OwnedRoleService\OwnedRole.disco" />
+    <None Include="Web References\RoleService\Role.wsdl" />
+    <None Include="Web References\RoleService\RoleInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UserRoleService\UserRole.wsdl" />
+    <None Include="Web References\UserRoleService\UserRoleInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UserService\User.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Shmzh.Components.SystemComponent.snk" />
+    <None Include="Web References\CompanyService\Company.wsdl" />
+    <None Include="Web References\CompanyService\CompanyInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CompanyService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\HistoryService\History.wsdl" />
+    <None Include="Web References\HistoryService\HistoryInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\HistoryService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\OnlineStatusService\OnlineStatus.wsdl" />
+    <None Include="Web References\OnlineStatusService\OnlineStatusInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnlineStatusService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\OwnedRoleService\OwnedRole.wsdl" />
+    <None Include="Web References\OwnedRoleService\OwnedRoleInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OwnedRoleService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RoleRightService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RoleRightService\RoleRight.wsdl" />
+    <None Include="Web References\RoleRightService\RoleRightInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UserService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\UserService\User.wsdl" />
+    <None Include="Web References\UserService\UserInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/Company.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CompanyService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/Company.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_CompanyService_Company</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/Dept.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DeptService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/Dept.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_DeptService_Dept</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/Group.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GroupService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/Group.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_GroupService_Group</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/GroupCat.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GroupCatService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/GroupCat.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_GroupCatService_GroupCat</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/GroupRole.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GroupRoleService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/GroupRole.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_GroupRoleService_GroupRole</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/GroupUser.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GroupUserService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/GroupUser.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_GroupUserService_GroupUser</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/History.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HistoryService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/History.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_HistoryService_History</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/OnlineStatus.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OnlineStatusService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/OnlineStatus.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_OnlineStatusService_OnlineStatus</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/OwnedRole.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OwnedRoleService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/OwnedRole.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_OwnedRoleService_OwnedRole</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/Role.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RoleService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/Role.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_RoleService_Role</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/RoleRight.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RoleRightService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/RoleRight.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_RoleRightService_RoleRight</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/User.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\UserService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/User.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_UserService_User</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.SystemComponent.WebService/UserRole.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\UserRoleService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.SystemComponent.WebService/UserRole.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Components_SystemComponent_UserRoleService_UserRole</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shmzh.Components.Util\Shmzh.Components.Util.csproj">
+      <Project>{0876485A-A83F-4B46-BA5B-941FAF6B791C}</Project>
+      <Name>Shmzh.Components.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

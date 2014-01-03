@@ -1,0 +1,25 @@
+﻿.fieldWrapper
+{
+    background-position: 0 0;
+    background: transparent url(../../images/left-top-corner-box.jpg) no-repeat 0 0;
+    background-attachment: inherit;
+    padding:0px 10px 0px 10px;
+    color:#666666;
+}
+.fieldWrapper fieldset {border-style:solid;text-align:left;padding-left:15px;padding-bottom:10px;min-width:380px;}
+.fieldWrapper fieldset legend{color:#666666;font-weight:bold;font-size:14px;margin-bottom:20px;}
+
+.fieldWrapper fieldset label {font-weight:bold;margin-top:10px;}
+.fieldWrapper fieldset input{width:350px;padding:1px 0px;}
+
+.fieldWrapper fieldset input[type="text"]{width:350px;}
+.fieldWrapper fieldset input[type="checkbox"]{width:30px;}
+.fieldWrapper fieldset input[type="submit"]{width:50px;}
+.fieldWrapper fieldset input[type="button"]{width:50px;}
+
+input#chkIsValid{width:30px;}
+
+.fieldWrapper fieldset select{width:352px;}
+.fieldWrapper fieldset textarea{width:350px;overflow:auto;}
+.fieldWrapper span.required {	color: #BE5028;}
+/*fieldset .calendarDate{width:180px !important;}*/

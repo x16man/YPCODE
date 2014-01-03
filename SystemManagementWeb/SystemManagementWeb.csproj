@@ -1,0 +1,1150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F893213-2650-4CD2-B310-6E32B5B72F3F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SystemManagementWeb</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SystemManagement</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentArt.Web.UI">
+      <HintPath>..\Reference\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net20-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml">
+      <Name>Microsoft.mshtml</Name>
+      <HintPath>C:\Program Files\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll</HintPath>
+      <AssemblyFolderKey>hklm\primary interop assemblies</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="enum\ProductEnum.cs" />
+    <Compile Include="enum\OperationEnum.cs" />
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ChooseDept.aspx.cs">
+      <DependentUpon>SYS_ChooseDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ChooseDept.aspx.designer.cs">
+      <DependentUpon>SYS_ChooseDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\Sys_ChoosePureUsers.aspx.cs">
+      <DependentUpon>Sys_ChoosePureUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\Sys_ChoosePureUsers.aspx.designer.cs">
+      <DependentUpon>Sys_ChoosePureUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ChooseUser.aspx.cs">
+      <DependentUpon>SYS_ChooseUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ChooseUser.aspx.designer.cs">
+      <DependentUpon>SYS_ChooseUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ChooseUsers.aspx.cs">
+      <DependentUpon>SYS_ChooseUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ChooseUsers.aspx.designer.cs">
+      <DependentUpon>SYS_ChooseUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_GroupCatEdit.aspx.cs">
+      <DependentUpon>SYS_GroupCatEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_GroupCatEdit.aspx.designer.cs">
+      <DependentUpon>SYS_GroupCatEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_GroupEdit.aspx.cs">
+      <DependentUpon>SYS_GroupEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_GroupEdit.aspx.designer.cs">
+      <DependentUpon>SYS_GroupEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_MenuTypeEdit.aspx.cs">
+      <DependentUpon>SYS_MenuTypeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_MenuTypeEdit.aspx.designer.cs">
+      <DependentUpon>SYS_MenuTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_MenuTypeList.aspx.cs">
+      <DependentUpon>SYS_MenuTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_MenuTypeList.aspx.designer.cs">
+      <DependentUpon>SYS_MenuTypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_RoleEdit.aspx.cs">
+      <DependentUpon>SYS_RoleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_RoleEdit.aspx.designer.cs">
+      <DependentUpon>SYS_RoleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEControlEdit.aspx.cs">
+      <DependentUpon>SYS_SEControlEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEControlEdit.aspx.designer.cs">
+      <DependentUpon>SYS_SEControlEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEControlTypeEdit.aspx.cs">
+      <DependentUpon>SYS_SEControlTypeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEControlTypeEdit.aspx.designer.cs">
+      <DependentUpon>SYS_SEControlTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEControlTypeList.aspx.cs">
+      <DependentUpon>SYS_SEControlTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEControlTypeList.aspx.designer.cs">
+      <DependentUpon>SYS_SEControlTypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEDataTypeEdit.aspx.cs">
+      <DependentUpon>SYS_SEDataTypeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEDataTypeEdit.aspx.designer.cs">
+      <DependentUpon>SYS_SEDataTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEDataTypeList.aspx.cs">
+      <DependentUpon>SYS_SEDataTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEDataTypeList.aspx.designer.cs">
+      <DependentUpon>SYS_SEDataTypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEModuleEdit.aspx.cs">
+      <DependentUpon>SYS_SEModuleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEModuleEdit.aspx.designer.cs">
+      <DependentUpon>SYS_SEModuleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEModuleList.aspx.cs">
+      <DependentUpon>SYS_SEModuleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SEModuleList.aspx.designer.cs">
+      <DependentUpon>SYS_SEModuleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SettingInfoEdit.aspx.cs">
+      <DependentUpon>SYS_SettingInfoEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SettingInfoEdit.aspx.designer.cs">
+      <DependentUpon>SYS_SettingInfoEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SettingInfoList.aspx.cs">
+      <DependentUpon>SYS_SettingInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SettingInfoList.aspx.designer.cs">
+      <DependentUpon>SYS_SettingInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_UserEdit.aspx.cs">
+      <DependentUpon>SYS_UserEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_UserEdit.aspx.designer.cs">
+      <DependentUpon>SYS_UserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_CompanyList.aspx.designer.cs">
+      <DependentUpon>SYS_CompanyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_GroupUser.aspx.designer.cs">
+      <DependentUpon>SYS_GroupUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_Menu.aspx.cs">
+      <DependentUpon>SYS_Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_Menu.aspx.designer.cs">
+      <DependentUpon>SYS_Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_OrgTypeList.aspx.designer.cs">
+      <DependentUpon>SYS_OrgTypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ProductList.aspx.designer.cs">
+      <DependentUpon>SYS_ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_RightCatList.aspx.designer.cs">
+      <DependentUpon>SYS_RightCatList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_RightCodeList.aspx.designer.cs">
+      <DependentUpon>SYS_RightCodeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_User.aspx.designer.cs">
+      <DependentUpon>SYS_User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_UserRole.aspx.designer.cs">
+      <DependentUpon>SYS_UserRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_UserRoleEdit.aspx.cs">
+      <DependentUpon>SYS_UserRoleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_UserRoleEdit.aspx.designer.cs">
+      <DependentUpon>SYS_UserRoleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_TemplateList.aspx.cs">
+      <DependentUpon>SYS_TemplateList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_TemplateList.aspx.designer.cs">
+      <DependentUpon>SYS_TemplateList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_TemplateEdit.aspx.cs">
+      <DependentUpon>SYS_TemplateEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_TemplateEdit.aspx.designer.cs">
+      <DependentUpon>SYS_TemplateEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SESchemaList.aspx.cs">
+      <DependentUpon>SYS_SESchemaList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SESchemaList.aspx.designer.cs">
+      <DependentUpon>SYS_SESchemaList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SESchemaEdit.aspx.cs">
+      <DependentUpon>SYS_SESchemaEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_SESchemaEdit.aspx.designer.cs">
+      <DependentUpon>SYS_SESchemaEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ChooseDepts.aspx.cs">
+      <DependentUpon>SYS_ChooseDepts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ChooseDepts.aspx.designer.cs">
+      <DependentUpon>SYS_ChooseDepts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_UserRight.aspx.cs">
+      <DependentUpon>SYS_UserRight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_UserRight.aspx.designer.cs">
+      <DependentUpon>SYS_UserRight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ProductRegister.aspx.cs">
+      <DependentUpon>SYS_ProductRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ProductRegister.aspx.designer.cs">
+      <DependentUpon>SYS_ProductRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_OperationLogList.aspx.cs">
+      <DependentUpon>SYS_OperationLogList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_OperationLogList.aspx.designer.cs">
+      <DependentUpon>SYS_OperationLogList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="base\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="enum\RightEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Login\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\CPWDOK.aspx.cs">
+      <DependentUpon>CPWDOK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\CPWDOK.aspx.designer.cs">
+      <DependentUpon>CPWDOK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Logoff.aspx.cs">
+      <DependentUpon>Logoff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Logoff.aspx.designer.cs">
+      <DependentUpon>Logoff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ValidateKey.aspx.cs">
+      <DependentUpon>ValidateKey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\ValidateKey.aspx.designer.cs">
+      <DependentUpon>ValidateKey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\ConfigCommon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_CompanyEdit.aspx.cs">
+      <DependentUpon>SYS_CompanyEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_CompanyEdit.aspx.designer.cs">
+      <DependentUpon>SYS_CompanyEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_CompanyList.aspx.cs">
+      <DependentUpon>SYS_CompanyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_DeptManagement.aspx.cs">
+      <DependentUpon>SYS_DeptManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_DeptManagement.aspx.designer.cs">
+      <DependentUpon>SYS_DeptManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_DutyManagement.aspx.cs">
+      <DependentUpon>SYS_DutyManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_DutyManagement.aspx.designer.cs">
+      <DependentUpon>SYS_DutyManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_GroupUser.aspx.cs">
+      <DependentUpon>SYS_GroupUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_OrgTypeEdit.aspx.cs">
+      <DependentUpon>SYS_OrgTypeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_OrgTypeEdit.aspx.designer.cs">
+      <DependentUpon>SYS_OrgTypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_OrgTypeList.aspx.cs">
+      <DependentUpon>SYS_OrgTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ProductEdit.aspx.cs">
+      <DependentUpon>SYS_ProductEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ProductEdit.aspx.designer.cs">
+      <DependentUpon>SYS_ProductEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_ProductList.aspx.cs">
+      <DependentUpon>SYS_ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_RightCatEdit.aspx.cs">
+      <DependentUpon>SYS_RightCatEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_RightCatEdit.aspx.designer.cs">
+      <DependentUpon>SYS_RightCatEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_RightCatList.aspx.cs">
+      <DependentUpon>SYS_RightCatList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_RightCodeEdit.aspx.cs">
+      <DependentUpon>SYS_RightCodeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_RightCodeEdit.aspx.designer.cs">
+      <DependentUpon>SYS_RightCodeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_RightCodeList.aspx.cs">
+      <DependentUpon>SYS_RightCodeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_RoleRight.aspx.cs">
+      <DependentUpon>SYS_RoleRight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_RoleRight.aspx.designer.cs">
+      <DependentUpon>SYS_RoleRight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_User.aspx.cs">
+      <DependentUpon>SYS_User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_UserDetail.aspx.cs">
+      <DependentUpon>SYS_UserDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZHUM\SYS_UserDetail.aspx.designer.cs">
+      <DependentUpon>SYS_UserDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZHUM\SYS_UserRole.aspx.cs">
+      <DependentUpon>SYS_UserRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\DynamicControlViewState.aspx.cs">
+      <DependentUpon>DynamicControlViewState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\DynamicControlViewState.aspx.designer.cs">
+      <DependentUpon>DynamicControlViewState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\IE7Test.aspx.cs">
+      <DependentUpon>IE7Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\IE7Test.aspx.designer.cs">
+      <DependentUpon>IE7Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\ToolbarIcon.aspx.cs">
+      <DependentUpon>ToolbarIcon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\ToolbarIcon.aspx.designer.cs">
+      <DependentUpon>ToolbarIcon.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Data\pubdata.mdb">
+    </Content>
+    <Content Include="changelog.txt" />
+    <Content Include="CompontentConfiguration.xml" />
+    <Content Include="CSS\base.css" />
+    <Content Include="CSS\box.css" />
+    <Content Include="CSS\Common.css" />
+    <Content Include="CSS\DataGrid.css" />
+    <Content Include="CSS\fonts.css" />
+    <Content Include="CSS\grids.css" />
+    <Content Include="CSS\MZHUM\SYS_GroupUser.css" />
+    <Content Include="CSS\MZHUM\SYS_Menu.css" />
+    <Content Include="CSS\MZHUM\SYS_MenuEdit.css" />
+    <Content Include="CSS\MZHUM\Sys_MenuList.css" />
+    <Content Include="CSS\MZHUM\SYS_RightCodeList.css" />
+    <Content Include="CSS\MZHUM\SYS_RightCodeTop.css" />
+    <Content Include="CSS\MZHUM\SYS_RightEdit.css" />
+    <Content Include="CSS\MZHUM\SYS_DeptManagement.css" />
+    <Content Include="CSS\MZHUM\form1Column.css" />
+    <Content Include="CSS\MZHUM\SYS_RoleRight.css" />
+    <Content Include="CSS\MZHUM\SYS_UserEdit.css" />
+    <Content Include="CSS\MZHUM\SYS_UserRole.css" />
+    <Content Include="CSS\MZHUM\SYS_UserRoleEdit.css" />
+    <Content Include="CSS\MZHUM\SYS_User.css" />
+    <Content Include="CSS\MZHUM\form2Column.css" />
+    <Content Include="CSS\MZHUM\SYS_TemplateEdit.css" />
+    <Content Include="CSS\MZHUM\SYS_SEModuleList.css" />
+    <Content Include="CSS\MZHUM\SYS_SESchemaList.css" />
+    <Content Include="CSS\MZHUM\SYS_ChooseUsers.css" />
+    <Content Include="CSS\MZHUM\SYS_DutyManagement.css" />
+    <Content Include="CSS\reset.css" />
+    <Content Include="CSS\toolbar.css" />
+    <Content Include="CSS\treeStyle.css" />
+    <Content Include="CSS\WebUIFrame.css" />
+    <Content Include="CSS\Ocean.css" />
+    <Content Include="default.aspx" />
+    <Content Include="Images\arrow-left.gif" />
+    <Content Include="Images\arrow-right.gif" />
+    <Content Include="Images\background.gif" />
+    <Content Include="Images\bar_bg.gif" />
+    <Content Include="Images\bg-shadow.gif" />
+    <Content Include="Images\bgTls.gif" />
+    <Content Include="Images\box_980_bg.png" />
+    <Content Include="Images\breadcrumb_sep.png" />
+    <Content Include="Images\default\box\corners-blue.gif" />
+    <Content Include="Images\default\box\corners.gif" />
+    <Content Include="Images\default\box\l-blue.gif" />
+    <Content Include="Images\default\box\l.gif" />
+    <Content Include="Images\default\box\r-blue.gif" />
+    <Content Include="Images\default\box\r.gif" />
+    <Content Include="Images\default\box\tb-blue.gif" />
+    <Content Include="Images\default\box\tb.gif" />
+    <Content Include="Images\default\button\btn-arrow.gif" />
+    <Content Include="Images\default\button\btn-sprite.gif" />
+    <Content Include="Images\default\dd\drop-add.gif" />
+    <Content Include="Images\default\dd\drop-no.gif" />
+    <Content Include="Images\default\dd\drop-yes.gif" />
+    <Content Include="Images\default\editor\tb-sprite.gif" />
+    <Content Include="Images\default\form\clear-trigger.gif" />
+    <Content Include="Images\default\form\date-trigger.gif" />
+    <Content Include="Images\default\form\error-tip-corners.gif" />
+    <Content Include="Images\default\form\exclamation.gif" />
+    <Content Include="Images\default\form\search-trigger.gif" />
+    <Content Include="Images\default\form\text-bg.gif" />
+    <Content Include="Images\default\form\trigger-tpl.gif" />
+    <Content Include="Images\default\form\trigger.gif" />
+    <Content Include="Images\default\gradient-bg.gif" />
+    <Content Include="Images\default\grid\arrow-left-white.gif" />
+    <Content Include="Images\default\grid\arrow-right-white.gif" />
+    <Content Include="Images\default\grid\col-move-bottom.gif" />
+    <Content Include="Images\default\grid\col-move-top.gif" />
+    <Content Include="Images\default\grid\columns.gif" />
+    <Content Include="Images\default\grid\dirty.gif" />
+    <Content Include="Images\default\grid\done.gif" />
+    <Content Include="Images\default\grid\drop-no.gif" />
+    <Content Include="Images\default\grid\drop-yes.gif" />
+    <Content Include="Images\default\grid\footer-bg.gif" />
+    <Content Include="Images\default\grid\grid-blue-hd.gif" />
+    <Content Include="Images\default\grid\grid-blue-split.gif" />
+    <Content Include="Images\default\grid\grid-hrow.gif" />
+    <Content Include="Images\default\grid\grid-loading.gif" />
+    <Content Include="Images\default\grid\grid-split.gif" />
+    <Content Include="Images\default\grid\grid-vista-hd.gif" />
+    <Content Include="Images\default\grid\grid3-hd-btn.gif" />
+    <Content Include="Images\default\grid\grid3-hrow-over.gif" />
+    <Content Include="Images\default\grid\grid3-hrow.gif" />
+    <Content Include="Images\default\grid\grid3-special-col-bg.gif" />
+    <Content Include="Images\default\grid\grid3-special-col-sel-bg.gif" />
+    <Content Include="Images\default\grid\group-by.gif" />
+    <Content Include="Images\default\grid\group-expand-sprite.gif" />
+    <Content Include="Images\default\grid\hd-pop.gif" />
+    <Content Include="Images\default\grid\hmenu-asc.gif" />
+    <Content Include="Images\default\grid\hmenu-desc.gif" />
+    <Content Include="Images\default\grid\hmenu-lock.gif" />
+    <Content Include="Images\default\grid\hmenu-lock.png" />
+    <Content Include="Images\default\grid\hmenu-unlock.gif" />
+    <Content Include="Images\default\grid\hmenu-unlock.png" />
+    <Content Include="Images\default\grid\invalid_line.gif" />
+    <Content Include="Images\default\grid\loading.gif" />
+    <Content Include="Images\default\grid\mso-hd.gif" />
+    <Content Include="Images\default\grid\nowait.gif" />
+    <Content Include="Images\default\grid\page-first-disabled.gif" />
+    <Content Include="Images\default\grid\page-first.gif" />
+    <Content Include="Images\default\grid\page-last-disabled.gif" />
+    <Content Include="Images\default\grid\page-last.gif" />
+    <Content Include="Images\default\grid\page-next-disabled.gif" />
+    <Content Include="Images\default\grid\page-next.gif" />
+    <Content Include="Images\default\grid\page-prev-disabled.gif" />
+    <Content Include="Images\default\grid\page-prev.gif" />
+    <Content Include="Images\default\grid\pick-button.gif" />
+    <Content Include="Images\default\grid\refresh.gif" />
+    <Content Include="Images\default\grid\row-check-sprite.gif" />
+    <Content Include="Images\default\grid\row-expand-sprite.gif" />
+    <Content Include="Images\default\grid\row-over.gif" />
+    <Content Include="Images\default\grid\row-sel.gif" />
+    <Content Include="Images\default\grid\sort_asc.gif" />
+    <Content Include="Images\default\grid\sort_desc.gif" />
+    <Content Include="Images\default\grid\wait.gif" />
+    <Content Include="Images\default\layout\collapse.gif" />
+    <Content Include="Images\default\layout\expand.gif" />
+    <Content Include="Images\default\layout\gradient-bg.gif" />
+    <Content Include="Images\default\layout\mini-bottom.gif" />
+    <Content Include="Images\default\layout\mini-left.gif" />
+    <Content Include="Images\default\layout\mini-right.gif" />
+    <Content Include="Images\default\layout\mini-top.gif" />
+    <Content Include="Images\default\layout\ns-collapse.gif" />
+    <Content Include="Images\default\layout\ns-expand.gif" />
+    <Content Include="Images\default\layout\panel-close.gif" />
+    <Content Include="Images\default\layout\panel-title-bg.gif" />
+    <Content Include="Images\default\layout\panel-title-light-bg.gif" />
+    <Content Include="Images\default\layout\stick.gif" />
+    <Content Include="Images\default\layout\stuck.gif" />
+    <Content Include="Images\default\layout\tab-close-on.gif" />
+    <Content Include="Images\default\layout\tab-close.gif" />
+    <Content Include="Images\default\menu\checked.gif" />
+    <Content Include="Images\default\menu\group-checked.gif" />
+    <Content Include="Images\default\menu\item-over.gif" />
+    <Content Include="Images\default\menu\menu-parent.gif" />
+    <Content Include="Images\default\menu\menu.gif" />
+    <Content Include="Images\default\menu\unchecked.gif" />
+    <Content Include="Images\default\panel\corners-sprite.gif" />
+    <Content Include="Images\default\panel\left-right.gif" />
+    <Content Include="Images\default\panel\light-hd.gif" />
+    <Content Include="Images\default\panel\tool-sprite-tpl.gif" />
+    <Content Include="Images\default\panel\tool-sprites.gif" />
+    <Content Include="Images\default\panel\tools-sprites-trans.gif" />
+    <Content Include="Images\default\panel\top-bottom.gif" />
+    <Content Include="Images\default\panel\top-bottom.png" />
+    <Content Include="Images\default\panel\white-corners-sprite.gif" />
+    <Content Include="Images\default\panel\white-left-right.gif" />
+    <Content Include="Images\default\panel\white-top-bottom.gif" />
+    <Content Include="Images\default\progress\progress-bg.gif" />
+    <Content Include="Images\default\qtip\bg.gif" />
+    <Content Include="Images\default\qtip\close.gif" />
+    <Content Include="Images\default\qtip\tip-sprite.gif" />
+    <Content Include="Images\default\s.gif" />
+    <Content Include="Images\default\shadow-c.png" />
+    <Content Include="Images\default\shadow-lr.png" />
+    <Content Include="Images\default\shadow.png" />
+    <Content Include="Images\default\shared\blue-loading.gif" />
+    <Content Include="Images\default\shared\calendar.gif" />
+    <Content Include="Images\default\shared\glass-bg.gif" />
+    <Content Include="Images\default\shared\hd-sprite.gif" />
+    <Content Include="Images\default\shared\large-loading.gif" />
+    <Content Include="Images\default\shared\left-btn.gif" />
+    <Content Include="Images\default\shared\loading-balls.gif" />
+    <Content Include="Images\default\shared\right-btn.gif" />
+    <Content Include="Images\default\shared\warning.gif" />
+    <Content Include="Images\default\sizer\e-handle-dark.gif" />
+    <Content Include="Images\default\sizer\e-handle.gif" />
+    <Content Include="Images\default\sizer\ne-handle-dark.gif" />
+    <Content Include="Images\default\sizer\ne-handle.gif" />
+    <Content Include="Images\default\sizer\nw-handle-dark.gif" />
+    <Content Include="Images\default\sizer\nw-handle.gif" />
+    <Content Include="Images\default\sizer\s-handle-dark.gif" />
+    <Content Include="Images\default\sizer\s-handle.gif" />
+    <Content Include="Images\default\sizer\se-handle-dark.gif" />
+    <Content Include="Images\default\sizer\se-handle.gif" />
+    <Content Include="Images\default\sizer\square.gif" />
+    <Content Include="Images\default\sizer\sw-handle-dark.gif" />
+    <Content Include="Images\default\sizer\sw-handle.gif" />
+    <Content Include="Images\default\tabs\scroll-left.gif" />
+    <Content Include="Images\default\tabs\scroll-right.gif" />
+    <Content Include="Images\default\tabs\scroller-bg.gif" />
+    <Content Include="Images\default\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="Images\default\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="Images\default\tabs\tab-btm-left-bg.gif" />
+    <Content Include="Images\default\tabs\tab-btm-right-bg.gif" />
+    <Content Include="Images\default\tabs\tab-close.gif" />
+    <Content Include="Images\default\tabs\tab-strip-bg.gif" />
+    <Content Include="Images\default\tabs\tab-strip-bg.png" />
+    <Content Include="Images\default\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="Images\default\tabs\tabs-sprite.gif" />
+    <Content Include="Images\default\toolbar\bg.gif" />
+    <Content Include="Images\default\toolbar\btn-arrow-light.gif" />
+    <Content Include="Images\default\toolbar\btn-arrow.gif" />
+    <Content Include="Images\default\toolbar\btn-over-bg.gif" />
+    <Content Include="Images\default\toolbar\gray-bg.gif" />
+    <Content Include="Images\default\toolbar\tb-bg.gif" />
+    <Content Include="Images\default\toolbar\tb-btn-sprite.gif" />
+    <Content Include="Images\default\tree\arrows.gif" />
+    <Content Include="Images\default\tree\drop-add.gif" />
+    <Content Include="Images\default\tree\drop-between.gif" />
+    <Content Include="Images\default\tree\drop-no.gif" />
+    <Content Include="Images\default\tree\drop-over.gif" />
+    <Content Include="Images\default\tree\drop-under.gif" />
+    <Content Include="Images\default\tree\drop-yes.gif" />
+    <Content Include="Images\default\tree\elbow-end-minus-nl.gif" />
+    <Content Include="Images\default\tree\elbow-end-minus.gif" />
+    <Content Include="Images\default\tree\elbow-end-plus-nl.gif" />
+    <Content Include="Images\default\tree\elbow-end-plus.gif" />
+    <Content Include="Images\default\tree\elbow-end.gif" />
+    <Content Include="Images\default\tree\elbow-line.gif" />
+    <Content Include="Images\default\tree\elbow-minus-nl.gif" />
+    <Content Include="Images\default\tree\elbow-minus.gif" />
+    <Content Include="Images\default\tree\elbow-plus-nl.gif" />
+    <Content Include="Images\default\tree\elbow-plus.gif" />
+    <Content Include="Images\default\tree\elbow.gif" />
+    <Content Include="Images\default\tree\folder-open.gif" />
+    <Content Include="Images\default\tree\folder.gif" />
+    <Content Include="Images\default\tree\leaf.gif" />
+    <Content Include="Images\default\tree\loading.gif" />
+    <Content Include="Images\default\tree\s.gif" />
+    <Content Include="Images\default\window\icon-error.gif" />
+    <Content Include="Images\default\window\icon-info.gif" />
+    <Content Include="Images\default\window\icon-question.gif" />
+    <Content Include="Images\default\window\icon-warning.gif" />
+    <Content Include="Images\default\window\left-corners.png" />
+    <Content Include="Images\default\window\left-right.png" />
+    <Content Include="Images\default\window\right-corners.png" />
+    <Content Include="Images\default\window\top-bottom.png" />
+    <Content Include="Images\Dept.png" />
+    <Content Include="Images\depts.png" />
+    <Content Include="Images\error.gif" />
+    <Content Include="Images\findouthow_bg.gif" />
+    <Content Include="Images\gray\button\btn-arrow.gif" />
+    <Content Include="Images\gray\button\btn-sprite.gif" />
+    <Content Include="Images\gray\gradient-bg.gif" />
+    <Content Include="Images\gray\panel\corners-sprite.gif" />
+    <Content Include="Images\gray\panel\left-right.gif" />
+    <Content Include="Images\gray\panel\light-hd.gif" />
+    <Content Include="Images\gray\panel\tool-sprite-tpl.gif" />
+    <Content Include="Images\gray\panel\tool-sprites.gif" />
+    <Content Include="Images\gray\panel\tools-sprites-trans.gif" />
+    <Content Include="Images\gray\panel\top-bottom.gif" />
+    <Content Include="Images\gray\panel\top-bottom.png" />
+    <Content Include="Images\gray\panel\white-corners-sprite.gif" />
+    <Content Include="Images\gray\panel\white-left-right.gif" />
+    <Content Include="Images\gray\panel\white-top-bottom.gif" />
+    <Content Include="Images\gray\qtip\bg.gif" />
+    <Content Include="Images\gray\qtip\close.gif" />
+    <Content Include="Images\gray\qtip\tip-sprite.gif" />
+    <Content Include="Images\gray\s.gif" />
+    <Content Include="Images\gray\tabs\scroll-left.gif" />
+    <Content Include="Images\gray\tabs\scroll-right.gif" />
+    <Content Include="Images\gray\tabs\scroller-bg.gif" />
+    <Content Include="Images\gray\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="Images\gray\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="Images\gray\tabs\tab-btm-left-bg.gif" />
+    <Content Include="Images\gray\tabs\tab-btm-right-bg.gif" />
+    <Content Include="Images\gray\tabs\tab-close.gif" />
+    <Content Include="Images\gray\tabs\tab-strip-bg.gif" />
+    <Content Include="Images\gray\tabs\tab-strip-bg.png" />
+    <Content Include="Images\gray\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="Images\gray\tabs\tabs-sprite.gif" />
+    <Content Include="Images\gray\toolbar\bg.gif" />
+    <Content Include="Images\gray\toolbar\btn-arrow-light.gif" />
+    <Content Include="Images\gray\toolbar\btn-arrow.gif" />
+    <Content Include="Images\gray\toolbar\btn-over-bg.gif" />
+    <Content Include="Images\gray\toolbar\gray-bg.gif" />
+    <Content Include="Images\gray\toolbar\tb-bg.gif" />
+    <Content Include="Images\gray\toolbar\tb-btn-sprite.gif" />
+    <Content Include="Images\gray\window\icon-error.gif" />
+    <Content Include="Images\gray\window\icon-info.gif" />
+    <Content Include="Images\gray\window\icon-question.gif" />
+    <Content Include="Images\gray\window\icon-warning.gif" />
+    <Content Include="Images\gray\window\left-corners.png" />
+    <Content Include="Images\gray\window\left-right.png" />
+    <Content Include="Images\gray\window\right-corners.png" />
+    <Content Include="Images\gray\window\top-bottom.png" />
+    <Content Include="Images\grd-1px_1.4.gif" />
+    <Content Include="Images\grid_pattern.PNG" />
+    <Content Include="Images\group.png" />
+    <Content Include="Images\icon_edge.gif" />
+    <Content Include="Images\left-top-corner-box.jpg" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\main_vaga.gif" />
+    <Content Include="Images\oops!.gif" />
+    <Content Include="Images\Product.gif" />
+    <Content Include="Images\root.png" />
+    <Content Include="Images\row-check-sprite.png" />
+    <Content Include="Images\s.gif" />
+    <Content Include="Images\table_add.png" />
+    <Content Include="Images\table_delete.png" />
+    <Content Include="Images\table_edit.png" />
+    <Content Include="Images\treeview_images\arrow_black.gif" />
+    <Content Include="Images\treeview_images\bg.gif" />
+    <Content Include="Images\treeview_images\break.gif" />
+    <Content Include="Images\treeview_images\calendar.gif" />
+    <Content Include="Images\treeview_images\col.gif" />
+    <Content Include="Images\treeview_images\contacts.gif" />
+    <Content Include="Images\treeview_images\deleted.gif" />
+    <Content Include="Images\treeview_images\deletedFolder.gif" />
+    <Content Include="Images\treeview_images\drafts.gif" />
+    <Content Include="Images\treeview_images\exp.gif" />
+    <Content Include="Images\treeview_images\folder.gif" />
+    <Content Include="Images\treeview_images\folders.gif" />
+    <Content Include="Images\treeview_images\group.png" />
+    <Content Include="Images\treeview_images\inbox.gif" />
+    <Content Include="Images\treeview_images\journal.gif" />
+    <Content Include="Images\treeview_images\junk.gif" />
+    <Content Include="Images\treeview_images\lines\dash.gif" />
+    <Content Include="Images\treeview_images\lines\dashminus.gif" />
+    <Content Include="Images\treeview_images\lines\dashplus.gif" />
+    <Content Include="Images\treeview_images\lines\i.gif" />
+    <Content Include="Images\treeview_images\lines\l.gif" />
+    <Content Include="Images\treeview_images\lines\lminus.gif" />
+    <Content Include="Images\treeview_images\lines\lplus.gif" />
+    <Content Include="Images\treeview_images\lines\minus.gif" />
+    <Content Include="Images\treeview_images\lines\noexpand.gif" />
+    <Content Include="Images\treeview_images\lines\plus.gif" />
+    <Content Include="Images\treeview_images\lines\r.gif" />
+    <Content Include="Images\treeview_images\lines\rminus.gif" />
+    <Content Include="Images\treeview_images\lines\rplus.gif" />
+    <Content Include="Images\treeview_images\lines\t.gif" />
+    <Content Include="Images\treeview_images\lines\tminus.gif" />
+    <Content Include="Images\treeview_images\lines\tplus.gif" />
+    <Content Include="Images\treeview_images\notes.gif" />
+    <Content Include="Images\treeview_images\outbox.gif" />
+    <Content Include="Images\treeview_images\plus.gif" />
+    <Content Include="Images\treeview_images\root.gif" />
+    <Content Include="Images\treeview_images\search.gif" />
+    <Content Include="Images\treeview_images\searchFolder.gif" />
+    <Content Include="Images\treeview_images\sentItems.gif" />
+    <Content Include="Images\treeview_images\spacer.gif" />
+    <Content Include="Images\treeview_images\tasks.gif" />
+    <Content Include="Images\treeview_images\user.png" />
+    <Content Include="Images\treeview_images\user_gray.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="Images\user_add.png" />
+    <Content Include="Images\user_delete.png" />
+    <Content Include="Images\user_edit.png" />
+    <Content Include="Images\vcard.png" />
+    <Content Include="Images\vista\basic-dialog\bg-center.gif" />
+    <Content Include="Images\vista\basic-dialog\bg-left.gif" />
+    <Content Include="Images\vista\basic-dialog\bg-right.gif" />
+    <Content Include="Images\vista\basic-dialog\close.gif" />
+    <Content Include="Images\vista\basic-dialog\collapse.gif" />
+    <Content Include="Images\vista\basic-dialog\dlg-bg.gif" />
+    <Content Include="Images\vista\basic-dialog\e-handle.gif" />
+    <Content Include="Images\vista\basic-dialog\expand.gif" />
+    <Content Include="Images\vista\basic-dialog\hd-sprite.gif" />
+    <Content Include="Images\vista\basic-dialog\s-handle.gif" />
+    <Content Include="Images\vista\basic-dialog\se-handle.gif" />
+    <Content Include="Images\vista\basic-dialog\w-handle.gif" />
+    <Content Include="Images\vista\gradient-bg.gif" />
+    <Content Include="Images\vista\grid\grid-split.gif" />
+    <Content Include="Images\vista\grid\grid-vista-hd.gif" />
+    <Content Include="Images\vista\layout\collapse.gif" />
+    <Content Include="Images\vista\layout\expand.gif" />
+    <Content Include="Images\vista\layout\gradient-bg.gif" />
+    <Content Include="Images\vista\layout\ns-collapse.gif" />
+    <Content Include="Images\vista\layout\ns-expand.gif" />
+    <Content Include="Images\vista\layout\panel-close.gif" />
+    <Content Include="Images\vista\layout\panel-title-bg.gif" />
+    <Content Include="Images\vista\layout\panel-title-light-bg.gif" />
+    <Content Include="Images\vista\layout\stick.gif" />
+    <Content Include="Images\vista\layout\tab-close-on.gif" />
+    <Content Include="Images\vista\layout\tab-close.gif" />
+    <Content Include="Images\vista\qtip\bg.gif" />
+    <Content Include="Images\vista\qtip\tip-sprite.gif" />
+    <Content Include="Images\vista\s.gif" />
+    <Content Include="Images\vista\sizer\e-handle-dark.gif" />
+    <Content Include="Images\vista\sizer\e-handle.gif" />
+    <Content Include="Images\vista\sizer\ne-handle-dark.gif" />
+    <Content Include="Images\vista\sizer\ne-handle.gif" />
+    <Content Include="Images\vista\sizer\nw-handle-dark.gif" />
+    <Content Include="Images\vista\sizer\nw-handle.gif" />
+    <Content Include="Images\vista\sizer\s-handle-dark.gif" />
+    <Content Include="Images\vista\sizer\s-handle.gif" />
+    <Content Include="Images\vista\sizer\se-handle-dark.gif" />
+    <Content Include="Images\vista\sizer\se-handle.gif" />
+    <Content Include="Images\vista\sizer\sw-handle-dark.gif" />
+    <Content Include="Images\vista\sizer\sw-handle.gif" />
+    <Content Include="Images\vista\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="Images\vista\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="Images\vista\tabs\tab-btm-left-bg.gif" />
+    <Content Include="Images\vista\tabs\tab-btm-right-bg.gif" />
+    <Content Include="Images\vista\tabs\tab-sprite.gif" />
+    <Content Include="Images\vista\toolbar\gray-bg.gif" />
+    <Content Include="Images\vista\toolbar\tb-btn-sprite.gif" />
+    <Content Include="Images\WebUIFrame\bottomshadow.png" />
+    <Content Include="Images\WebUIFrame\HeaderGradientImageType.png" />
+    <Content Include="Images\WebUIFrame\Leve3MenuItemFlag.gif" />
+    <Content Include="Images\WebUIFrame\Level1MenuItemBG.gif" />
+    <Content Include="Images\WebUIFrame\Level2Flag.gif" />
+    <Content Include="Images\WebUIFrame\Level2MenuItemBG.gif" />
+    <Content Include="Images\WebUIFrame\menu_level1_bg.jpg" />
+    <Content Include="Images\WebUIFrame\menu_level2_bg.jpg" />
+    <Content Include="Images\WebUIFrame\menu_level2_bg_left.jpg" />
+    <Content Include="Images\WebUIFrame\rb_conner.png" />
+    <Content Include="Images\WebUIFrame\rightShadow.png" />
+    <Content Include="Images\WebUIFrame\righttopconner.png" />
+    <Content Include="Images\WebUIFrame\sc_hover.gif" />
+    <Content Include="Images\WebUIFrame\sc_rest.gif" />
+    <Content Include="Images\WebUIFrame\top_bg.jpg" />
+    <Content Include="Images\YPWater_breadcrumb_sep.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="JS\AutoHeightIFrame.js" />
+    <Content Include="JS\jquery-1.2.6-vsdoc.js" />
+    <Content Include="JS\jquery-1.2.6.js" />
+    <Content Include="JS\jquery-1.2.6.min.js" />
+    <Content Include="JS\jquery-1.8.2.min.js" />
+    <Content Include="JS\jquery.blockUI.js" />
+    <Content Include="JS\MZHUM\SYS_Menu.js" />
+    <Content Include="JS\MZHUM\SYS_DeptManagement.js" />
+    <Content Include="JS\MZHUM\SYS_MenuTypeList.js" />
+    <Content Include="JS\MZHUM\SYS_OrgTypeList.js" />
+    <Content Include="JS\MZHUM\SYS_ProductList.js" />
+    <Content Include="JS\MZHUM\SYS_RightCatList.js" />
+    <Content Include="JS\MZHUM\SYS_RightCodeList.js" />
+    <Content Include="JS\MZHUM\SYS_CompanyList.js" />
+    <Content Include="JS\MZHUM\SYS_DutyManagement.js" />
+    <Content Include="JS\MZHUM\SYS_User.js" />
+    <Content Include="JS\MZHUM\SYS_UserEdit.js" />
+    <Content Include="JS\MZHUM\SYS_UserRole.js" />
+    <Content Include="JS\MZHUM\SYS_UserRoleEdit.js" />
+    <Content Include="JS\MZHUM\SYS_GroupUser.js" />
+    <Content Include="JS\MZHUM\SYS_RoleRight.js" />
+    <Content Include="JS\MZHUM\SYS_TemplateList.js" />
+    <Content Include="JS\MZHUM\SYS_SEModuleList.js" />
+    <Content Include="JS\MZHUM\SYS_SEDataTypeList.js" />
+    <Content Include="JS\MZHUM\SYS_SEControlTypeList.js" />
+    <Content Include="JS\MZHUM\SYS_SESchemaList.js" />
+    <Content Include="JS\pngfix.js" />
+    <Content Include="JS\PopupWindow.js" />
+    <Content Include="Login\ChangePassword.aspx" />
+    <Content Include="Login\CPWDOK.aspx" />
+    <Content Include="Login\History.aspx" />
+    <Content Include="Login\Logoff.aspx" />
+    <Content Include="Login\ValidateKey.aspx" />
+    <Content Include="MZHUM\Error.aspx" />
+    <Content Include="MZHUM\SYS_ChooseDept.aspx" />
+    <Content Include="MZHUM\Sys_ChoosePureUsers.aspx" />
+    <Content Include="MZHUM\SYS_ChooseUser.aspx" />
+    <Content Include="MZHUM\SYS_ChooseUsers.aspx" />
+    <Content Include="MZHUM\SYS_GroupCatEdit.aspx" />
+    <Content Include="MZHUM\SYS_GroupEdit.aspx" />
+    <Content Include="MZHUM\SYS_MenuTypeEdit.aspx" />
+    <Content Include="MZHUM\SYS_MenuTypeList.aspx" />
+    <Content Include="MZHUM\SYS_RoleEdit.aspx" />
+    <Content Include="MZHUM\SYS_SEControlEdit.aspx" />
+    <Content Include="MZHUM\SYS_SEControlTypeEdit.aspx" />
+    <Content Include="MZHUM\SYS_SEControlTypeList.aspx" />
+    <Content Include="MZHUM\SYS_SEDataTypeEdit.aspx" />
+    <Content Include="MZHUM\SYS_SEDataTypeList.aspx" />
+    <Content Include="MZHUM\SYS_SEModuleEdit.aspx" />
+    <Content Include="MZHUM\SYS_SEModuleList.aspx" />
+    <Content Include="MZHUM\SYS_SettingInfoEdit.aspx" />
+    <Content Include="MZHUM\SYS_SettingInfoList.aspx" />
+    <Content Include="MZHUM\SYS_UserEdit.aspx" />
+    <Content Include="MZHUM\SYS_CompanyEdit.aspx" />
+    <Content Include="MZHUM\SYS_CompanyList.aspx" />
+    <Content Include="MZHUM\SYS_DeptManagement.aspx" />
+    <Content Include="MZHUM\SYS_DutyManagement.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MZHUM\SYS_GroupUser.aspx" />
+    <Content Include="MZHUM\SYS_Menu.aspx" />
+    <Content Include="MZHUM\SYS_OrgTypeEdit.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MZHUM\SYS_OrgTypeList.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MZHUM\SYS_ProductEdit.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MZHUM\SYS_ProductList.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MZHUM\SYS_RightCatEdit.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MZHUM\SYS_RightCatList.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MZHUM\SYS_RightCodeEdit.aspx" />
+    <Content Include="MZHUM\SYS_RightCodeList.aspx" />
+    <Content Include="MZHUM\SYS_RoleRight.aspx" />
+    <Content Include="MZHUM\SYS_User.aspx" />
+    <Content Include="MZHUM\SYS_UserDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MZHUM\SYS_UserRole.aspx" />
+    <Content Include="MZHUM\SYS_UserRoleEdit.aspx" />
+    <Content Include="MZHUM\SYS_TemplateList.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MZHUM\SYS_TemplateEdit.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MZHUM\SYS_SESchemaList.aspx" />
+    <Content Include="MZHUM\SYS_SESchemaEdit.aspx" />
+    <Content Include="MZHUM\SYS_ChooseDepts.aspx" />
+    <Content Include="MZHUM\SYS_UserRight.aspx" />
+    <Content Include="MZHUM\SYS_ProductRegister.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MZHUM\SYS_OperationLogList.aspx" />
+    <Content Include="Resource\Template\newYPWater.htm" />
+    <Content Include="Resource\Template\Normal.htm" />
+    <Content Include="Resource\Template\Ocean.htm" />
+    <Content Include="Resource\Template\YPWater.htm" />
+    <Content Include="switchs.xml" />
+    <Content Include="Test\DynamicControlViewState.aspx" />
+    <Content Include="Test\IE7Test.aspx" />
+    <Content Include="Test\table.htm" />
+    <Content Include="Test\Test.aspx" />
+    <Content Include="Test\bg.htm" />
+    <Content Include="Test\ToolbarIcon.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Themes\Default\Default.skin" />
+    <None Include="Images\default\button\Thumbs.db" />
+    <None Include="Images\default\form\clear-trigger.psd" />
+    <None Include="Images\default\form\date-trigger.psd" />
+    <None Include="Images\default\form\search-trigger.psd" />
+    <None Include="Images\default\form\trigger.psd" />
+    <None Include="Images\default\grid\Thumbs.db" />
+    <None Include="Images\default\shared\Thumbs.db" />
+    <None Include="Images\default\toolbar\Thumbs.db" />
+    <None Include="Images\default\window\left-corners.psd" />
+    <None Include="Images\default\window\left-right.psd" />
+    <None Include="Images\default\window\right-corners.psd" />
+    <None Include="Images\default\window\top-bottom.psd" />
+    <None Include="Images\gray\button\Thumbs.db" />
+    <None Include="Images\gray\panel\Thumbs.db" />
+    <None Include="Images\gray\window\left-corners.pspimage" />
+    <None Include="Images\vista\basic-dialog\Thumbs.db" />
+    <None Include="Images\vista\grid\Thumbs.db" />
+    <None Include="Images\vista\layout\Thumbs.db" />
+    <None Include="Images\vista\qtip\Thumbs.db" />
+    <None Include="Images\vista\sizer\Thumbs.db" />
+    <None Include="Images\vista\tabs\Thumbs.db" />
+    <None Include="Images\vista\Thumbs.db" />
+    <None Include="Images\vista\toolbar\Thumbs.db" />
+    <Content Include="log4net.config" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shmzh.Component.SystemComponent\Shmzh.Components.SystemComponent.csproj">
+      <Project>{6FEE0F13-3DC0-42DA-B8EC-2E322C56D5C0}</Project>
+      <Name>Shmzh.Components.SystemComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Components.AuthorizationModule\Shmzh.Components.AuthorizationModule.csproj">
+      <Project>{2BAD2AD3-3032-4B04-B938-2603D91ADB2B}</Project>
+      <Name>Shmzh.Components.AuthorizationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Components.Util\Shmzh.Components.Util.csproj">
+      <Project>{0876485A-A83F-4B46-BA5B-941FAF6B791C}</Project>
+      <Name>Shmzh.Components.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Web.UI\Shmzh.Web.UI.csproj">
+      <Project>{91F4E74C-AD35-46C3-B0C3-ABE5D558FBF0}</Project>
+      <Name>Shmzh.Web.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1122</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SystemManagementWeb</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

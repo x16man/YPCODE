@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<!--组件配置文件-->
+<Components>
+	<Component Name="WorkFlow" Version="V1.0">
+		<Purpose>用于产品信息的描述、用户对象、基本组织结构等</Purpose>
+		<DatabaseConnectionString>data source=db2;initial catalog=MMDB;User ID=sa;password=mzh;</DatabaseConnectionString>
+	</Component>
+	<Component Name="PubData" Version="V1.0">
+		<Purpose>PubData数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=PubDataProduct;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+	<Component Name="KM" Version="V1.0">
+		<Purpose>知识库数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=MZHKM;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+	<Component Name="MM" Version="V1.0">
+		<Purpose>物料数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=MMDB;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+	<Component Name="PM" Version="V1.0">
+		<Purpose>项目数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=PMDB;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+	<Component Name="CRM" Version="V1.0">
+		<Purpose>供应商数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=CRMData;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+	<Component Name="ET" Version="V1.0">
+		<Purpose>食堂数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=Eatery;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+	<Component Name="INFO" Version="V1.0">
+		<Purpose>杨水信息数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=YPINFO;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+	<Component Name="Produce" Version="V1.0">
+		<Purpose>生产数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=GATHER;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+	<Component Name="DEV" Version="V1.0">
+		<Purpose>设备数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=GATHER;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+	<Component Name="Address" Version="V1.0">
+		<Purpose>通讯录数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=AddressBookData;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+	<Component Name="MAIL" Version="V1.0">
+		<Purpose>邮件数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=MailData;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+	<Component Name="DLFLODB" Version="V1.0">
+		<Purpose>工作流数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=DLFLODB;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+	<Component Name="NetDoor" Version="V1.0">
+		<Purpose>巡检数据库</Purpose>
+		<DatabaseConnectionString>data source=vista-dell;initial catalog=NetDoor;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+</Components>
+

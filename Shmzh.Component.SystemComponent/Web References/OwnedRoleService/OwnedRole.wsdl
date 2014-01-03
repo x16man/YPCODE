@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">系统管理中用户拥有角色的WebService接口.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetAllByProductCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productCode" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllByProductCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllByProductCodeResult" type="tns:ArrayOfOwnedRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOwnedRoleInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OwnedRoleInfo" nillable="true" type="tns:OwnedRoleInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OwnedRoleInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RoleCode" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="CheckCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetByUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByUserNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByUserNameResult" type="tns:ArrayOfOwnedRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByGroupCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="groupCode" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByGroupCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByGroupCodeResult" type="tns:ArrayOfOwnedRoleInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllByProductCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllByProductCode" />
+  </wsdl:message>
+  <wsdl:message name="GetAllByProductCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllByProductCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByUserNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByUserName" />
+  </wsdl:message>
+  <wsdl:message name="GetByUserNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByGroupCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByGroupCode" />
+  </wsdl:message>
+  <wsdl:message name="GetByGroupCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByGroupCodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OwnedRoleSoap">
+    <wsdl:operation name="GetAllByProductCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据产品获取所有的角色与对象的关系的集合</wsdl:documentation>
+      <wsdl:input message="tns:GetAllByProductCodeSoapIn" />
+      <wsdl:output message="tns:GetAllByProductCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByUserName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据用户名获取用户所具有的角色和访问对象的关系</wsdl:documentation>
+      <wsdl:input message="tns:GetByUserNameSoapIn" />
+      <wsdl:output message="tns:GetByUserNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByGroupCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据组编号获取具有的角色和访问对象的关系</wsdl:documentation>
+      <wsdl:input message="tns:GetByGroupCodeSoapIn" />
+      <wsdl:output message="tns:GetByGroupCodeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OwnedRoleSoap" type="tns:OwnedRoleSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllByProductCode">
+      <soap:operation soapAction="http://tempuri.org/GetAllByProductCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByUserName">
+      <soap:operation soapAction="http://tempuri.org/GetByUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByGroupCode">
+      <soap:operation soapAction="http://tempuri.org/GetByGroupCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OwnedRoleSoap12" type="tns:OwnedRoleSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllByProductCode">
+      <soap12:operation soapAction="http://tempuri.org/GetAllByProductCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByUserName">
+      <soap12:operation soapAction="http://tempuri.org/GetByUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByGroupCode">
+      <soap12:operation soapAction="http://tempuri.org/GetByGroupCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OwnedRole">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">系统管理中用户拥有角色的WebService接口.</wsdl:documentation>
+    <wsdl:port name="OwnedRoleSoap" binding="tns:OwnedRoleSoap">
+      <soap:address location="http://localhost/Shmzh.SystemComponent.WebService/OwnedRole.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OwnedRoleSoap12" binding="tns:OwnedRoleSoap12">
+      <soap12:address location="http://localhost/Shmzh.SystemComponent.WebService/OwnedRole.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

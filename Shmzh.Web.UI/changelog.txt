@@ -1,0 +1,27 @@
+﻿Shmzh.Web.UI ChangeLog
+===================================================================================================
+### V2.0.0.12
+- MzhWebUIFrame控件增加HelpUrl的解析功能。
+### V2.0.0.12
+- 将CKFinder集成进FCKEditor控件。 -- 2009-09-10 by zhanghao
+
+### V2.0.0.12
+- 增加FCKeditor控件。 -- 2009-09-10 by zhanghao
+
+### V2.0.0.12 
+- MzhWebUIFrame控件增加公司英文名称的解析功能. - 2009-09-02 by zhanghao
+
+### V2.0.0.12
+- WebUIFrame控件增加自动缺省页功能。
+
+### V2.0.0.11
+- DataGrid控件增加AutoDataBind委托对象，实现排序，翻页，pagesizechanged事件的零代码自动实现功能。 by zhanghao 
+
+### V2.0.0.10
+- DataGrid控件增加PageSize部件。by zhanghao
+
+### V2.0.0.9
+- Toolbar控件增加CauseValidation属性。by zhanghao
+
+### V2.0.0.8
+- 第一个版本。 by zhanghao

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--组件配置文件-->
+<Components>
+  <Component Name="PubData" Version="V1.0">
+    <Purpose>PubData数据</Purpose>
+    <DatabaseConnectionString>data source=win2008r2;initial catalog=Pubdata;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+  </Component>
+</Components>

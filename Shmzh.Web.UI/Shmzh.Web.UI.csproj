@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91F4E74C-AD35-46C3-B0C3-ABE5D558FBF0}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Shmzh.Web.UI</AssemblyName>
+    <AssemblyOriginatorKeyFile>Shmzh.Components.SystemComponent.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Shmzh.Web.UI</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Shmzh.Web.UI/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net20-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml">
+      <Name>Microsoft.mshtml</Name>
+      <HintPath>C:\Program Files\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll</HintPath>
+      <AssemblyFolderKey>hklm\primary interop assemblies</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientScriptManager\ClientScriptManager.cs" />
+    <Compile Include="Controls\CKFinder\AccessControlRules.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\CommandHandlerBase.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\CreateFolderCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\DeleteFileCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\DeleteFolderCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\DownloadFileCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\ErrorCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\FileUploadCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\GetFilesCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\GetFoldersCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\InitCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\QuickUploadCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\RenameFileCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\RenameFolderCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\ThumbnailCommandHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\CommandHandlers\XmlCommandHandlerBase.cs" />
+    <Compile Include="Controls\CKFinder\Connector\Config.cs" />
+    <Compile Include="Controls\CKFinder\Connector\Connector.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CKFinder\Connector\ConnectorException.cs" />
+    <Compile Include="Controls\CKFinder\Connector\Errors.cs" />
+    <Compile Include="Controls\CKFinder\Connector\FolderHandler.cs" />
+    <Compile Include="Controls\CKFinder\Connector\ImageTools.cs" />
+    <Compile Include="Controls\CKFinder\Connector\Lang.cs" />
+    <Compile Include="Controls\CKFinder\Connector\OctreeQuantizer.cs" />
+    <Compile Include="Controls\CKFinder\Connector\Quantizer.cs" />
+    <Compile Include="Controls\CKFinder\Connector\RegexLib.cs" />
+    <Compile Include="Controls\CKFinder\FileBrowser.cs" />
+    <Compile Include="Controls\CKFinder\FileBrowserDesigner.cs" />
+    <Compile Include="Controls\CKFinder\Settings\AccessControl.cs" />
+    <Compile Include="Controls\CKFinder\Settings\AccessControlManager.cs" />
+    <Compile Include="Controls\CKFinder\Settings\ConfigFile.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CKFinder\Settings\Images.cs" />
+    <Compile Include="Controls\CKFinder\Settings\ResourceType.cs" />
+    <Compile Include="Controls\CKFinder\Settings\ResourceTypeManager.cs" />
+    <Compile Include="Controls\CKFinder\Settings\Thumbnails.cs" />
+    <Compile Include="Controls\CKFinder\TriStateBool.cs" />
+    <Compile Include="Controls\FCKeditor\FCKeditor.cs" />
+    <Compile Include="Controls\FCKeditor\FCKeditorConfigurations.cs" />
+    <Compile Include="Controls\FCKeditor\FileBrowser\Config.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FCKeditor\FileBrowser\Connector.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FCKeditor\FileBrowser\FileWorkerBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FCKeditor\FileBrowser\TypeConfig.cs" />
+    <Compile Include="Controls\FCKeditor\FileBrowser\TypeConfigList.cs" />
+    <Compile Include="Controls\FCKeditor\FileBrowser\Uploader.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FCKeditor\FileBrowser\XmlResponseHandler.cs" />
+    <Compile Include="Controls\MzhToolbarItem\ToolbarChooser.cs" />
+    <Compile Include="Controls\testDataGrid.cs" />
+    <Compile Include="Designer\FCKeditorDesigner.cs" />
+    <Compile Include="Designer\MzhTitleDesigner.cs" />
+    <Compile Include="Controls\MzhTitle.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\delegates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhDataGrid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhDropDownList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhOutLookBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhToolbar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhToolbarItem\IPostBackToolbarItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhToolbarItem\ToolbarButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhToolbarItem\ToolbarCalendar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhToolbarItem\ToolbarCheckBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhToolbarItem\ToolbarDropdownList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhToolbarItem\ToolbarItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhToolbarItem\ToolbarItemCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhToolbarItem\ToolbarLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhToolbarItem\ToolbarLink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhToolbarItem\ToolbarSeparator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhToolbarItem\ToolbarTextBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\MzhWebUIFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ResourceRoot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Designer\ToolbarDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Designer\ToolbarItemCollectionEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Util.cs" />
+    <Compile Include="Util\XmlUtil.cs" />
+    <Content Include="changelog.txt" />
+    <Content Include="JavaScript\array.js" />
+    <Content Include="JavaScript\css.js" />
+    <Content Include="JavaScript\DataGrid.js" />
+    <Content Include="JavaScript\jquery-1.2.6.pack.js" />
+    <Content Include="JavaScript\My97DatePicker\calendar.js" />
+    <Content Include="JavaScript\My97DatePicker\config.js" />
+    <Content Include="JavaScript\My97DatePicker\lang\en.js" />
+    <Content Include="JavaScript\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="JavaScript\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="JavaScript\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="JavaScript\My97DatePicker\readme.txt" />
+    <Content Include="JavaScript\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="JavaScript\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="JavaScript\My97DatePicker\skin\default\img.gif" />
+    <Content Include="JavaScript\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="JavaScript\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="JavaScript\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="JavaScript\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="JavaScript\My97DatePicker\WdatePicker.js" />
+    <Content Include="JavaScript\readme.txt" />
+    <Content Include="JavaScript\string.js" />
+    <Content Include="JavaScript\Toolbar.js" />
+    <Content Include="JavaScript\UI\ui.accordion.js" />
+    <Content Include="JavaScript\UI\ui.core.js" />
+    <Content Include="readme.txt" />
+    <EmbeddedResource Include="Controls\Shmzh.Web.UI.Controls.MzhDataGrid.bmp" />
+    <EmbeddedResource Include="Controls\Shmzh.Web.UI.Controls.MzhToolbar.bmp" />
+    <EmbeddedResource Include="Controls\Shmzh.Web.UI.Controls.ToolbarButton.bmp" />
+    <EmbeddedResource Include="Controls\Shmzh.Web.UI.Controls.ToolbarCalendar.bmp" />
+    <EmbeddedResource Include="Controls\Shmzh.Web.UI.Controls.ToolbarLabel.bmp" />
+    <EmbeddedResource Include="Controls\Shmzh.Web.UI.Controls.ToolbarTextBox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JavaScript\My97DatePicker\skin\default\Thumbs.db" />
+    <None Include="packages.config" />
+    <None Include="Shmzh.Components.SystemComponent.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shmzh.Component.SystemComponent\Shmzh.Components.SystemComponent.csproj">
+      <Project>{6FEE0F13-3DC0-42DA-B8EC-2E322C56D5C0}</Project>
+      <Name>Shmzh.Components.SystemComponent</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

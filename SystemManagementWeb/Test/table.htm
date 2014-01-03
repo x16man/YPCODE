@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>产品列表</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/common.css" />
+
+    <script src="../JS/jquery-1.2.6.js" type="text/javascript"></script>
+
+    <script src="../JS/PopupWindow.js" type="text/javascript"></script>
+
+    <script src="../JS/MZHUM/SYS_ProductList.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        
+    </script>
+
+</head>
+<body>
+    <form name="Form1" id="Form1">
+    <script type="text/javascript">
+<!--
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+    </script>
+
+    <script src="/aspnet_client/Shmzh.Web.UI/Toolbar.js"></script>
+
+    <script src="/aspnet_client/Shmzh.Web.UI/string.js"></script>
+
+    <script src="/aspnet_client/Shmzh.Web.UI/array.js"></script>
+
+    <script src="/aspnet_client/Shmzh.Web.UI/css.js"></script>
+
+    <script src="/aspnet_client/Shmzh.Web.UI/DataGrid.js"></script>
+
+    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWDQLwxKTrDgKjseynBQLom5eGBALdjvXPCALp3sqYAQLmsaD1DQLnsaD1DQLeysa9DQLOpezTAQK+wZ4kArvylLENAuCRk4YDAsCf6+YMVLDGqab/qh/poIEc0DZdpIJgFcc=" />
+    <div id="main">
+        <div class="paneToolbar clearfix" id="MzhToolbar1">
+            <div class="paneToolbarLeftCap">
+            </div>
+            <div class="toolbar clearfix" style="visibility: visible;">
+                <table class="buttonTable" cellpadding="0" cellspacing="0" title="" unselectable="on"
+                    onclick="addProduct(this.id);" id="MzhToolbar1_toolbarItemAdd">
+                    <td class="leftCap" unselectable="on" style="width: 3px;">
+                        <div unselectable="on" style="width: 3px; visibility: hidden;">
+                        </div>
+                    </td>
+                    <td class="buttonIconCell" unselectable="on">
+                        <div class="button add" unselectable="on">
+                        </div>
+                    </td>
+                    <td class="labelCell" unselectable="on">
+                        新建
+                    </td>
+                    <td class="rightCap" unselectable="on" style="width: 3px;">
+                        <div unselectable="on" style="width: 3px; visibility: hidden;">
+                        </div>
+                    </td>
+                </table>
+                <table class="buttonTable" cellpadding="0" cellspacing="0" title="" unselectable="on"
+                    onclick="editProduct(this.id);" id="MzhToolbar1_toolbarItemEdit">
+                    <td class="leftCap" unselectable="on" style="width: 3px;">
+                        <div unselectable="on" style="width: 3px; visibility: hidden;">
+                        </div>
+                    </td>
+                    <td class="buttonIconCell" unselectable="on">
+                        <div class="button edit" unselectable="on">
+                        </div>
+                    </td>
+                    <td class="labelCell" unselectable="on">
+                        编辑
+                    </td>
+                    <td class="rightCap" unselectable="on" style="width: 3px;">
+                        <div unselectable="on" style="width: 3px; visibility: hidden;">
+                        </div>
+                    </td>
+                </table>
+                <table class="buttonTable" cellpadding="0" cellspacing="0" title="" unselectable="on"
+                    onclick="if(!confirmDelete()) return;setTimeout('__doPostBack(\'MzhToolbar1$toolbarItemDelete\',\'\')', 0)"
+                    id="MzhToolbar1_toolbarItemDelete">
+                    <td class="leftCap" unselectable="on" style="width: 3px;">
+                        <div unselectable="on" style="width: 3px; visibility: hidden;">
+                        </div>
+                    </td>
+                    <td class="buttonIconCell" unselectable="on">
+                        <div class="button delete" unselectable="on">
+                        </div>
+                    </td>
+                    <td class="labelCell" unselectable="on">
+                        删除
+                    </td>
+                    <td class="rightCap" unselectable="on" style="width: 3px;">
+                        <div unselectable="on" style="width: 3px; visibility: hidden;">
+                        </div>
+                    </td>
+                </table>
+            </div>
+            <div class="paneToolbarRightCap">
+            </div>
+        </div>
+        <div>
+            <table class="datagrid" cellspacing="0" rules="all" name="MzhMultiSelectDataGrid"
+                cssclassforpagerbuttonjump="m-grid-pager-button-jump" cssclassforpagerinputpage="m-grid-pager-input-page"
+                border="1" id="dg_Product" style="border-collapse: collapse;">
+                <tr class="m-grid-hd-row">
+                    <td style="width: 60px;">
+                        编号
+                    </td>
+                    <td style="width: 150px;">
+                        名称
+                    </td>
+                    <td style="width: 120px;">
+                        状态
+                    </td>
+                    <td>
+                        描述
+                    </td>
+                </tr>
+                <tr class="m-grid-row" id="1">
+                    <td class="center">
+                        1
+                    </td>
+                    <td>
+                        知识管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl3_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row-alt" id="2">
+                    <td class="center">
+                        2
+                    </td>
+                    <td>
+                        物料管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl4_Label1">有效</span>
+                    </td>
+                    <td>
+                        test
+                    </td>
+                </tr>
+                <tr class="m-grid-row" id="3">
+                    <td class="center">
+                        3
+                    </td>
+                    <td>
+                        资源管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl5_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row-alt" id="4">
+                    <td class="center">
+                        4
+                    </td>
+                    <td>
+                        巡检管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl6_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row" id="5">
+                    <td class="center">
+                        5
+                    </td>
+                    <td>
+                        供应商管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl7_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row-alt" id="6">
+                    <td class="center">
+                        6
+                    </td>
+                    <td>
+                        水质分析系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl8_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row" id="7">
+                    <td class="center">
+                        7
+                    </td>
+                    <td>
+                        党政学习系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl9_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row-alt" id="8">
+                    <td class="center">
+                        8
+                    </td>
+                    <td>
+                        项目管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl10_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row" id="9">
+                    <td class="center">
+                        9
+                    </td>
+                    <td>
+                        即时消息系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl11_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row-alt" id="10">
+                    <td class="center">
+                        10
+                    </td>
+                    <td>
+                        网站管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl12_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row" id="11">
+                    <td class="center">
+                        11
+                    </td>
+                    <td>
+                        系统管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl13_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row-alt" id="12">
+                    <td class="center">
+                        12
+                    </td>
+                    <td>
+                        合同管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl14_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row" id="13">
+                    <td class="center">
+                        13
+                    </td>
+                    <td>
+                        食堂管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl15_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row-alt" id="14">
+                    <td class="center">
+                        14
+                    </td>
+                    <td>
+                        费用管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl16_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row" id="15">
+                    <td class="center">
+                        15
+                    </td>
+                    <td>
+                        短信管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl17_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row-alt" id="16">
+                    <td class="center">
+                        16
+                    </td>
+                    <td>
+                        水质管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl18_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-row" id="18">
+                    <td class="center">
+                        18
+                    </td>
+                    <td>
+                        会议管理系统
+                    </td>
+                    <td class="center">
+                        <span id="dg_Product__ctl19_Label1">有效</span>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr class="m-grid-page-row">
+                    <td colspan="4">
+                        每页<select name="dg_Product:_ctl21:_ctl1" onchange="javascript:setTimeout('__doPostBack(\'dg_Product$_ctl21$_ctl1\',\'\')', 0)"
+                            language="javascript">
+                            <option value="10">10</option>
+                            <option selected="selected" value="20">20</option>
+                        </select> [ <a id="dg_Product__ctl21_First" disabled="disabled" title="转到第一页">
+                            首页</a> | <a id="dg_Product__ctl21_Prev" disabled="disabled" title="转到前一页">前页</a>
+                        | <a id="dg_Product__ctl21_Next" disabled="disabled" title="转到下一页">下页</a> | <a id="dg_Product__ctl21_Last"
+                            disabled="disabled" title="转到最后一页">末页 </a>] 第<select name="dg_Product:_ctl21:PageIndexList"
+                                onchange="javascript:setTimeout('__doPostBack(\'dg_Product$_ctl21$PageIndexList\',\'\')', 0)"
+                                language="javascript" id="dg_Product__ctl21_PageIndexList">
+                                <option selected="selected" value="0">1 / 1</option>
+                            </select>共17条记
+                    </td>
+                </tr>
+            </table>
+            <input name="dg_Product:SelectedID" type="hidden" id="dg_Product_SelectedID" /><input
+                name="dg_Product:SelectedArray" type="hidden" id="dg_Product_SelectedArray" /><input
+                    name="dg_Product:SelectedStream" type="hidden" id="dg_Product_SelectedStream" /><script>
+var dg_Product_obj=new DataGridObject(document.getElementById('dg_Product'),1,'m-grid-row-over','m-grid-row-selected');
+$("#dg_Product tr[id]").bind("mouseover",function(){dg_Product_obj.execMouseOver(this);}).bind("mouseout",function(){dg_Product_obj.execMouseOut(this);}).bind("mousedown",function(){dg_Product_obj.execMouseDown(this);}).bind("click",function(){dg_Product_obj.execClick(this);dg_Product_obj.setSelectedID();dg_Product_obj.setSelectedArray();dg_Product_obj.setSelectedStream();});</script>
+
+        </div>
+        <div class="hidden">
+            <input type="submit" name="btnRefresh" value="" id="btnRefresh" />
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿html{margin:0;padding:0;}
+body{margin: 75px 0;padding: 0 0;background-color: #003466;font-family: verdana,arial,sans-serif;}
+#wrapper{margin:0 0;background:none repeat scroll 0 0 #FFFFFF;color:#333333;margin:0 auto;width:1024px;max-width:1024px;}
+#logoWrap{background:url("../Images/Nottingham/bg-logo.png") repeat-x scroll left bottom #F9FAFA;padding:5px 0;}
+#logo{margin:0 auto;text-align:left;width:960px;}
+#menuWrap{background:url("../Images/Nottingham/bg-menu.png") repeat-x scroll left top #E7E7E7;}
+#homepage #otherCampusesWrap{background:url("../Images/Nottingham/bg-othercampuses.png") repeat-x scroll left top #ABC1D6;}
+#homepage #otherCampuses{margin:0 auto;overflow:hidden;padding:1px 0;text-align:right;width:960px;}
+#homepage #otherCampuses ul{float:right;margin:0 14px 0 0;overflow:hidden;list-style:none outside none;}
+#homepage #otherCampuses ul li{background:url("../Images/Nottingham/bg-othercampuses-b1.png") no-repeat scroll right top #0A3D70;float:left;margin:0 0 0 8px;text-align:center;}
+#homepage #otherCampuses ul li a{background:url("../Images/Nottingham/bg-othercampuses-b2.png") no-repeat scroll left top transparent;color:#FFFFFF;display:block;float:left;text-decoration:none;}     
+#homepage #otherCampuses ul li a span{background:url("../Images/Nottingham/bg-othercampuses-b3.png") no-repeat scroll right bottom transparent;display:block;}
+#homepage #otherCampuses ul li a span span{background:url("../Images/Nottingham/bg-othercampuses-b4.png") no-repeat scroll left bottom transparent;font-size:11px;font-weight:bold;width:50px;min-width:50px;padding:5px 14px 6px;}
+#homepage #mainFeature{background:url("../Images/Nottingham/bghomeimage.jpg") no-repeat scroll -200px -100px transparent;}
+#homepage #mainFeature #featureWrap1{background:url("../Images/Nottingham/bg-feature.png") repeat-x scroll left top transparent;height:500px;min-height:500px;overflow:hidden;position:relative;}
+#homepage #mainFeature #featureWrap2{margin:0 auto;text-align:left;width:960px;}
+#homepage #mainFeature #feature{line-height:1.7;padding:40px 0 0 15px;position:relative;width:610px;}
+#homepage #mainFeature #slider{bottom:0;left:0;position:absolute;width:100%;z-index:2;}
+#homepage #mainFeature #slider .sys_title .sys_btmWrap{background:url("../Images/Nottingham/bg-slider-title-btm.png") repeat-x scroll 0 0 #2B5DBD;}
+#homepage #mainFeature #slider .sys_title .sys_btn{margin:0 auto;overflow:hidden;padding:3px 0;text-align:right;width:930px;}
+img{border:none;}
+.hidden{display:none;visibility:hidden;}
+                  
