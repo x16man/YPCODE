@@ -1,0 +1,55 @@
+@import url("../../Common.css");
+@import url("../../Common/ThirdPart/My97DatePicker/skin/whyGreen/datePicker.css");
+@import url('../Modules/DocAuditWebControl.css');
+@import url('../Modules/DocWebControl.css');
+@import url('../Modules/StorageDropdownlist.css');
+@import url('../Modules/DGModel_Items.css');
+@import url('../Modules/PBORWebControl.css');
+body
+{
+	margin: 8px 0px 0px 0px;
+}
+.imgSearch
+{ 
+	border-width:0px;
+	vertical-align:middle;
+}
+.txtInvoice
+{
+	width:90%;
+}
+.txtContractCode
+{
+	width:90%;
+}
+.txtUsedFor
+{
+	width:90%;
+}
+.myTableToolbar
+{
+	width: 98%;
+	border-width:1px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.myTableToolbar td
+{
+	padding:1px;
+}
+.td_Submit
+{
+	text-align:center;
+}
+.td_label
+{
+	width:10%;
+}
+.td_Content
+{
+	width:25%;
+}
+.txtVendor
+{
+	width:55%;
+}

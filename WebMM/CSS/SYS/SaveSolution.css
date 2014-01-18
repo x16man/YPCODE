@@ -1,0 +1,41 @@
+@import url("../../CSS/Common.css");
+body
+{
+	margin:8px 0px 0px 0px;
+}
+.table_toolbar
+{
+	width:400px;
+	line-height:20px;
+	border-width:0px;
+	margin-left:25px;
+}
+.table_toolbar td
+{
+	padding: 1px 1px 1px 1px;
+}
+.td_label
+{
+	width:70px;
+}
+.td_content
+{
+	width:330px;
+}
+.td_Submit
+{
+	text-align:center;	
+}
+
+.txtSolutionName
+{
+	width:200px;
+}
+.txtDescription
+{
+	width:395px;
+	height:105px; 
+}
+
+
+

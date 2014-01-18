@@ -1,0 +1,55 @@
+@import url("../../CSS/Common.css");
+body
+{
+	margin:8px 0px 0px 0px;
+}
+.table_toolbar
+{
+	width:600px;
+	border-width:0px;
+	border-collapse: separate;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	margin-left:auto;margin-right:auto;
+}
+
+.table_ItemList
+{
+	width:100%;
+}
+
+.td_Submit
+{
+	text-align:center;
+}
+
+.input_txtItemCode1
+{
+	width:150px;
+}
+
+.input_txtItemName1
+{
+	width:150px;
+}
+
+.input_txtItemSpec1
+{
+	width:150px;
+}
+
+.input_txtItemUnit1
+{
+	width:150px;
+}
+.input_txtStoName1
+{
+	width:150px;
+}
+
+.input_txtConName1
+{
+	width:150px;
+}

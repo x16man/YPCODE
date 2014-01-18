@@ -1,0 +1,40 @@
+@import url("../../CSS/Common.css");
+html,body,form
+{
+	height:100%;
+	width:100%;
+}
+.table_toolbar
+{
+	width:98%;
+	border-width:1px;
+	border-collapse: separate;
+	height:94%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:8px;
+}
+.table_toolbar td
+{
+	padding: 1px;
+	vertical-align:top;
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	border-left: #cccccc 1px solid; 
+	border-bottom: #cccccc 1px solid; 
+}
+.tr_list
+{
+	height:95%;
+}
+.list_Role
+{
+	width:200px;
+	height:100%;
+	background-color:#eeeeee;
+}
+.td_submit
+{
+	 text-align:center;
+	 height:5%;
+}

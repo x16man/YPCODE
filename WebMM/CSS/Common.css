@@ -1,0 +1,136 @@
+﻿@import url("reset.css");
+@import url("fonts.css");
+@import url("grids.css");
+/*@import url("base.css");*/
+@import url("DataGrid.css");
+
+/*
+    -------------------                Standard Style              ---------------
+*/
+.hidden
+{
+	display:none;
+	visibility:hidden;
+}
+html{background-color:#FCFCFC;}
+body
+{
+	/*font-family:Verdana, Simsun;
+	font-size: 12px;
+	font-style: normal;*/
+	margin: 0px;
+	padding: 0px;
+	
+}
+a:link
+{
+	color: #333333;
+	position: relative;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color:#333333;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #333333;
+	text-decoration:underline;
+}
+
+.input
+{
+    border:1px solid #99AABD;
+    display:block;
+    float:none;
+    font-family:inherit;
+    font-size:12px;
+    height:23px;
+    margin-left:0;
+    padding:2px;
+    position:relative;
+    background-color:#FFF;
+    width:100%;
+   
+}
+select 
+{
+    /*border:1px solid #99AABD;
+    float:none;
+    font-family:inherit;
+    font-size:12px;
+    height:23px;*/
+    height:22px;
+    /*margin-left:0;*/
+    padding:2px;
+    /*position:relative;
+    background-color:#FFF;*/
+}
+.Commonbutton
+{
+	padding: 1px;
+	margin: 0px;
+	/*height:20px;
+	*height:23px;
+	\height:23px;
+	*/
+}
+
+.buttonMouseOver
+{
+	border-right: #989898 1px solid;
+	padding-right: 2px;
+	background-position: center center;
+	border-top: #989898 1px solid;
+	padding-left: 2px;
+	font-size: 12px;
+	background-image: url(../Images/Standard/buttonsilve.gif);
+	padding-bottom: 2px;
+	margin: 2px;
+	vertical-align: baseline;
+	border-left: #989898 1px solid;
+	cursor: hand;
+	padding-top: 2px;
+	border-bottom: #989898 1px solid;
+	background-repeat: repeat-x;
+	background-color: transparent;
+	text-align: center;
+}
+
+.textarea
+{
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	color: #000000;
+	border-bottom: black 1px solid;
+	background-color: #f6f6f6;
+}
+
+.iframe
+{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+span.required {
+	color: #BE5028;
+}
+
+
+.mzhTitle
+        {
+            padding:4px 5pt;
+	        position:relative;
+	        background:#A0C9EB url(../images/bar_bg.gif) repeat-x scroll 0pt -950px;
+	        margin:1px 0 1px;
+	        font-weight:bold;
+	        text-align:left;
+	        font-size:13px;
+	        color:#1168BD;
+        }
+.center{text-align:center;}        

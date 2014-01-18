@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Configs>
+  <Messages>
+    <Message name="MaterialID" value="物料编号" />
+    <Message name="MaterialName"   value="物料名称" />
+    <Message name="Special" value="规格型号" />
+    <Message name="Unit" value="单位" />
+    <Message name="CstPrice" value="单价" />
+    <Message name="StockNum" value="库存数量" />
+    <Message name="PlanNum" value="请领数量" />
+    <Message name="ItemNum" value="实发数量" />
+    <Message name="RequreNum" value="申购数量" />
+    <Message name="CancelNum" value="撤消数量" />
+    <Message name="ReqDate" value="需求日期" />
+    <Message name="ReqDeptName" value="申请部门" />
+    <Message name="ItemMoney" value="金额" />
+    <Message name="MoneySum" value="总金额" />
+    <Message name="ReqReason" value="用途" />
+    <Message name="Proposer" value="申请人" />
+    <Message name="Remark" value="备注" />
+    <Message name="PlanNumber" value="应收数量" />
+    <Message name="ItemNumber" value="实收数量" />
+    <Message name="PlanNumber1" value="应退数量" />
+    <Message name="ItemNumber1" value="实退数量" />
+    <Message name="BatchCode" value="批号" />
+    <Message name="Conname" value="架位" />
+    <Message name="AcceptDate" value="操作日期" />
+    <Message name="EntryCode" value="订单编号" />
+    <Message name="PrvCode" value="供应商编号" />
+    <Message name="PrvName" value="供应商名称" />
+    <Message name="ItemUnit" value="单位代码" />
+    <Message name="BuyerCode" value="采购员编号" />
+    <Message name="Buyername" value="采购员名称" />
+    <Message name="ItemPlanNum" value="数量" />
+    <Message name="DocName" value="单据类型" />
+    <Message name="CatName" value="类别" />
+    <Message name="ReqItemNum" value="需要数量" />
+    <Message name="SetPlanNum" value="应转数量" />
+    <Message name="SetItemNum" value="实转数量" />
+    <Message name="CitmCode" value="检验项编号" />
+    <Message name="CitmName" value="检验项名称" />
+    <Message name="Citmvalue" value="检验值" />
+    <Message name="PlanNo" value="应报废数量" />
+    <Message name="ItemNo" value="实报废数量" />
+    <Message name="ItemFee" value="费用" />
+    <Message name="GetItemNum" value="调整数量" />
+    <Message name="SrcConName" value="源架位" />
+    <Message name="TgtConName" value="目标架位" />
+    <Message name="ItemVolumn" value="体积" />
+    <Message name="EndVolumn" value="抽驳后液位" />
+    <Message name="StartVolumn" value="抽驳前液位" />
+    <Message name="SetItemName" value="货品名称" />
+    <Message name="ExportTime" value="出港时间" />
+    <Message name="ImportTime" value="进港时间" />
+    <Message name="EndTime" value="完工时间" />
+    <Message name="StartTime" value="开工时间" />
+    <Message name="ShipNo" value="船名" />
+    <Message name="FirstAudit" value="部门审批" />
+    <Message name="SecondAudit" value="财务审批" />
+    <Message name="ThirdAudit" value="厂长审批" />
+  </Messages>
+	<Switchs>
+		<Switch name="IsNeedAudit" value="1"/>
+		<Switch name="switchname2" value="switchvalue2"/>
+	</Switchs>
+</Configs>

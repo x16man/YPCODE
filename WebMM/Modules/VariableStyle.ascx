@@ -1,0 +1,1 @@
+<%@ Control Language="c#" AutoEventWireup="True" Codebehind="VariableStyle.ascx.cs" Inherits="MZHMM.WebMM.Modules.VariableStyle" %>

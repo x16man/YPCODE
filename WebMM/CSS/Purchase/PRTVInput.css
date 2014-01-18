@@ -1,0 +1,61 @@
+@import url("../../CSS/Common.css");
+@import url("../../CSS/Modules/DocAuditWebControl.css");
+@import url("../../CSS/Modules/DocWebControl.css");
+@import url("../../CSS/Modules/StorageDropdownlist.css");
+@import url("../../CSS/Modules/DGModel_Items.css");
+@import url("../../CSS/Modules/PRTVWebControl.css");
+body
+{
+	margin: 8px 0px 0px 0px;
+}
+.td_label
+{
+	width:11%;
+}
+.td_Content
+{
+	width:24%;
+}
+.txtVendor
+{
+	width:55%;
+}
+.imgSearch
+{ 
+	border-width:0px;
+	vertical-align:middle;
+}
+.txtInvoice
+{
+	width:90%;
+}
+.txtJFKM
+{
+	width:90%;
+}
+.myTableToolbar
+{
+	width: 98%;
+	border-width:1px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.myTableToolbar td
+{
+	padding:1px 1px 1px 1px;
+}
+.td_Submit
+{
+	text-align:center;
+}
+
+.txtStoManager
+{
+	width:120px;
+}
+.myItemControl
+{
+	height:200px;
+	vertical-align:top;
+}
+

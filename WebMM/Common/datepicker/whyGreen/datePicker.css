@@ -1,0 +1,146 @@
+/* 
+ * My97 DatePicker Ver 2.0
+ */
+.Wdate
+{
+	font-family: tahoma, helvetica, arial, sans-serif;
+	font-size: 11px;
+	width: 140px;
+	background: url(date.png) no-repeat right;
+	height:20px;
+	line-height:20px;
+	border: 1px solid threedshadow;
+}
+ 
+.WdateDiv{
+	width:180px;
+	background-color:#fff;
+	border:#C5E1E4 1px solid;
+	padding:2px;
+}
+.WdateDiv *{font-size:11px;}
+.WdateDiv #dpTitle{
+	height:24px;
+	border:#c5d9e8 1px solid;
+	color:#70A5AB;
+	background:url(bg.jpg);
+	margin-bottom:2px;
+}
+.WdateDiv .yminput
+{
+	padding-top: 2px;
+	text-align: center;
+	height: 16px;
+	color: #034c50; /*background: url(ymbg.jpg);*/
+	cursor: pointer;
+	background: url(pickerComboArrow.gif) no-repeat right;
+	border-right: 0px solid;
+	border-top: 0px solid;
+	border-left: 0px solid;
+	border-bottom: 0px solid;
+}
+.WdateDiv .yminputfocus{
+	text-align:center;
+	font-weight:bold;
+	color:#034c50;
+	border:#939393 1px solid;
+	height:16px;
+	background: url(pickerComboArrow.gif) no-repeat right;
+}
+/*年月选择区域*/
+.WdateDiv .ymsel{
+	position:absolute;
+	margin-left:24px;
+	top:23px;
+	background-color:#FFFFFF;
+	padding:2px;
+	border:#A3C6C8 1px solid;
+	display:none;
+	
+}
+.WdateDiv .ymsel table td{
+	color:#11777C;
+}
+.WdateDiv .Wym{
+	cursor:pointer;
+	background-color:#fff;
+}
+.WdateDiv .WymOn{
+	cursor:pointer;
+	background-color:#BEEBEE;
+}
+.WdateDiv #dpDayTable{
+	line-height:20px;	
+	color:#13777e;
+	background-color:#edfbfb;
+	border:#BEE9F0 1px solid;
+}
+.WdateDiv #dpWeekTitle{
+	color:#13777e;
+	background-color:#bdebee;
+}
+.WdateDiv .Wday{
+	cursor:pointer;
+}
+.WdateDiv .WdayOn{
+	cursor:pointer;
+	background-color:#74d2d9 ;
+}
+.WdateDiv .Wwday{
+	cursor:pointer;
+	color:#ab1e1e;
+}
+.WdateDiv .WwdayOn{
+	cursor:pointer;
+	background-color:#74d2d9 ;
+}
+.WdateDiv #dpTime{
+	
+}
+.WdateDiv #dpTime #dpTimeStr{
+	margin-left:1px;
+	color:#497F7F;
+}
+.WdateDiv #dpTime input{
+	height:16px;
+	width:18px;
+	text-align:center;
+	color:#333;
+	border:#61CAD0 1px solid;	
+}
+.WdateDiv #dpTime .tB{
+	border-right:0px;
+}
+.WdateDiv #dpTime .tE{
+	border-left:0;
+	border-right:0;
+}
+.WdateDiv #dpTime .tm{
+	width:7px;
+	border-left:0;
+	border-right:0;
+}
+.WdateDiv #dpTime #dpTimeUp{
+	height:10px;
+	width:13px;
+	border:0px;
+	background-image:url(up.jpg);
+}
+.WdateDiv #dpTime #dpTimeDown{
+	height:10px;
+	width:13px;
+	border:0px;
+	background-image:url(down.jpg);
+}
+.WdateDiv #dpOkInput{
+	border:#38B1B9 1px solid;
+	height:16px;
+	background-color:#CFEBEE;
+	color:#08575B;
+}
+.Close
+{
+	background-position: center center;
+	background-image: url(cross.png);
+	background-repeat: no-repeat;
+}

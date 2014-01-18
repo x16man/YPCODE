@@ -1,0 +1,130 @@
+@import url("../../CSS/Common.css");
+body
+{
+	margin:8px 0px 0px 0px;
+}
+
+.td_label
+{
+	width:10%;
+}
+.td_content
+{
+	width:40%;
+}
+.td_Submit
+{
+	text-align:center;	
+}
+.input_txtDate
+{
+	width:150px;
+}
+.input_txtInVolumn1
+{
+	width:150px;
+}
+.input_txtInNum1
+{
+	width:150px;
+}
+.input_txtOutVolumn1
+{
+	width:150px;
+}
+.input_txtOutNum1
+{
+	width:150px;
+}
+.input_txtInVolumn2
+{
+	width:150px;
+}
+.input_txtInNum2
+{
+	width:150px;
+}
+.input_txtOutVolumn2
+{
+	width:150px;
+}
+.input_txtOutNum2
+{
+	width:150px;
+}
+.input_txtInVolumn3
+{
+	width:150px;
+}
+.input_txtInNum3
+{
+	width:150px;
+}
+.input_txtOutVolumn3
+{
+	width:150px;
+}
+.input_txtOutNum3
+{
+	width:150px;
+}
+.input_txtInVolumn4
+{
+	width:150px;
+}
+.input_txtInNum4
+{
+	width:150px;
+}
+.input_txtOutVolumn4
+{
+	width:150px;
+}
+.input_txtOutNum4
+{
+	width:150px;
+}
+.input_txtInVolumn5
+{
+	width:150px;
+}
+.input_txtInNum5
+{
+	width:150px;
+}
+.input_txtOutVolumn5
+{
+	width:150px;
+}
+.input_txtOutNum5
+{
+	width:150px;
+}
+.input_txtInVolumn6
+{
+	width:150px;
+}
+.input_txtInNum6
+{
+	width:150px;
+}
+.input_txtOutVolumn6
+{
+	width:150px;
+}
+.input_txtOutNum6
+{
+	width:150px;
+}
+.input_txtDate
+{
+	width:150px;
+}
+.input_txtDate
+{
+	width:150px;
+}
+.input_txtDate
+{
+	width:150px;
+}

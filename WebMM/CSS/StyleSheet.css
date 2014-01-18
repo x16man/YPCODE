@@ -1,0 +1,196 @@
+A:visited{TEXT-DECORATION: none;Color:#003399}
+A:active{TEXT-DECORATION: none;Color:#003399}
+A:hover{TEXT-DECORATION: none;Color:ff3300}
+A:link{text-decoration: none;Color:#003399}
+
+.noDoubleBorderTable
+{
+	border-right: black 1px solid;
+	padding-right: 1px;
+	border-top: black 1px solid;
+	padding-left: 2px;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+	border-collapse: collapse;
+}
+.noDoubleBorderTable_OliveColor
+{
+	border-right: olive 1px solid;
+	padding-right: 1px;
+	border-top: olive 1px solid;
+	padding-left: 2px;
+	border-left: olive 1px solid;
+	border-bottom: olive 1px solid;
+	border-collapse: collapse;
+}
+.noBorderTD
+{
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+}
+.noDoubleBorderTable_OliveColor_TD
+{
+	border-right: olive 1px solid;
+	padding-right: 1px;
+	border-top: olive 1px solid;
+	padding-left: 2px;
+	border-left: olive 1px solid;
+	border-bottom: olive 1px solid;
+		}
+.noDoubleBorderTable_TD
+{
+	border-right: black 1px solid;
+	padding-right: 1px;
+	border-top: black 1px solid;
+	padding-left: 2px;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+}
+.flatTextBox
+{
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+}
+
+.t{LINE-HEIGHT: 1.4}
+BODY{FONT-FAMILY: "宋体"; FONT-SIZE: 12px;
+SCROLLBAR-HIGHLIGHT-COLOR: #99ccff;
+SCROLLBAR-SHADOW-COLOR: #99ccff;
+SCROLLBAR-3DLIGHT-COLOR: #99ccff;
+SCROLLBAR-TRACK-COLOR: #FFFFFF;
+SCROLLBAR-DARKSHADOW-COLOR: #99ccff;
+scrollbar-Base-Color: #99ccff;
+Color:#000000;
+}
+TD,p,div,br{FONT-FAMILY: "宋体"; FONT-SIZE: 12px;Color:#000000;}
+FORM{FONT-FAMILY: "宋体"; FONT-SIZE: 12px}
+OPTION{FONT-FAMILY: "宋体"; FONT-SIZE: 12px}
+INPUT
+{
+	border-top-width: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	border-left-width: 1px;
+	font-size: 12px;
+	border-left-color: #cccccc;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+	padding-bottom: 1px;
+	border-top-color: #cccccc;
+	padding-top: 1px;
+	font-family: "宋体";
+	height: 18px;
+	border-right-width: 1px;
+	border-right-color: #cccccc;
+}
+textarea {border-width: 1; border-color: #000000; background-color: #ffffff; font-family: "宋体"; font-size: 12px; font-style: bold;}
+select {border-width: 1; border-color: #000000; background-color: #eeeeee; font-family: "宋体"; font-size: 12px; font-style: bold;}
+.imageButton
+{
+	cursor: hand;
+}
+.skin
+{
+	border-right: buttonhighlight 3px outset;
+	border-top: buttonhighlight 2px outset;
+	font-size: 10pt;
+	visibility: hidden;
+	border-left: buttonhighlight 2px outset;
+	width: 60px;
+	cursor: default;
+	border-bottom: buttonhighlight 3px outset;
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	background-color: menu;
+	text-align: left;
+}
+.menuitems
+{
+	padding-right: 10px;
+	padding-left: 15px;	
+}
+.unableItems
+{
+	padding-right: 10px;
+	padding-left: 15px;
+	visibility: hidden;
+	color: #cccccc;
+	position: absolute;
+}
+.menuhr
+{
+}
+.datagrid
+{
+	cursor: default;
+}
+.selection
+{
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	color: #cc6600;
+	border-bottom: black 1px solid;
+	border-collapse: collapse;
+	background-color: transparent;
+}
+.MenuTD
+{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+TABLE.OnePixelBoldTable
+{
+	border-right: #000000 1px solid;
+	border-top: #000000 2px solid;
+	border-left: #000000 2px solid;
+	border-bottom: #000000 1px solid;
+}
+.OnePixelBoldTable TD
+{
+	border-right: #000000 1px solid;	
+	border-bottom: #000000 1px solid;
+}
+TABLE.OnePixelTable
+{
+	border-right: #000000 0px solid;
+	border-top: #000000 1px solid;
+	border-left: #000000 1px solid;
+	border-bottom: #000000 0px solid;
+}
+.OnePixelTable TD
+{
+	border-right: #000000 1px solid;	
+	border-bottom: #000000 1px solid;
+}
+
+.RightTextBox
+{
+	vertical-align: baseline;
+	text-align: right;
+}
+div.blockHome {background:url(../PICS/dundas_blockHome.png) no-repeat; font-size:12px; margin:0px; width:292px; padding:7px 14px 15px 13px; float: left;}
+div.blockHome p {margin:13px 0px 0px 0px; line-height:14px; height:45px; display:block; clear:both}
+div.blockHome p img, div.blockHome p object {margin:0px 5px 13px 0px; border:1px solid #ccc}
+
+.labINPUTAuditSuggest
+{
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+}
+
+
+.labINPUTdate
+{
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+}
+

@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{340A06D4-CEB0-49B3-9754-9C3F03690A93}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Shmzh.MM.Common</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Shmzh.MM.Common</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Shmzh.MM.Common/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis\CurrentABCStockData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\CurrentMonth_WithdrawData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\CurrentROSData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\CurrentStockData.cs" />
+    <Compile Include="Analysis\CurrentVendorINData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\DocItemRouteData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\ROSDetailsData.cs" />
+    <Compile Include="Analysis\VendorInDetailData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analysis\WithDrawDetailData.cs" />
+    <Compile Include="COM\Col2List.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="COM\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="COM\ESTUInfo.cs" />
+    <Compile Include="COM\IForm.cs" />
+    <Compile Include="COM\IFormDetail.cs" />
+    <Compile Include="COM\SBODInfo.cs" />
+    <Compile Include="Purchase\Audit3Data.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\BillOfDocumentData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\BillOfReceiveData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\CancelData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\CBRSData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\CBRSDetailData.cs" />
+    <Compile Include="Purchase\CITMData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\DocBaseData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\InData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\InItemData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\PBRBData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\PBSData.cs" />
+    <Compile Include="Purchase\PBSDData.cs" />
+    <Compile Include="Purchase\PCBRData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\PMRPData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\POSData.cs" />
+    <Compile Include="Purchase\PPAYData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\PPRCData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\PPRNData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\PPSData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\PRTVData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\PslpData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchasePlanData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\RequestOfStockData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\RTVSData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\RTVSDetailData.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storage\CategoryData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\CheckReportData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\ClassifyData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\InventoryDetailInfo.cs" />
+    <Compile Include="Storage\InventoryInfo.cs" />
+    <Compile Include="Storage\InventoryProfitDetailInfo.cs" />
+    <Compile Include="Storage\InventoryProfitInfo.cs" />
+    <Compile Include="Storage\InventoryShortageDetailInfo.cs" />
+    <Compile Include="Storage\InventoryShortageInfo.cs" />
+    <Compile Include="Storage\IOData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\ItemData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\MAIOData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\OutData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\ProjectItemData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\PurposeData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\RealDrawItemData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\StockChoiceData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\StockData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\StockInfo.cs" />
+    <Compile Include="Storage\StoConData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\StoData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\StoManagerData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\UnitData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\ViewOutedWDRWData.cs" />
+    <Compile Include="Storage\WADJData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\WDRWData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\WINWData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\WITRData.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storage\WRTSData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\WSCRData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\WTOWData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\WTRFData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\YCLData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\YCLGroupData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SYS\DeptData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SYS\SBODData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SYS\STAGData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SYS\SwitchData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SYS\UserData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Workflow\ActivityInfo.cs" />
+    <Compile Include="Workflow\AssgnRuleInfo.cs" />
+    <Compile Include="Workflow\ProcessInfo.cs" />
+    <Compile Include="Workflow\RoutingRuleInfo.cs" />
+    <EmbeddedResource Include="Analysis\CurrentStockData.resx">
+      <DependentUpon>CurrentStockData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\WithDrawDetailData.resx">
+      <DependentUpon>WithDrawDetailData.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

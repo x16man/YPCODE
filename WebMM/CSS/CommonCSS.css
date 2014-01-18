@@ -1,0 +1,24 @@
+body
+{
+	font-size: 12px;
+	color: black;
+	font-family: ËÎÌו;
+}
+
+.flatTextBox
+{
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+}
+
+input.text, textarea, select{
+    font-size:1.1em;
+    line-height:1.3em;
+    border-top:1px solid #7c7c7c;
+    border-left:1px solid #c3c3c3;
+    border-right:1px solid #c3c3c3;
+    border-bottom:1px solid #ddd;
+    background:#fff url(/Images/fieldbg.gif) repeat-x bottom;
+}

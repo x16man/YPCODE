@@ -1,0 +1,47 @@
+
+.table_AuditWeb
+{
+	width:100%;
+	border-width:0px;
+	border-collapse: separate;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+}
+.table_AuditWeb td
+{
+	padding: 0px 0px 0px 0px;
+}
+.td_AuditWeb_label
+{
+	width:13%;
+}
+.td_AuditWeb_Content
+{
+	Width:22%;
+}
+.input_AuditWeb_txtAuditDate1
+{
+	Width:80px;
+}
+.input_AuditWeb_txtAuditDate2
+{
+	Width:80px;
+}
+.input_AuditWeb_txtAuditDate3
+{
+	Width:80px;
+}
+.input_AuditWeb_txtAuditSuggest3
+{
+	Width:100px;
+}
+.input_AuditWeb_txtAuditSuggest1
+{
+	Width:100px;
+}
+.input_AuditWeb_txtAuditSuggest2
+{
+	Width:100px;
+}

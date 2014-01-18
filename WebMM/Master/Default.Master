@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="MZHMM.WebMM.Master.Default" %>
+
+<!--DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"-->
+<html>
+<head runat="server">
+    <title>物料系统-<%= TitlValue%></title>
+    
+    
+    <link href="../CSS/Common.css" type="text/css" rel="stylesheet" />
+    <link href="../CSS/toolbar.css" type="text/css" rel="stylesheet" />
+    <link href="../CSS/DataGrid.css" type="text/css" rel="stylesheet" />
+    <link href="../CSS/cb.css" type="text/css" rel="Stylesheet" />
+    <script src="/aspnet_client/Shmzh.Web.UI/jquery-1.2.6.pack.js" type="text/javascript"></script>
+    <script src="../JS/cb.js" type="text/javascript"></script>
+    <script src="/aspnet_client/Shmzh.Web.UI/PopupWindow.js" type="text/javascript"></script>
+    <style type="text/css">
+        .myTrTitle
+        {
+	        background-color: #9FCBEF;
+        }
+        .myTrSingularLine
+        {
+	        background-color: #FFFFFF;
+        }
+        .myTrDualLine
+        {
+	        background-color: #F6F6F6;
+        }
+        .myTrSubmitLine
+        {
+	        background-color: #ACC8F7;
+	        background-color:#9FCBEF;
+	        background-color:#E9F2FA;
+        }
+        .TitleClass
+        {
+        	margin-top:-1px;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <asp:ContentPlaceHolder ID="AjaxHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    <div style="TitleClass">
+        <mzh:MzhTitle ID="MzhTitle1" runat="server" />
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="BodyHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

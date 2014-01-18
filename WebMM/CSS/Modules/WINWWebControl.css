@@ -1,0 +1,206 @@
+
+.tc_ItemCode
+{
+	width:15%;
+}
+.tc_ItemName
+{
+	width:13%;
+}
+.tc_ItemSpecial
+{
+	width:13%;
+}
+.tc_ItemUnitName
+{
+	width:10%;
+}
+.tc_PlanNum
+{
+	width:10%;
+}
+.tc_ItemNum
+{
+	width:10%;
+}
+.tc_ItemPrice
+{
+	width:9%;
+}
+.tc_ItemFee
+{
+	width:10%;
+}
+.tc_ItemSum
+{
+	width:10%;
+}
+.tc_ToolBar
+{
+	text-align:center;
+}
+
+
+.txtItemCode
+{
+	width:  60%;
+}
+.txtItemName
+{
+	width: 90%;
+}
+.btnWWBrowser
+{
+	width:34px;
+	height:20px;
+}
+.txtItemSpecial
+{
+	width: 90%;
+}
+.txtItemPrice
+{
+	width: 90%;
+}
+.txtReqNum
+{
+	width: 90%;
+}
+.txtItemNum
+{
+	width: 90%;
+}
+
+.tc_PSerialNo
+{
+	width: 10%;
+}
+.tc_ResCode
+{
+	width: 16%;
+}
+.tc_ResName
+{
+	width: 16%;
+}
+.tc_ResSpecial
+{
+	width: 16%;
+}
+.tc_ResUnitName
+{
+	width: 12%;
+}
+.tc_ResPrice
+{
+	width: 10%;
+}
+.tc_ResNum
+{
+	width: 10%;
+}
+.tc_ResMoney
+{
+	width: 10%;
+}
+
+.txtPSerialNo
+{
+	width:90%;
+}
+.txtResCode
+{
+	width:90%;
+}
+.txtResName
+{
+	width:90%;
+}
+.txtResSpecial
+{
+	width:90%;
+}
+.txtResPrice
+{
+	width:90%;
+}
+.txtResNum
+{
+	width:90%;
+}
+
+.txtRemark
+{
+	width:100%;
+	height: 50px;
+}
+.itemRemark
+{
+	padding-right: 2px;
+	margin-top: 10px;
+	padding-left: 2px;
+	width: 100%;
+	position: relative;
+}
+.txtTotalFee
+{
+	width:120px;
+}
+.ItemTotalFee
+{
+	text-align:right;
+	position:relative;
+	margin-top:5px;
+}
+.TableaddHidden
+{
+	width:100%;
+	display: none;
+	font-size:12px;
+	position: relative;
+	margin-top: 10px;
+	border-right: #c1cdd8 1px solid;
+	border-left: #c1cdd8 1px solid;
+	border-top-style: none;
+	border-bottom: #c1cdd8 1px solid;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.Tableadd
+{
+	width: 100%;
+	display: block;
+	font-size:12px;
+	position: relative;
+	margin-top: 10px;
+	border-right: #c1cdd8 1px solid;
+	border-left: #c1cdd8 1px solid;
+	border-top-style: none;
+	border-bottom: #c1cdd8 1px solid;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.Tableadd TD
+{
+	border-right: #c1cdd8 1px solid;
+	border-left: #c1cdd8 1px solid;
+	border-bottom: #c1cdd8 1px solid;
+}
+
+.TableaddHidden TD
+{
+	border-right: #c1cdd8 1px solid;
+	border-left: #c1cdd8 1px solid;
+	border-bottom: #c1cdd8 1px solid;
+}
+.DivItemtable
+{
+	width: 100%;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	
+}

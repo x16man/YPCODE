@@ -1,0 +1,56 @@
+﻿body
+{
+}
+
+.managertable
+{
+	 cellspacing:1;
+	 cellpadding:3;
+	 width:100%;
+	 border:1;
+	 word-wrap:break-word;
+	 word-break:break-all;
+}
+
+.managertr
+{
+	height:30px
+}
+
+
+.titletd
+{
+	 width:20%
+}
+
+.contenttd
+{
+	 width:30%;
+	 text-align:left
+}
+
+
+.WebPanel1ctl
+{
+    width: 100%;
+}
+
+.WebPanel1pnl
+{
+    border-color: #002D96;
+    border-style: Solid;
+    border-width: 1px;
+    border-top-width: 0px;
+    padding: 1px 1px 1px 1px;
+}
+
+
+.Wdate{
+	border:#999 1px solid;
+	height:20px;
+	background:#fff url(datePicker.gif) no-repeat right;
+}
+.calendarDate{height:23px !important;}
+.datePicker{border-style:solid solid solid none;padding-top:3px;}
+.chooserTextBox{height:23px !important;}
+.chooserPicker{border-style:solid solid solid none;padding-top:3px;}

@@ -1,0 +1,550 @@
+/* ROSEditBoundColumn Begin --> */
+.ROSEdit_Header
+{
+	 text-align:center;
+}
+.ROSEdit_ItemCode
+{
+	width:18%;
+}
+.ROSEdit_ItemName
+{
+	width:20%;
+}
+.ROSEdit_ItemSpecial
+{
+	width:20%;
+}
+.ROSEdit_ItemUnitName
+{
+	width:10%;
+}
+.ROSEdit_ItemPrice
+{
+	width:10%;
+}
+.ROSEdit_ItemNum
+{
+	width:10%;
+}
+.ROSEdit_ReqDate
+{
+	width:12%;
+}
+/* <-- ROSEditBoundColumn End */
+
+/* PPBoundColumn Begin --> */
+.PPBound_Header
+{
+	 text-align:center;
+}
+.PPBound_ReqDeptName
+{
+	width:9%;
+}
+.PPBound_ItemCode
+{
+	width:14%;
+}
+.PPBound_ItemName
+{
+	width:9%;
+}
+.PPBound_ItemSpecial
+{
+	width:9%;
+}
+.PPBound_ItemUnitName
+{
+	width:7%;
+}
+.PPBound_ItemPrice
+{
+	width:5%;
+}
+.PPBound_ItemPlanNum
+{
+	width:7%;
+}
+.PPBound_ItemPlanMoney
+{
+	width:6%;
+}
+.PPBound_ReqReason
+{
+	width:11%;
+}
+.PPBound_ReqDate
+{
+	width:10%;
+}
+.PPBound_Proposer
+{
+	width:7%;
+}
+.PPBound_Remark
+{
+	width:6%;
+}
+/* <-- PPBoundColumn End */
+
+/* POBoundColumn Begin --> */
+.POBound_Header
+{
+	text-align:center;
+}
+.POBound_ItemCode
+{
+	width:15%;
+}
+.POBound_ItemName
+{
+	width:15%;
+}
+.POBound_ItemSpecial
+{
+	width:15%;
+}
+.POBound_ItemUnitName
+{
+	width:15%;
+}
+.POBound_ItemNum
+{
+	width:10%;
+}
+.POBound_ItemPrice
+{
+	width:10%;
+}
+.POBound_ItemMoney
+{
+	width:10%;
+}
+.POBound_Proposer
+{
+	width:10%;
+}
+/* <-- POBoundColumn End */
+
+/* BorBoundColumn Begin --> */
+.BorBound_Header
+{
+	text-align:center;
+}
+.BorBound_ItemCode
+{
+	width:14%;
+}
+.BorBound_ItemName
+{
+	width:14%;
+}
+.BorBound_ItemSpecial
+{
+	width:14%;
+}
+.BorBound_ItemUnitName
+{
+	width:6%;
+}
+.BorBound_BatchCode
+{
+	width:8%;
+}
+.BorBound_ItemPrice
+{
+	width:7%;
+}
+.BorBound_PlanNum
+{
+	width:9%;
+}
+.BorBound_ItemNum
+{
+	width:9%;
+}
+.BorBound_ItemMoney
+{
+	width:9%;
+}
+.BorBound_MoneySum
+{
+	width:10%;
+}
+/* <-- BorBoundColumn End */
+
+
+/* BorReceiveBoundColumn Begin --> */
+.BorReceive_Header
+{
+	text-align:center;
+}
+.BorReceive_ItemCode
+{
+	width:14%;
+}
+.BorReceive_ItemName
+{
+	width:10%;
+}
+.BorReceive_ItemSpecial
+{
+	width:10%;
+}
+.BorReceive_ItemUnitName
+{
+	width:6%;
+}
+.BorReceive_BatchCode
+{
+	width:8%;
+}
+.BorReceive_ItemPrice
+{
+	width:7%;
+}
+.BorReceive_PlanNum
+{
+	width:9%;
+}
+.BorReceive_ItemNum
+{
+	width:9%;
+}
+.BorReceive_ItemMoney
+{
+	width:9%;
+}
+.BorReceive_MoneySum
+{
+	width:10%;
+}
+.BorReceive_ConName
+{
+	width:8%;	
+}
+/* <-- BorReceiveBoundColumn End */
+
+/* RTVBoundColumn Begin --> */
+.RTVBound_Header
+{
+	text-align:center;
+}
+.RTVBound_ItemCode
+{
+	width:13%;
+}
+.RTVBound_ItemName
+{
+	width:13%;
+}
+.RTVBound_ItemSpecial
+{
+	width:13%;
+}
+.RTVBound_ItemUnitName
+{
+	width:11%;
+}
+.RTVBound_BatchCode
+{
+	width:10%;
+}
+.RTVBound_ItemPrice
+{
+	width:10%;
+}
+.RTVBound_PlanNum
+{
+	width:10%;
+}
+.RTVBound_ItemNum
+{
+	width:10%;
+}
+.RTVBound_ItemMoney
+{
+	width:10%;
+}
+/* <-- RTVBoundColumn End */
+
+
+/* WTOWBoundColumn Begin --> */
+.WTOWBound_Header
+{
+	text-align:center;
+}
+.WTOWBound_ItemCode
+{
+	width:15%;
+}
+.WTOWBound_ItemName
+{
+	width:14%;
+}
+.WTOWBound_ItemSpecial
+{
+	width:14%;
+}
+.WTOWBound_ItemUnitName
+{
+	width:7%;
+}
+.WTOWBound_StockNum
+{
+	width:10%;
+}
+.WTOWBound_PlanNum
+{
+	width:10%;
+}
+.WTOWBound_ItemNum
+{
+	width:10%;
+}
+.WTOWBound_ItemPrice
+{
+	width:10%;
+}
+.WTOWBound_ItemMoney
+{
+	width:10%;
+}
+/* <-- WTOWBoundColumn End */
+
+
+/* WTOWEditBoundColumn Begin --> */
+.WTOWEdit_Header
+{
+	text-align:center;
+}
+.WTOWEdit_ItemCode
+{
+	width:20%;
+}
+.WTOWEdit_ItemName
+{
+	width:20%;
+}
+.WTOWEdit_ItemSpecial
+{
+	width:20%;
+}
+.WTOWEdit_ItemUnitName
+{
+	width:10%;
+}
+.WTOWEdit_StockNum
+{
+	width:10%;
+}
+.WTOWEdit_PlanNum
+{
+	width:10%;
+}
+.WTOWEdit_ItemNum
+{
+	width:10%;
+}
+/* <-- WTOWEditBoundColumn End */
+
+/* WINWEditBoundColumn Begin --> */
+.WINWEdit_Header
+{
+	text-align:center;
+}
+.WINWEdit_ItemCode
+{
+	width:15%;
+}
+.WINWEdit_ItemName
+{
+	width:13%;
+}
+.WINWEdit_ItemSpecial
+{
+	width:13%;
+}
+.WINWEdit_ItemUnitName
+{
+	width:10%;
+}
+.WINWEdit_PlanNum
+{
+	width:10%;
+}
+.WINWEdit_ItemNum
+{
+	width:10%;
+}
+.WINWEdit_ItemPrice
+{
+	width:9%;
+}
+.WINWEdit_ItemFee
+{
+	width:10%;
+}
+.WINWEdit_ItemSum
+{
+	width:10%;
+}
+/* <-- WTOWEditBoundColumn End */
+
+
+/* WINWBoundColumn Begin --> */
+.WINWBound_Header
+{
+	text-align:center;
+}
+.WINWBound_ItemCode
+{
+	width:15%;
+}
+.WINWBound_ItemName
+{
+	width:13%;
+}
+.WINWBound_ItemSpecial
+{
+	width:13%;
+}
+.WINWBound_ItemUnitName
+{
+	width:10%;
+}
+.WINWBound_PlanNum
+{
+	width:10%;
+}
+.WINWBound_ItemNum
+{
+	width:10%;
+}
+.WINWBound_ItemPrice
+{
+	width:9%;
+}
+.WINWBound_ItemFee
+{
+	width:10%;
+}
+.WINWBound_ItemSum
+{
+	width:10%;
+}
+/* <-- WINWBoundColumn End */
+
+
+
+/* SCRBoundColumn Begin --> */
+.SCRBound_Header
+{
+	text-align:center;
+}
+.SCRBound_ItemCode
+{
+	width:16%;
+}
+.SCRBound_ItemName
+{
+	width:16%;
+}
+.SCRBound_ItemSpecial
+{
+	width:16%;
+}
+.SCRBound_ItemUnitName
+{
+	width:12%;
+}
+.SCRBound_ItemPrice
+{
+	width:10%;
+}
+.SCRBound_PlanNum
+{
+	width:10%;
+}
+.SCRBound_ItemNum
+{
+	width:10%;
+}
+.SCRBound_ItemMoney
+{
+	width:10%;
+}
+/* <-- SCRBoundColumn End */
+
+
+/* DrawEditBoundColumn Begin --> */
+.DrawEdit_Header
+{
+	text-align:center;
+}
+.DrawEdit_ItemCode
+{
+	width:20%;
+}
+.DrawEdit_ItemName
+{
+	width:20%;
+}
+.DrawEdit_ItemSpecial
+{
+	width:20%;
+}
+.DrawEdit_ItemUnitName
+{
+	width:10%;
+}
+.DrawEdit_StockNum
+{
+	width:10%;
+}
+.DrawEdit_PlanNum
+{
+	width:10%;
+}
+.DrawEdit_ItemNum
+{
+	width:10%;
+}
+/* <-- DrawEditBoundColumn End */
+
+
+/* CancelBoundColumn Begin --> */
+.CancelBound_Header
+{
+	text-align:center;
+}
+.CancelBound_ItemCode
+{
+	width:20%;
+}
+.CancelBound_ItemName
+{
+	width:20%;
+}
+.CancelBound_ItemSpecial
+{
+	width:20%;
+}
+.CancelBound_ItemUnitName
+{
+	width:10%;
+}
+.CancelBound_ItemPrice
+{
+	width:10%;
+}
+.CancelBound_ItemNum
+{
+	width:10%;
+}
+.CancelBound_ItemMoney
+{
+	width:10%;
+}
+/* <-- CancelBoundColumn End */

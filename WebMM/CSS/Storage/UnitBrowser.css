@@ -1,0 +1,16 @@
+@import url("../../CSS/Common.css");
+body
+{
+	margin:8px 0px 0px 0px;
+}
+.datagrid
+{
+	width:100%;
+	border-width:1px;
+	border-color:#0099cc;	
+}
+.datagrid td
+{
+	padding:3px;
+	height:18px;
+}

@@ -1,0 +1,20 @@
+table
+{
+	font-size: 10pt;
+	background-color:White;
+	}
+.printTb
+{
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-bottom: black 1px solid;
+	border-collapse: collapse;
+}
+.undline
+{
+	border-top-style: none;
+	border-bottom: black 1px solid;
+	border-right-style: none;
+	border-left-style: none;
+}

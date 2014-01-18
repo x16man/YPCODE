@@ -1,0 +1,30 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.head
+{
+    width: 100%;
+    height: 76px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main
+{
+    width: 100%;
+    height: 510px;
+    background-color: Read;
+}
+
+.help
+{
+    display: none;
+}
+
+.bottom
+{
+    display: none;
+}

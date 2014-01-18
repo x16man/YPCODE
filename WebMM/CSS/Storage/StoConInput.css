@@ -1,0 +1,25 @@
+@import url("../../CSS/Common.css");
+body
+{
+	margin:8px 0px 0px 0px;
+}
+.table_toolbar td
+{
+	padding: 3px 3px 3px 3px;
+}
+.input_txtDescription
+{
+	Width:400px;
+}
+.input_txtStoCode
+{
+	Width:400px;
+}
+.input_txtStoArea
+{
+	Width:400px;
+}
+.td_Submit
+{
+	text-align:center;
+}

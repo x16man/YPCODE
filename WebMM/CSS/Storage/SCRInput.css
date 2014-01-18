@@ -1,0 +1,43 @@
+@import url("../../CSS/Common.css");
+@import url("../../CSS/Modules/DocAuditWebControl.css");
+@import url("../../CSS/Modules/DocWebControl.css");
+@import url("../../CSS/Modules/StorageDropdownlist.css");
+@import url("../../CSS/Modules/DGModel_Items.css");
+@import url("../../CSS/Modules/SCRWebControl.css");
+body
+{
+	margin: 8px 0px 0px 0px;
+}
+.td_Label
+{
+	width:20%;
+}
+.td_Content
+{
+	width:30%;
+}
+.txtProposer
+{
+	width:90%;
+}
+.myTableToolbar
+{
+	width: 98%;
+	border-width:1px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.myTableToolbar td
+{
+	padding:0px 2px 0px 2px;
+}
+.td_Submit
+{
+	text-align:center;
+}
+.myItemControl
+{
+	height:140px;
+	vertical-align:top;
+}
+

@@ -1,0 +1,61 @@
+@import url('../Modules/DocAuditWebControl.css');
+@import url('../Modules/DocWebControl.css');
+@import url('../Modules/StorageDropdownlist.css');
+@import url('../Modules/USWebControl.css');
+@import url('../Modules/WTOWWebControl.css');
+body
+{
+	margin: 8px 0px 0px 0px;
+}
+.txt_rolename
+{
+	width:120px;
+}
+.td_Submit
+{
+	text-align:center;
+}
+.TextBox1
+{
+	width:90%;
+}
+.TextBox2
+{
+	width:90%;
+}
+.txtDrawingCount
+{
+	width:140px;
+}
+.txtProspectusCount
+{
+	width:140px;
+}
+.txtProcessContent
+{
+	width:97%;
+	height:40px;
+}
+.txtReqDate
+{
+	width:90%;
+}
+.Table_Attachment
+{
+	width:100%;
+}
+.td_Label
+{
+	width:20%;
+}
+.td_Content
+{
+	width:30%;
+}
+.myItemControl
+{
+	height:100px;
+	vertical-align:top;
+}
+.calendarDate{height:23px !important;width:70px;}
+.datePicker{border-style:solid solid solid none;padding-top:3px;}

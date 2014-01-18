@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CE309E1-FC5C-4309-A033-95BEED3ABA68}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Shmzh.MM.Facade</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Shmzh.MM.Facade</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Shmzh.MM.Facade/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net20-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MZHCommon, Version=1.0.2209.28909, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MZHCommon\bin\Debug\MZHCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Shmzh.Components.SystemComponent, Version=2.0.0.8, Culture=neutral, PublicKeyToken=67191c9e5456fa33, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shmzh.Component.SystemComponent\bin\Debug\Shmzh.Components.SystemComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Shmzh.MM.Common\Shmzh.MM.Common.csproj">
+      <Name>Shmzh.MM.Common</Name>
+      <Project>{340A06D4-CEB0-49B3-9754-9C3F03690A93}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.MM.DataAccess\Shmzh.MM.DataAccess.csproj">
+      <Name>Shmzh.MM.DataAccess</Name>
+      <Project>{558D1397-80A1-4521-9038-4AD9B4490FBC}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.MM.Rules\Shmzh.MM.BusinessRules.csproj">
+      <Name>Shmzh.MM.BusinessRules</Name>
+      <Project>{439AE25A-959C-4FA8-AD8A-DDF5545B73E1}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="COM\Entry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="COM\ToolTip.cs" />
+    <Compile Include="Purchase\IAudit3System.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\IBRSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\ICancelSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\IPAYSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\IPBRBSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\IPCBRSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\IPMRPSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\IPOSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\IPPRCSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\IPPRNSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\IPPSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\IPRTVSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\IPslpSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\IMAIOSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\IProjectSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\IRealDrawItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\IStockSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\ItemSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\IWADJSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\IWDRWSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\IWINWSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\IWITRSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\IWRTSSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\IWSCRSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\IWTOWSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Storage\IWTRFSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SYS\IDeptSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SYS\ISbodSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SYS\ISTAGSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SYS\ISwitchSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SYS\IUserSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SYS\SysSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

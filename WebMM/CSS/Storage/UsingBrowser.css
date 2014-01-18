@@ -1,0 +1,36 @@
+@import url("../../CSS/Common.css");
+
+body
+{
+	margin: 8px 0px 0px 0px;
+	
+}
+.table_toolbar_td
+{
+	border-right: #ffcc33 1px solid;
+	border-top: #ffcc33 1px solid;
+	padding-left: 2px;
+	border-left: #ffcc33 1px solid;
+	border-bottom: #ffcc33 1px solid;
+	height: 26px;
+	background-color: #ffffcc;
+}
+.td_label
+{
+	width:80px;
+}
+.td_Content
+{
+	width:300px;
+}
+.input_txtContent
+{
+	background-color:#ffffcc;
+	width:100%;
+}
+
+.datagrid td
+{
+	padding:3px;
+	height:18px;
+}

@@ -1,0 +1,7 @@
+ComponentArt.Web.UI.TreeView, ComponentArt.Web.UI, Version=2008.1.1085.2, Culture=neutral, PublicKeyToken=null
+Infragistics.WebUI.UltraWebGrid.UltraWebGrid, Infragistics.WebUI.UltraWebGrid.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+Infragistics.WebUI.WebSchedule.WebCalendar, Infragistics.WebUI.WebDateChooser.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+Infragistics.WebUI.Misc.WebPanel, Infragistics.WebUI.Misc.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+Infragistics.WebUI.WebSchedule.WebDateChooser, Infragistics.WebUI.WebDateChooser.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+Dundas.Charting.WebControl.Chart, DundasWebChart, Version=4.1.0.1669, Culture=neutral, PublicKeyToken=null
+

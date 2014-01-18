@@ -1,0 +1,3065 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE2583FB-62BA-4C1B-A4E9-DD5B85181884}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>WebMM</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WebMM</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MZHCommon\MZHCommon.csproj">
+      <Project>{d9d05869-57c8-4b79-85df-004b5acbdc01}</Project>
+      <Name>MZHCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Web.UI\Shmzh.Web.UI.csproj">
+      <Project>{91f4e74c-ad35-46c3-b0c3-abe5d558fbf0}</Project>
+      <Name>Shmzh.Web.UI</Name>
+    </ProjectReference>
+    <Reference Include="ComponentArt.Web.UI">
+      <HintPath>..\Reference\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DundasWebChart">
+      <HintPath>..\Reference\DundasWebChart.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.WebUI.Misc.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Infragistics.WebUI.Misc.v5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.WebUI.Shared.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Infragistics.WebUI.Shared.v5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.WebUI.UltraWebGrid.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Infragistics.WebUI.UltraWebGrid.v5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.WebUI.WebCombo.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reference\Infragistics.WebUI.WebCombo.v5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.WebUI.WebDateChooser.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reference\Infragistics.WebUI.WebDateChooser.v5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net35-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NullableTypes, Version=1.3.2129.26186, Culture=neutral, PublicKeyToken=2fe76717e05fac0e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reference\NullableTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportingService, Version=0.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\ReportingService.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportViewer, Version=1.0.1998.26150, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\ReportViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Shmzh.Components.AuthorizationModule, Version=2.0.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shmzh.Components.AuthorizationModule\bin\Debug\Shmzh.Components.AuthorizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Shmzh.Components.SystemComponent, Version=2.0.0.8, Culture=neutral, PublicKeyToken=67191c9e5456fa33, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\公共库\Reference\Shmzh.Components.SystemComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="Shmzh.Components.Util, Version=1.0.0.0, Culture=neutral, PublicKeyToken=67191c9e5456fa33, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\公共库\Reference\Shmzh.Components.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Shmzh.MM.Facade\Shmzh.MM.Facade.csproj">
+      <Project>{2CE309E1-FC5C-4309-A033-95BEED3ABA68}</Project>
+      <Name>Shmzh.MM.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.MM.Rules\Shmzh.MM.BusinessRules.csproj">
+      <Project>{439AE25A-959C-4FA8-AD8A-DDF5545B73E1}</Project>
+      <Name>Shmzh.MM.BusinessRules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.MM.Common\Shmzh.MM.Common.csproj">
+      <Project>{340A06D4-CEB0-49B3-9754-9C3F03690A93}</Project>
+      <Name>Shmzh.MM.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.MM.DataAccess\Shmzh.MM.DataAccess.csproj">
+      <Project>{558D1397-80A1-4521-9038-4AD9B4490FBC}</Project>
+      <Name>Shmzh.MM.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Components.WorkFlow\Shmzh.Components.WorkFlow.csproj">
+      <Name>Shmzh.Components.WorkFlow</Name>
+      <Project>{7D4C8287-522D-44A6-872C-9C1EC9C7867C}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Analysis\CorrespondingABCAnalysis.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\CorrespondingABCMonthCompare.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\CorrespondingABCYearCompare.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\CorrespondingAnalysis.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\CorrespondingPeriodAnalysis.aspx" />
+    <Content Include="Analysis\CorrespondingPeriodAnalysisChart.aspx" />
+    <Content Include="Analysis\CorrespondingPeriodMonthCompare.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\CorrespondingPeriodYearCompare.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\CurrentAnalysis.aspx" />
+    <Content Include="Analysis\CurrentROS.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\CurrentROSDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\CurrentStock.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\CurrentVendor.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\CurrentWithDraw.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\DocRoute.aspx" />
+    <Content Include="Analysis\DocStat.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\ROSAnalysis.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\ROSDetails.aspx" />
+    <Content Include="Analysis\StockAnalysis.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\StockDetail.aspx" />
+    <Content Include="Analysis\USECompare.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\UseDetail.aspx" />
+    <Content Include="Analysis\USEMonthCompare.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\VendorAnalysis.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\VendorInDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\WithDrawAnalysis.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Analysis\WithDrawDetail.aspx" />
+    <Content Include="Analysis\WUC_DocDowithCount.ascx" />
+    <Content Include="Analysis\WUC_DocStat.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="changelog.txt" />
+    <Content Include="CSS\base.css" />
+    <Content Include="Common\ErrorPage.aspx" />
+    <Content Include="Common\NoRight.aspx" />
+    <Content Include="Common\Test.aspx" />
+    <Content Include="CompontentConfiguration.xml" />
+    <Content Include="CSS\Analysis\DocRoute.css" />
+    <Content Include="CSS\box.css" />
+    <Content Include="CSS\cb.css" />
+    <Content Include="CSS\Common.css" />
+    <Content Include="CSS\CommonCSS.css" />
+    <Content Include="CSS\Common_MM.css" />
+    <Content Include="CSS\DataGrid.css" />
+    <Content Include="CSS\default.css" />
+    <Content Include="CSS\fonts.css" />
+    <Content Include="CSS\grids.css" />
+    <Content Include="CSS\ManageCommon.css" />
+    <Content Include="CSS\Modules\CancelWebControl.css" />
+    <Content Include="CSS\Modules\DGModel_Items.css" />
+    <Content Include="CSS\Modules\DocAuditWebControl.css" />
+    <Content Include="CSS\Modules\DocWebControl.css" />
+    <Content Include="CSS\Modules\DRWWebControl.css" />
+    <Content Include="CSS\Modules\ItemsWebControl.css" />
+    <Content Include="CSS\Modules\PBORWebControl.css" />
+    <Content Include="CSS\Modules\POWebControl.css" />
+    <Content Include="CSS\Modules\PPWebControl.css" />
+    <Content Include="CSS\Modules\PRTVWebControl.css" />
+    <Content Include="CSS\Modules\SCRWebControl.css" />
+    <Content Include="CSS\Modules\StorageDropdownlist.css" />
+    <Content Include="CSS\Modules\USWebControl.css" />
+    <Content Include="CSS\Modules\VariableStyle.css" />
+    <Content Include="CSS\Modules\WINWWebControl.css" />
+    <Content Include="CSS\Modules\WTOWWebControl.css" />
+    <Content Include="CSS\myJob.css" />
+    <Content Include="CSS\MZHREPOSITORY.css" />
+    <Content Include="CSS\PCSTYLES.css" />
+    <Content Include="CSS\PCTRBrowser.css" />
+    <Content Include="CSS\Printer.css" />
+    <Content Include="CSS\Purchase\CancelDetail.css" />
+    <Content Include="CSS\Purchase\CancelInput.css" />
+    <Content Include="CSS\Purchase\MRPDetail.css" />
+    <Content Include="CSS\Purchase\MRPInput.css" />
+    <Content Include="CSS\Purchase\PBORDetail.css" />
+    <Content Include="CSS\Purchase\PBORInput.css" />
+    <Content Include="CSS\Purchase\PCBRSource.css" />
+    <Content Include="CSS\Purchase\PODetail.css" />
+    <Content Include="CSS\Purchase\POInput.css" />
+    <Content Include="CSS\Purchase\PPAYDetail.css" />
+    <Content Include="CSS\Purchase\PPInput.css" />
+    <Content Include="CSS\Purchase\PRTVDetail.css" />
+    <Content Include="CSS\Purchase\PRTVInput.css" />
+    <Content Include="CSS\Purchase\ROSDetail.css" />
+    <Content Include="CSS\Purchase\ROSInput.css" />
+    <Content Include="CSS\reset-fonts-grids.css" />
+    <Content Include="CSS\reset.css" />
+    <Content Include="CSS\Storage\ClassfiyInput.css" />
+    <Content Include="CSS\Storage\DRWDetail.css" />
+    <Content Include="CSS\Storage\DRWInput.css" />
+    <Content Include="CSS\Storage\ItemPriceTrendLine.css" />
+    <Content Include="CSS\Storage\ItemQuery.css" />
+    <Content Include="CSS\Storage\ItemUseDetail.css" />
+    <Content Include="CSS\Storage\PurposeInput.css" />
+    <Content Include="CSS\Storage\RTSBrowser.css" />
+    <Content Include="CSS\Storage\RTSDetail.css" />
+    <Content Include="CSS\Storage\RTSInput.css" />
+    <Content Include="CSS\Storage\SCRBrowser.css" />
+    <Content Include="CSS\Storage\SCRDetail.css" />
+    <Content Include="CSS\Storage\SCRInput.css" />
+    <Content Include="CSS\Storage\StoConInput.css" />
+    <Content Include="CSS\Storage\StoInput.css" />
+    <Content Include="CSS\Storage\StoManagerInput.css" />
+    <Content Include="CSS\Storage\UnitBrowser.css" />
+    <Content Include="CSS\Storage\UnitInput.css" />
+    <Content Include="CSS\Storage\UsingBrowser.css" />
+    <Content Include="CSS\Storage\WDRWSourceBrowser.css" />
+    <Content Include="CSS\Storage\WINWBrowser.css" />
+    <Content Include="CSS\Storage\WINWInput.css" />
+    <Content Include="CSS\Storage\WITRBrowser.css" />
+    <Content Include="CSS\Storage\WTOWBrowser.css" />
+    <Content Include="CSS\Storage\WTOWDetail.css" />
+    <Content Include="CSS\Storage\WTOWInput.css" />
+    <Content Include="CSS\Storage\YCLInput.css" />
+    <Content Include="CSS\Storage\YJ.css" />
+    <Content Include="CSS\Storage\InventoryDetail.css" />
+    <Content Include="CSS\Storage\InventoryProfitInput.css" />
+    <Content Include="CSS\Storage\InventoryShortageInput.css" />
+    <Content Include="CSS\StyleSheet.css" />
+    <Content Include="CSS\SYS\AdminTools.css" />
+    <Content Include="CSS\SYS\Grant.css" />
+    <Content Include="CSS\SYS\SaveSolution.css" />
+    <Content Include="CSS\SYS\SelectEngine.css" />
+    <Content Include="CSS\SYS\SolutionManage.css" />
+    <Content Include="CSS\SYS\UserDocDept.css" />
+    <Content Include="CSS\todo.css" />
+    <Content Include="CSS\toolbar.css" />
+    <Content Include="CSS\treeStyle.css" />
+    <Content Include="CSS\WebUIFrame.css" />
+    <Content Include="default.aspx" />
+    <Content Include="ErrorPage.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Help.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Images\Add.gif" />
+    <Content Include="Images\arrow-left.gif" />
+    <Content Include="Images\arrow-right.gif" />
+    <Content Include="Images\ARROW.gif" />
+    <Content Include="Images\arrow_collaps.gif" />
+    <Content Include="Images\ARROW_EXPAND.gif" />
+    <Content Include="Images\AttPIC\bmp.gif" />
+    <Content Include="Images\AttPIC\delete.ICO" />
+    <Content Include="Images\AttPIC\dll.gif" />
+    <Content Include="Images\AttPIC\doc.gif" />
+    <Content Include="Images\AttPIC\exe.gif" />
+    <Content Include="Images\AttPIC\gif.gif" />
+    <Content Include="Images\AttPIC\hlp.gif" />
+    <Content Include="Images\AttPIC\htm.gif" />
+    <Content Include="Images\AttPIC\ini.gif" />
+    <Content Include="Images\AttPIC\jpg.gif" />
+    <Content Include="Images\AttPIC\mdb.gif" />
+    <Content Include="Images\AttPIC\other.gif" />
+    <Content Include="Images\AttPIC\pdf.gif" />
+    <Content Include="Images\AttPIC\ppt.gif" />
+    <Content Include="Images\AttPIC\rar.gif" />
+    <Content Include="Images\AttPIC\txt.gif" />
+    <Content Include="Images\AttPIC\wav.gif" />
+    <Content Include="Images\AttPIC\xls.gif" />
+    <Content Include="Images\background_blue.gif" />
+    <Content Include="Images\balloons\balloons.png" />
+    <Content Include="Images\balloons\GBubble\balloon.png" />
+    <Content Include="Images\balloons\GBubble\balloon_ie.png" />
+    <Content Include="Images\balloons\GBubble\close.png" />
+    <Content Include="Images\balloons\GBubble\down_left.png" />
+    <Content Include="Images\balloons\GBubble\down_right.png" />
+    <Content Include="Images\balloons\GBubble\up_left.png" />
+    <Content Include="Images\balloons\GBubble\up_right.png" />
+    <Content Include="Images\balloons\GPlain\balloon.png" />
+    <Content Include="Images\balloons\GPlain\close.png" />
+    <Content Include="Images\balloons\GPlain\down_left.png" />
+    <Content Include="Images\balloons\GPlain\down_right.png" />
+    <Content Include="Images\balloons\GPlain\up_left.png" />
+    <Content Include="Images\balloons\GPlain\up_right.png" />
+    <Content Include="Images\bar_bg.gif" />
+    <Content Include="Images\borders.gif" />
+    <Content Include="Images\borders.png" />
+    <Content Include="Images\box.gif" />
+    <Content Include="Images\box.png" />
+    <Content Include="Images\branding.gif" />
+    <Content Include="Images\bullet_orange.gif" />
+    <Content Include="Images\Button\Back.gif" />
+    <Content Include="Images\Button\Delete.gif" />
+    <Content Include="Images\Button\Edit.gif" />
+    <Content Include="Images\Button\MM\BOR.gif" />
+    <Content Include="Images\Button\MM\Cancel.gif" />
+    <Content Include="Images\Button\MM\DMAudit.gif" />
+    <Content Include="Images\Button\MM\FMAudit.gif" />
+    <Content Include="Images\Button\MM\GMAudit.gif" />
+    <Content Include="Images\Button\MM\InvoiceBill.gif" />
+    <Content Include="Images\Button\MM\PRTV.gif" />
+    <Content Include="Images\Button\MM\Rubric.gif" />
+    <Content Include="Images\Button\MM\Submit.gif" />
+    <Content Include="Images\Button\New.gif" />
+    <Content Include="Images\Button\Search.gif" />
+    <Content Include="Images\button_bg.gif" />
+    <Content Include="Images\button_bg_hover.gif" />
+    <Content Include="Images\CLOSE.gif" />
+    <Content Include="Images\collapse_blue.jpg" />
+    <Content Include="Images\default\box\corners-blue.gif" />
+    <Content Include="Images\default\box\corners.gif" />
+    <Content Include="Images\default\box\l-blue.gif" />
+    <Content Include="Images\default\box\l.gif" />
+    <Content Include="Images\default\box\r-blue.gif" />
+    <Content Include="Images\default\box\r.gif" />
+    <Content Include="Images\default\box\tb-blue.gif" />
+    <Content Include="Images\default\box\tb.gif" />
+    <Content Include="Images\default\button\btn-arrow.gif" />
+    <Content Include="Images\default\button\btn-sprite.gif" />
+    <Content Include="Images\default\dd\drop-add.gif" />
+    <Content Include="Images\default\dd\drop-no.gif" />
+    <Content Include="Images\default\dd\drop-yes.gif" />
+    <Content Include="Images\default\editor\tb-sprite.gif" />
+    <Content Include="Images\default\form\clear-trigger.gif" />
+    <Content Include="Images\default\form\date-trigger.gif" />
+    <Content Include="Images\default\form\error-tip-corners.gif" />
+    <Content Include="Images\default\form\exclamation.gif" />
+    <Content Include="Images\default\form\search-trigger.gif" />
+    <Content Include="Images\default\form\text-bg.gif" />
+    <Content Include="Images\default\form\trigger-tpl.gif" />
+    <Content Include="Images\default\form\trigger.gif" />
+    <Content Include="Images\default\gradient-bg.gif" />
+    <Content Include="Images\default\grid\arrow-left-white.gif" />
+    <Content Include="Images\default\grid\arrow-right-white.gif" />
+    <Content Include="Images\default\grid\col-move-bottom.gif" />
+    <Content Include="Images\default\grid\col-move-top.gif" />
+    <Content Include="Images\default\grid\columns.gif" />
+    <Content Include="Images\default\grid\dirty.gif" />
+    <Content Include="Images\default\grid\done.gif" />
+    <Content Include="Images\default\grid\drop-no.gif" />
+    <Content Include="Images\default\grid\drop-yes.gif" />
+    <Content Include="Images\default\grid\footer-bg.gif" />
+    <Content Include="Images\default\grid\grid-blue-hd.gif" />
+    <Content Include="Images\default\grid\grid-blue-split.gif" />
+    <Content Include="Images\default\grid\grid-hrow-blue-hover.gif" />
+    <Content Include="Images\default\grid\grid-hrow-blue.gif" />
+    <Content Include="Images\default\grid\grid-hrow-gray.png" />
+    <Content Include="Images\default\grid\grid-hrow.gif" />
+    <Content Include="Images\default\grid\grid-loading.gif" />
+    <Content Include="Images\default\grid\grid-split.gif" />
+    <Content Include="Images\default\grid\grid-vista-hd.gif" />
+    <Content Include="Images\default\grid\grid3-hd-btn.gif" />
+    <Content Include="Images\default\grid\grid3-hrow-over.gif" />
+    <Content Include="Images\default\grid\grid3-hrow.gif" />
+    <Content Include="Images\default\grid\grid3-special-col-bg.gif" />
+    <Content Include="Images\default\grid\grid3-special-col-sel-bg.gif" />
+    <Content Include="Images\default\grid\group-by.gif" />
+    <Content Include="Images\default\grid\group-expand-sprite.gif" />
+    <Content Include="Images\default\grid\hd-pop.gif" />
+    <Content Include="Images\default\grid\hdr.gif" />
+    <Content Include="Images\default\grid\hmenu-asc.gif" />
+    <Content Include="Images\default\grid\hmenu-desc.gif" />
+    <Content Include="Images\default\grid\hmenu-lock.gif" />
+    <Content Include="Images\default\grid\hmenu-lock.png" />
+    <Content Include="Images\default\grid\hmenu-unlock.gif" />
+    <Content Include="Images\default\grid\hmenu-unlock.png" />
+    <Content Include="Images\default\grid\invalid_line.gif" />
+    <Content Include="Images\default\grid\loading.gif" />
+    <Content Include="Images\default\grid\mso-hd.gif" />
+    <Content Include="Images\default\grid\nowait.gif" />
+    <Content Include="Images\default\grid\page-first-disabled.gif" />
+    <Content Include="Images\default\grid\page-first.gif" />
+    <Content Include="Images\default\grid\page-last-disabled.gif" />
+    <Content Include="Images\default\grid\page-last.gif" />
+    <Content Include="Images\default\grid\page-next-disabled.gif" />
+    <Content Include="Images\default\grid\page-next.gif" />
+    <Content Include="Images\default\grid\page-prev-disabled.gif" />
+    <Content Include="Images\default\grid\page-prev.gif" />
+    <Content Include="Images\default\grid\pick-button.gif" />
+    <Content Include="Images\default\grid\refresh.gif" />
+    <Content Include="Images\default\grid\row-check-sprite.gif" />
+    <Content Include="Images\default\grid\row-expand-sprite.gif" />
+    <Content Include="Images\default\grid\row-over.gif" />
+    <Content Include="Images\default\grid\row-sel.gif" />
+    <Content Include="Images\default\grid\sort_asc.gif" />
+    <Content Include="Images\default\grid\sort_desc.gif" />
+    <Content Include="Images\default\grid\wait.gif" />
+    <Content Include="Images\default\layout\collapse.gif" />
+    <Content Include="Images\default\layout\expand.gif" />
+    <Content Include="Images\default\layout\gradient-bg.gif" />
+    <Content Include="Images\default\layout\mini-bottom.gif" />
+    <Content Include="Images\default\layout\mini-left.gif" />
+    <Content Include="Images\default\layout\mini-right.gif" />
+    <Content Include="Images\default\layout\mini-top.gif" />
+    <Content Include="Images\default\layout\ns-collapse.gif" />
+    <Content Include="Images\default\layout\ns-expand.gif" />
+    <Content Include="Images\default\layout\panel-close.gif" />
+    <Content Include="Images\default\layout\panel-title-bg.gif" />
+    <Content Include="Images\default\layout\panel-title-light-bg.gif" />
+    <Content Include="Images\default\layout\stick.gif" />
+    <Content Include="Images\default\layout\stuck.gif" />
+    <Content Include="Images\default\layout\tab-close-on.gif" />
+    <Content Include="Images\default\layout\tab-close.gif" />
+    <Content Include="Images\default\menu\checked.gif" />
+    <Content Include="Images\default\menu\group-checked.gif" />
+    <Content Include="Images\default\menu\item-over.gif" />
+    <Content Include="Images\default\menu\menu-parent.gif" />
+    <Content Include="Images\default\menu\menu.gif" />
+    <Content Include="Images\default\menu\unchecked.gif" />
+    <Content Include="Images\default\panel\corners-sprite.gif" />
+    <Content Include="Images\default\panel\left-right.gif" />
+    <Content Include="Images\default\panel\light-hd.gif" />
+    <Content Include="Images\default\panel\tool-sprite-tpl.gif" />
+    <Content Include="Images\default\panel\tool-sprites.gif" />
+    <Content Include="Images\default\panel\tools-sprites-trans.gif" />
+    <Content Include="Images\default\panel\top-bottom.gif" />
+    <Content Include="Images\default\panel\top-bottom.png" />
+    <Content Include="Images\default\panel\white-corners-sprite.gif" />
+    <Content Include="Images\default\panel\white-left-right.gif" />
+    <Content Include="Images\default\panel\white-top-bottom.gif" />
+    <Content Include="Images\default\progress\progress-bg.gif" />
+    <Content Include="Images\default\qtip\bg.gif" />
+    <Content Include="Images\default\qtip\close.gif" />
+    <Content Include="Images\default\qtip\tip-sprite.gif" />
+    <Content Include="Images\default\s.gif" />
+    <Content Include="Images\default\shadow-c.png" />
+    <Content Include="Images\default\shadow-lr.png" />
+    <Content Include="Images\default\shadow.png" />
+    <Content Include="Images\default\shared\blue-loading.gif" />
+    <Content Include="Images\default\shared\calendar.gif" />
+    <Content Include="Images\default\shared\glass-bg.gif" />
+    <Content Include="Images\default\shared\hd-sprite.gif" />
+    <Content Include="Images\default\shared\large-loading.gif" />
+    <Content Include="Images\default\shared\left-btn.gif" />
+    <Content Include="Images\default\shared\loading-balls.gif" />
+    <Content Include="Images\default\shared\right-btn.gif" />
+    <Content Include="Images\default\shared\warning.gif" />
+    <Content Include="Images\default\sizer\e-handle-dark.gif" />
+    <Content Include="Images\default\sizer\e-handle.gif" />
+    <Content Include="Images\default\sizer\ne-handle-dark.gif" />
+    <Content Include="Images\default\sizer\ne-handle.gif" />
+    <Content Include="Images\default\sizer\nw-handle-dark.gif" />
+    <Content Include="Images\default\sizer\nw-handle.gif" />
+    <Content Include="Images\default\sizer\s-handle-dark.gif" />
+    <Content Include="Images\default\sizer\s-handle.gif" />
+    <Content Include="Images\default\sizer\se-handle-dark.gif" />
+    <Content Include="Images\default\sizer\se-handle.gif" />
+    <Content Include="Images\default\sizer\square.gif" />
+    <Content Include="Images\default\sizer\sw-handle-dark.gif" />
+    <Content Include="Images\default\sizer\sw-handle.gif" />
+    <Content Include="Images\default\tabs\scroll-left.gif" />
+    <Content Include="Images\default\tabs\scroll-right.gif" />
+    <Content Include="Images\default\tabs\scroller-bg.gif" />
+    <Content Include="Images\default\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="Images\default\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="Images\default\tabs\tab-btm-left-bg.gif" />
+    <Content Include="Images\default\tabs\tab-btm-right-bg.gif" />
+    <Content Include="Images\default\tabs\tab-close.gif" />
+    <Content Include="Images\default\tabs\tab-strip-bg.gif" />
+    <Content Include="Images\default\tabs\tab-strip-bg.png" />
+    <Content Include="Images\default\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="Images\default\tabs\tabs-sprite.gif" />
+    <Content Include="Images\default\toolbar\bg.gif" />
+    <Content Include="Images\default\toolbar\btn-arrow-light.gif" />
+    <Content Include="Images\default\toolbar\btn-arrow.gif" />
+    <Content Include="Images\default\toolbar\btn-over-bg.gif" />
+    <Content Include="Images\default\toolbar\gray-bg.gif" />
+    <Content Include="Images\default\toolbar\tb-bg.gif" />
+    <Content Include="Images\default\toolbar\tb-btn-sprite.gif" />
+    <Content Include="Images\default\tree\arrows.gif" />
+    <Content Include="Images\default\tree\drop-add.gif" />
+    <Content Include="Images\default\tree\drop-between.gif" />
+    <Content Include="Images\default\tree\drop-no.gif" />
+    <Content Include="Images\default\tree\drop-over.gif" />
+    <Content Include="Images\default\tree\drop-under.gif" />
+    <Content Include="Images\default\tree\drop-yes.gif" />
+    <Content Include="Images\default\tree\elbow-end-minus-nl.gif" />
+    <Content Include="Images\default\tree\elbow-end-minus.gif" />
+    <Content Include="Images\default\tree\elbow-end-plus-nl.gif" />
+    <Content Include="Images\default\tree\elbow-end-plus.gif" />
+    <Content Include="Images\default\tree\elbow-end.gif" />
+    <Content Include="Images\default\tree\elbow-line.gif" />
+    <Content Include="Images\default\tree\elbow-minus-nl.gif" />
+    <Content Include="Images\default\tree\elbow-minus.gif" />
+    <Content Include="Images\default\tree\elbow-plus-nl.gif" />
+    <Content Include="Images\default\tree\elbow-plus.gif" />
+    <Content Include="Images\default\tree\elbow.gif" />
+    <Content Include="Images\default\tree\folder-open.gif" />
+    <Content Include="Images\default\tree\folder.gif" />
+    <Content Include="Images\default\tree\leaf.gif" />
+    <Content Include="Images\default\tree\loading.gif" />
+    <Content Include="Images\default\tree\s.gif" />
+    <Content Include="Images\default\window\icon-error.gif" />
+    <Content Include="Images\default\window\icon-info.gif" />
+    <Content Include="Images\default\window\icon-question.gif" />
+    <Content Include="Images\default\window\icon-warning.gif" />
+    <Content Include="Images\default\window\left-corners.png" />
+    <Content Include="Images\default\window\left-right.png" />
+    <Content Include="Images\default\window\right-corners.png" />
+    <Content Include="Images\default\window\top-bottom.png" />
+    <Content Include="Images\Delete.gif" />
+    <Content Include="Images\doing.jpg" />
+    <Content Include="Images\Edit.gif" />
+    <Content Include="Images\expand_blue.jpg" />
+    <Content Include="Images\fieldbg.gif" />
+    <Content Include="Images\grd-1px_1.4.gif" />
+    <Content Include="Images\h-protect-notext-persinfo.jpg" />
+    <Content Include="Images\havedone.jpg" />
+    <Content Include="Images\Header.jpg" />
+    <Content Include="Images\History_info.gif" />
+    <Content Include="Images\icon_edge.gif" />
+    <Content Include="Images\igpnl_office2k3_drk.png" />
+    <Content Include="Images\igpnl_up.gif" />
+    <Content Include="Images\language.gif" />
+    <Content Include="Images\loader.gif" />
+    <Content Include="Images\ni_search.gif" />
+    <Content Include="Images\Standard\buttonsilve.gif" />
+    <Content Include="Images\Standard\buttonsilve_mix.gif" />
+    <Content Include="Images\Standard\buttonwhite.gif" />
+    <Content Include="Images\Standard\buttonwhite_mix.gif" />
+    <Content Include="Images\Standard\复件 %282%29 buttonsilve.gif" />
+    <Content Include="Images\Standard\复件 %282%29 buttonwhite.gif" />
+    <Content Include="Images\Standard\复件 %283%29 buttonsilve.gif" />
+    <Content Include="Images\Standard\复件 %283%29 buttonwhite.gif" />
+    <Content Include="Images\Standard\复件 buttonsilve.gif" />
+    <Content Include="Images\Standard\复件 buttonwhite.gif" />
+    <Content Include="Images\todo.jpg" />
+    <Content Include="Images\treeview_images\arrow_black.gif" />
+    <Content Include="Images\treeview_images\bg.gif" />
+    <Content Include="Images\treeview_images\break.gif" />
+    <Content Include="Images\treeview_images\calendar.gif" />
+    <Content Include="Images\treeview_images\col.gif" />
+    <Content Include="Images\treeview_images\contacts.gif" />
+    <Content Include="Images\treeview_images\deleted.gif" />
+    <Content Include="Images\treeview_images\deletedFolder.gif" />
+    <Content Include="Images\treeview_images\drafts.gif" />
+    <Content Include="Images\treeview_images\exp.gif" />
+    <Content Include="Images\treeview_images\folder.gif" />
+    <Content Include="Images\treeview_images\folders.gif" />
+    <Content Include="Images\treeview_images\inbox.gif" />
+    <Content Include="Images\treeview_images\journal.gif" />
+    <Content Include="Images\treeview_images\junk.gif" />
+    <Content Include="Images\treeview_images\lines\dash.gif" />
+    <Content Include="Images\treeview_images\lines\dashminus.gif" />
+    <Content Include="Images\treeview_images\lines\dashplus.gif" />
+    <Content Include="Images\treeview_images\lines\i.gif" />
+    <Content Include="Images\treeview_images\lines\l.gif" />
+    <Content Include="Images\treeview_images\lines\lminus.gif" />
+    <Content Include="Images\treeview_images\lines\lplus.gif" />
+    <Content Include="Images\treeview_images\lines\minus.gif" />
+    <Content Include="Images\treeview_images\lines\noexpand.gif" />
+    <Content Include="Images\treeview_images\lines\r.gif" />
+    <Content Include="Images\treeview_images\lines\rminus.gif" />
+    <Content Include="Images\treeview_images\lines\rplus.gif" />
+    <Content Include="Images\treeview_images\lines\t.gif" />
+    <Content Include="Images\treeview_images\lines\tminus.gif" />
+    <Content Include="Images\treeview_images\lines\tplus.gif" />
+    <Content Include="Images\treeview_images\notes.gif" />
+    <Content Include="Images\treeview_images\outbox.gif" />
+    <Content Include="Images\treeview_images\plus.gif" />
+    <Content Include="Images\treeview_images\root.gif" />
+    <Content Include="Images\treeview_images\search.gif" />
+    <Content Include="Images\treeview_images\searchFolder.gif" />
+    <Content Include="Images\treeview_images\sentItems.gif" />
+    <Content Include="Images\treeview_images\spacer.gif" />
+    <Content Include="Images\treeview_images\tasks.gif" />
+    <Content Include="Images\WebUIFrame\bottomshadow.png" />
+    <Content Include="Images\WebUIFrame\HeaderGradientImageType.png" />
+    <Content Include="Images\WebUIFrame\Leve3MenuItemFlag.gif" />
+    <Content Include="Images\WebUIFrame\Level1MenuItemBG.gif" />
+    <Content Include="Images\WebUIFrame\Level2Flag.gif" />
+    <Content Include="Images\WebUIFrame\Level2MenuItemBG.gif" />
+    <Content Include="Images\WebUIFrame\menu2.png" />
+    <Content Include="Images\WebUIFrame\menu2expand.png" />
+    <Content Include="Images\WebUIFrame\rb_conner.png" />
+    <Content Include="Images\WebUIFrame\rightShadow.png" />
+    <Content Include="Images\WebUIFrame\righttopconner.png" />
+    <Content Include="Images\WebUIFrame\sc_hover.gif" />
+    <Content Include="Images\WebUIFrame\sc_rest.gif" />
+    <Content Include="Images\workers.gif" />
+    <Content Include="Images\ypwater.gif" />
+    <Content Include="JS\balloon.config.js" />
+    <Content Include="JS\balloon.js" />
+    <Content Include="JS\box.js" />
+    <Content Include="JS\cb.js" />
+    <Content Include="JS\CheckBox.js" />
+    <Content Include="JS\Common.js" />
+    <Content Include="JS\dw_event.js" />
+    <Content Include="JS\dw_tooltip.js" />
+    <Content Include="JS\dw_viewport.js" />
+    <Content Include="JS\ExpandTable.js" />
+    <Content Include="JS\MenuExpand.js" />
+    <Content Include="JS\MenuShow.js" />
+    <Content Include="JS\PopupWindow.js" />
+    <Content Include="JS\prototype.js" />
+    <Content Include="JS\Purchase\ROSInput.js" />
+    <Content Include="JS\SearchBar.js" />
+    <Content Include="JS\Storage\ItemQuery.js" />
+    <Content Include="JS\ToDo_ToolTip.js" />
+    <Content Include="JS\yahoo-dom-event.js" />
+    <Content Include="licenses.licx" />
+    <Content Include="Modules\BRBWebControl.ascx" />
+    <Content Include="Modules\CancelWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\ConChooserWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\DeptTreeControls.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\DGModel.ascx" />
+    <Content Include="Modules\DGModel_Items.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\DocAuditWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\DocWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\DRWWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\ItemsWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\PBORWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\PCBRWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\POWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\PPWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\PRTVWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\RTSWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\SCRWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\StatModule.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\StorageDropdownlist.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\Test.ascx" />
+    <Content Include="Modules\TRFWebControl.ascx" />
+    <Content Include="Modules\USWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\VariableStyle.ascx" />
+    <Content Include="Modules\VendorChooserControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\WINWWebControl.ascx" />
+    <Content Include="Modules\WTOWWebControl.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\WUCFeedBackGrid.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\WUCFeedbackPurchase.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\WUCHaveDoneList.ascx" />
+    <Content Include="Modules\WUCNoPayed.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\WUCToDoList.ascx" />
+    <Content Include="Modules\WUCToolTip.ascx" />
+    <Content Include="Modules\WUC_DKCStock.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\WUC_DKC_Stock_Panel.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\WUC_GKCStock.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\WUC_GKCStock_Panel.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\WUC_WithDrawAnalysis.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\WUC_YCLStock.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\WUC_YCLStock_Panel.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="PICS\ARROW.gif" />
+    <Content Include="PICS\arrow_collaps.gif" />
+    <Content Include="PICS\arrow_d.gif" />
+    <Content Include="PICS\ARROW_EXPAND.gif" />
+    <Content Include="PICS\bindRoleRights.GIF" />
+    <Content Include="PICS\branding.gif" />
+    <Content Include="PICS\branding1.gif" />
+    <Content Include="PICS\CLOSE.gif" />
+    <Content Include="PICS\delete.ICO" />
+    <Content Include="PICS\dept.gif" />
+    <Content Include="PICS\deptSelected.gif" />
+    <Content Include="PICS\dundas_blockHome.png" />
+    <Content Include="PICS\Dundas_WhyHomeTech.png" />
+    <Content Include="PICS\folder.gif" />
+    <Content Include="PICS\folderopen.gif" />
+    <Content Include="PICS\gaoshang.gif" />
+    <Content Include="PICS\GROUP.GIF" />
+    <Content Include="PICS\GS.gif" />
+    <Content Include="PICS\html.gif" />
+    <Content Include="PICS\lmenu_r1.gif" />
+    <Content Include="PICS\lmenu_r2.gif" />
+    <Content Include="PICS\lmenu_r3.gif" />
+    <Content Include="PICS\lmenu_rb.gif" />
+    <Content Include="PICS\minus.gif" />
+    <Content Include="PICS\m_corporation.gif" />
+    <Content Include="PICS\m_exit.gif" />
+    <Content Include="PICS\m_firstpage.gif" />
+    <Content Include="PICS\m_help.gif" />
+    <Content Include="PICS\m_individual.gif" />
+    <Content Include="PICS\m_manage.gif" />
+    <Content Include="PICS\m_search.gif" />
+    <Content Include="PICS\plus.gif" />
+    <Content Include="PICS\right_rb.gif" />
+    <Content Include="PICS\root.gif" />
+    <Content Include="PICS\setCatASL.GIF" />
+    <Content Include="PICS\tb2_db.gif" />
+    <Content Include="PICS\tb2_lb.gif" />
+    <Content Include="PICS\tb2_ld.gif" />
+    <Content Include="PICS\tb2_lt.gif" />
+    <Content Include="PICS\tb2_rb.gif" />
+    <Content Include="PICS\tb2_rd.gif" />
+    <Content Include="PICS\tb2_rt.gif" />
+    <Content Include="PICS\tb2_tb.gif" />
+    <Content Include="PICS\tb_db.gif" />
+    <Content Include="PICS\tb_lb.gif" />
+    <Content Include="PICS\tb_ld.gif" />
+    <Content Include="PICS\tb_lt.gif" />
+    <Content Include="PICS\tb_rb.gif" />
+    <Content Include="PICS\tb_rd.gif" />
+    <Content Include="PICS\tb_rt.gif" />
+    <Content Include="PICS\tb_tb.gif" />
+    <Content Include="PICS\Title.jpg" />
+    <Content Include="PICS\top-home.jpg" />
+    <Content Include="PICS\top-Material.jpg" />
+    <Content Include="PICS\top_c1.gif" />
+    <Content Include="PICS\top_c2.gif" />
+    <Content Include="PICS\top_cb.gif" />
+    <Content Include="PICS\treegroup.gif" />
+    <Content Include="PICS\treeuser.GIF" />
+    <Content Include="PICS\USER.GIF" />
+    <Content Include="PICS\UserDetail.GIF" />
+    <Content Include="PICS\userManagement.gif" />
+    <Content Include="PICS\user_bb.gif" />
+    <Content Include="PICS\user_head.gif" />
+    <Content Include="PICS\user_l_r1.gif" />
+    <Content Include="PICS\user_l_r3.gif" />
+    <Content Include="PICS\user_l_rb.gif" />
+    <Content Include="PICS\user_r_r1.gif" />
+    <Content Include="PICS\user_r_r3.gif" />
+    <Content Include="PICS\user_r_rb.gif" />
+    <Content Include="PICS\user_tb.gif" />
+    <Content Include="PICS\version_c2.gif" />
+    <Content Include="PICS\version_c3.gif" />
+    <Content Include="PICS\version_cb.gif" />
+    <Content Include="PICS\vitta.png" />
+    <Content Include="Project\ProjectItem.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\CancelBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\CancelDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\CancelInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\MRPBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\MRPDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\MRPInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PBORBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PBORDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PBORInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PBORUpdateInvoice.aspx" />
+    <Content Include="Purchase\PBSABrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PBSADetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PCBRSource.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PINBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\POBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PODetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\POInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\POReport.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\POSBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PPAYBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PPAYDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PPBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PPDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PPInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PPReport.aspx" />
+    <Content Include="Purchase\PRTVBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PRTVDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PRTVInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PslpBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\PslpInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\ROSBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\ROSDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\ROSInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\ROSSearch.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Purchase\WebAjax.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Report\CommReport.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SRC\add.gif" />
+    <Content Include="SRC\background.jpg" />
+    <Content Include="SRC\copy.gif" />
+    <Content Include="SRC\delete.gif" />
+    <Content Include="SRC\down.gif" />
+    <Content Include="SRC\Edit.gif" />
+    <Content Include="SRC\title.gif" />
+    <Content Include="Storage\CategroyBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\CategroyDetails.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\CategroyInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\ChoosePurposeClassify.aspx" />
+    <Content Include="Storage\ClassfiyInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\ClassifyBrowser.aspx" />
+    <Content Include="Storage\ConChooser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\DRWBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\DRWDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\DRWInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\DRWSDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\DRWSListBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\InChooser1.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\Inventory.aspx" />
+    <Content Include="Storage\InventoryDetail.aspx" />
+    <Content Include="Storage\InventoryList.aspx" />
+    <Content Include="Storage\InventoryProfitInput.aspx" />
+    <Content Include="Storage\IODetail.aspx" />
+    <Content Include="Storage\ItemBrowser.aspx" />
+    <Content Include="Storage\ItemDetails.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\ItemInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\ItemPriceTrendLine.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\ItemQuery.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\ItemUseDetail.aspx" />
+    <Content Include="Storage\KMUpdate.aspx" />
+    <Content Include="Storage\OUTBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\ProjectItem.aspx" />
+    <Content Include="Storage\PurposeBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\PurposeInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\RTSBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\RTSDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\RTSInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\SCRBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\SCRDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\SCRInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\StoBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\StockBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\StoConBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\StoConInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\StoInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\StoManagerBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\StoManagerInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\UnitBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\UnitInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\UsingBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\WDRWSourceBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\WINWBrowser.aspx" />
+    <Content Include="Storage\WINWInput.aspx" />
+    <Content Include="Storage\WITAInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\WITRBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\WRES_SRCBrowser.aspx" />
+    <Content Include="Storage\WTOWBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\WTOWDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\WTOWInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\WUC_YCLGroup.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Storage\YCLGroupBrowser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\YCLInput.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\YJ.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\YJBaocun.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Storage\InventoryProfitList.aspx" />
+    <Content Include="Storage\InventoryShortageList.aspx" />
+    <Content Include="Storage\InventoryShortageInput.aspx" />
+    <Content Include="switchs.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SYS\AdminTools.aspx" />
+    <Content Include="SYS\Grant.aspx" />
+    <Content Include="SYS\UserDocDept.aspx" />
+    <Content Include="Test\Layout.htm" />
+    <Content Include="ToDo.aspx" />
+    <Content Include="Web.config" />
+    <Compile Include="Analysis\CorrespondingABCAnalysis.aspx.cs">
+      <DependentUpon>CorrespondingABCAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingABCAnalysis.aspx.designer.cs">
+      <DependentUpon>CorrespondingABCAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingABCMonthCompare.aspx.cs">
+      <DependentUpon>CorrespondingABCMonthCompare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingABCMonthCompare.aspx.designer.cs">
+      <DependentUpon>CorrespondingABCMonthCompare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingABCYearCompare.aspx.cs">
+      <DependentUpon>CorrespondingABCYearCompare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingABCYearCompare.aspx.designer.cs">
+      <DependentUpon>CorrespondingABCYearCompare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingAnalysis.aspx.cs">
+      <DependentUpon>CorrespondingAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingAnalysis.aspx.designer.cs">
+      <DependentUpon>CorrespondingAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingPeriodAnalysis.aspx.cs">
+      <DependentUpon>CorrespondingPeriodAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingPeriodAnalysisChart.aspx.cs">
+      <DependentUpon>CorrespondingPeriodAnalysisChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingPeriodMonthCompare.aspx.cs">
+      <DependentUpon>CorrespondingPeriodMonthCompare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingPeriodMonthCompare.aspx.designer.cs">
+      <DependentUpon>CorrespondingPeriodMonthCompare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingPeriodYearCompare.aspx.cs">
+      <DependentUpon>CorrespondingPeriodYearCompare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CorrespondingPeriodYearCompare.aspx.designer.cs">
+      <DependentUpon>CorrespondingPeriodYearCompare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\CurrentAnalysis.aspx.cs">
+      <DependentUpon>CurrentAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CurrentAnalysis.aspx.designer.cs">
+      <DependentUpon>CurrentAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\CurrentROS.aspx.cs">
+      <DependentUpon>CurrentROS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CurrentROS.aspx.designer.cs">
+      <DependentUpon>CurrentROS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\CurrentROSDetail.aspx.cs">
+      <DependentUpon>CurrentROSDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CurrentROSDetail.aspx.designer.cs">
+      <DependentUpon>CurrentROSDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\CurrentStock.aspx.cs">
+      <DependentUpon>CurrentStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CurrentStock.aspx.designer.cs">
+      <DependentUpon>CurrentStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\CurrentVendor.aspx.cs">
+      <DependentUpon>CurrentVendor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CurrentVendor.aspx.designer.cs">
+      <DependentUpon>CurrentVendor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\CurrentWithDraw.aspx.cs">
+      <DependentUpon>CurrentWithDraw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\CurrentWithDraw.aspx.designer.cs">
+      <DependentUpon>CurrentWithDraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\DocRoute.aspx.cs">
+      <DependentUpon>DocRoute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\DocRoute.aspx.designer.cs">
+      <DependentUpon>DocRoute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\DocStat.aspx.cs">
+      <DependentUpon>DocStat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\DocStat.aspx.designer.cs">
+      <DependentUpon>DocStat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\ROSAnalysis.aspx.cs">
+      <DependentUpon>ROSAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\ROSAnalysis.aspx.designer.cs">
+      <DependentUpon>ROSAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\ROSDetails.aspx.cs">
+      <DependentUpon>ROSDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\ROSDetails.aspx.designer.cs">
+      <DependentUpon>ROSDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\StockAnalysis.aspx.cs">
+      <DependentUpon>StockAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\StockAnalysis.aspx.designer.cs">
+      <DependentUpon>StockAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\StockDetail.aspx.cs">
+      <DependentUpon>StockDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\StockDetail.aspx.designer.cs">
+      <DependentUpon>StockDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\USECompare.aspx.cs">
+      <DependentUpon>USECompare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\USECompare.aspx.designer.cs">
+      <DependentUpon>USECompare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\UseDetail.aspx.cs">
+      <DependentUpon>UseDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\UseDetail.aspx.designer.cs">
+      <DependentUpon>UseDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\USEMonthCompare.aspx.cs">
+      <DependentUpon>USEMonthCompare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\USEMonthCompare.aspx.designer.cs">
+      <DependentUpon>USEMonthCompare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\VendorAnalysis.aspx.cs">
+      <DependentUpon>VendorAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\VendorAnalysis.aspx.designer.cs">
+      <DependentUpon>VendorAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\VendorInDetail.aspx.cs">
+      <DependentUpon>VendorInDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\VendorInDetail.aspx.designer.cs">
+      <DependentUpon>VendorInDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\WithDrawAnalysis.aspx.cs">
+      <DependentUpon>WithDrawAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\WithDrawAnalysis.aspx.designer.cs">
+      <DependentUpon>WithDrawAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\WithDrawDetail.aspx.cs">
+      <DependentUpon>WithDrawDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\WithDrawDetail.aspx.designer.cs">
+      <DependentUpon>WithDrawDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\WUC_DocDowithCount.ascx.cs">
+      <DependentUpon>WUC_DocDowithCount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\WUC_DocDowithCount.ascx.designer.cs">
+      <DependentUpon>WUC_DocDowithCount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\WUC_DocStat.ascx.cs">
+      <DependentUpon>WUC_DocStat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Analysis\WUC_DocStat.ascx.designer.cs">
+      <DependentUpon>WUC_DocStat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ConfigCommon.cs" />
+    <Compile Include="Common\Enums.cs" />
+    <Compile Include="Common\ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\NoRight.aspx.cs">
+      <DependentUpon>NoRight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\NoRight.aspx.designer.cs">
+      <DependentUpon>NoRight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\BRBWebControl.ascx.cs">
+      <DependentUpon>BRBWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\BRBWebControl.ascx.designer.cs">
+      <DependentUpon>BRBWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CancelWebControl.ascx.cs">
+      <DependentUpon>CancelWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\CancelWebControl.ascx.designer.cs">
+      <DependentUpon>CancelWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ConChooserWebControl.ascx.cs">
+      <DependentUpon>ConChooserWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\ConChooserWebControl.ascx.designer.cs">
+      <DependentUpon>ConChooserWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DeptTreeControls.ascx.cs">
+      <DependentUpon>DeptTreeControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\DeptTreeControls.ascx.designer.cs">
+      <DependentUpon>DeptTreeControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DGModel.ascx.cs">
+      <DependentUpon>DGModel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\DGModel.ascx.designer.cs">
+      <DependentUpon>DGModel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DGModel_Items.ascx.cs">
+      <DependentUpon>DGModel_Items.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\DGModel_Items.ascx.designer.cs">
+      <DependentUpon>DGModel_Items.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocAuditWebControl.ascx.cs">
+      <DependentUpon>DocAuditWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\DocAuditWebControl.ascx.designer.cs">
+      <DependentUpon>DocAuditWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocWebControl.ascx.cs">
+      <DependentUpon>DocWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\DocWebControl.ascx.designer.cs">
+      <DependentUpon>DocWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DRWWebControl.ascx.cs">
+      <DependentUpon>DRWWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\DRWWebControl.ascx.designer.cs">
+      <DependentUpon>DRWWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ItemsWebControl.ascx.cs">
+      <DependentUpon>ItemsWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\ItemsWebControl.ascx.designer.cs">
+      <DependentUpon>ItemsWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PBORWebControl.ascx.cs">
+      <DependentUpon>PBORWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\PBORWebControl.ascx.designer.cs">
+      <DependentUpon>PBORWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PCBRWebControl.ascx.cs">
+      <DependentUpon>PCBRWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\PCBRWebControl.ascx.designer.cs">
+      <DependentUpon>PCBRWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\POWebControl.ascx.cs">
+      <DependentUpon>POWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\POWebControl.ascx.designer.cs">
+      <DependentUpon>POWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PPWebControl.ascx.cs">
+      <DependentUpon>PPWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\PPWebControl.ascx.designer.cs">
+      <DependentUpon>PPWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PRTVWebControl.ascx.cs">
+      <DependentUpon>PRTVWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\PRTVWebControl.ascx.designer.cs">
+      <DependentUpon>PRTVWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RTSWebControl.ascx.cs">
+      <DependentUpon>RTSWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\RTSWebControl.ascx.designer.cs">
+      <DependentUpon>RTSWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\SCRWebControl.ascx.cs">
+      <DependentUpon>SCRWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\SCRWebControl.ascx.designer.cs">
+      <DependentUpon>SCRWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\StatModule.ascx.cs">
+      <DependentUpon>StatModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StatModule.ascx.designer.cs">
+      <DependentUpon>StatModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\StorageDropdownlist.ascx.cs">
+      <DependentUpon>StorageDropdownlist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\StorageDropdownlist.ascx.designer.cs">
+      <DependentUpon>StorageDropdownlist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Test.ascx.cs">
+      <DependentUpon>Test.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Test.ascx.designer.cs">
+      <DependentUpon>Test.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TRFWebControl.ascx.cs">
+      <DependentUpon>TRFWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\TRFWebControl.ascx.designer.cs">
+      <DependentUpon>TRFWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\USWebControl.ascx.cs">
+      <DependentUpon>USWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\USWebControl.ascx.designer.cs">
+      <DependentUpon>USWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\VariableStyle.ascx.cs">
+      <DependentUpon>VariableStyle.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\VariableStyle.ascx.designer.cs">
+      <DependentUpon>VariableStyle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\VendorChooserControl.ascx.cs">
+      <DependentUpon>VendorChooserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\VendorChooserControl.ascx.designer.cs">
+      <DependentUpon>VendorChooserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WINWWebControl.ascx.cs">
+      <DependentUpon>WINWWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WINWWebControl.ascx.designer.cs">
+      <DependentUpon>WINWWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WTOWWebControl.ascx.cs">
+      <DependentUpon>WTOWWebControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WTOWWebControl.ascx.designer.cs">
+      <DependentUpon>WTOWWebControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUCFeedBackGrid.ascx.cs">
+      <DependentUpon>WUCFeedBackGrid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUCFeedBackGrid.ascx.designer.cs">
+      <DependentUpon>WUCFeedBackGrid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUCFeedbackPurchase.ascx.cs">
+      <DependentUpon>WUCFeedbackPurchase.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUCFeedbackPurchase.ascx.designer.cs">
+      <DependentUpon>WUCFeedbackPurchase.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUCHaveDoneList.ascx.cs">
+      <DependentUpon>WUCHaveDoneList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUCHaveDoneList.ascx.designer.cs">
+      <DependentUpon>WUCHaveDoneList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUCNoPayed.ascx.cs">
+      <DependentUpon>WUCNoPayed.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUCNoPayed.ascx.designer.cs">
+      <DependentUpon>WUCNoPayed.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUCToDoList.ascx.cs">
+      <DependentUpon>WUCToDoList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUCToDoList.ascx.designer.cs">
+      <DependentUpon>WUCToDoList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUCToolTip.ascx.cs">
+      <DependentUpon>WUCToolTip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUCToolTip.ascx.designer.cs">
+      <DependentUpon>WUCToolTip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUC_DKCStock.ascx.cs">
+      <DependentUpon>WUC_DKCStock.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUC_DKCStock.ascx.designer.cs">
+      <DependentUpon>WUC_DKCStock.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUC_DKC_Stock_Panel.ascx.cs">
+      <DependentUpon>WUC_DKC_Stock_Panel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUC_DKC_Stock_Panel.ascx.designer.cs">
+      <DependentUpon>WUC_DKC_Stock_Panel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUC_GKCStock.ascx.cs">
+      <DependentUpon>WUC_GKCStock.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUC_GKCStock.ascx.designer.cs">
+      <DependentUpon>WUC_GKCStock.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUC_GKCStock_Panel.ascx.cs">
+      <DependentUpon>WUC_GKCStock_Panel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUC_GKCStock_Panel.ascx.designer.cs">
+      <DependentUpon>WUC_GKCStock_Panel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUC_WithDrawAnalysis.ascx.cs">
+      <DependentUpon>WUC_WithDrawAnalysis.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUC_WithDrawAnalysis.ascx.designer.cs">
+      <DependentUpon>WUC_WithDrawAnalysis.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUC_YCLStock.ascx.cs">
+      <DependentUpon>WUC_YCLStock.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUC_YCLStock.ascx.designer.cs">
+      <DependentUpon>WUC_YCLStock.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WUC_YCLStock_Panel.ascx.cs">
+      <DependentUpon>WUC_YCLStock_Panel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WUC_YCLStock_Panel.ascx.designer.cs">
+      <DependentUpon>WUC_YCLStock_Panel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Project\ProjectItem.aspx.cs">
+      <DependentUpon>ProjectItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Project\ProjectItem.aspx.designer.cs">
+      <DependentUpon>ProjectItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase\CancelBrowser.aspx.cs">
+      <DependentUpon>CancelBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\CancelBrowser.aspx.designer.cs">
+      <DependentUpon>CancelBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\CancelDetail.aspx.cs">
+      <DependentUpon>CancelDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\CancelDetail.aspx.designer.cs">
+      <DependentUpon>CancelDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\CancelInput.aspx.cs">
+      <DependentUpon>CancelInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\CancelInput.aspx.designer.cs">
+      <DependentUpon>CancelInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\MRPBrowser.aspx.cs">
+      <DependentUpon>MRPBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\MRPBrowser.aspx.designer.cs">
+      <DependentUpon>MRPBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\MRPDetail.aspx.cs">
+      <DependentUpon>MRPDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\MRPDetail.aspx.designer.cs">
+      <DependentUpon>MRPDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\MRPInput.aspx.cs">
+      <DependentUpon>MRPInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\MRPInput.aspx.designer.cs">
+      <DependentUpon>MRPInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PBORBrowser.aspx.cs">
+      <DependentUpon>PBORBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PBORBrowser.aspx.designer.cs">
+      <DependentUpon>PBORBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PBORDetail.aspx.cs">
+      <DependentUpon>PBORDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PBORDetail.aspx.designer.cs">
+      <DependentUpon>PBORDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PBORInput.aspx.cs">
+      <DependentUpon>PBORInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PBORInput.aspx.designer.cs">
+      <DependentUpon>PBORInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PBORUpdateInvoice.aspx.cs">
+      <DependentUpon>PBORUpdateInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PBORUpdateInvoice.aspx.designer.cs">
+      <DependentUpon>PBORUpdateInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PBSABrowser.aspx.cs">
+      <DependentUpon>PBSABrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PBSABrowser.aspx.designer.cs">
+      <DependentUpon>PBSABrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PBSADetail.aspx.cs">
+      <DependentUpon>PBSADetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PBSADetail.aspx.designer.cs">
+      <DependentUpon>PBSADetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PCBRSource.aspx.cs">
+      <DependentUpon>PCBRSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PCBRSource.aspx.designer.cs">
+      <DependentUpon>PCBRSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PINBrowser.aspx.cs">
+      <DependentUpon>PINBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PINBrowser.aspx.designer.cs">
+      <DependentUpon>PINBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\POBrowser.aspx.cs">
+      <DependentUpon>POBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\POBrowser.aspx.designer.cs">
+      <DependentUpon>POBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PODetail.aspx.cs">
+      <DependentUpon>PODetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PODetail.aspx.designer.cs">
+      <DependentUpon>PODetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\POInput.aspx.cs">
+      <DependentUpon>POInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\POInput.aspx.designer.cs">
+      <DependentUpon>POInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\POReport.aspx.cs">
+      <DependentUpon>POReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\POReport.aspx.designer.cs">
+      <DependentUpon>POReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\POSBrowser.aspx.cs">
+      <DependentUpon>POSBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\POSBrowser.aspx.designer.cs">
+      <DependentUpon>POSBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PPAYBrowser.aspx.cs">
+      <DependentUpon>PPAYBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PPAYBrowser.aspx.designer.cs">
+      <DependentUpon>PPAYBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PPAYDetail.aspx.cs">
+      <DependentUpon>PPAYDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PPAYDetail.aspx.designer.cs">
+      <DependentUpon>PPAYDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PPBrowser.aspx.cs">
+      <DependentUpon>PPBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PPBrowser.aspx.designer.cs">
+      <DependentUpon>PPBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PPDetail.aspx.cs">
+      <DependentUpon>PPDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PPDetail.aspx.designer.cs">
+      <DependentUpon>PPDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PPInput.aspx.cs">
+      <DependentUpon>PPInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PPInput.aspx.designer.cs">
+      <DependentUpon>PPInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PPReport.aspx.cs">
+      <DependentUpon>PPReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PPReport.aspx.designer.cs">
+      <DependentUpon>PPReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PRTVBrowser.aspx.cs">
+      <DependentUpon>PRTVBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PRTVBrowser.aspx.designer.cs">
+      <DependentUpon>PRTVBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PRTVDetail.aspx.cs">
+      <DependentUpon>PRTVDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PRTVDetail.aspx.designer.cs">
+      <DependentUpon>PRTVDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PRTVInput.aspx.cs">
+      <DependentUpon>PRTVInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PRTVInput.aspx.designer.cs">
+      <DependentUpon>PRTVInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PslpBrowser.aspx.cs">
+      <DependentUpon>PslpBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PslpBrowser.aspx.designer.cs">
+      <DependentUpon>PslpBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PslpInput.aspx.cs">
+      <DependentUpon>PslpInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\PslpInput.aspx.designer.cs">
+      <DependentUpon>PslpInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\ROSBrowser.aspx.cs">
+      <DependentUpon>ROSBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\ROSBrowser.aspx.designer.cs">
+      <DependentUpon>ROSBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\ROSDetail.aspx.cs">
+      <DependentUpon>ROSDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\ROSDetail.aspx.designer.cs">
+      <DependentUpon>ROSDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\ROSInput.aspx.cs">
+      <DependentUpon>ROSInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\ROSInput.aspx.designer.cs">
+      <DependentUpon>ROSInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\ROSSearch.aspx.cs">
+      <DependentUpon>ROSSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\ROSSearch.aspx.designer.cs">
+      <DependentUpon>ROSSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\WebAjax.aspx.cs">
+      <DependentUpon>WebAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchase\WebAjax.aspx.designer.cs">
+      <DependentUpon>WebAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommReport.aspx.cs">
+      <DependentUpon>CommReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\CommReport.aspx.designer.cs">
+      <DependentUpon>CommReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\CategroyBrowser.aspx.cs">
+      <DependentUpon>CategroyBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\CategroyBrowser.aspx.designer.cs">
+      <DependentUpon>CategroyBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\CategroyDetails.aspx.cs">
+      <DependentUpon>CategroyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\CategroyDetails.aspx.designer.cs">
+      <DependentUpon>CategroyDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\CategroyInput.aspx.cs">
+      <DependentUpon>CategroyInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\CategroyInput.aspx.designer.cs">
+      <DependentUpon>CategroyInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\ChoosePurposeClassify.aspx.cs">
+      <DependentUpon>ChoosePurposeClassify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\ChoosePurposeClassify.aspx.designer.cs">
+      <DependentUpon>ChoosePurposeClassify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\ClassfiyInput.aspx.cs">
+      <DependentUpon>ClassfiyInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\ClassfiyInput.aspx.designer.cs">
+      <DependentUpon>ClassfiyInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\ClassifyBrowser.aspx.cs">
+      <DependentUpon>ClassifyBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\ClassifyBrowser.aspx.designer.cs">
+      <DependentUpon>ClassifyBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\ConChooser.aspx.cs">
+      <DependentUpon>ConChooser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\ConChooser.aspx.designer.cs">
+      <DependentUpon>ConChooser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\DRWBrowser.aspx.cs">
+      <DependentUpon>DRWBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\DRWBrowser.aspx.designer.cs">
+      <DependentUpon>DRWBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\DRWDetail.aspx.cs">
+      <DependentUpon>DRWDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\DRWDetail.aspx.designer.cs">
+      <DependentUpon>DRWDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\DRWInput.aspx.cs">
+      <DependentUpon>DRWInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\DRWInput.aspx.designer.cs">
+      <DependentUpon>DRWInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\DRWSDetail.aspx.cs">
+      <DependentUpon>DRWSDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\DRWSDetail.aspx.designer.cs">
+      <DependentUpon>DRWSDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\DRWSListBrowser.aspx.cs">
+      <DependentUpon>DRWSListBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\DRWSListBrowser.aspx.designer.cs">
+      <DependentUpon>DRWSListBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\InChooser1.aspx.cs">
+      <DependentUpon>InChooser1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\InChooser1.aspx.designer.cs">
+      <DependentUpon>InChooser1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\Inventory.aspx.cs">
+      <DependentUpon>Inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\Inventory.aspx.designer.cs">
+      <DependentUpon>Inventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\InventoryDetail.aspx.cs">
+      <DependentUpon>InventoryDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\InventoryDetail.aspx.designer.cs">
+      <DependentUpon>InventoryDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\InventoryList.aspx.cs">
+      <DependentUpon>InventoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\InventoryList.aspx.designer.cs">
+      <DependentUpon>InventoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\InventoryProfitInput.aspx.cs">
+      <DependentUpon>InventoryProfitInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\InventoryProfitInput.aspx.designer.cs">
+      <DependentUpon>InventoryProfitInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\IODetail.aspx.cs">
+      <DependentUpon>IODetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\IODetail.aspx.designer.cs">
+      <DependentUpon>IODetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\ItemBrowser.aspx.cs">
+      <DependentUpon>ItemBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\ItemBrowser.aspx.designer.cs">
+      <DependentUpon>ItemBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\ItemDetails.aspx.cs">
+      <DependentUpon>ItemDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\ItemDetails.aspx.designer.cs">
+      <DependentUpon>ItemDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\ItemInput.aspx.cs">
+      <DependentUpon>ItemInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\ItemInput.aspx.designer.cs">
+      <DependentUpon>ItemInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\ItemPriceTrendLine.aspx.cs">
+      <DependentUpon>ItemPriceTrendLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\ItemPriceTrendLine.aspx.designer.cs">
+      <DependentUpon>ItemPriceTrendLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\ItemQuery.aspx.cs">
+      <DependentUpon>ItemQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\ItemQuery.aspx.designer.cs">
+      <DependentUpon>ItemQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\ItemUseDetail.aspx.cs">
+      <DependentUpon>ItemUseDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\ItemUseDetail.aspx.designer.cs">
+      <DependentUpon>ItemUseDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\KMUpdate.aspx.cs">
+      <DependentUpon>KMUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\KMUpdate.aspx.designer.cs">
+      <DependentUpon>KMUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\OUTBrowser.aspx.cs">
+      <DependentUpon>OUTBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\OUTBrowser.aspx.designer.cs">
+      <DependentUpon>OUTBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\ProjectItem.aspx.cs">
+      <DependentUpon>ProjectItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\ProjectItem.aspx.designer.cs">
+      <DependentUpon>ProjectItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\PurposeBrowser.aspx.cs">
+      <DependentUpon>PurposeBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\PurposeBrowser.aspx.designer.cs">
+      <DependentUpon>PurposeBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\PurposeInput.aspx.cs">
+      <DependentUpon>PurposeInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\PurposeInput.aspx.designer.cs">
+      <DependentUpon>PurposeInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\RTSBrowser.aspx.cs">
+      <DependentUpon>RTSBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\RTSBrowser.aspx.designer.cs">
+      <DependentUpon>RTSBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\RTSDetail.aspx.cs">
+      <DependentUpon>RTSDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\RTSDetail.aspx.designer.cs">
+      <DependentUpon>RTSDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\RTSInput.aspx.cs">
+      <DependentUpon>RTSInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\RTSInput.aspx.designer.cs">
+      <DependentUpon>RTSInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\SCRBrowser.aspx.cs">
+      <DependentUpon>SCRBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\SCRBrowser.aspx.designer.cs">
+      <DependentUpon>SCRBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\SCRDetail.aspx.cs">
+      <DependentUpon>SCRDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\SCRDetail.aspx.designer.cs">
+      <DependentUpon>SCRDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\SCRInput.aspx.cs">
+      <DependentUpon>SCRInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\SCRInput.aspx.designer.cs">
+      <DependentUpon>SCRInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\StoBrowser.aspx.cs">
+      <DependentUpon>StoBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\StoBrowser.aspx.designer.cs">
+      <DependentUpon>StoBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\StockBrowser.aspx.cs">
+      <DependentUpon>StockBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\StockBrowser.aspx.designer.cs">
+      <DependentUpon>StockBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\StoConBrowser.aspx.cs">
+      <DependentUpon>StoConBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\StoConBrowser.aspx.designer.cs">
+      <DependentUpon>StoConBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\StoConInput.aspx.cs">
+      <DependentUpon>StoConInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\StoConInput.aspx.designer.cs">
+      <DependentUpon>StoConInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\StoInput.aspx.cs">
+      <DependentUpon>StoInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\StoInput.aspx.designer.cs">
+      <DependentUpon>StoInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\StoManagerBrowser.aspx.cs">
+      <DependentUpon>StoManagerBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\StoManagerBrowser.aspx.designer.cs">
+      <DependentUpon>StoManagerBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\StoManagerInput.aspx.cs">
+      <DependentUpon>StoManagerInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\StoManagerInput.aspx.designer.cs">
+      <DependentUpon>StoManagerInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\UnitBrowser.aspx.cs">
+      <DependentUpon>UnitBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\UnitBrowser.aspx.designer.cs">
+      <DependentUpon>UnitBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\UnitInput.aspx.cs">
+      <DependentUpon>UnitInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\UnitInput.aspx.designer.cs">
+      <DependentUpon>UnitInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\UsingBrowser.aspx.cs">
+      <DependentUpon>UsingBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\UsingBrowser.aspx.designer.cs">
+      <DependentUpon>UsingBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\WDRWSourceBrowser.aspx.cs">
+      <DependentUpon>WDRWSourceBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\WDRWSourceBrowser.aspx.designer.cs">
+      <DependentUpon>WDRWSourceBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\WINWBrowser.aspx.cs">
+      <DependentUpon>WINWBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\WINWBrowser.aspx.designer.cs">
+      <DependentUpon>WINWBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\WINWInput.aspx.cs">
+      <DependentUpon>WINWInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\WINWInput.aspx.designer.cs">
+      <DependentUpon>WINWInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\WITAInput.aspx.cs">
+      <DependentUpon>WITAInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\WITAInput.aspx.designer.cs">
+      <DependentUpon>WITAInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\WITRBrowser.aspx.cs">
+      <DependentUpon>WITRBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\WITRBrowser.aspx.designer.cs">
+      <DependentUpon>WITRBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\WRES_SRCBrowser.aspx.cs">
+      <DependentUpon>WRES_SRCBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\WRES_SRCBrowser.aspx.designer.cs">
+      <DependentUpon>WRES_SRCBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\WTOWBrowser.aspx.cs">
+      <DependentUpon>WTOWBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\WTOWBrowser.aspx.designer.cs">
+      <DependentUpon>WTOWBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\WTOWDetail.aspx.cs">
+      <DependentUpon>WTOWDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\WTOWDetail.aspx.designer.cs">
+      <DependentUpon>WTOWDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\WTOWInput.aspx.cs">
+      <DependentUpon>WTOWInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\WTOWInput.aspx.designer.cs">
+      <DependentUpon>WTOWInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\WUC_YCLGroup.ascx.cs">
+      <DependentUpon>WUC_YCLGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\WUC_YCLGroup.ascx.designer.cs">
+      <DependentUpon>WUC_YCLGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\YCLGroupBrowser.aspx.cs">
+      <DependentUpon>YCLGroupBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\YCLGroupBrowser.aspx.designer.cs">
+      <DependentUpon>YCLGroupBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\YCLInput.aspx.cs">
+      <DependentUpon>YCLInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\YCLInput.aspx.designer.cs">
+      <DependentUpon>YCLInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\YJ.aspx.cs">
+      <DependentUpon>YJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\YJ.aspx.designer.cs">
+      <DependentUpon>YJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\YJBaocun.aspx.cs">
+      <DependentUpon>YJBaocun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\YJBaocun.aspx.designer.cs">
+      <DependentUpon>YJBaocun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\InventoryProfitList.aspx.cs">
+      <DependentUpon>InventoryProfitList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\InventoryProfitList.aspx.designer.cs">
+      <DependentUpon>InventoryProfitList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\InventoryShortageList.aspx.cs">
+      <DependentUpon>InventoryShortageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\InventoryShortageList.aspx.designer.cs">
+      <DependentUpon>InventoryShortageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\InventoryShortageInput.aspx.cs">
+      <DependentUpon>InventoryShortageInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Storage\InventoryShortageInput.aspx.designer.cs">
+      <DependentUpon>InventoryShortageInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SYS\AdminTools.aspx.cs">
+      <DependentUpon>AdminTools.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SYS\AdminTools.aspx.designer.cs">
+      <DependentUpon>AdminTools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SYS\Grant.aspx.cs">
+      <DependentUpon>Grant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SYS\Grant.aspx.designer.cs">
+      <DependentUpon>Grant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SYS\UserDocDept.aspx.cs">
+      <DependentUpon>UserDocDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SYS\UserDocDept.aspx.designer.cs">
+      <DependentUpon>UserDocDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ToDo.aspx.cs">
+      <DependentUpon>ToDo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ToDo.aspx.designer.cs">
+      <DependentUpon>ToDo.aspx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Analysis\CorrespondingABCAnalysis.aspx.resx">
+      <DependentUpon>CorrespondingABCAnalysis.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CorrespondingABCMonthCompare.aspx.resx">
+      <DependentUpon>CorrespondingABCMonthCompare.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CorrespondingABCYearCompare.aspx.resx">
+      <DependentUpon>CorrespondingABCYearCompare.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CorrespondingAnalysis.aspx.resx">
+      <DependentUpon>CorrespondingAnalysis.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CorrespondingPeriodAnalysis.aspx.resx">
+      <DependentUpon>CorrespondingPeriodAnalysis.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CorrespondingPeriodAnalysisChart.aspx.resx">
+      <DependentUpon>CorrespondingPeriodAnalysisChart.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CorrespondingPeriodMonthCompare.aspx.resx">
+      <DependentUpon>CorrespondingPeriodMonthCompare.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CorrespondingPeriodYearCompare.aspx.resx">
+      <DependentUpon>CorrespondingPeriodYearCompare.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CurrentAnalysis.aspx.resx">
+      <DependentUpon>CurrentAnalysis.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CurrentROS.aspx.resx">
+      <DependentUpon>CurrentROS.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CurrentROSDetail.aspx.resx">
+      <DependentUpon>CurrentROSDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CurrentStock.aspx.resx">
+      <DependentUpon>CurrentStock.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CurrentVendor.aspx.resx">
+      <DependentUpon>CurrentVendor.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\CurrentWithDraw.aspx.resx">
+      <DependentUpon>CurrentWithDraw.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\DocRoute.aspx.resx">
+      <DependentUpon>DocRoute.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\DocStat.aspx.resx">
+      <DependentUpon>DocStat.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\ROSAnalysis.aspx.resx">
+      <DependentUpon>ROSAnalysis.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\ROSDetails.aspx.resx">
+      <DependentUpon>ROSDetails.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\StockAnalysis.aspx.resx">
+      <DependentUpon>StockAnalysis.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\StockDetail.aspx.resx">
+      <DependentUpon>StockDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\USECompare.aspx.resx">
+      <DependentUpon>USECompare.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\UseDetail.aspx.resx">
+      <DependentUpon>UseDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\USEMonthCompare.aspx.resx">
+      <DependentUpon>USEMonthCompare.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\VendorAnalysis.aspx.resx">
+      <DependentUpon>VendorAnalysis.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\VendorInDetail.aspx.resx">
+      <DependentUpon>VendorInDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\WithDrawAnalysis.aspx.resx">
+      <DependentUpon>WithDrawAnalysis.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\WithDrawDetail.aspx.resx">
+      <DependentUpon>WithDrawDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\WUC_DocDowithCount.ascx.resx">
+      <DependentUpon>WUC_DocDowithCount.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\WUC_DocStat.ascx.resx">
+      <DependentUpon>WUC_DocStat.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorPage.aspx.resx">
+      <DependentUpon>ErrorPage.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.aspx.resx">
+      <DependentUpon>Help.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\BRBWebControl.ascx.resx">
+      <DependentUpon>BRBWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CancelWebControl.ascx.resx">
+      <DependentUpon>CancelWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ConChooserWebControl.ascx.resx">
+      <DependentUpon>ConChooserWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DeptTreeControls.ascx.resx">
+      <DependentUpon>DeptTreeControls.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DGModel.ascx.resx">
+      <DependentUpon>DGModel.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DGModel_Items.ascx.resx">
+      <DependentUpon>DGModel_Items.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocAuditWebControl.ascx.resx">
+      <DependentUpon>DocAuditWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DocWebControl.ascx.resx">
+      <DependentUpon>DocWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DRWWebControl.ascx.resx">
+      <DependentUpon>DRWWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ItemsWebControl.ascx.resx">
+      <DependentUpon>ItemsWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PBORWebControl.ascx.resx">
+      <DependentUpon>PBORWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PCBRWebControl.ascx.resx">
+      <DependentUpon>PCBRWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\POWebControl.ascx.resx">
+      <DependentUpon>POWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PPWebControl.ascx.resx">
+      <DependentUpon>PPWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PRTVWebControl.ascx.resx">
+      <DependentUpon>PRTVWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RTSWebControl.ascx.resx">
+      <DependentUpon>RTSWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\SCRWebControl.ascx.resx">
+      <DependentUpon>SCRWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StatModule.ascx.resx">
+      <DependentUpon>StatModule.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\StorageDropdownlist.ascx.resx">
+      <DependentUpon>StorageDropdownlist.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\TRFWebControl.ascx.resx">
+      <DependentUpon>TRFWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\USWebControl.ascx.resx">
+      <DependentUpon>USWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\VariableStyle.ascx.resx">
+      <DependentUpon>VariableStyle.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\VendorChooserControl.ascx.resx">
+      <DependentUpon>VendorChooserControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WINWWebControl.ascx.resx">
+      <DependentUpon>WINWWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WTOWWebControl.ascx.resx">
+      <DependentUpon>WTOWWebControl.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WUCFeedBackGrid.ascx.resx">
+      <DependentUpon>WUCFeedBackGrid.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WUCFeedbackPurchase.ascx.resx">
+      <DependentUpon>WUCFeedbackPurchase.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WUC_DKCStock.ascx.resx">
+      <DependentUpon>WUC_DKCStock.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WUC_DKC_Stock_Panel.ascx.resx">
+      <DependentUpon>WUC_DKC_Stock_Panel.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WUC_GKCStock.ascx.resx">
+      <DependentUpon>WUC_GKCStock.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WUC_GKCStock_Panel.ascx.resx">
+      <DependentUpon>WUC_GKCStock_Panel.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WUC_WithDrawAnalysis.ascx.resx">
+      <DependentUpon>WUC_WithDrawAnalysis.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WUC_YCLStock.ascx.resx">
+      <DependentUpon>WUC_YCLStock.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\WUC_YCLStock_Panel.ascx.resx">
+      <DependentUpon>WUC_YCLStock_Panel.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ProjectItem.aspx.resx">
+      <DependentUpon>ProjectItem.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\CancelBrowser.aspx.resx">
+      <DependentUpon>CancelBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\CancelDetail.aspx.resx">
+      <DependentUpon>CancelDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\CancelInput.aspx.resx">
+      <DependentUpon>CancelInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\MRPBrowser.aspx.resx">
+      <DependentUpon>MRPBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\MRPDetail.aspx.resx">
+      <DependentUpon>MRPDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\MRPInput.aspx.resx">
+      <DependentUpon>MRPInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PBORBrowser.aspx.resx">
+      <DependentUpon>PBORBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PBORDetail.aspx.resx">
+      <DependentUpon>PBORDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PBORInput.aspx.resx">
+      <DependentUpon>PBORInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PBSABrowser.aspx.resx">
+      <DependentUpon>PBSABrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PBSADetail.aspx.resx">
+      <DependentUpon>PBSADetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PCBRSource.aspx.resx">
+      <DependentUpon>PCBRSource.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PINBrowser.aspx.resx">
+      <DependentUpon>PINBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\POBrowser.aspx.resx">
+      <DependentUpon>POBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PODetail.aspx.resx">
+      <DependentUpon>PODetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\POInput.aspx.resx">
+      <DependentUpon>POInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\POReport.aspx.resx">
+      <DependentUpon>POReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\POSBrowser.aspx.resx">
+      <DependentUpon>POSBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PPAYBrowser.aspx.resx">
+      <DependentUpon>PPAYBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PPAYDetail.aspx.resx">
+      <DependentUpon>PPAYDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PPBrowser.aspx.resx">
+      <DependentUpon>PPBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PPDetail.aspx.resx">
+      <DependentUpon>PPDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PPInput.aspx.resx">
+      <DependentUpon>PPInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PPReport.aspx.resx">
+      <DependentUpon>PPReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PRTVBrowser.aspx.resx">
+      <DependentUpon>PRTVBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PRTVDetail.aspx.resx">
+      <DependentUpon>PRTVDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PRTVInput.aspx.resx">
+      <DependentUpon>PRTVInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PslpBrowser.aspx.resx">
+      <DependentUpon>PslpBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PslpInput.aspx.resx">
+      <DependentUpon>PslpInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ROSBrowser.aspx.resx">
+      <DependentUpon>ROSBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ROSDetail.aspx.resx">
+      <DependentUpon>ROSDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ROSInput.aspx.resx">
+      <DependentUpon>ROSInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ROSSearch.aspx.resx">
+      <DependentUpon>ROSSearch.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\WebAjax.aspx.resx">
+      <DependentUpon>WebAjax.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommReport.aspx.resx">
+      <DependentUpon>CommReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\CategroyBrowser.aspx.resx">
+      <DependentUpon>CategroyBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\CategroyDetails.aspx.resx">
+      <DependentUpon>CategroyDetails.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\CategroyInput.aspx.resx">
+      <DependentUpon>CategroyInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\ClassfiyInput.aspx.resx">
+      <DependentUpon>ClassfiyInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\ConChooser.aspx.resx">
+      <DependentUpon>ConChooser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\DRWBrowser.aspx.resx">
+      <DependentUpon>DRWBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\DRWDetail.aspx.resx">
+      <DependentUpon>DRWDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\DRWInput.aspx.resx">
+      <DependentUpon>DRWInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\DRWSDetail.aspx.resx">
+      <DependentUpon>DRWSDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\DRWSListBrowser.aspx.resx">
+      <DependentUpon>DRWSListBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\InChooser1.aspx.resx">
+      <DependentUpon>InChooser1.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\ItemDetails.aspx.resx">
+      <DependentUpon>ItemDetails.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\ItemInput.aspx.resx">
+      <DependentUpon>ItemInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\ItemPriceTrendLine.aspx.resx">
+      <DependentUpon>ItemPriceTrendLine.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\ItemQuery.aspx.resx">
+      <DependentUpon>ItemQuery.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\OUTBrowser.aspx.resx">
+      <DependentUpon>OUTBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\ProjectItem.aspx.resx">
+      <DependentUpon>ProjectItem.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\PurposeBrowser.aspx.resx">
+      <DependentUpon>PurposeBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\PurposeInput.aspx.resx">
+      <DependentUpon>PurposeInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\RTSBrowser.aspx.resx">
+      <DependentUpon>RTSBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\RTSDetail.aspx.resx">
+      <DependentUpon>RTSDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\RTSInput.aspx.resx">
+      <DependentUpon>RTSInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\SCRBrowser.aspx.resx">
+      <DependentUpon>SCRBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\SCRDetail.aspx.resx">
+      <DependentUpon>SCRDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\SCRInput.aspx.resx">
+      <DependentUpon>SCRInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\StoBrowser.aspx.resx">
+      <DependentUpon>StoBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\StockBrowser.aspx.resx">
+      <DependentUpon>StockBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\StoConBrowser.aspx.resx">
+      <DependentUpon>StoConBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\StoConInput.aspx.resx">
+      <DependentUpon>StoConInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\StoInput.aspx.resx">
+      <DependentUpon>StoInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\StoManagerBrowser.aspx.resx">
+      <DependentUpon>StoManagerBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\StoManagerInput.aspx.resx">
+      <DependentUpon>StoManagerInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\UnitBrowser.aspx.resx">
+      <DependentUpon>UnitBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\UnitInput.aspx.resx">
+      <DependentUpon>UnitInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\UsingBrowser.aspx.resx">
+      <DependentUpon>UsingBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\WDRWSourceBrowser.aspx.resx">
+      <DependentUpon>WDRWSourceBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\WINWBrowser.aspx.resx">
+      <DependentUpon>WINWBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\WINWInput.aspx.resx">
+      <DependentUpon>WINWInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\WITAInput.aspx.resx">
+      <DependentUpon>WITAInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\WITRBrowser.aspx.resx">
+      <DependentUpon>WITRBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\WRES_SRCBrowser.aspx.resx">
+      <DependentUpon>WRES_SRCBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\WTOWBrowser.aspx.resx">
+      <DependentUpon>WTOWBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\WTOWDetail.aspx.resx">
+      <DependentUpon>WTOWDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\WTOWInput.aspx.resx">
+      <DependentUpon>WTOWInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\WUC_YCLGroup.ascx.resx">
+      <DependentUpon>WUC_YCLGroup.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\YCLGroupBrowser.aspx.resx">
+      <DependentUpon>YCLGroupBrowser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\YCLInput.aspx.resx">
+      <DependentUpon>YCLInput.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\YJ.aspx.resx">
+      <DependentUpon>YJ.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\YJBaocun.aspx.resx">
+      <DependentUpon>YJBaocun.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYS\UserDocDept.aspx.resx">
+      <DependentUpon>UserDocDept.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="App_Themes\Default\Default.skin" />
+    <None Include="Images\Button\MM\Thumbs.db" />
+    <Content Include="log4net.config">
+    </Content>
+    <Content Include="Master\Default.Master" />
+    <None Include="Images\default\button\Thumbs.db" />
+    <None Include="Images\default\form\clear-trigger.psd" />
+    <None Include="Images\default\form\date-trigger.psd" />
+    <None Include="Images\default\form\search-trigger.psd" />
+    <None Include="Images\default\form\trigger.psd" />
+    <None Include="Images\default\grid\Thumbs.db" />
+    <None Include="Images\default\shared\Thumbs.db" />
+    <None Include="Images\default\toolbar\Thumbs.db" />
+    <None Include="Images\default\window\left-corners.psd" />
+    <None Include="Images\default\window\left-right.psd" />
+    <None Include="Images\default\window\right-corners.psd" />
+    <None Include="Images\default\window\top-bottom.psd" />
+    <None Include="Images\treeview_images\.svn\all-wcprops" />
+    <None Include="Images\treeview_images\.svn\entries" />
+    <None Include="Images\treeview_images\.svn\format" />
+    <None Include="Images\treeview_images\.svn\prop-base\arrow_black.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\bg.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\break.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\calendar.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\col.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\contacts.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\deleted.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\deletedFolder.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\drafts.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\exp.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\folder.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\folders.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\inbox.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\journal.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\junk.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\notes.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\outbox.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\plus.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\root.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\search.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\searchFolder.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\sentItems.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\spacer.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\prop-base\tasks.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\arrow_black.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\bg.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\break.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\calendar.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\col.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\contacts.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\deleted.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\deletedFolder.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\drafts.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\exp.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\folder.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\folders.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\inbox.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\journal.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\junk.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\notes.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\outbox.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\plus.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\root.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\search.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\searchFolder.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\sentItems.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\spacer.gif.svn-base" />
+    <None Include="Images\treeview_images\.svn\text-base\tasks.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\all-wcprops" />
+    <None Include="Images\treeview_images\lines\.svn\entries" />
+    <None Include="Images\treeview_images\lines\.svn\format" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\dash.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\dashminus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\dashplus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\i.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\l.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\lminus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\lplus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\minus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\noexpand.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\r.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\rminus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\rplus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\t.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\tminus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\prop-base\tplus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\dash.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\dashminus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\dashplus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\i.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\l.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\lminus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\lplus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\minus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\noexpand.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\r.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\rminus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\rplus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\t.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\tminus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\.svn\text-base\tplus.gif.svn-base" />
+    <None Include="Images\treeview_images\lines\Thumbs.db" />
+    <None Include="Images\treeview_images\Thumbs.db" />
+    <None Include="Images\WebUIFrame\Thumbs.db" />
+    <Content Include="packages.config" />
+    <None Include="Templates\template.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\treeview_images\.svn\props\" />
+    <Folder Include="Images\treeview_images\.svn\tmp\prop-base\" />
+    <Folder Include="Images\treeview_images\.svn\tmp\props\" />
+    <Folder Include="Images\treeview_images\.svn\tmp\text-base\" />
+    <Folder Include="Images\treeview_images\lines\.svn\props\" />
+    <Folder Include="Images\treeview_images\lines\.svn\tmp\prop-base\" />
+    <Folder Include="Images\treeview_images\lines\.svn\tmp\props\" />
+    <Folder Include="Images\treeview_images\lines\.svn\tmp\text-base\" />
+    <Folder Include="UpLoadFile\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12220</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/WebMM</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,45 @@
+@import url("../../CSS/Common.css");
+@import url("../../CSS/Modules/DocAuditWebControl.css");
+@import url("../../CSS/Modules/DocWebControl.css");
+@import url("../../CSS/Modules/StorageDropdownlist.css");
+@import url("../../CSS/Modules/DGModel_Items.css");
+@import url("../../CSS/Modules/WINWWebControl.css");
+body
+{
+	margin: 8px 0px 0px 0px;
+}
+.td_Label
+{
+	width:10%;
+}
+.td_Content
+{
+	width:25%;
+}
+.txtVendor1
+{
+	width:60%;
+}
+.imgSearch
+{ 
+	border-width:0px;
+	vertical-align:middle;
+}
+.txtInvoiceNo
+{
+	width:90%;
+}
+.txtContractCode
+{
+	width:90%;
+}
+.td_Submit
+{
+	text-align:center;
+}
+.myItemControl
+{
+	height:280px;
+	vertical-align:top;
+}
+
