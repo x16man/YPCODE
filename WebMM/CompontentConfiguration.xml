@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--组件配置文件-->
+<Components>
+  <Component Name="WorkFlow" Version="V1.0">
+    <Purpose>用于工作流的数据库连接和日志路径</Purpose>
+    <DatabaseConnectionString>data source=.;initial catalog=MMDB;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+    <LogFilePath>c:\inetpub\wwwroot\webmm\log</LogFilePath>
+  </Component>
+  <Component Name="PubData" Version="V1.0">
+    <Purpose>PubData数据库</Purpose>
+    <DatabaseConnectionString>data source=.;initial catalog=PubData;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+  </Component>
+  <Component Name="MM" Version="V1.0">
+    <Purpose>物料数据库</Purpose>
+    <DatabaseConnectionString>data source=.;initial catalog=MMDB;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+  </Component>
+</Components>

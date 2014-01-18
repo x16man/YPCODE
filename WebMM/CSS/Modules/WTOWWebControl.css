@@ -1,0 +1,169 @@
+
+.tc_ItemCodeA
+{
+	width:20%;
+}
+.tc_ItemCode
+{	width:15%;
+}
+.tc_ItemNameA
+{
+	width:20%;
+}
+.tc_ItemName
+{
+	width:14%;
+}
+.tc_ItemSpecialA
+{
+	width:20%;
+}
+.tc_ItemSpecial
+{
+	width:14%;
+}
+.tc_ItemUnitNameA
+{
+	width:10%;
+}
+.tc_ItemUnitName
+{
+	width:7%;
+}
+.tc_StockNum
+{
+	width:10%;
+}
+.tc_PlanNum
+{
+	width:10%;
+}
+.tc_ItemNum
+{
+	width:10%;
+}
+.tc_ItemPriceA
+{
+	display:none;
+}
+.tc_ItemPrice
+{
+	width:10%;
+}
+.tc_ItemMoneyA
+{
+	 display:none;
+}
+.tc_ItemMoney
+{
+	width:10%;
+}
+.tc_ToolBar
+{
+	text-align:center;
+}
+
+
+.txtItemCode
+{
+	width:  60%;
+}
+.btnWWBrowser
+{
+	width:34px;
+	height:20px;
+}
+.txtItemName
+{
+	width: 90%;
+}
+.txtItemSpecial
+{
+	width: 90%;
+}
+.txtItemPrice
+{
+	width: 90%;
+}
+.txtReqNum
+{
+	width: 90%;
+}
+.txtItemNum
+{
+	width: 90%;
+}
+
+.txtRemark
+{
+	width:100%;
+	height: 50px;
+}
+.itemRemark
+{
+	padding-right: 2px;
+	margin-top: 10px;
+	padding-left: 2px;
+	width: 100%;
+	position: relative;
+}
+.TableaddHidden
+{
+	width:100%;
+	display: none;
+	font-size:12px;
+	position: relative;
+	margin-top: 10px;
+	border-right: #c1cdd8 1px solid;
+	border-left: #c1cdd8 1px solid;
+	border-top-style: none;
+	border-bottom: #c1cdd8 1px solid;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.Tableadd
+{
+	width: 100%;
+	display: block;
+	font-size:12px;
+	position: relative;
+	margin-top: 10px;
+	border-right: #c1cdd8 1px solid;
+	border-left: #c1cdd8 1px solid;
+	border-top-style: none;
+	border-bottom: #c1cdd8 1px solid;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.Tableadd TD
+{
+	border-right: #c1cdd8 1px solid;
+	border-left: #c1cdd8 1px solid;
+	border-bottom: #c1cdd8 1px solid;
+}
+
+.TableaddHidden TD
+{
+	border-right: #c1cdd8 1px solid;
+	border-left: #c1cdd8 1px solid;
+	border-bottom: #c1cdd8 1px solid;
+}
+.ifr_CalFrame
+{
+	display: none;  
+	width: 148px; 
+	position: absolute; 
+	height: 194px;
+	margin:0px 0px 0px 0px;
+	border-width:0px;
+}
+.DivItemtable
+{
+	width: 100%;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+}

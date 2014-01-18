@@ -1,0 +1,58 @@
+﻿
+/* ToolBar Button Begin --> */
+
+.ButtonSubmit
+{
+	background-image: url(../Images/Button/MM/Submit.gif);
+	background-repeat: no-repeat;
+}
+
+.ButtonCancel
+{
+	background-image: url(../Images/Button/MM/Cancel.gif);
+	background-repeat: no-repeat;
+}
+
+.ButtonDMAudit
+{
+	background-image: url(../Images/Button/MM/DMAudit.gif);
+	background-repeat: no-repeat;
+}
+
+.ButtonFMAudit
+{
+	background-image: url(../Images/Button/MM/FMAudit.gif);
+	background-repeat: no-repeat;
+}
+
+.ButtonGMAudit
+{
+	background-image: url(../Images/Button/MM/GMAudit.gif);
+	background-repeat: no-repeat;
+}
+
+.ButtonRubric
+{
+	background-image: url(../Images/Button/MM/Rubric.gif);
+	background-repeat: no-repeat;
+}
+
+.ButtonInvoiceBill
+{
+	background-image: url(../Images/Button/MM/InvoiceBill.gif);
+	background-repeat: no-repeat;
+}
+
+.ButtonPRTV
+{
+	background-image: url(../Images/Button/MM/PRTV.gif);
+	background-repeat: no-repeat;
+}
+
+.ButtonBOR
+{
+	background-image: url(../Images/Button/MM/BOR.gif);
+	background-repeat: no-repeat;
+}
+
+/* <-- ToolBar End */

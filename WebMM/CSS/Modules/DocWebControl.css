@@ -1,0 +1,41 @@
+
+.table_module
+{
+	width:100%;
+	border-width:0px;
+	border-collapse: separate;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+}
+.table_module td
+{
+	padding: 0px 0px 0px 0px;
+}
+.td_module_Image
+{
+	width:30%;
+}
+.td_module_Title
+{
+	width:40%;
+	text-align:center;
+	font-size:large;
+	font-weight:bold;
+	margin-left:auto;
+	margin-right:auto;
+}
+.td_module_DocNo
+{
+	width:30%;
+	text-align:right;
+}
+.td_module_date
+{
+	text-align:center;
+}
+.td_module_BillNo
+{
+	text-align:right;
+}

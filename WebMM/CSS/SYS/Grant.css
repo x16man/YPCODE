@@ -1,0 +1,121 @@
+@import url("../../CSS/Common.css");
+@import url("../../CSS/PCSTYLES.css");
+@import url("../../CSS/MZHREPOSITORY.css");
+.table_toolbar
+{
+	width:96%;
+	border-width:0px; 
+	margin-left:auto;
+	margin-right:auto;
+}
+.table_Role td
+{
+	padding: 0px 0px 0px 0px;
+}
+.td_toolbar
+{
+	border-top: #003399 1px solid; 
+	padding-left: 5px; 
+	padding-bottom: 2px; 
+	padding-top: 2px;
+}
+.td_RoleCode
+{
+	padding-right: 5px; 
+	padding-bottom: 2px; 
+	padding-top: 2px;
+}
+.td_RoleName
+{
+	padding-right: 5px; 
+	padding-bottom: 2px; 
+	padding-top: 2px;
+}
+.td_RoleDate
+{
+	padding-right: 5px; 
+	padding-bottom: 2px; 
+	padding-top: 2px;
+}
+.td_RoleReason
+{
+	padding-left: 5px; 
+	padding-bottom: 2px; 
+	padding-top: 2px
+}
+.td_RoleCheck
+{
+	padding-left: 5px; 
+	padding-bottom: 2px; 
+	padding-top: 2px
+}
+.td_RoleTitle
+{
+	BORDER-TOP: #003399 1px solid; 
+	PADDING-LEFT: 5px; 
+	PADDING-BOTTOM: 2px; 
+	PADDING-TOP: 5px
+}
+.Img_style
+{
+	CURSOR: hand; 
+}
+.Div_Title
+{
+	margin-top:4px;
+	padding-right:5px;
+}
+.datagrid td
+{
+	padding:3px;
+	height:18px;
+}
+.input_RoleName
+{
+	width:208px;
+}
+.input_RoleDate
+{
+	width:208px;
+}
+.input_RoleReason
+{
+	width:208px;
+}
+.input_RoleCode
+{
+	Width:208px;
+}
+.input_SelectUser
+{
+	height: 18px
+}
+.table_ItemList
+{
+	width:100%;
+	text-align:left;
+	border-width:0px; 
+}
+.table_Role
+{
+	border-width:0px;
+}
+.td_Submit
+{
+	padding-right: 5px; 
+	padding-bottom: 2px; 
+	padding-top: 2px;
+	text-align:center;
+	vertical-align:top;
+}
+.td_rolerights
+{
+	padding-left: 5px; 
+	padding-bottom: 2px; 
+	padding-top: 2px
+}
+.td_RoleEdit
+{
+	text-align:center;
+}
+

@@ -1,0 +1,341 @@
+
+A.selected_link {
+  color: #000000;
+  font-family: 宋体;
+  text-decoration: none;
+}
+
+.bold_text {
+  color: #003399;
+  font-weight: bolder;
+}
+
+.BtnImage {
+  filter: Gray alpha(opacity=35);
+}
+
+.eula_button_class {
+  background-color: buttonface;
+  behavior: url('Style/LINK.HTC');
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  color: buttontext;
+  font-family: 宋体;
+  font-size: 12px;
+}
+
+.eula_hr {
+  color: windowtext;
+  font-family: 宋体;
+  height: 1px;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+}
+
+.eula_maintext {
+  color: windowtext;
+  font-size: 12px; /* Localized Font-Size */
+}
+
+.eula_ordered_list {
+  color: windowtext;
+  font-family: 宋体;
+  margin-bottom: 0.1em;
+  margin-top: 0.5em;
+}
+
+.eula_ordered_list_item {
+  color: windowtext;
+  font-family: 宋体;
+  padding-top: 0.5em;
+}
+
+.eula_space_above {
+  color: windowtext;
+  font-family: 宋体;
+  padding-top: 0.75em;
+}
+
+.eula_text {
+  font-family: 宋体;
+}
+
+.eula_title {
+  color: windowtext;
+  font-family: 宋体;
+  font-weight: bolder;
+}
+
+.eula_titleunderline {
+  border-bottom: 1px solid black;
+  color: windowtext;
+  font-family: 宋体;
+  font-weight: bolder;
+}
+
+.eula_underline {
+  color: windowtext;
+  font-family: 宋体;
+  text-decoration: underline;
+}
+
+.eula_unordered_list {
+  color: windowtext;
+  font-family: 宋体;
+  margin-bottom: 0.1em;
+  margin-top: 0.1em;
+}
+
+.eula_unordered_list_item {
+  color: windowtext;
+  font-family: 宋体;
+  margin-top: 0.3em;
+}
+
+.header_text {
+  color: #003399;
+  font-family: 宋体;
+  font-size: 12px; /* Localized Font-Size */
+  font-weight: bold;
+}
+
+.help_title {
+  color: windowtext;
+  font-family: 宋体;
+  font-weight: bolder;
+}
+
+.image_link {
+  behavior: url('Style/LINK.HTC');
+}
+
+.link {
+  behavior: url('Style/BEHAVE.HTC');
+  color: #000000;
+  font-family: 宋体;
+  text-decoration: none;
+}
+
+.link2 {
+  behavior: url('Style/BEHAVE.HTC');
+  color: #003399;
+  font-family: 宋体;
+  text-decoration: none;
+}
+
+.logon_text1 {
+  color: windowtext;
+  font-family: 宋体;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.logon_text2 {
+  color: windowtext;
+  font-family: 宋体;
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.menu_cell {
+  padding-left: 0.45em;
+  padding-right: 0.45em;
+  vertical-align: middle;
+}
+
+.menu_divider {
+  color: white;
+  font-weight: normal;
+}
+
+.menu_divider_branding {
+  color: gray;
+  font-weight: normal;
+}
+
+.normal_text {
+  color: windowtext;
+  font-family: 宋体;
+}
+
+.ows_hr {
+  color: #3366cc;
+  height: 1px;
+}
+
+.ows_hr2 {
+  color: #3366cc;
+  height: 2px;
+}
+
+.page_title {
+  color: windowtext;
+  font-family: 宋体;
+  font-size: 14px; /* Localized Font-Size */
+  padding-left: 14px;
+}
+
+.page_title_subhead {
+  font-weight: normal;
+}
+
+.PageButtonDivider {
+  border-bottom: 2px solid #003399;
+  color: #003399;
+  font-family: 宋体;
+  font-size: 12px; /* Localized Font-Size */
+  font-weight: bold;
+  height: 1.5em;
+}
+
+.red_text {
+  color: red;
+  font-family: 宋体;
+}
+
+.section_border {
+  border-bottom: 1px solid #003399;
+  padding-top: 2px;
+}
+
+.section_text {
+  behavior: url('Style/BEHAVE.HTC');
+  color: #003399;
+  font-family: 宋体;
+  font-size: 13px; /* Localized Font-Size */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.section_text_nolink {
+  color: blue; /* BUGBUG (kenst) : Confirm color (?? #003399 ??) */
+  font-family: 宋体;
+  font-size: 13px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.selected_menu {
+  color: gold;
+  font-family: 宋体;
+  font-size: 12px; /* Localized Font-Size */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sr_name_text {
+  behavior: url('Style/BEHAVE.HTC');
+  color: #003399;
+  font-family: 宋体;
+  text-decoration: none;
+}
+
+.sr_text {
+  color: windowtext;
+  font-family: 宋体;
+}
+
+.sub_head_text {
+  color: #003399;
+  font-family: 宋体;
+  font-weight: bold;
+  height: 1.5em;
+}
+
+.sub_head_text2
+{
+	font-weight: bold;
+	color: #000000;
+	font-family: 宋体;
+	height: 1.5em;
+}
+
+.sub_section_link {
+  behavior: url('Style/BEHAVE.HTC');
+  border-top: 1px solid #003399;
+  color: #003399;
+  font-family: 宋体;
+  font-weight: bold;
+  height: 1.5em;
+  padding-top: 2px;
+  text-decoration: none;
+}
+
+.sub_section_text {
+  border-top: 1px solid #003399;
+  color: #003399;
+  font-family: 宋体;
+  font-size: 12px; /* Localized Font-Size */
+  font-weight: bold;
+  height: 1.5em;
+  padding-top: 2px;
+}
+
+.sub_section_text2 {
+  border-top: 1px solid #C0C0C0;
+  color: #003399;
+  font-family: 宋体;
+  font-size: 12px; /* Localized Font-Size */
+  height: 1.5em;
+  margin-top: 1em;
+  padding-top: 0.3em;
+}
+
+.sub_section_text_no_hr {
+  color: #003399;
+  font-family: 宋体;
+  font-weight: bold;
+  height: 1.5em;
+}
+
+.top_menu {
+  border-bottom: medium none;
+  border-left: white thin;
+  border-right: white thin;
+  border-top: medium none;
+  color: white;
+  font-family: 宋体;
+  font-size: 12px; /* Localized Font-Size */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.welcomeText
+{
+	border-right: white thin;
+	border-top: medium none;
+	font-weight: bold;
+	font-size: 12px;
+	border-left: white thin;
+	color: #FFD275;
+	border-bottom: medium none;
+	font-family: 宋体;
+	text-decoration: none;
+}
+
+.top_menu_branding {
+  border-bottom: medium none;
+  border-left: white thin;
+  border-right: white thin;
+  border-top: medium none;
+  color: gray;
+  font-family: 宋体;
+  font-size: 12px; /* Localized Font-Size */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.top_menu_branding_selected
+{
+	border-right: white thin;
+	border-top: medium none;
+	font-weight: bold;
+	font-size: 12px;
+	border-left: white thin;
+	color: gold;
+	border-bottom: medium none;
+	font-family: 宋体;
+	text-decoration: none;
+}

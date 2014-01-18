@@ -1,0 +1,44 @@
+@import url("../../CSS/Common.css");
+@import url("../../CSS/Modules/USWebControl.css");
+td 
+{ 
+	padding-right: 10px; 
+	padding-left: 10px; 
+}
+.table_toolbar
+{
+	width:100%;
+	border-width:0px;
+	border-collapse: separate;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	margin-left:auto;
+	margin-right:auto;
+	position:absolute;
+}
+.table_toolbar_td
+{
+	text-align:right;	
+}
+.img_style
+{
+	cursor: hand;
+}
+.mytable
+{
+	width: 100%;
+	border-right: #acc8f7 1px solid;
+	border-top: #acc8f7 1px solid;
+	border-left: #acc8f7 1px solid;
+	border-bottom: #acc8f7 1px solid;
+	border-collapse:collapse;
+}
+.mytable td
+{
+	border-right: #acc8f7 1px solid;
+	border-top: #acc8f7 1px solid;
+	border-left: #acc8f7 1px solid;
+	border-bottom: #acc8f7 1px solid;
+}

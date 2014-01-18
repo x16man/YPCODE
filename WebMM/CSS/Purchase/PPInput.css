@@ -1,0 +1,52 @@
+@import url("../../CSS/Common.css");
+@import url("../../CSS/Modules/DocAuditWebControl.css");
+@import url("../../CSS/Modules/DocWebControl.css");
+@import url("../../CSS/Modules/PPWebControl.css");
+@import url("../../CSS/Modules/StorageDropdownlist.css");
+@import url("../../CSS/Modules/USWebControl.css");
+@import url("../../CSS/Modules/DGModel_Items.css");
+body
+{
+	margin: 8px 0px 0px 0px;
+}
+.txt_rolename
+{
+	width:120px;
+}
+select#ddlDept_thisDDL
+{
+	width:120px;
+}
+.myTableToolbar
+{
+	width: 98%;
+	border-width:1px;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:18px;
+}
+.myTableToolbar td
+{
+	padding:1px 1px 1px 1px;
+}
+.td_Submit
+{
+	text-align:center;
+}
+.myItemControl
+{
+	height:280px;
+	vertical-align:top;
+}
+select#doc1_ddlYear_thisDDL
+{
+	width:80px;
+}
+select#doc1_ddlMonth_thisDDL
+{
+	width:80px;
+}
+.labelTable td {padding:0px;}
+.labelTable td input{height:23px;}
+.calendarDate{height:23px !important;width:70px;}
+.datePicker{border-style:solid solid solid none;padding-top:3px;}

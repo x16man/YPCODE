@@ -1,0 +1,27 @@
+﻿<%--
+默认的外观模板。以下外观仅作为示例提供。
+
+1. 命名的控件外观。SkinId 的定义应唯一，因为在同一主题中不允许一个控件类型有重复的 SkinId。
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. 默认外观。未定义 SkinId。在同一主题中每个控件类型只允许有一个默认的控件外观。
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<mzh:MzhDataGrid runat="server" HignLightCSS="m-grid-row-over" CssClass="datagrid"
+ CSSClassForPagerButtonJump="m-grid-pager-button-jump"  
+    SelectedCSS="m-grid-row-selected" CellPadding="3" BorderWidth="1px" CellSpacing="1"
+     HighLightColor="Gold" CSSClassForPagerInputPage="m-grid-pager-input-page" SelectedColor="Blue" Width="100%">
+</mzh:MzhDataGrid>
+<asp:TextBox  runat="server" CssClass="input" ></asp:TextBox>
+<asp:Button runat="server" CssClass="Commonbutton"></asp:Button>
+<mzh:ToolbarCalendar runat="server" CssClass="calendarDate"></mzh:ToolbarCalendar>
+<asp:TextBox  runat="server" SkinID="PurposeTable" style="width:100%"></asp:TextBox>
+<asp:TextBox  runat="server" SkinID="PurposeDisTable" ></asp:TextBox>
+<asp:TextBox  runat="server"  CssClass="Wdate" SkinID="PurposeDate" Width="100%" ></asp:TextBox>
+
+
+

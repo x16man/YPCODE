@@ -1,0 +1,108 @@
+@import url("../../Common.css");
+@import url("../../CSS/Modules/USWebControl.css");
+.td_title
+{
+	font-size:large;
+	font-weight:bold;
+	text-align:center;
+	height:35px;
+}
+.td_form
+{
+	padding-top:10px;
+	background-color:White;
+}
+.mytable_td
+{
+	font-weight:bold;
+}
+.mytable_td_Submit
+{
+	text-align:center;
+}
+.datagrid td
+{
+	padding:3px;
+	height:18px;
+}
+.mytable
+{
+	border-right: #acc8f7 1px solid;
+	border-top: #acc8f7 1px solid;
+	border-left: #acc8f7 1px solid;
+	width: 100%;
+	border-bottom: #acc8f7 1px solid;
+	border-collapse:collapse;
+	margin-left:auto;
+	margin-right:auto;
+}
+.mytable td
+{
+	border-right: #acc8f7 1px solid;
+	border-top: #acc8f7 1px solid;
+	border-left: #acc8f7 1px solid;
+	border-bottom: #acc8f7 1px solid;
+}
+.mytable_label
+{
+	width:15%;
+}
+
+.mytable_content
+{
+	width:35%;
+}
+
+.td_ItemLabel
+{
+	width:100px;
+	font-weight:bold;
+}
+.input_txtItemNameSearch
+{
+	width:150px;
+}
+.input_txtItemSpecSearch
+{
+	width:150px;
+}
+.input_ItemName
+{
+	width:96%; 
+}
+.input_txtRemark
+{
+	width:100%;
+	height:50px;	
+}
+.input_txtFeedBack
+{
+	width:100%;
+	height:50px;	
+}
+.input_txtDeptName
+{
+	 width:100%;
+}
+.input_txtAuthorName
+{
+	 width:100%;
+}
+.input_txtItemSpec
+{
+	 width:100%;
+}
+.input_txtItemPrice
+{
+	 width:100%;
+}
+.input_txtItemNum
+{
+	 width:100%;
+}
+.td_Search
+{
+	width:20px;
+}
+
+

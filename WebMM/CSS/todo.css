@@ -1,0 +1,62 @@
+@import url("../CSS/Common.css");
+body
+{
+	margin:8px 20px 0px 0px;
+}
+.table_toolbar
+{
+	width:100%;
+	border-width:0px;
+	border-collapse: separate;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	margin-left:auto;
+	margin-right:auto;
+}
+.td_line
+{
+	height:4px;
+	background-color:#2a55bd;
+	vertical-align:top;
+}
+
+.td_Feedback1
+{
+	background-color:#f1f6fc;
+}
+.td_FeedbackPurchase1
+{
+	background-color:#f1f6fc;
+}
+.td_NoPayed1
+{
+	background-color:#f1f6fc;
+}
+.td_blankLine
+{
+	background-color:#b6d1ee;
+}
+.td_Title
+{
+	width:20px;
+}
+.tr_blankheight
+{
+	height:8px;
+}
+.td_feedback
+{
+	vertical-align:top;
+	width:220px;
+}
+.td_separate
+{
+	width:5px;
+}
+.datagrid td
+{
+	padding:3px;
+	height:18px;
+}

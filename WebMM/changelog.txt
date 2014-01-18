@@ -1,0 +1,102 @@
+系统名称 changelog
+=======================================================================================================
+03/21/2013
+	- 紧急申购单增加NewCode字段。
+	- Pur_RequestOfStockGetByEntryNo 增加NewCode字段。
+	- 月度计划需求单增加NewCode字段。
+	- Pur_MRPGetByEntryNo 增加NewCode字段。
+	- 采购计划增加NewCode字段。
+	- Pur_PlanGetByEntryNo 增加NewCode字段。
+	- 
+	- Pur_PPSGetAll （ViewPurchasePlan，ViewPurchasePlanDetailSource，ViewNeedLackStock，ViewLackStock）增加NewCode
+	- Pur_PlanGetByEntryNoExceptZero 增加NewCode字段。
+	- 采购订单增加NewCode字段。
+	- Pur_OrderGetByEntryNo，Pur_OrderGetRepealEntryNo,Pur_POSGetByPKIDS
+	- ViewPurchaseOrderSource
+	- 采购收料单增加NewCode字段。
+	- Pur_BillOfReceiveGetByEntryNo，Pur_BillOfReceiveGetByEntryNoInMode
+	- 库存查询
+	- ViewWSTK 增加NewCode。
+	- 领料单增加NewCode字段。
+	- Sto_DRWGetByEntryNo，Sto_DRWGetBySelectedFeedback，Sto_DRWRed,Sto_DRWGetByEntryNoOutMode
+	- ViewDrawSourceDetail
+05/06/2013
+	- 物料维护页面增加NewCode字段。
+	- WITM表 增加NewCode字段。
+	- Modify sp Sto_ItemCompleteQuery,Sto_ItemInsert,Sto_ItemUpdate.
+01/09/2012
+	-       应张澄要求，允许用途名称重复。
+12/12/2011
+	-[Fix]	/Module/RTSWebControl.ascx.cs.新建单据时，删除物料记录时会出错或会删错。
+05/11/2011
+	-[Fix]	/Storage/ItemQuery.aspx 页码下拉列表，和pagesize bug。
+04/20/2011
+	-[Change] SUDD 增加角色ID字段。
+04/19/2011
+	- [Change] PROS 增加四级审批。
+	-          SBOD表增加四级审批。
+12/22/2010
+	- 发布 v1.0.0.5(张豪)
+	- 增加盘点功能。
+	- SQL 更新
+	-    Function：	GetAssessor1.sql 
+					GetAssessor2.sql
+					GetAssessor3.sql
+					GetEntryAuthorAndStatus.sql
+					GetPriOfDoc.sql
+					GetReqDeptNameOfDoc.sql
+					GetSubTotal.sql
+					GetTitleString.sql
+					GetUserByProc_Entry.sql
+					GetUserByProc_Role_Entry.sql
+					WF_EntryCode.sql
+					GetItemSummary.sql
+	-	Table:		Inventory.sql
+					InventoryDetail.sql
+					InventoryProfit.sql
+					InventoryProfitDetail.sql
+					InventoryShortage.sql
+					InventoryShortageDetail.sql
+	-	StoreProcedure:	
+						盘盈/InventoryProfit_ThirdAudit.sql
+						盘盈/InventoryStockIn.sql
+						工作流/WF_BatchThirdAudit.sql
+						工作流/WF_CreateToDoList.sql
+						公用/GetTooltipDataByEntryNo.sql
+						Sto_IOInsert.sql
+						Sto_IO_InventoryProfitInsert.sql
+						
+						采购收料单/Pur_StockInsert.sql
+						采购收料单/Pur_BillOfReceiveReceiveDetail.sql
+						领料单/Sto_DRWGetStockChoice.sql
+						领料单/Sto_DRWDowithRedStock.sql
+						领料单/Sto_DRWDowithDrawBill.sql
+						盘亏/InventoryShortage_DowithStock.sql
+						盘亏/InventoryShortage_DowithRedStock.sql
+						盘亏/InventoryShortage_DowithDrawBill.sql
+						盘亏/InventoryShortage_StockOut.sql
+						盘亏/InventoryShortage_ThirdAudit.sql
+	-	View:	ViewIn.sql
+	-			ViewOut.sql
+
+03/08/2010
+	-发布 v1.0.0.4(张豪)
+	-Task [#2863] Fix V1.0.0.3的Bug。
+02/21/2010
+	-发布 v1.0.0.3(zhangfeng)
+	- [#2863] 采购收料，采购订单出现用途代码
+
+12/30/2009
+	-发布 v1.0.0.2(zhangfeng)
+	- [#2740] 用户单据优化排序
+	
+12/15/2009
+	-发布 v1.0.0.1(zhangfeng)
+	- 增加 单据状态为领料的列表背景颜色
+
+10/20/2009
+	- 发布 v1.0.0.0 （zhangfeng）
+
+
+	
+	

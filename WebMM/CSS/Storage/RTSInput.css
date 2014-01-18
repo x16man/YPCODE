@@ -1,0 +1,195 @@
+@import url("../../CSS/Common.css");
+@import url("../../CSS/Modules/DocAuditWebControl.css");
+@import url("../../CSS/Modules/DocWebControl.css");
+@import url("../../CSS/Modules/StorageDropdownlist.css");
+@import url("../../CSS/Modules/DGModel_Items.css");
+@import url("../../CSS/Modules/USWebControl.css");
+@import url("../../CSS/Modules/RTSWebControl.css");
+body
+{
+	margin: 0px 0px 0px 0px;
+}
+.td_Label
+{
+	width:15%;
+}
+.td_Content
+{
+	width:35%;
+}
+select#ddlDept_thisDDL
+{
+	width:71%;
+}
+
+.TextBox2
+{
+	width:90%;
+}
+.txtReceiver
+{
+	width:90%;
+}
+.txtProposer
+{
+	width:90%;
+}
+.TextBox1
+{
+	width:90%;
+}
+.myTableToolbar
+{
+	width: 98%;
+	border-width:1px;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:18px;
+}
+.myTableToolbar td
+{
+	padding:2px 2px 2px 2px;
+}
+.td_Submit
+{
+	text-align:center;
+}
+.myItemControl
+{
+	height:260px;
+	vertical-align:top;
+}
+
+.tc_ItemCode
+{
+	width:13%;
+}
+.tc_ItemName
+{
+	width:13%;
+}
+.tc_ItemSpecial
+{
+	width:13%;
+}
+.tc_ItemUnitName
+{
+	width:11%;
+}
+.tc_ItemPrice
+{
+	width:10%;
+}
+.tc_PlanNum
+{
+	width:10%;
+}
+.tc_ItemNum
+{
+	width:10%;
+}
+.tc_ItemMoney
+{
+	width:10%;
+}
+.tc_ConName
+{
+	width:10%;
+}
+.TableaddHidden
+{
+	width:100%;
+	display: none;
+	font-size:12px;
+	position: relative;
+	margin-top: 0px;
+	border-right: #c1cdd8 1px solid;
+	border-left: #c1cdd8 1px solid;
+	border-top-style: none;
+	border-bottom: #c1cdd8 1px solid;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.Tableadd
+{
+	width: 100%;
+	display: block;
+	font-size:12px;
+	position: relative;
+	margin-top: 0px;
+	border-right: #c1cdd8 1px solid;
+	border-left: #c1cdd8 1px solid;
+	border-top-style: none;
+	border-bottom: #c1cdd8 1px solid;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.Tableadd TD
+{
+	border-right: #c1cdd8 1px solid;
+	border-left: #c1cdd8 1px solid;
+	border-bottom: #c1cdd8 1px solid;
+}
+
+.TableaddHidden TD
+{
+	border-right: #c1cdd8 1px solid;
+	border-left: #c1cdd8 1px solid;
+	border-bottom: #c1cdd8 1px solid;
+}
+.txtItemCode
+{
+	width:90%;
+}
+.txtItemName
+{
+	width:90%;
+}
+.txtItemSpecial
+{
+	width:90%;
+}
+.txtItemUnit
+{
+	width:90%;
+}
+.txtItemPrice
+{
+	width:90%;	
+}
+.txtPlanNum
+{
+	width:90%;
+}
+.txtItemNum
+{
+	width:90%;
+}
+.txtItemMoney
+{
+	width:90%;
+}
+.itemRemark
+{
+	padding-right: 2px;
+	margin-top: 10px;
+	padding-left: 2px;
+	width: 100%;
+	position: relative;
+	text-align:left;
+}
+.txtRemark
+{
+	width:100%;
+	height: 50px;
+}
+.myItemControl
+{
+	height:200px;
+	vertical-align:top;
+}
+
+
+

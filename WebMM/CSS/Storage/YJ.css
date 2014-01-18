@@ -1,0 +1,63 @@
+@import url("../../CSS/Common.css");
+body
+{
+	margin:8px 0px 0px 10px;
+	font-size:2;
+}
+.table_toolbar
+{
+	width:180px;
+	border-width:0px;
+	border-collapse: separate;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	margin-left:0px;
+}
+.table_toolbar td
+{
+	padding: 1px;
+}
+.label_selectDate
+{
+	z-index: 101; 
+	left: 8px; 
+	width:176px;
+}
+.label_selectYear
+{
+	z-index: 102; 
+	margin-left: 16px; 
+}
+.label_selectMonth
+{
+	z-index: 104; 
+	margin-left: 16px;
+}
+.label_Return
+{
+	z-index: 107; 
+	left: 16px; 
+	width:376px;
+}
+
+.select_ddlYear
+{
+	z-index: 103; 
+	width:100px 
+}
+.select_ddlMonth
+{
+	z-index: 105;  
+	width:80px;
+}
+.btn_YJ
+{
+	z-index: 106;
+}
+.td_submit
+{
+	 text-align:center;
+}
+
