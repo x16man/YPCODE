@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="schemaId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByIdResult" type="tns:GraphSchemaInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GraphSchemaInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SchemaId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsValid" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Layout" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TabWidth" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemList" type="tns:ArrayOfGraphSchemaItemInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="FloatingBlockInfos" type="tns:ArrayOfFloatingBlockInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="GraphSchemaTabInfos" type="tns:ArrayOfGraphSchemaTabInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TitleVisible" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="TitleFontSize" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleFontFamily" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LegendVisible" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="LegendFontSize" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="LegendFontFamily" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LegendIsShowSymbols" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="LegendIsHStack" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="LegendPosition" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Margin" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="InnerPaneGap" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferLoginName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReferOpTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfGraphSchemaItemInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GraphSchemaItemInfo" nillable="true" type="tns:GraphSchemaItemInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GraphSchemaItemInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ItemId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SchemaId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TitleVisible" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="TitleFontSize" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleFontFamily" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LegendVisible" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="LegendFontSize" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="LegendFontFamily" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LegendIsShowSymbols" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="LegendIsHStack" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="LegendPosition" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="XAxis" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="XScaleVisible" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="XScaleFontSize" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="XScaleFontFamily" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="XTitleVisible" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="XTitleFontSize" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="XTitleFontFamily" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="YAxis" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="YScaleVisible" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="YScaleFontSize" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="YScaleFontFaminly" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="YTitleVisible" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="YTitleFontSize" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="YTitleFontFamily" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinSpaceL" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinSpaceR" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="SerialNumber" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="XScaleFormat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="YScaleFormat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TagList" type="tns:ArrayOfGraphSchemaTagInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfGraphSchemaTagInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GraphSchemaTagInfo" nillable="true" type="tns:GraphSchemaTagInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GraphSchemaTagInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="KeyId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ItemId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TagId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TagName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurveType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurveColor" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SerialNumber" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LineWidth" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="SymbolType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SymbolSize" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="MAPeriod" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LineType" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="SymbolColor" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfFloatingBlockInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FloatingBlockInfo" nillable="true" type="tns:FloatingBlockInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FloatingBlockInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SchemaId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BlockId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FillColor" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BorderColor" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LableFontSize" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="LableFontFamily" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LableForeColor" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="X" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="Y" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="Width" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="Height" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsAutoSize" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemList" type="tns:ArrayOfFloatingBlockItemInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsLabelInLine" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfFloatingBlockItemInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FloatingBlockItemInfo" nillable="true" type="tns:FloatingBlockItemInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FloatingBlockItemInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="BlockItemId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BlockId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Label" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TagExp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BorderColor" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValueFontSize" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="ValueFontFamily" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValueForeColor" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnitFontSize" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="UnitFontFamily" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnitForeColor" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SerialNumber" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfGraphSchemaTabInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GraphSchemaTabInfo" nillable="true" type="tns:GraphSchemaTabInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GraphSchemaTabInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TabId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SchemaId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TabName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TabType" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="TabVisible" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TitleVisible" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SerialNumber" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RTagList" type="tns:ArrayOfGraphSchemaRTagInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfGraphSchemaRTagInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GraphSchemaRTagInfo" nillable="true" type="tns:GraphSchemaRTagInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GraphSchemaRTagInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RTagId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TabId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TagId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TagName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SerialNumber" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TagValue" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetByName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByNameResult" type="tns:GraphSchemaInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllResult" type="tns:ArrayOfGraphSchemaInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfGraphSchemaInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GraphSchemaInfo" nillable="true" type="tns:GraphSchemaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetByCategoryId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByCategoryIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByCategoryIdResult" type="tns:ArrayOfGraphSchemaInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNoCategorySchema">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNoCategorySchemaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNoCategorySchemaResult" type="tns:ArrayOfGraphSchemaInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="schemaId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="graphSchemaInfo" type="tns:GraphSchemaInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="graphSchemaInfo" type="tns:GraphSchemaInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLoginName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="schemaId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="referLoginName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLoginNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateLoginNameResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeepSave">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:GraphSchemaInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeepSaveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeepSaveResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetById" />
+  </wsdl:message>
+  <wsdl:message name="GetByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByName" />
+  </wsdl:message>
+  <wsdl:message name="GetByNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAll" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByCategoryIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByCategoryId" />
+  </wsdl:message>
+  <wsdl:message name="GetByCategoryIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByCategoryIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNoCategorySchemaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNoCategorySchema" />
+  </wsdl:message>
+  <wsdl:message name="GetNoCategorySchemaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNoCategorySchemaResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSoapIn">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSoapIn">
+    <wsdl:part name="parameters" element="tns:Insert" />
+  </wsdl:message>
+  <wsdl:message name="InsertSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLoginNameSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateLoginName" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLoginNameSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateLoginNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeepSaveSoapIn">
+    <wsdl:part name="parameters" element="tns:DeepSave" />
+  </wsdl:message>
+  <wsdl:message name="DeepSaveSoapOut">
+    <wsdl:part name="parameters" element="tns:DeepSaveResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GraphSchemaSoap">
+    <wsdl:operation name="GetById">
+      <wsdl:input message="tns:GetByIdSoapIn" />
+      <wsdl:output message="tns:GetByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByName">
+      <wsdl:input message="tns:GetByNameSoapIn" />
+      <wsdl:output message="tns:GetByNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <wsdl:input message="tns:GetAllSoapIn" />
+      <wsdl:output message="tns:GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByCategoryId">
+      <wsdl:input message="tns:GetByCategoryIdSoapIn" />
+      <wsdl:output message="tns:GetByCategoryIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNoCategorySchema">
+      <wsdl:input message="tns:GetNoCategorySchemaSoapIn" />
+      <wsdl:output message="tns:GetNoCategorySchemaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input message="tns:DeleteSoapIn" />
+      <wsdl:output message="tns:DeleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <wsdl:input message="tns:InsertSoapIn" />
+      <wsdl:output message="tns:InsertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input message="tns:UpdateSoapIn" />
+      <wsdl:output message="tns:UpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLoginName">
+      <wsdl:input message="tns:UpdateLoginNameSoapIn" />
+      <wsdl:output message="tns:UpdateLoginNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeepSave">
+      <wsdl:input message="tns:DeepSaveSoapIn" />
+      <wsdl:output message="tns:DeepSaveSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GraphSchemaSoap" type="tns:GraphSchemaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetById">
+      <soap:operation soapAction="http://tempuri.org/GetById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByName">
+      <soap:operation soapAction="http://tempuri.org/GetByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <soap:operation soapAction="http://tempuri.org/GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByCategoryId">
+      <soap:operation soapAction="http://tempuri.org/GetByCategoryId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNoCategorySchema">
+      <soap:operation soapAction="http://tempuri.org/GetNoCategorySchema" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <soap:operation soapAction="http://tempuri.org/Insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap:operation soapAction="http://tempuri.org/Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLoginName">
+      <soap:operation soapAction="http://tempuri.org/UpdateLoginName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeepSave">
+      <soap:operation soapAction="http://tempuri.org/DeepSave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GraphSchemaSoap12" type="tns:GraphSchemaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetById">
+      <soap12:operation soapAction="http://tempuri.org/GetById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByName">
+      <soap12:operation soapAction="http://tempuri.org/GetByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <soap12:operation soapAction="http://tempuri.org/GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByCategoryId">
+      <soap12:operation soapAction="http://tempuri.org/GetByCategoryId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNoCategorySchema">
+      <soap12:operation soapAction="http://tempuri.org/GetNoCategorySchema" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap12:operation soapAction="http://tempuri.org/Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert">
+      <soap12:operation soapAction="http://tempuri.org/Insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap12:operation soapAction="http://tempuri.org/Update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLoginName">
+      <soap12:operation soapAction="http://tempuri.org/UpdateLoginName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeepSave">
+      <soap12:operation soapAction="http://tempuri.org/DeepSave" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GraphSchema">
+    <wsdl:port name="GraphSchemaSoap" binding="tns:GraphSchemaSoap">
+      <soap:address location="http://localhost/Shmzh.Monitor.DataService/GraphSchema.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GraphSchemaSoap12" binding="tns:GraphSchemaSoap12">
+      <soap12:address location="http://localhost/Shmzh.Monitor.DataService/GraphSchema.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

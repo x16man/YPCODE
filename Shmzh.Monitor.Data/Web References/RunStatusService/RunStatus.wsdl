@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://shuizhi.ypwater.com/DataService/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://shuizhi.ypwater.com/DataService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://shuizhi.ypwater.com/DataService/">
+      <s:element name="Get_Current_By_TagId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tagId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Current_By_TagIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Current_By_TagIdResult" type="tns:RunStatusInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RunStatusInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="PKID" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dev_Code" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Begin_Time" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="End_Time" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Operator" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="I_Tag_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Get_Current_By_DevCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="devCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Current_By_DevCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Current_By_DevCodeResult" type="tns:RunStatusInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Current_By_DevCodes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="devCodes" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Current_By_DevCodesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Current_By_DevCodesResult" type="tns:ArrayOfRunStatusInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRunStatusInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RunStatusInfo" nillable="true" type="tns:RunStatusInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Get_Current_All">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_Current_AllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Current_AllResult" type="tns:ArrayOfRunStatusInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Get_Current_By_TagIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Current_By_TagId" />
+  </wsdl:message>
+  <wsdl:message name="Get_Current_By_TagIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Current_By_TagIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Current_By_DevCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Current_By_DevCode" />
+  </wsdl:message>
+  <wsdl:message name="Get_Current_By_DevCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Current_By_DevCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Current_By_DevCodesSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Current_By_DevCodes" />
+  </wsdl:message>
+  <wsdl:message name="Get_Current_By_DevCodesSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Current_By_DevCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Current_AllSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Current_All" />
+  </wsdl:message>
+  <wsdl:message name="Get_Current_AllSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Current_AllResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RunStatusSoap">
+    <wsdl:operation name="Get_Current_By_TagId">
+      <wsdl:input message="tns:Get_Current_By_TagIdSoapIn" />
+      <wsdl:output message="tns:Get_Current_By_TagIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Current_By_DevCode">
+      <wsdl:input message="tns:Get_Current_By_DevCodeSoapIn" />
+      <wsdl:output message="tns:Get_Current_By_DevCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Current_By_DevCodes">
+      <wsdl:input message="tns:Get_Current_By_DevCodesSoapIn" />
+      <wsdl:output message="tns:Get_Current_By_DevCodesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Current_All">
+      <wsdl:input message="tns:Get_Current_AllSoapIn" />
+      <wsdl:output message="tns:Get_Current_AllSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RunStatusSoap" type="tns:RunStatusSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_Current_By_TagId">
+      <soap:operation soapAction="http://shuizhi.ypwater.com/DataService/Get_Current_By_TagId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Current_By_DevCode">
+      <soap:operation soapAction="http://shuizhi.ypwater.com/DataService/Get_Current_By_DevCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Current_By_DevCodes">
+      <soap:operation soapAction="http://shuizhi.ypwater.com/DataService/Get_Current_By_DevCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Current_All">
+      <soap:operation soapAction="http://shuizhi.ypwater.com/DataService/Get_Current_All" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RunStatusSoap12" type="tns:RunStatusSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_Current_By_TagId">
+      <soap12:operation soapAction="http://shuizhi.ypwater.com/DataService/Get_Current_By_TagId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Current_By_DevCode">
+      <soap12:operation soapAction="http://shuizhi.ypwater.com/DataService/Get_Current_By_DevCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Current_By_DevCodes">
+      <soap12:operation soapAction="http://shuizhi.ypwater.com/DataService/Get_Current_By_DevCodes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Current_All">
+      <soap12:operation soapAction="http://shuizhi.ypwater.com/DataService/Get_Current_All" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RunStatus">
+    <wsdl:port name="RunStatusSoap" binding="tns:RunStatusSoap">
+      <soap:address location="http://localhost/Shmzh.Monitor.DataService/RunStatus.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RunStatusSoap12" binding="tns:RunStatusSoap12">
+      <soap12:address location="http://localhost/Shmzh.Monitor.DataService/RunStatus.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>  
+  <!--窗体的背景图-->
+  <BackGround>
+    <Item Color="200,200,200" Src="" IsTiled="True" />
+  </BackGround>
+  <SpecialStyle>
+    <Priority>
+      <Item Name="普通" BackColor="255,255,255" />
+      <Item Name="紧急" BackColor="255,230,230" />
+    </Priority>
+    <State>
+      <Item Name="不通过" ForeColor="0,0,200" />
+      <Item Name="已确认" ForeColor="0,200,0" />
+      <Item Name="未完成" ForeColor="0,0,255" />
+      <Item Name="已完成" ForeColor="200,200,200" />
+    </State>
+  </SpecialStyle>
+  <Style>
+    <Title ForeColor="0,0,0" IsBold="True" Font="宋体" FontSize="36" >中控室日常任务进行图</Title>
+    <Label ForeColor="0,0,0" IsBold="False" Font="宋体" FontSize="18" />
+    <!--PgdnTime：当列表记录过多显示不全时，向下滚动一条记录的时间间隔，单位是秒。-->
+    <DayList PgdnTime="3" ProjectType="中控室任务,公告88" State="" Title="最近24小时任务列表" Height="200" >
+      <Header ForeColor="0,0,0" BackColor="252,235,152" Height="28" IsBold="True" Font="宋体" FontSize="18" />
+      <Item IsBold="True" Font="宋体" FontSize="18" Height="28" />
+      <Columns>
+        <!--注意：Name 为程序中所用列名，是不可更改的。-->
+        <Column Name="colID" Title="编号" Visible="True"></Column>
+        <Column Name="colName" Title="任务名称" Visible="True"></Column>
+        <Column Name="colPriority" Title="优先级" Visible="False"></Column>
+        <Column Name="colState" Title="当前状态" Visible="False"></Column>
+        <Column Name="colPrincipal" Title="指定负责人" Visible="True"></Column>
+        <Column Name="colPlanFinishDate" Title="限定时间" Visible="True"></Column>
+        <Column Name="colMaster" Title="发布人" Visible="True"></Column>
+        <Column Name="colCreateTime" Title="发布时间" Visible="True"></Column>
+      </Columns>
+    </DayList>
+    <!--PgdnTime：当列表记录过多显示不全时，向下滚动一条记录的时间间隔，单位是秒。-->
+    <WeekList PgdnTime="3" ProjectType="中控室任务,公告88" State="不通过,已确认,未完成" Title="最近1周未完成任务列表" Height="300" >
+      <Header ForeColor="0,0,0" BackColor="252,235,152" Height="28" IsBold="True" Font="宋体" FontSize="18" />
+      <Item IsBold="True" Font="宋体" FontSize="18" Height="28" />
+      <Columns>
+        <!--注意：Name 为程序中所用列名，是不可更改的。-->
+        <Column Name="colIDWeek" Title="编号" Visible="True"></Column>
+        <Column Name="colNameWeek" Title="任务名称" Visible="True"></Column>
+        <Column Name="colPriorityWeek" Title="优先级" Visible="False"></Column>
+        <Column Name="colStateWeek" Title="当前状态" Visible="False"></Column>
+        <Column Name="colPrincipalWeek" Title="指定负责人" Visible="True"></Column>
+        <Column Name="colPlanFinishDateWeek" Title="限定时间" Visible="True"></Column>
+        <Column Name="colMasterWeek" Title="发布人" Visible="True"></Column>
+        <Column Name="colCreateTimeWeek" Title="发布时间" Visible="True"></Column>
+      </Columns>
+    </WeekList>
+  </Style>
+</Configuration>

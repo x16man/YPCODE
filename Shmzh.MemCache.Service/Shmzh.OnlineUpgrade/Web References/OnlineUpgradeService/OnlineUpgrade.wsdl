@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetAppsVirtualRoot">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAppsVirtualRootResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppsVirtualRootResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckVersion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="product" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckVersionResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUpgradeList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="product" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUpgradeListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUpgradeListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CheckIsNeedZip">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="product" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckIsNeedZipResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckIsNeedZipResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZipFiles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="product" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZipFilesResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTotalBytes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="product" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTotalBytesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTotalBytesResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadFileBytes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="product" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadFileBytesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownloadFileBytesResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAppsVirtualRootSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppsVirtualRoot" />
+  </wsdl:message>
+  <wsdl:message name="GetAppsVirtualRootSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppsVirtualRootResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckVersion" />
+  </wsdl:message>
+  <wsdl:message name="CheckVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUpgradeListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUpgradeList" />
+  </wsdl:message>
+  <wsdl:message name="GetUpgradeListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUpgradeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckIsNeedZipSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckIsNeedZip" />
+  </wsdl:message>
+  <wsdl:message name="CheckIsNeedZipSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckIsNeedZipResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZipFilesSoapIn">
+    <wsdl:part name="parameters" element="tns:ZipFiles" />
+  </wsdl:message>
+  <wsdl:message name="ZipFilesSoapOut">
+    <wsdl:part name="parameters" element="tns:ZipFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalBytesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTotalBytes" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalBytesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTotalBytesResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownloadFileBytesSoapIn">
+    <wsdl:part name="parameters" element="tns:DownloadFileBytes" />
+  </wsdl:message>
+  <wsdl:message name="DownloadFileBytesSoapOut">
+    <wsdl:part name="parameters" element="tns:DownloadFileBytesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OnlineUpgradeSoap">
+    <wsdl:operation name="GetAppsVirtualRoot">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取应用程序的虚拟目录根目录。</wsdl:documentation>
+      <wsdl:input message="tns:GetAppsVirtualRootSoapIn" />
+      <wsdl:output message="tns:GetAppsVirtualRootSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckVersion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">检查客户端版本是否需要升级。需要升级则返回 true， 否则返回 false。</wsdl:documentation>
+      <wsdl:input message="tns:CheckVersionSoapIn" />
+      <wsdl:output message="tns:CheckVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUpgradeList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取要更新的文件列表。</wsdl:documentation>
+      <wsdl:input message="tns:GetUpgradeListSoapIn" />
+      <wsdl:output message="tns:GetUpgradeListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckIsNeedZip">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">检查是否需要重新打包升级文件。需要重新打包返回 true，否则返回 false。</wsdl:documentation>
+      <wsdl:input message="tns:CheckIsNeedZipSoapIn" />
+      <wsdl:output message="tns:CheckIsNeedZipSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZipFiles">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">重新打包升级文件。</wsdl:documentation>
+      <wsdl:input message="tns:ZipFilesSoapIn" />
+      <wsdl:output message="tns:ZipFilesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalBytes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取升级包的大小。</wsdl:documentation>
+      <wsdl:input message="tns:GetTotalBytesSoapIn" />
+      <wsdl:output message="tns:GetTotalBytesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFileBytes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回需要下载的文件字节。</wsdl:documentation>
+      <wsdl:input message="tns:DownloadFileBytesSoapIn" />
+      <wsdl:output message="tns:DownloadFileBytesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OnlineUpgradeSoap" type="tns:OnlineUpgradeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAppsVirtualRoot">
+      <soap:operation soapAction="http://tempuri.org/GetAppsVirtualRoot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckVersion">
+      <soap:operation soapAction="http://tempuri.org/CheckVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUpgradeList">
+      <soap:operation soapAction="http://tempuri.org/GetUpgradeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckIsNeedZip">
+      <soap:operation soapAction="http://tempuri.org/CheckIsNeedZip" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZipFiles">
+      <soap:operation soapAction="http://tempuri.org/ZipFiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalBytes">
+      <soap:operation soapAction="http://tempuri.org/GetTotalBytes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFileBytes">
+      <soap:operation soapAction="http://tempuri.org/DownloadFileBytes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OnlineUpgradeSoap12" type="tns:OnlineUpgradeSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAppsVirtualRoot">
+      <soap12:operation soapAction="http://tempuri.org/GetAppsVirtualRoot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckVersion">
+      <soap12:operation soapAction="http://tempuri.org/CheckVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUpgradeList">
+      <soap12:operation soapAction="http://tempuri.org/GetUpgradeList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckIsNeedZip">
+      <soap12:operation soapAction="http://tempuri.org/CheckIsNeedZip" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZipFiles">
+      <soap12:operation soapAction="http://tempuri.org/ZipFiles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalBytes">
+      <soap12:operation soapAction="http://tempuri.org/GetTotalBytes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFileBytes">
+      <soap12:operation soapAction="http://tempuri.org/DownloadFileBytes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OnlineUpgrade">
+    <wsdl:port name="OnlineUpgradeSoap" binding="tns:OnlineUpgradeSoap">
+      <soap:address location="http://localhost/Shmzh.OnlineUpgradeService/OnlineUpgrade.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OnlineUpgradeSoap12" binding="tns:OnlineUpgradeSoap12">
+      <soap12:address location="http://localhost/Shmzh.OnlineUpgradeService/OnlineUpgrade.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

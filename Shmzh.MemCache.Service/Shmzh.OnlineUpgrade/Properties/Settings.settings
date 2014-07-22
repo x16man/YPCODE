@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Shmzh.Monitor.OnlineUpgrade.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="OnlineUpgrade_OnlineUpgradeService_OnlineUpgrade" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.OnlineUpgradeService/OnlineUpgrade.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{984F0612-9DDF-4207-BA7E-0E8DD9A9FC30}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shmzh.Monitor.DataService</RootNamespace>
+    <AssemblyName>Shmzh.Monitor.DataService</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Enyim.Caching, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\公共库\Reference\Enyim.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\公共库\Reference\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MemcachedProviders, Version=1.2.3102.35179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\公共库\Reference\MemcachedProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tag.asmx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Category.asmx.cs">
+      <DependentUpon>Category.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CategoryItem.asmx.cs">
+      <DependentUpon>CategoryItem.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FloatingBlock.asmx.cs">
+      <DependentUpon>FloatingBlock.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FloatingBlockItem.asmx.cs">
+      <DependentUpon>FloatingBlockItem.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GraphSchema.asmx.cs">
+      <DependentUpon>GraphSchema.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GraphSchemaItem.asmx.cs">
+      <DependentUpon>GraphSchemaItem.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GraphSchemaRTag.asmx.cs">
+      <DependentUpon>GraphSchemaRTag.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GraphSchemaTab.asmx.cs">
+      <DependentUpon>GraphSchemaTab.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GraphSchemaTag.asmx.cs">
+      <DependentUpon>GraphSchemaTag.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MonitorObj.asmx.cs">
+      <DependentUpon>MonitorObj.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ObjType.asmx.cs">
+      <DependentUpon>ObjType.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ObjTypeAttr.asmx.cs">
+      <DependentUpon>ObjTypeAttr.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RunStatus.asmx.cs">
+      <DependentUpon>RunStatus.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tag.asmx.cs">
+      <DependentUpon>Tag.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TagCategory.asmx.cs">
+      <DependentUpon>TagCategory.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TagCategoryDetail.asmx.cs">
+      <DependentUpon>TagCategoryDetail.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TagDay.asmx.cs">
+      <DependentUpon>TagDay.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TagHour.asmx.cs">
+      <DependentUpon>TagHour.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TagMin15.asmx.cs">
+      <DependentUpon>TagMin15.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TagMinute.asmx.cs">
+      <DependentUpon>TagMinute.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TagMonth.asmx.cs">
+      <DependentUpon>TagMonth.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TagSecond.asmx.cs">
+      <DependentUpon>TagSecond.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TagYear.asmx.cs">
+      <DependentUpon>TagYear.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TagGather.asmx.cs">
+      <DependentUpon>TagGather.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shmzh.Component.SystemComponent\Shmzh.Components.SystemComponent.csproj">
+      <Project>{6FEE0F13-3DC0-42DA-B8EC-2E322C56D5C0}</Project>
+      <Name>Shmzh.Components.SystemComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Monitor.Data\Shmzh.Monitor.Data.csproj">
+      <Project>{B96FCE8C-F4B4-4567-ACEF-E6D208EB280A}</Project>
+      <Name>Shmzh.Monitor.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Monitor.Entity\Shmzh.Monitor.Entity.csproj">
+      <Project>{8F94FD06-11D7-4A26-A860-160862586DD0}</Project>
+      <Name>Shmzh.Monitor.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CompontentConfiguration.xml" />
+    <Content Include="RunStatus.asmx" />
+    <Content Include="TagDay.asmx" />
+    <Content Include="TagHour.asmx" />
+    <Content Include="TagMin15.asmx" />
+    <Content Include="TagMinute.asmx" />
+    <Content Include="TagMonth.asmx" />
+    <Content Include="TagYear.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Category.asmx" />
+    <Content Include="CategoryItem.asmx" />
+    <Content Include="FloatingBlock.asmx" />
+    <Content Include="FloatingBlockItem.asmx" />
+    <Content Include="Global.asax" />
+    <Content Include="GraphSchema.asmx" />
+    <Content Include="GraphSchemaItem.asmx" />
+    <Content Include="GraphSchemaRTag.asmx" />
+    <Content Include="GraphSchemaTab.asmx" />
+    <Content Include="GraphSchemaTag.asmx" />
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MonitorObj.asmx" />
+    <Content Include="ObjType.asmx" />
+    <Content Include="ObjTypeAttr.asmx" />
+    <Content Include="TagCategory.asmx" />
+    <Content Include="TagCategoryDetail.asmx" />
+    <Content Include="TagSecond.asmx" />
+    <Content Include="TagGather.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2201</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Shmzh.Monitor.DataService</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

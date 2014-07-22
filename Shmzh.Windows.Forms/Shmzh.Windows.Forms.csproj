@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0011FA33-D8B3-458C-B9D0-98CF6E4A4AEB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shmzh.Windows.Forms</RootNamespace>
+    <AssemblyName>Shmzh.Windows.Forms</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AGauge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AGauge.Designer.cs">
+      <DependentUpon>AGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimateBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnimateBox.Designer.cs">
+      <DependentUpon>AnimateBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MdiClientController.cs" />
+    <Compile Include="MzhCheckBoxCollection.cs" />
+    <Compile Include="MzhDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MzhDataGridView.Designer.cs">
+      <DependentUpon>MzhDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MzhListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MzhListView.Designer.cs">
+      <DependentUpon>MzhListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MzhNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MzhOutlookBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MzhRibbonMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MzhRibbonMenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MzhRibbonMenuRenderer.cs" />
+    <Compile Include="MzhTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MzhTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pickers\CheckButtonDisplayAdapter.cs" />
+    <Compile Include="Pickers\ColorPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pickers\ComboBoxAppearance\ComboBoxDisplayAdapter.cs" />
+    <Compile Include="Pickers\ComboBoxAppearance\ComboBoxDisplayBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pickers\ComboBoxAppearance\ComboBoxDisplayType.cs" />
+    <Compile Include="Pickers\ComboBoxAppearance\EditableComboBoxDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pickers\ComboBoxAppearance\ReadonlyComboBoxDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pickers\ContentAlignmentPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pickers\DockStylePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pickers\DropDownForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pickers\Formatter.cs" />
+    <Compile Include="Pickers\IDropDownUI.cs" />
+    <Compile Include="Pickers\IPickerControl.cs" />
+    <Compile Include="Pickers\IPickerDisplayAdapter.cs" />
+    <Compile Include="Pickers\ISyncDropDownUI.cs" />
+    <Compile Include="Pickers\NativeMethods.cs" />
+    <Compile Include="Pickers\PickerAppearance.cs" />
+    <Compile Include="Pickers\PickerBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pickers\PickerDisplayAdapterBase.cs" />
+    <Compile Include="Pickers\SvcPickerBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pickers\SvcPickerBaseUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResizableToolStripDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStripDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeListView\ITreeListViewItemComparer.cs" />
+    <Compile Include="TreeListView\SelectedTreeListViewItemCollection.cs" />
+    <Compile Include="TreeListView\TreeListExItem.cs" />
+    <Compile Include="TreeListView\TreeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeListView\TreeListView.Designer.cs">
+      <DependentUpon>TreeListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeListView\TreeListViewItemCollection.cs" />
+    <Compile Include="TreeViewComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AnimateBox.resx">
+      <DependentUpon>AnimateBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MdiClientController.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pickers\DocContent.xml" />
+    <Content Include="Pickers\Pickers.ColorPicker.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

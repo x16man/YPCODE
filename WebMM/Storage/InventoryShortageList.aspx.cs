@@ -141,7 +141,7 @@ namespace WebMM.Storage
                         {
                             conn.Open();
                             var trans = conn.BeginTransaction();
-                            if (da.Update(trans, obj) && new DataAccess.Common.ToDoLists().Create(trans,19,obj.EntryNo,1083,"T",CurrentUser.LoginName))
+                            if (da.Update(trans, obj) && new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans,19,obj.EntryNo,1083,"T",CurrentUser.LoginName))
                             {
                                 trans.Commit();
                                 this.myDataBind();
@@ -169,7 +169,7 @@ namespace WebMM.Storage
                         {
                             conn.Open();
                             var trans = conn.BeginTransaction();
-                            if (da.Update(trans, obj) && new DataAccess.Common.ToDoLists().Create(trans, 19,obj.EntryNo,1040,"T",CurrentUser.LoginName))
+                            if (da.Update(trans, obj) && new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 19,obj.EntryNo,1040,"T",CurrentUser.LoginName))
                             {
                                 trans.Commit();
                                 this.ClientScript.RegisterStartupScript(this.GetType(), "PresentSuccessful", string.Format("alert(\"{0}\");", "单据提交成功！"), true);

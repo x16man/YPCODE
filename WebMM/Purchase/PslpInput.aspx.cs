@@ -18,38 +18,38 @@
 
 namespace MZHMM.WebMM.Purchase
 {
-	using System;
-	using System.Collections;
-	using System.ComponentModel;
-	using System.Data;
-	using System.Drawing;
-	using System.Web;
-	using System.Web.SessionState;
-	using System.Web.UI;
-	using System.Web.UI.WebControls;
-	using System.Web.UI.HtmlControls;
-	using Shmzh.Components.SystemComponent;
+    using System;
+    using System.Collections;
+    using System.ComponentModel;
+    using System.Data;
+    using System.Drawing;
+    using System.Web;
+    using System.Web.SessionState;
+    using System.Web.UI;
+    using System.Web.UI.WebControls;
+    using System.Web.UI.HtmlControls;
+    using Shmzh.Components.SystemComponent;
     using Shmzh.MM.Facade;
     using Shmzh.MM.Common;
-	using MZHMM.WebMM.Storage;
+    using MZHMM.WebMM.Storage;
     using SysRight = MZHMM.WebMM.Common.SysRight;
-	/// <summary>
-	/// 采购员输入的WEB表示层。
-	/// </summary>
-	public partial class PslpInput : System.Web.UI.Page
-	{
-		#region 成员变量
-		private string op = "New";
-		
+    /// <summary>
+    /// 采购员输入的WEB表示层。
+    /// </summary>
+    public partial class PslpInput : System.Web.UI.Page
+    {
+        #region 成员变量
+        //private string op = "New";
+        
         PslpData oPslpData = new PslpData();
         PurchaseSystem oPurchaseSystem = new PurchaseSystem();
-	    private DataRow oDataRow;
+        private DataRow oDataRow;
       
-		#endregion
+        #endregion
 
-		
+        
 
-		#region 事件
+        #region 事件
 
         protected void MzhToolbar1_ItemPostBack(Shmzh.Web.UI.Controls.ToolbarItem item)
         {
@@ -62,45 +62,45 @@ namespace MZHMM.WebMM.Purchase
             }
         }
 
-	    /// <summary>
-		/// 页面的Load事件处理。
-		/// </summary>
-		protected void Page_Load(object sender, System.EventArgs e)
-		{
-			//根据不同的状态进行数据绑定。
-			if(!Page.IsPostBack)
-			{
+        /// <summary>
+        /// 页面的Load事件处理。
+        /// </summary>
+        protected void Page_Load(object sender, System.EventArgs e)
+        {
+            //根据不同的状态进行数据绑定。
+            if(!Page.IsPostBack)
+            {
                 Master.SetTitleContent(this.Title);
                 txtDescription.Attributes.Add("Readonly", "Readonly");
                 txtCode.Attributes.Add("Readonly", "Readonly");
-				if(Master.Op != "New" )
-				{
-				    
-					if (!Master.HasBrowseRight(SysRight.BuyerMaintain))
-					{
-						
-						return;
-					}
-
-                    this.toolbarButtonAdd.Visible = false;
-				    
-					oPslpData = ((IPslpSystem)oPurchaseSystem).GetPslpByCode(Master.Code);
-					//赋值
-					oDataRow = oPslpData.Tables[PslpData.PSLP_TABLE].Rows[0];
-					this.txtCode.Text = oDataRow[PslpData.CODE_FIELD].ToString();					//采购员代码。
-					this.txtDescription.Text = oDataRow[PslpData.DESCRIPTION_FIELD].ToString();		//采购员姓名。
-				}
-				else
-				{
+                if(Master.Op != "New" )
+                {
                     
                     if (!Master.HasBrowseRight(SysRight.BuyerMaintain))
-					{
-						return;
-					}
-				}
-			}
-		}
-		
+                    {
+                        
+                        return;
+                    }
+
+                    this.toolbarButtonAdd.Visible = false;
+                    
+                    oPslpData = ((IPslpSystem)oPurchaseSystem).GetPslpByCode(Master.Code);
+                    //赋值
+                    oDataRow = oPslpData.Tables[PslpData.PSLP_TABLE].Rows[0];
+                    this.txtCode.Text = oDataRow[PslpData.CODE_FIELD].ToString();					//采购员代码。
+                    this.txtDescription.Text = oDataRow[PslpData.DESCRIPTION_FIELD].ToString();		//采购员姓名。
+                }
+                else
+                {
+                    
+                    if (!Master.HasBrowseRight(SysRight.BuyerMaintain))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+        
         public void PslpSubmit()
         {
             if(this.txtCode.Text == "")
@@ -138,5 +138,5 @@ namespace MZHMM.WebMM.Purchase
            Response.Redirect("PslpBrowser.aspx");
         }
         #endregion
-	}
+    }
 }

@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2009 (http://www.altova.com) by fm.audio (fmaudio) -->
+<Configuration>
+	<ConfigSections>
+		<section name="BackGround" type="System.Configuration.IgnoreSectionHandler"/>
+		<section name="Image" type="System.Configuration.IgnoreSectionHandler"/>
+		<section name="Line" type="System.Configuration.IgnoreSectionHandler"/>
+		<section name="Text" type="System.Configuration.IgnoreSectionHandler"/>
+		<section name="Tag" type="System.Configuration.IgnoreSectionHandler"/>
+		<section name="Dev" type="System.Configuration.IgnoreSectionHandler"/>
+	</ConfigSections>
+	<!--窗体的背景图-->
+	<BackGround>
+		<Item Color="200,200,200" Src="" IsTiled="True"/>
+		<!--<Item Color="200,200,200" Src="Image\rule.png" IsTiled="False"/>-->
+		<!--<Item Color="200,200,200" Src="WaterQualityFlowsheet\bg_T1.png" IsTiled="True"/>-->
+	</BackGround>
+	<!--Image对象-->
+	<Image>
+		<!--2号接收井-->
+		<Item Src="WaterQualityFlowsheet\图片1.png" HoverSrc="WaterQualityFlowsheet\图片1.png" IsHoverEffect="False" X="16" Y="40" Width="120" Height="120" TriggerEvent=""/>
+		<!--1800加注-->
+		<Item Src="WaterQualityFlowsheet\加注.png" HoverSrc="WaterQualityFlowsheet\加注.png" IsHoverEffect="False" X="185" Y="20" Width="60" Height="30" TriggerEvent=""/>
+		<!--3500加注-->
+		<Item Src="WaterQualityFlowsheet\加注.png" HoverSrc="WaterQualityFlowsheet\加注.png" IsHoverEffect="False" X="185" Y="90" Width="60" Height="30" TriggerEvent=""/>
+		
+		<!--7号沉淀池-->
+		<Item Src="WaterQualityFlowsheet\高程沉淀池.png" HoverSrc="WaterQualityFlowsheet\图片4.png" IsHoverEffect="False" X="265" Y="45" Width="230" Height="70" TriggerEvent=""/>
+		<!--2\3#沉淀池条目栏-->
+		<Item Src="WaterQualityFlowsheet\高程沉淀池.png" HoverSrc="WaterQualityFlowsheet\图片4.png" IsHoverEffect="False" X="493" Y="120" Width="20" Height="140" TriggerEvent=""/>
+		<!--2#沉淀池-->
+		<Item Src="WaterQualityFlowsheet\高程沉淀池.png" HoverSrc="WaterQualityFlowsheet\图片4.png" IsHoverEffect="False" X="265" Y="120" Width="230" Height="70" TriggerEvent=""/>
+		<!--3#沉淀池-->
+		<Item Src="WaterQualityFlowsheet\高程沉淀池.png" HoverSrc="WaterQualityFlowsheet\图片4.png" IsHoverEffect="False" X="265" Y="189" Width="230" Height="70" TriggerEvent=""/>
+		<!--8#沉淀池-->
+		<Item Src="WaterQualityFlowsheet\低程沉淀池.png" HoverSrc="WaterQualityFlowsheet\图片15.png" IsHoverEffect="False" X="265" Y="270" Width="230" Height="55" TriggerEvent=""/>
+		<!--9#沉淀池-->
+		<Item Src="WaterQualityFlowsheet\低程沉淀池.png" HoverSrc="WaterQualityFlowsheet\图片15.png" IsHoverEffect="False" X="265" Y="324" Width="230" Height="55" TriggerEvent=""/>
+		<!--5#沉淀池-->
+		<Item Src="WaterQualityFlowsheet\低程沉淀池.png" HoverSrc="WaterQualityFlowsheet\图片15.png" IsHoverEffect="False" X="265" Y="400" Width="230" Height="70" TriggerEvent=""/>
+		<!--6#沉淀池-->
+		<Item Src="WaterQualityFlowsheet\低程沉淀池.png" HoverSrc="WaterQualityFlowsheet\图片15.png" IsHoverEffect="False" X="265" Y="469" Width="230" Height="70" TriggerEvent=""/>
+		<!--10#沉淀池-->
+		<Item Src="WaterQualityFlowsheet\低程沉淀池.png" HoverSrc="WaterQualityFlowsheet\图片15.png" IsHoverEffect="False" X="265" Y="538" Width="230" Height="70" TriggerEvent=""/>
+		<!--11#沉淀池-->
+		<Item Src="WaterQualityFlowsheet\低程沉淀池.png" HoverSrc="WaterQualityFlowsheet\图片15.png" IsHoverEffect="False" X="265" Y="607" Width="230" Height="70" TriggerEvent=""/>
+		
+		<!--丙组滤池-->
+		<Item Src="WaterQualityFlowsheet\高程滤池.png" HoverSrc="WaterQualityFlowsheet\图片4.png" IsHoverEffect="False" X="550" Y="45" Width="250" Height="60" TriggerEvent=""/>
+		<!--甲组滤池-->
+		<Item Src="WaterQualityFlowsheet\高程滤池.png" HoverSrc="WaterQualityFlowsheet\图片4.png" IsHoverEffect="False" X="550" Y="135" Width="250" Height="60" TriggerEvent=""/>
+		<!--乙组滤池-->
+		<Item Src="WaterQualityFlowsheet\高程滤池.png" HoverSrc="WaterQualityFlowsheet\图片4.png" IsHoverEffect="False" X="550" Y="193" Width="250" Height="60" TriggerEvent=""/>
+		<!--129#滤池-->
+		<Item Src="WaterQualityFlowsheet\低程滤池.png" HoverSrc="WaterQualityFlowsheet\图片21.png" IsHoverEffect="False" X="550" Y="330" Width="250" Height="60" TriggerEvent=""/>
+		<!--128#滤池-->
+		<Item Src="WaterQualityFlowsheet\低程滤池.png" HoverSrc="WaterQualityFlowsheet\图片21.png" IsHoverEffect="False" X="550" Y="389" Width="250" Height="60" TriggerEvent=""/>
+		<!--127#滤池-->
+		<Item Src="WaterQualityFlowsheet\低程滤池.png" HoverSrc="WaterQualityFlowsheet\图片21.png" IsHoverEffect="False" X="550" Y="448" Width="250" Height="60" TriggerEvent=""/>
+		<!--东区滤池-->
+		<Item Src="WaterQualityFlowsheet\低程滤池.png" HoverSrc="WaterQualityFlowsheet\图片21.png" IsHoverEffect="False" X="550" Y="577" Width="250" Height="60" TriggerEvent=""/>
+		
+		<!--一号车间-->
+		<Item Src="WaterQualityFlowsheet\图片11.png" HoverSrc="WaterQualityFlowsheet\图片11.png" IsHoverEffect="False" X="850" Y="130" Width="150" Height="140" TriggerEvent=""/>
+		<!--三号车间-->
+		<Item Src="WaterQualityFlowsheet\图片11.png" HoverSrc="WaterQualityFlowsheet\图片11.png" IsHoverEffect="False" X="850" Y="280" Width="150" Height="140" TriggerEvent=""/>
+		<!--二号车间-->
+		<Item Src="WaterQualityFlowsheet\图片19.png" HoverSrc="WaterQualityFlowsheet\图片19.png" IsHoverEffect="False" X="850" Y="430" Width="150" Height="120" TriggerEvent=""/>
+		<!--六号车间号车间-->
+		<Item Src="WaterQualityFlowsheet\图片19.png" HoverSrc="WaterQualityFlowsheet\图片19.png" IsHoverEffect="False" X="850" Y="560" Width="150" Height="120" TriggerEvent=""/>
+		
+		<!--导出8～11#沉淀池栏-->
+		<Item Src="WaterQualityFlowsheet\图片7.png" HoverSrc="WaterQualityFlowsheet\图片7.png" IsHoverEffect="False" X="493" Y="300" Width="0" Height="350" TriggerEvent=""/>
+		<!--方向向上-->
+		<Item Src="WaterQualityFlowsheet\方向向上.png" HoverSrc="WaterQualityFlowsheet\方向向上.png" IsHoverEffect="False" X="493" Y="265" Width="16" Height="25" TriggerEvent=""/>
+		<!--方向向下-->
+		<Item Src="WaterQualityFlowsheet\方向向下.png" HoverSrc="WaterQualityFlowsheet\方向向下.png" IsHoverEffect="False" X="823" Y="270" Width="16" Height="25" TriggerEvent=""/>
+		
+		<!--导出甲乙组滤池栏-->
+		<Item Src="WaterQualityFlowsheet\高程滤池.png" HoverSrc="WaterQualityFlowsheet\高程滤池.png" IsHoverEffect="False" X="798" Y="138" Width="18" Height="115" TriggerEvent=""/>
+		<!--导出129#～东区滤池栏-->
+		<Item Src="WaterQualityFlowsheet\图片20.png" HoverSrc="WaterQualityFlowsheet\图片20.png" IsHoverEffect="False" X="798" Y="330" Width="18" Height="305" TriggerEvent=""/>
+		
+	</Image>
+	<!--TagImage对象-->
+	<TagImage>
+		<!--TagId,Src,BorderColor 可写成表达式。如：Src="if(value>0,'Image\rule.png','Image\rule2.png')"-->
+		<!--TagId {}表示是设备编号，[]表示是指标编号，必须加有{}或[]-->
+		<!--<Item TagId="{01-661-09}" DataType="Min15" BorderWidth="2" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=-1,'Image\rule.png','Device\jb_running.gif')" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="True" X="150" Y="200" Width="300" Height="225" TriggerEvent=""></Item>-->
+	</TagImage>
+	<!--Text对象-->
+	<Text>
+		<Item Text="杨厂老系统瞬时水质流程监视图" Font="宋体" FontSize="20" IsVertical="False" X="305" Y="10" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		
+		<Item Text="" Font="宋体" FontSize="14" IsVertical="False" X="20" Y="190" Width="170" Height="160" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="132,130,132" LeftWidth="2" RightWidth="2" TopWidth="0" BottomWidth="2"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255"/>
+			<SelectedStyle IsBold="False" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!--上游水原水指标-->
+		<Item Text="上游水原水指标" Font="宋体" FontSize="12" IsVertical="False" X="20" Y="170" Width="170" Height="20" Align="Center" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="132,130,132" LeftWidth="2" RightWidth="2" TopWidth="2" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,243,165"/>
+			<SelectedStyle IsBold="False" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:            NTU" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="190" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="氨氮:            mg/l" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="210" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水温:            ℃" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="230" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="溶解氧:          mg/l" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="250" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="PH值:            " Font="宋体" FontSize="10" IsVertical="False" X="20" Y="270" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="亚硝酸盐:        mg/l" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="290" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="污染指数:        PI" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="310" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水量:            m3/h" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="330" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!--下游原水指标-->
+		<Item Text="" Font="宋体" FontSize="14" IsVertical="False" X="20" Y="400" Width="170" Height="160" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="132,130,132" LeftWidth="2" RightWidth="2" TopWidth="0" BottomWidth="2"/>
+			<ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="下游水原水指标" Font="宋体" FontSize="12" IsVertical="False" X="20" Y="370" Width="170" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="132,130,132" LeftWidth="2" RightWidth="2" TopWidth="2" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,243,165"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:            NTU" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="400" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="氨氮:            mg/l" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="420" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水温:            ℃" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="440" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="溶解氧:          mg/l" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="460" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="PH值:            " Font="宋体" FontSize="10" IsVertical="False" X="20" Y="480" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="亚硝酸盐:        mg/l" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="500" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="污染指数:        PI" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="520" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水量:            m3/h" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="540" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!--2#接收井-->
+		<Item Text="2#接收井" Font="宋体" FontSize="10" IsVertical="False" X="25" Y="110" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="m3/h" Font="宋体" FontSize="12" IsVertical="False" X="30" Y="90" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="φ1800" Font="宋体" FontSize="9" IsVertical="False" X="220" Y="55" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="132,130,132" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="kg/h" Font="宋体" FontSize="9" IsVertical="False" X="200" Y="38" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="132,130,132" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="φ3500" Font="宋体" FontSize="9" IsVertical="False" X="220" Y="125" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="132,130,132" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="kg/h" Font="宋体" FontSize="9" IsVertical="False" X="200" Y="108" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="132,130,132" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!-- 丙组滤池-->
+		<Item Text="丙组滤池" Font="宋体" FontSize="12" IsVertical="False" X="720" Y="82" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="后加氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="50" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(进):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="66" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:         mg/l" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="50" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(出):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="66" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!-- 甲组滤池-->
+		<Item Text="甲组滤池" Font="宋体" FontSize="12" IsVertical="False" X="720" Y="172" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="后加氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="140" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(进):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="156" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:         mg/l" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="140" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(出):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="156" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!-- 乙组滤池-->
+		<Item Text="乙组滤池" Font="宋体" FontSize="12" IsVertical="False" X="720" Y="227" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="后加氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="195" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(进):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="211" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:         mg/l" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="195" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(出):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="211" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		
+		<!-- 129滤池-->
+		<Item Text="129滤池" Font="宋体" FontSize="12" IsVertical="False" X="720" Y="364" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="后加氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="332" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(进):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="348" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:         mg/l" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="332" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(出):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="348" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!-- 128滤池-->
+		<Item Text="128滤池" Font="宋体" FontSize="12" IsVertical="False" X="720" Y="424" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="后加氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="392" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(进):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="408" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:         mg/l" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="392" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(出):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="408" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!-- 127滤池-->
+		<Item Text="127滤池" Font="宋体" FontSize="12" IsVertical="False" X="720" Y="484" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="后加氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="452" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(进):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="468" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:         mg/l" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="452" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(出):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="468" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!-- 东区滤池-->
+		<Item Text="东区滤池" Font="宋体" FontSize="12" IsVertical="False" X="720" Y="615" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="后加氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="583" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(进):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="553" Y="599" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:         mg/l" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="583" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(出):     NTU" Font="宋体" FontSize="9" IsVertical="False" X="680" Y="599" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!--7#沉淀池-->
+		<Item Text="7#沉淀池" Font="宋体" FontSize="12" IsVertical="False" X="265" Y="98" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="氯:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="50" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="矾:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="66" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="66" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="50" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水玻璃:      mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="82" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="流量:       m3/h" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="98" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		
+		<!--2#沉淀池-->
+		<Item Text="2#沉淀池" Font="宋体" FontSize="12" IsVertical="False" X="265" Y="168" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="氯:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="120" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="矾:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="136" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="136" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="120" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水玻璃:      mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="152" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="流量:       m3/h" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="168" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!--3#沉淀池-->
+		<Item Text="3#沉淀池" Font="宋体" FontSize="12" IsVertical="False" X="265" Y="238" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="氯:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="190" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="矾:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="206" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="206" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="190" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水玻璃:      mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="222" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="流量:       m3/h" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="238" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!--8#沉淀池-->
+		<Item Text="8#沉淀池" Font="宋体" FontSize="12" IsVertical="False" X="265" Y="302" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="氯:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="270" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="矾:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="286" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="286" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="270" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="流量:       m3/h" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="302" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!--9#沉淀池-->
+		<Item Text="9#沉淀池" Font="宋体" FontSize="12" IsVertical="False" X="265" Y="358" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="氯:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="326" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="矾:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="342" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="342" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="326" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="流量:       m3/h" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="358" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!--5#沉淀池-->
+		<Item Text="5#沉淀池" Font="宋体" FontSize="12" IsVertical="False" X="265" Y="448" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="氯:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="400" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="矾:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="416" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="416" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="400" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水玻璃:      mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="432" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="流量:       m3/h" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="448" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!--6#沉淀池-->
+		<Item Text="6#沉淀池" Font="宋体" FontSize="12" IsVertical="False" X="265" Y="518" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="氯:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="470" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="矾:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="486" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="486" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="470" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水玻璃:      mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="502" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="流量:       m3/h" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="518" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!--10#沉淀池-->
+		<Item Text="10#沉淀池" Font="宋体" FontSize="12" IsVertical="False" X="265" Y="588" Width="80" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="氯:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="540" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="矾:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="556" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="556" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="540" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水玻璃:      mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="572" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="流量:       m3/h" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="588" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!--11#沉淀池-->
+		<Item Text="11#沉淀池" Font="宋体" FontSize="12" IsVertical="False" X="265" Y="658" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="氯:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="610" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="矾:          mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="626" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="626" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="610" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水玻璃:      mg/l" Font="宋体" FontSize="9" IsVertical="False" X="270" Y="642" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="流量:       m3/h" Font="宋体" FontSize="9" IsVertical="False" X="385" Y="658" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!-- 总出厂水指标 -->
+		<Item Text="" Font="宋体" FontSize="12" IsVertical="False" X="850" Y="27" Width="150" Height="90" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="132,130,132" LeftWidth="2" RightWidth="2" TopWidth="0" BottomWidth="2"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="总出厂水指标" Font="宋体" FontSize="12" IsVertical="False" X="850" Y="8" Width="150" Height="20" Align="Center" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="132,130,132" LeftWidth="2" RightWidth="2" TopWidth="2" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,243,165"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="总水量:           m3/h" Font="宋体" FontSize="9" IsVertical="False" X="850" Y="30" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="氨氮(平均):       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="850" Y="46" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度(平均):       NTU" Font="宋体" FontSize="9" IsVertical="False" X="850" Y="62" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		
+		<Item Text="余氯(平均):       mg/l" Font="宋体" FontSize="9" IsVertical="False" X="850" Y="78" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="压力(平均):       kPa" Font="宋体" FontSize="9" IsVertical="False" X="850" Y="94" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!-- 一号车间 -->
+		<Item Text="一号车间" Font="宋体" FontSize="12" IsVertical="False" X="895" Y="134" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>		
+		<Item Text="水量:       m3/h" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="152" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="177" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="202" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="压力:       kPa" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="227" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!-- 三号车间 -->
+		<Item Text="三号车间" Font="宋体" FontSize="12" IsVertical="False" X="895" Y="284" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		
+		<Item Text="水量:       m3/h" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="307" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="332" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="357" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+		
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		
+		<Item Text="压力:       kPa" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="377" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!-- 二号车间 -->
+		<Item Text="二号车间" Font="宋体" FontSize="12" IsVertical="False" X="895" Y="434" Width="0" Height="0" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水量:       m3/h" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="454" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="479" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="504" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>		
+		<Item Text="压力:       kPa" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="529" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<!-- 六号车间 -->
+		<Item Text="六号车间" Font="宋体" FontSize="12" IsVertical="False" X="895" Y="564" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="水量:       m3/h" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="584" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="余氯:       mg/l" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="609" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="浊度:       NTU" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="634" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="压力:       kPa" Font="宋体" FontSize="10" IsVertical="False" X="875" Y="659" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+	</Text>
+	<!--指标对象-->
+	<Tag>
+		
+		<!-- 上游原水指标 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="[1504001]"  TagName="上游源水浊度"  StringFormat="{0}" X="65" Y="192" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1402008]" TagName="上游源水氨氮" StringFormat="{0}" X="65" Y="212" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1402002]" TagName="上游源水水温" StringFormat="{0}" X="65" Y="232" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1402007]" TagName="上游源水溶解氧" StringFormat="{0}" X="80" Y="252" Width="55" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1402006]" TagName="上游源水PH值" StringFormat="{0}" X="65" Y="272" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1402009]" TagName="上游源水亚硝酸盐" StringFormat="{0}" X="80" Y="292" Width="55" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1402028]" TagName="上游源水污染指数" StringFormat="{0}" X="80" Y="312" Width="55" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="[1305001]+[1305002]"  TagName="上游源水水量" StringFormat="{0}" X="65" Y="332" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 下游原水指标 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1403001]" TagName="下游源水浊度"  StringFormat="{0}" X="65" Y="402" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1403008]" TagName="下游源水氨氮"  StringFormat="{0}" X="65" Y="422" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1403002]" TagName="下游源水水温"  StringFormat="{0}" X="65" Y="442" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1403007]" TagName="下游源水溶解氧"  StringFormat="{0}" X="80" Y="462" Width="55" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1403006]" TagName="下游源水PH值"  StringFormat="{0}" X="65" Y="482" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1403009]" TagName="下游源水亚硝酸盐"  StringFormat="{0}" X="80" Y="502" Width="55" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1403026]" TagName="下游源水污染指数"  StringFormat="{0}" X="80" Y="522" Width="55" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="[1304001]+[1304002]+[1304003]+[1304004]+[1304005]+[1304006]+[1304010]+[1304011]+[1304007]+[1304008]+[1304009]-[1305001]-[1305002]" TagName="下游源水水量"  StringFormat="{0}" X="65" Y="542" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 2#接收井 -->
+		<!-- 水量 -->
+		<Item Font="Franklin Gothic Medium" FontSize="12" DataType="Hour" TagId="[1305001]+[1305002]"  TagName="2#接收井水量" StringFormat="{0}" X="20" Y="70" Width="80" Height="20" Align="Center" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 氨（1800） -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1504016]" TagName="2#接收井氨（1800）" StringFormat="{0}" X="185" Y="25" Width="60" Height="12" Align="Center" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 氨（3500） -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[1504017]" TagName="2#接收井氨（3500）" StringFormat="{0}" X="185" Y="95" Width="60" Height="12" Align="Center" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 7#沉淀池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1102011]+[1102012]+[1102013]+[1101025],2)" TagName="7#沉淀池 氯"  StringFormat="{0}" X="285" Y="50" Width="68" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1101011]+[1101012]+[1101013],2)" TagName="7#沉淀池 矾"  StringFormat="{0}" X="285" Y="68" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1106006],2)" TagName="7#沉淀池 浊度"  StringFormat="{0}" X="410" Y="68" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1107006],2)" TagName="7#沉淀池 余氯"  StringFormat="{0}" X="410" Y="50" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="[1103005]" TagName="7#沉淀池 水玻璃"  StringFormat="{0}" X="305" Y="84" Width="45" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="[1304006]" TagName="7#沉淀池 流量"  StringFormat="{0}" X="400" Y="98" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		
+		<!-- 2#沉淀池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1102003],2)" TagName="2#沉淀池 氯"  StringFormat="{0}" X="285" Y="122" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1101003]+[1101004]+[1101021],2)" TagName="2#沉淀池 矾"  StringFormat="{0}" X="285" Y="138" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1106002],2)" TagName="2#沉淀池 浊度"  StringFormat="{0}" X="410" Y="138" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1107002],2)" TagName="2#沉淀池 余氯"  StringFormat="{0}" X="410" Y="122" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="[1103001]" TagName="2#沉淀池 水玻璃"  StringFormat="{0}" X="305" Y="152" Width="45" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="[1304002]" TagName="2#沉淀池 流量"  StringFormat="{0}" X="400" Y="170" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 3#沉淀池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1102005],2)" TagName="3#沉淀池 氯"  StringFormat="{0}" X="285" Y="192" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1101005]+[1101006]+[1101022],2)" TagName="3#沉淀池 矾"  StringFormat="{0}" X="285" Y="208" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1106003],2)" TagName="3#沉淀池 浊度"  StringFormat="{0}" X="410" Y="208" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1107003],2)" TagName="3#沉淀池 余氯"  StringFormat="{0}" X="410" Y="192" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="[1103002]" TagName="3#沉淀池 水玻璃"  StringFormat="{0}" X="305" Y="224" Width="45" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="[1304003]" TagName="3#沉淀池 流量"  StringFormat="{0}" X="400" Y="240" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 8#沉淀池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="Round([1102015]+[1102016],2)" TagName="8#沉淀池 氯"  StringFormat="{0}" X="285" Y="272" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1101014]+[1101015]+[1101026],2)" TagName="8#沉淀池 矾"  StringFormat="{0}" X="285" Y="288" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1106007],2)" TagName="8#沉淀池 浊度"  StringFormat="{0}" X="410" Y="288" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1107007],2)" TagName="8#沉淀池 余氯"  StringFormat="{0}" X="410" Y="272" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="[1304007]" TagName="8#沉淀池 流量"  StringFormat="{0}" X="400" Y="304" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 9#沉淀池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="Round([1102015]+[1102016],2)" TagName="9#沉淀池 氯"  StringFormat="{0}" X="285" Y="327" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1101014]+[1101015]+[1101026],2)" TagName="9#沉淀池 矾"  StringFormat="{0}" X="285" Y="343" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1106008],2)" TagName="9#沉淀池 浊度"  StringFormat="{0}" X="410" Y="343" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1107008],2)" StringFormat="{0}" X="410" Y="327" TagName="9#沉淀池 余氯"  Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="[1304007]" TagName="9#沉淀池 流量"  StringFormat="{0}" X="400" Y="359" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 5#沉淀池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1102007],2)" TagName="5#沉淀池 氯"  StringFormat="{0}" X="285" Y="402" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1101007]+[1101008]+[1101023],2)" TagName="5#沉淀池 矾"  StringFormat="{0}" X="285" Y="418" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1106004],2)" TagName="5#沉淀池 浊度"  StringFormat="{0}" X="410" Y="418" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1107004],2)" TagName="5#沉淀池 余氯"  StringFormat="{0}" X="410" Y="402" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="[1103003]" TagName="5#沉淀池 水玻璃"  StringFormat="{0}" X="305" Y="434" Width="45" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="[1304004]" TagName="5#沉淀池 流量"  StringFormat="{0}" X="400" Y="450" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 6#沉淀池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1102009],2)" TagName="6#沉淀池 氯"  StringFormat="{0}" X="285" Y="472" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1101009]+[1101010]+[1101024],2)" TagName="6#沉淀池 矾"  StringFormat="{0}" X="285" Y="488" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1106005],2)" StringFormat="{0}" X="410" Y="488" TagName="6#沉淀池 浊度"  Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1107005],2)" TagName="6#沉淀池 余氯"  StringFormat="{0}" X="410" Y="472" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="[1103004]" TagName="6#沉淀池 水玻璃"  StringFormat="{0}" X="305" Y="504" Width="45" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="[1304005]"  TagName="6#沉淀池 流量" StringFormat="{0}" X="400" Y="520" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 10#沉淀池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1102017],2)" TagName="10#沉淀池 氯"  StringFormat="{0}" X="285" Y="542" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1101016]+[1101017]+[1101027],2)" TagName="10#沉淀池 矾"  StringFormat="{0}" X="285" Y="558" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1106009],2)" TagName="10#沉淀池 浊度"  StringFormat="{0}" X="410" Y="558" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1107009],2)" TagName="10#沉淀池 余氯"  StringFormat="{0}" X="410" Y="542" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="[1103006]" TagName="10#沉淀池 水玻璃"  StringFormat="{0}" X="305" Y="574" Width="45" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="[1304008]" TagName="10#沉淀池 流量"  StringFormat="{0}" X="400" Y="590" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 11#沉淀池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1102019],2)" TagName="11#沉淀池 氯"  StringFormat="{0}" X="285" Y="612" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([1101018]+[1101019]+[1101028],2)" TagName="11#沉淀池 矾"  StringFormat="{0}" X="285" Y="628" Width="65" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1106010],2)" TagName="11#沉淀池 浊度"  StringFormat="{0}" X="410" Y="628" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1107010],2)" TagName="11#沉淀池 余氯"  StringFormat="{0}" X="410" Y="612" Width="50" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="[1103007]" TagName="11#沉淀池 水玻璃"  StringFormat="{0}" X="305" Y="644" Width="45" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="[1304009]" TagName="11#沉淀池 流量"  StringFormat="{0}" X="400" Y="660" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 一号车间 -->
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1306001]+[1306002]+[1306003]+[1306004]+[1306005]" TagName="一号车间 水量"  StringFormat="{0}" X="890" Y="150" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1401005]" TagName="一号车间 余氯"  StringFormat="{0}" X="890" Y="175" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1401001]" TagName="一号车间 浊度"  StringFormat="{0}" X="890" Y="200" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1002006]" TagName="一号车间 压力"  StringFormat="{0}" X="890" Y="225" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 三号车间 -->
+		
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1306010]+[1306011]+[1306012]+[1306013]+[1306014]" TagName="三号车间 水量"  StringFormat="{0}" X="890" Y="305" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1401006]" TagName="三号车间 余氯"  StringFormat="{0}" X="890" Y="330" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1401002]" TagName="三号车间 浊度"  StringFormat="{0}" X="890" Y="355" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1002008]" TagName="三号车间 压力"  StringFormat="{0}" X="890" Y="375" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 二号车间 -->
+		
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1306022]+[1306024]+[1306026]+[1306028]" TagName="二号车间 水量"  StringFormat="{0}" X="890" Y="452" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1401007]" TagName="二号车间 余氯"  StringFormat="{0}" X="890" Y="477" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1401003]" TagName="二号车间 浊度"  StringFormat="{0}" X="890" Y="502" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1002007]" TagName="二号车间 压力"  StringFormat="{0}" X="890" Y="527" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 六号车间 -->
+		
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1306017]+[1306018]+[1306019]+[1306020]" TagName="六号车间 水量"  StringFormat="{0}" X="890" Y="582" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1401008]" TagName="六号车间 余氯"  StringFormat="{0}" X="890" Y="607" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1401004]" TagName="六号车间 浊度"  StringFormat="{0}" X="890" Y="632" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="10" DataType="Second" TagId="[1002009]" TagName="六号车间 压力"  StringFormat="{0}" X="890" Y="657" Width="70" Height="20" Align="right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 总出厂水指标 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="Round([5003001],0)" TagName="总出厂水指标 总水量"  StringFormat="{0}" X="870" Y="32" Width="90" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Day" TagId="[5301006]" TagName="总出厂水指标 氨氮"  StringFormat="{0}" X="870" Y="48" Width="90" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="[WQ_CCSZD]" TagName="总出厂水指标 浊度"  StringFormat="{0}" X="870" Y="64" Width="90" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Hour" TagId="[WQ_CCSYL]" TagName="总出厂水指标 余氯"  StringFormat="{0}" X="870" Y="80" Width="90" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="Round(([1002006]+[1002007]+[1002008]+[1002009])/4,0)" TagName="总出厂水指标 压力"  StringFormat="{0}" X="870" Y="96" Width="90" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 丙组滤池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="Round([1104005],2)" TagName="丙组滤池 后加氯"  StringFormat="{0}" X="570" Y="52" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1106006],2)" TagName="丙组滤池 进水浊度"  StringFormat="{0}" X="585" Y="68" Width="55" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1109003],2)" TagName="丙组滤池 余氯"  StringFormat="{0}" X="678" Y="52" Width="90" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1108003],2)" TagName="丙组滤池 出水浊度"  StringFormat="{0}" X="708" Y="68" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 甲组滤池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="Round([1104001],2)" TagName="甲组滤池 后加氯"  StringFormat="{0}" X="570" Y="140" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round(([1106002]+[1106003])/2,2)" TagName="甲组滤池 进水浊度"  StringFormat="{0}" X="585" Y="156" Width="55" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1109001],2)" TagName="甲组滤池 余氯"  StringFormat="{0}" X="678" Y="140" Width="90" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1108001],2)" TagName="甲组滤池 出水浊度"  StringFormat="{0}" X="708" Y="156" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 乙组滤池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="Round([1104003],2)" TagName="乙组滤池 后加氯"  StringFormat="{0}" X="570" Y="195" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round(([1106002]+[1106003])/2,2)" TagName="乙组滤池 进水浊度"  StringFormat="{0}" X="585" Y="211" Width="55" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1109002],2)" TagName="乙组滤池 余氯"  StringFormat="{0}" X="678" Y="195" Width="90" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1108002],2)" TagName="乙组滤池 出水浊度"  StringFormat="{0}" X="708" Y="211" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 129滤池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="Round([1104009],2)" TagName="129滤池 后加氯"  StringFormat="{0}" X="570" Y="332" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round(([1106004]+[1106005])/2,2)" TagName="129滤池 进水浊度"  StringFormat="{0}" X="582" Y="348" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1109005],2)" TagName="129滤池 余氯"  StringFormat="{0}" X="678" Y="332" Width="90" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1108005],2)" TagName="129滤池 出水浊度"  StringFormat="{0}" X="708" Y="348" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 128滤池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="Round([1104007],2)" TagName="128滤池 后加氯"  StringFormat="{0}" X="570" Y="392" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round(([1106004]+[1106005])/2,2)" TagName="128滤池 进水浊度"  StringFormat="{0}" X="582" Y="408" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1109007],2)" TagName="128滤池 余氯"  StringFormat="{0}" X="678" Y="392" Width="90" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1108004],2)" TagName="128滤池 出水浊度"  StringFormat="{0}" X="708" Y="408" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 127滤池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="Round([1104007],2)" TagName="127滤池 后加氯"  StringFormat="{0}" X="570" Y="452" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round(([1106004]+[1106005])/2,2)" TagName="127滤池 进水浊度"  StringFormat="{0}" X="582" Y="468" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1109007],2)" TagName="127滤池 余氯"  StringFormat="{0}" X="678" Y="452" Width="90" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1108004],2)" TagName="127滤池 出水浊度"  StringFormat="{0}" X="708" Y="468" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<!-- 东区滤池 -->
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Second" TagId="Round([1104011],2)" TagName="东区滤池 后加氯"  StringFormat="{0}" X="570" Y="583" Width="70" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round(([1106009]+[1106010])/2,2)" TagName="东区滤池 进水浊度"  StringFormat="{0}" X="582" Y="599" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1109006],2)" TagName="东区滤池 余氯"  StringFormat="{0}" X="678" Y="583" Width="90" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+		<Item Font="Franklin Gothic Medium" FontSize="9" DataType="Min" TagId="Round([1108006],2)" TagName="东区滤池 出水浊度"  StringFormat="{0}" X="708" Y="599" Width="60" Height="12" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,255" BackColor=""/>
+		</Item>
+	</Tag>
+	<!--设备对象-->
+	<Device>
+		<!--
+		<Item RunSrc="WaterQualityFlowsheet\jb_run_T.png" StopSrc="WaterQualityFlowsheet\jb_stop_T.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction_t.png" RepairSrc="WaterQualityFlowsheet\jb_stop_T.png" Text="64" PaddingTop="4" PaddingLeft="13"  Font="宋体" FontSize="9" Width="30" Height="22" TagId="1901035" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="82" Y="270" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		-->
+		<!-- 一号车间 -->
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="5" PaddingTop="6" PaddingLeft="6" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-05" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="131" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="19" PaddingTop="6" PaddingLeft="2" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-19" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="158" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="8" PaddingTop="6" PaddingLeft="6" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-08" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="185" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="1" PaddingTop="6" PaddingLeft="6" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-01" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="212" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="9" PaddingTop="6" PaddingLeft="6" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-09" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="240" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<!-- 三号车间 -->
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="12" PaddingTop="6" PaddingLeft="2" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-12" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="282" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="13" PaddingTop="6" PaddingLeft="2" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-13" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="309" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="14" PaddingTop="6" PaddingLeft="2" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-14" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="336" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="3" PaddingTop="6" PaddingLeft="6" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-03" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="363" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run_T_e.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="4" PaddingTop="6" PaddingLeft="6" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-04" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="390" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<!-- 二号车间 -->
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="27" PaddingTop="6" PaddingLeft="2" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-27" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="432" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="28" PaddingTop="6" PaddingLeft="2" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-28" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="459" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="25" PaddingTop="6" PaddingLeft="2" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-25" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="486" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="26" PaddingTop="6" PaddingLeft="2" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-26" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="513" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<!-- 六号车间 -->
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="21" PaddingTop="6" PaddingLeft="2" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-21" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="562" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="22" PaddingTop="6" PaddingLeft="2" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-22" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="589" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="23" PaddingTop="6" PaddingLeft="2" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-23" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="616" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+		<Item RunSrc="WaterQualityFlowsheet\jb_run.png" StopSrc="WaterQualityFlowsheet\jb_stop.png" MalfunctionSrc="WaterQualityFlowsheet\jb_Malfunction.png" RepairSrc="WaterQualityFlowsheet\jb_Malfunction.png" Text="24" PaddingTop="6" PaddingLeft="2" Font="宋体" FontSize="12" Width="25" Height="27" DevCode="01-661-24A" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="852" Y="643" IsHoverEffect="False" TriggerEvent="">
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0"/>
+		</Item>
+	</Device>
+	<!--Line对象-->
+	<Line>
+		<!-- LineStyle可选值:Solid/Dash/DashDot/DashDotDot/Dot/DashDash
+    <Item StartArrow="True" EndArrow="True" TagId="[1903034]">      
+      <ItemStyle Condition="=1" Color="0,0,0"  Width="2" LineStyle="DashDash" />
+      <Points>
+        <Point X="10" Y="10" />
+        <Point X="100" Y="100" />
+        <Point X="400" Y="300" />
+      </Points>
+    </Item> -->
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="134" Y="70"/>
+				<Point X="265" Y="70"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="false" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="200" Y="140"/>
+				<Point X="200" Y="640"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="215" Y="50"/>
+				<Point X="215" Y="70"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="215" Y="120"/>
+				<Point X="215" Y="140"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="134" Y="140"/>
+				<Point X="265" Y="140"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="492" Y="80"/>
+				<Point X="550" Y="80"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="200" Y="220"/>
+				<Point X="265" Y="220"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="200" Y="325"/>
+				<Point X="235" Y="325"/>
+				<Point X="235" Y="300"/>
+				<Point X="265" Y="300"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="200" Y="325"/>
+				<Point X="235" Y="325"/>
+				<Point X="235" Y="350"/>
+				<Point X="265" Y="350"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="200" Y="435"/>
+				<Point X="265" Y="435"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="200" Y="500"/>
+				<Point X="265" Y="500"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="200" Y="580"/>
+				<Point X="265" Y="580"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="200" Y="640"/>
+				<Point X="265" Y="640"/>
+			</Points>
+		</Item>
+		
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="512" Y="190"/>
+				<Point X="525" Y="190"/>
+				<Point X="525" Y="160"/>
+				<Point X="550" Y="160"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="512" Y="190"/>
+				<Point X="525" Y="190"/>
+				<Point X="525" Y="220"/>
+				<Point X="550" Y="220"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="false" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="500" Y="260"/>
+				<Point X="500" Y="302"/>
+			</Points>
+		</Item>
+		
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="512" Y="350"/>
+				<Point X="550" Y="350"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="512" Y="425"/>
+				<Point X="550" Y="425"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="512" Y="500"/>
+				<Point X="550" Y="500"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="512" Y="610"/>
+				<Point X="550" Y="610"/>
+			</Points>
+		</Item>
+		<Item StartArrow="false" EndArrow="false" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="800" Y="70"/>
+				<Point X="830" Y="70"/>
+				<Point X="830" Y="620"/>
+			</Points>
+		</Item>
+		
+
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="815" Y="200"/>
+				<Point X="830" Y="200"/>
+				<Point X="830" Y="380"/>
+				<Point X="850" Y="380"/>
+			</Points>
+		</Item>
+
+		<Item StartArrow="false" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="2" LineStyle="Solid">
+			<Points>
+				<Point X="815" Y="620"/>
+				<Point X="850" Y="620"/>
+			</Points>
+		</Item>
+	</Line>
+	<LitePool>
+		<!--Unit(单位), 可设置为属性。-->
+		<Item Font="宋体" MonitorObj="SZ-01" Unit="M" TagId="[1312029]*60" DataType="Min" X="114" Y="40" Width="20" Height="110" TriggerEvent="RightClick:1234567">
+			<!--池样式-->
+			<PoolStyle BorderWidth="1" BorderColor="0,0,0"/>
+			<!--值样式 LineColor, Color 和 BackColor 支持带属性的表达式。如：if(value&lt;[AttrField01],'255,255,0','0,0,255')-->
+			<!--DecimalDigits(小数位数), 可设置为属性。 Align:显示位置,可选值有InnerLeft,InnerRight,OuterLeft,OuterRight-->
+			<ValueStyle DecimalDigits="2" LineColor="if(value&gt;[AttrField02],'255,0,0',if(value&lt;[AttrField03],'255,0,0','0,0,255'))" LineWidth="2" Align="OuterLeft" FontSize="9" IsBold="True" IsUnderLine="False" IsItalic="False" Color="if(value&gt;[AttrField02],'255,0,0',if(value&lt;[AttrField03],'255,0,0','0,0,255'))" BackColor="0,0,100,100"/>
+			<!--最大最小值等样式, Align：相对于池的显示位置，可选值为Left,Center,Right, 默认为Left。-->
+			<!--DecimalDigits(小数位数), 可设置为属性。-->
+			<LabelStyle DecimalDigits="1" Visible="True" Align="Right" LineColor="0,0,0" LineWidth="1" FontSize="10" IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="0,0,200,100">
+				<!--Value和FillColor可设置为属性。-->
+				<Label FillColor="255,0,0" Value="[AttrField01]" LabelName=""/>
+				<Label FillColor="0,207,0" Value="[AttrField02]" LabelName=""/>
+				<Label FillColor="255,255,090" Value="[AttrField03]" LabelName=""/>
+				<!--<Label FillColor="255,0,0" Value="0.01" LabelName="LL" />-->
+			</LabelStyle>
+		</Item>
+	</LitePool>
+	<Pie>
+		
+	</Pie>
+</Configuration>

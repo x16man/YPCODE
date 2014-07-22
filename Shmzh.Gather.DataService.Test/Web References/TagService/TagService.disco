@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost/Shmzh.Gather.DataService/TagService.asmx?wsdl" docRef="http://localhost/Shmzh.Gather.DataService/TagService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost/Shmzh.Gather.DataService/TagService.asmx" xmlns:q1="http://www.ypwater.com/" binding="q1:TagServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost/Shmzh.Gather.DataService/TagService.asmx" xmlns:q2="http://www.ypwater.com/" binding="q2:TagServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

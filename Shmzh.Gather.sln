@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shmzh.Gather.DDE", "Shmzh.Gather.DDE\Shmzh.Gather.DDE.csproj", "{7CD1FD19-2BC5-427C-859D-BB581FC60C50}"
 EndProject
@@ -20,6 +20,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDE2OPC", "DDE2OPC\DDE2OPC.csproj", "{D7A6C62C-41B7-4829-8293-B3A887134999}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shmzh.Gather.DDE.Test", "Shmzh.Gather.DDE.Test\Shmzh.Gather.DDE.Test.csproj", "{BAD16C34-4118-4EBD-8966-B42AE5077AC3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OmegaWriter", "OmegaWriterService\OmegaWriter.vbproj", "{70F2D4A9-61BB-4B00-BB86-F79B7D84B270}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "IWriter", "IWriter\IWriter.vbproj", "{A3AB6F1F-8E04-40E1-A8E5-313E4F92F0A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPCTest", "OPCTest\OPCTest.csproj", "{069B4E95-DBE4-4E06-B29F-5FC73A329A06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +93,24 @@ Global
 		{BAD16C34-4118-4EBD-8966-B42AE5077AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAD16C34-4118-4EBD-8966-B42AE5077AC3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BAD16C34-4118-4EBD-8966-B42AE5077AC3}.Release|x86.ActiveCfg = Release|Any CPU
+		{70F2D4A9-61BB-4B00-BB86-F79B7D84B270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F2D4A9-61BB-4B00-BB86-F79B7D84B270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F2D4A9-61BB-4B00-BB86-F79B7D84B270}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{70F2D4A9-61BB-4B00-BB86-F79B7D84B270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F2D4A9-61BB-4B00-BB86-F79B7D84B270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F2D4A9-61BB-4B00-BB86-F79B7D84B270}.Release|x86.ActiveCfg = Release|Any CPU
+		{A3AB6F1F-8E04-40E1-A8E5-313E4F92F0A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AB6F1F-8E04-40E1-A8E5-313E4F92F0A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AB6F1F-8E04-40E1-A8E5-313E4F92F0A1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A3AB6F1F-8E04-40E1-A8E5-313E4F92F0A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AB6F1F-8E04-40E1-A8E5-313E4F92F0A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3AB6F1F-8E04-40E1-A8E5-313E4F92F0A1}.Release|x86.ActiveCfg = Release|Any CPU
+		{069B4E95-DBE4-4E06-B29F-5FC73A329A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069B4E95-DBE4-4E06-B29F-5FC73A329A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069B4E95-DBE4-4E06-B29F-5FC73A329A06}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{069B4E95-DBE4-4E06-B29F-5FC73A329A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069B4E95-DBE4-4E06-B29F-5FC73A329A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{069B4E95-DBE4-4E06-B29F-5FC73A329A06}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

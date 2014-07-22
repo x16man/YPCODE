@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Configuration;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -30,7 +31,7 @@ namespace MZHMM.WebMM.Purchase
 		{
 			this._EntryNo = Convert.ToInt32(this.Request["EntryNo"].ToString());
 			
-			this.ReportViewer1.ServerUrl = System.Configuration.ConfigurationSettings.AppSettings["ReportServerUrl"].ToString();
+			this.ReportViewer1.ServerUrl = ConfigurationManager.AppSettings["ReportServerUrl"].ToString();
 
 			this.ReportViewer1.ReportPath= "/MMReports/BorDetailByInvoice";
 			

@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2009 (http://www.altova.com) by fm.audio (fmaudio) -->
+<Configuration>
+    <!--DataType可选值：Second/Min/Min15/Hour/Day/Month/Year.-->
+    <!--窗体的背景图-->
+    <BackGround>
+        <!--只使用第一个 Item，多个时将忽略其它的。-->
+        <Item Color="200,200,200" Src="" IsTiled="True"/>
+        <!--<Item Color="200,200,200" Src="Image\rule.png" IsTiled="False"/>-->
+        <!--<Item Color="200,200,200" Src="CompanyElectricalVoltage\bg.png" IsTiled="False" />-->
+    </BackGround>
+    <Clock Visible="True" StringFormat="{0}" TimeFormat="yyyy-MM-dd" Font="Times New Roman" FontSize="20" X="870" Y="10" IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255"/>
+    <!---->
+    <!--Image对象-->
+    <Image>
+        <!-- 
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="955" Y="115" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>  -->
+    </Image>
+    <!--饼图-->
+    <Pie>
+        <Item X="20" Y="50" Width="500" Height="320">
+            <PaneFill FillAngle="45.0">
+                <Color>100,255,255,255</Color>
+                <Color>100,255,255,255</Color>
+                <Color>100,255,255,255</Color>
+            </PaneFill>
+            <ChartFill FillAngle="60.0">
+                <Color>100,255,255,255</Color>
+                <Color>100,255,255,255</Color>
+                <Color>100,255,255,255</Color>
+            </ChartFill>
+            <Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,255">各生产位置统计损耗率占比饼图</Title>
+            <!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+            <!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+            <!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->
+            <!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+            <Legend Visible="True" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="0.99" Y="0.06" AlignH="Right" AlignV="Top" IsHStack="False"/>
+            <!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+            <!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+            <Tag TagId="Round((([5103015])-([5103049]+[5103061]))/([5103015]),2)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="0,102,000" Color2="0,102,000" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">1#/7#车间</Tag>
+            <Tag TagId="Round((([5103016])-([5103053]))/([5103016]),2)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="122,180,005" Color2="122,180,005" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">2#3#4#车间</Tag>
+            <Tag TagId="Round(([5103017]-[5103057])/([5103017]),2)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="242,160,023" Color2="242,160,023" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">6#车间</Tag>
+            <Tag TagId="Round(([5103019]-[5103065])/([5103019]),2)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="204,051,000" Color2="204,051,000" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">次唧车间</Tag>
+            <Tag TagId="Round((([5103021])-[5103069])/([5103021]),2)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="024,078,180" Color2="024,078,180" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">7#提升泵房</Tag>
+            <Tag TagId="Round(([5103020]-[5103073])/([5103020]),2)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="131,197,109" Color2="131,197,109" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">楼宇低配</Tag>
+            <Tag TagId="Round(([5103018]-[5103077])/([5103018]),2)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="116,105,172" Color2="116,105,172" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">初唧车间</Tag>
+            <Tag TagId="Round(([5103014]-[5103081])/([5103014]),2)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="216,122,117" Color2="216,122,117" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">总降站低配</Tag>
+        </Item>
+        <Item X="520" Y="50" Width="500" Height="320">
+            <PaneFill FillAngle="45.0">
+                <Color>100,255,255,255</Color>
+                <Color>100,255,255,255</Color>
+                <Color>100,255,255,255</Color>
+            </PaneFill>
+            <ChartFill FillAngle="60.0">
+                <Color>100,255,255,255</Color>
+                <Color>100,255,255,255</Color>
+                <Color>100,255,255,255</Color>
+            </ChartFill>
+            <Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,255">各生产位置统计损耗占比饼图</Title>
+            <!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+            <!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+            <!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->
+            <!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+            <Legend Visible="True" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="0.99" Y="0.06" AlignH="Right" AlignV="Top" IsHStack="False"/>
+            <!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+            <!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+            <Tag TagId="Round((([18560901]+[18560922])-([5103049]+[5103061]))),0)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="0,102,000" Color2="0,102,000" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">1#/7#车间</Tag>
+            <Tag TagId="Round((([18560903]+[18560916])-([5103053])),0)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="122,180,005" Color2="122,180,005" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">2#3#4#车间</Tag>
+            <Tag TagId="Round(([18560904]+[18560919]-[5103057]),0)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="242,160,023" Color2="242,160,023" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">6#车间</Tag>
+            <Tag TagId="Round(([18560905]+[18560918]-[5103065]),0)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="204,051,000" Color2="204,051,000" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">次唧车间</Tag>
+            <Tag TagId="Round((([18560902]+[18560921])-[5103069]),0)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="024,078,180" Color2="024,078,180" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">7#提升泵房</Tag>
+            <Tag TagId="Round(([18560907]+[18560920]-[5103073]),0)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="131,197,109" Color2="131,197,109" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">楼宇低配</Tag>
+            <Tag TagId="Round(([18560906]+[18560917]-[5103077]),0)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="116,105,172" Color2="116,105,172" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">初唧车间</Tag>
+            <Tag TagId="Round(([18560915]+[18560908]-[5103081]),0)" DataType="Day" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="216,122,117" Color2="216,122,117" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">总降站低配</Tag>
+        </Item>
+    </Pie>
+    <!--Text对象-->
+    <Text>
+        <Item Text="生产区域用电量及损耗对比图(月)" Font="宋体" FontSize="23" IsVertical="False" X="300" Y="10" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--单位-->
+        <Item Text="单位：KWh" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="370" Width="130" Height="24" Align="Left" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--名称-->
+        <Item Text="名称" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="400" Width="82" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--1#/7#车间-->
+        <Item Text="1#/7#车间" Font="宋体" FontSize="10" IsVertical="False" X="102" Y="400" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--2#/3#/4#车间-->
+        <Item Text="2#/3#/4#车间" Font="宋体" FontSize="10" IsVertical="False" X="204" Y="400" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--6#车间-->
+        <Item Text="6#车间" Font="宋体" FontSize="10" IsVertical="False" X="306" Y="400" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--次唧车间-->
+        <Item Text="次唧车间" Font="宋体" FontSize="10" IsVertical="False" X="408" Y="400" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--7#提升泵房-->
+        <Item Text="7#提升泵房" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="400" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--楼宇低配-->
+        <Item Text="楼宇低配" Font="宋体" FontSize="10" IsVertical="False" X="612" Y="400" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--初唧车间-->
+        <Item Text="初唧车间" Font="宋体" FontSize="10" IsVertical="False" X="714" Y="400" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--总降站低配-->
+        <Item Text="总降站低配" Font="宋体" FontSize="10" IsVertical="False" X="816" Y="400" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--合计-->
+        <Item Text="合计" Font="宋体" FontSize="10" IsVertical="False" X="918" Y="400" Width="102" Height="24" Align="Center" IsHoverEffect="True" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--电量I-->
+        <Item Text="电量I" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="425" Width="82" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--电量II-->
+        <Item Text="电量II" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="449" Width="82" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="1"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--总输入-->
+        <Item Text="总输入" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="473" Width="82" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--总输出-->
+        <Item Text="总输出" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="497" Width="82" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--总损耗-->
+        <Item Text="总损耗" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="521" Width="82" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--统计损耗率-->
+        <Item Text="统计损耗率" Font="宋体" FontSize="10" IsVertical="False" X="20" Y="545" Width="82" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="1"/>
+            <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+        <!--统计损耗率-->
+
+    </Text>
+    <!--指标对象-->
+    <Tag>
+        <!--1#/7#车间-->
+        <!--电量I[18560901]-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002286],0)" StringFormat="{0}" X="102" Y="425" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--电量II-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002287],0)" StringFormat="{0}" X="102" Y="449" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输入-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103015],0)" StringFormat="{0}" X="102" Y="473" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输出-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103049]+[5103061],0)" StringFormat="{0}" X="102" Y="497" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总损耗-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(([5103015])-([5103049]+[5103061]),0)" StringFormat="{0}" X="102" Y="521" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--统计损耗率-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(100*(([5103015])-([5103049]+[5103061]))/([5103015]),2)" StringFormat="{0}%" X="102" Y="545" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--2#/3#/4#车间-->
+        <!--电量I-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002288],0)" StringFormat="{0}" X="204" Y="425" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--电量II-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002289],0)" StringFormat="{0}" X="204" Y="449" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输入-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103016],0)" StringFormat="{0}" X="204" Y="473" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输出-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103053],0)" StringFormat="{0}" X="204" Y="497" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总损耗-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103016]-[5103053],0)" StringFormat="{0}" X="204" Y="521" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+
+        <!--统计损耗率-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(100*(([5103016])-([5103053]))/([5103016]),2)" StringFormat="{0}%" X="204" Y="545" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--6#车间-->
+        <!--电量I-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002290],0)" StringFormat="{0}" X="306" Y="425" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--电量II-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002291],0)" StringFormat="{0}" X="306" Y="449" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输入-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103017],0)" StringFormat="{0}" X="306" Y="473" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输出-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103057],0)" StringFormat="{0}" X="306" Y="497" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总损耗-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103017]-[5103057],0)" StringFormat="{0}" X="306" Y="521" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+
+        <!--统计损耗率-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(100*([5103017]-[5103057])/([5103017]),2)" StringFormat="{0}%" X="306" Y="545" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--次唧车间-->
+        <!--电量I-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002294],0)" StringFormat="{0}" X="408" Y="425" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--电量II-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002295],0)" StringFormat="{0}" X="408" Y="449" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输入-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103019],0)" StringFormat="{0}" X="408" Y="473" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输出-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103065],0)" StringFormat="{0}" X="408" Y="497" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总损耗-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103019]-[5103065],0)" StringFormat="{0}" X="408" Y="521" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+
+        <!--统计损耗率-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(100*([5103019]-[5103065])/([5103019]),2)" StringFormat="{0}%" X="408" Y="545" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--7#提升泵房-->
+        <!--电量I-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002296],0)" StringFormat="{0}" X="510" Y="425" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--电量II-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002297],0)" StringFormat="{0}" X="510" Y="449" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输入-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103021],0)" StringFormat="{0}" X="510" Y="473" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输出-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103069],0)" StringFormat="{0}" X="510" Y="497" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总损耗-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(([5103021])-[5103069],0)" StringFormat="{0}" X="510" Y="521" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+
+        <!--统计损耗率-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(100*(([5103021])-[5103069])/([5103021]),2)" StringFormat="{0}%" X="510" Y="545" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--楼宇低配-->
+        <!--电量I-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002298],0)" StringFormat="{0}" X="612" Y="425" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--电量II-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002299],0)" StringFormat="{0}" X="612" Y="449" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输入-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103020],0)" StringFormat="{0}" X="612" Y="473" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输出-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103073],0)" StringFormat="{0}" X="612" Y="497" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总损耗-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103020]-[5103073],0)" StringFormat="{0}" X="612" Y="521" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+
+        <!--统计损耗率-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(100*([5103020]-[5103073])/([5103020]),2)" StringFormat="{0}%" X="612" Y="545" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--初唧车间-->
+        <!--电量I-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002300],0)" StringFormat="{0}" X="714" Y="425" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--电量II-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002301],0)" StringFormat="{0}" X="714" Y="449" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输入-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103018],0)" StringFormat="{0}" X="714" Y="473" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输出-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103077],0)" StringFormat="{0}" X="714" Y="497" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总损耗-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103018]-[5103077],0)" StringFormat="{0}" X="714" Y="521" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+
+        <!--统计损耗率-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(100*([5103018]-[5103077])/([5103018]),2)" StringFormat="{0}%" X="714" Y="545" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总降站低配-->
+        <!--电量I-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002284],0)" StringFormat="{0}" X="816" Y="425" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--电量II-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002285],0)" StringFormat="{0}" X="816" Y="449" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输入-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103014],0)" StringFormat="{0}" X="816" Y="473" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输出-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103081],0)" StringFormat="{0}" X="816" Y="497" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总损耗-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103014]-[5103081],0)" StringFormat="{0}" X="816" Y="521" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--统计损耗率-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(100*([5103014]-[5103081])/([5103014]),2)" StringFormat="{0}%" X="816" Y="545" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--合计-->
+        <!--电量I-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002284]+[9002286]+[9002288]+[9002290]+[9002294]+[9002296]+[9002298]+[9002300],0)" StringFormat="{0}" X="918" Y="425" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--电量II-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([9002285]+[9002287]+[9002289]+[9002291]+[9002295]+[9002297]+[9002299]+[9002301],0)" StringFormat="{0}" X="918" Y="449" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输入-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103014]+[5103015]+[5103016]+[5103017]+[5103018]+[5103019]+[5103020]+[5103021],0)" StringFormat="{0}" X="918" Y="473" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总输出-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([5103049]+[5103053]+[5103057]+[5103061]+[5103065]+[5103069]+[5103073]+[5103077]+[5103081],0)" StringFormat="{0}" X="918" Y="497" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总损耗-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(([5103014]+[5103015]+[5103016]+[5103017]+[5103018]+[5103019]+[5103020]+[5103021])-([5103049]+[5103053]+[5103057]+[5103061]+[5103065]+[5103069]+[5103073]+[5103077]+[5103081]),0)" StringFormat="{0}" X="918" Y="521" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总统计损耗率-->
+        <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(100*(([5103014]+[5103015]+[5103016]+[5103017]+[5103018]+[5103019]+[5103020]+[5103021])-([5103049]+[5103053]+[5103057]+[5103061]+[5103065]+[5103069]+[5103073]+[5103077]+[5103081]))/([5103014]+[5103015]+[5103016]+[5103017]+[5103018]+[5103019]+[5103020]+[5103021]),2)" StringFormat="{0}%" X="918" Y="545" Width="102" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--百分比 -->
+        <!--1#、7#车间-->
+        <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round(([5103015]-([5103049]+[5103061]))/([5103015]),2)" StringFormat="{0:p}" X="360" Y="70" Width="130" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--234车间-->
+        <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round(([5103016]-[5103053])/([5103016]),2)" StringFormat="{0:p}" X="360" Y="105" Width="130" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--6#-->
+        <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round(([5103017]-[5103057])/([5103017]),2)" StringFormat="{0:p}" X="360" Y="140" Width="130" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--次唧-->
+        <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round(([5103019]-[5103065])/([5103019]),2)" StringFormat="{0:p}" X="360" Y="175" Width="130" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--7#提升-->
+        <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round((([5103021])-[5103069])/([5103021]),2)" StringFormat="{0:p}" X="360" Y="210" Width="130" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--楼宇-->
+        <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round(([5103020]-[5103073])/([5103020]),2)" StringFormat="{0:p}" X="360" Y="245" Width="130" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--初唧-->
+        <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round(([5103018]-[5103077])/([5103018]),2)" StringFormat="{0:p}" X="360" Y="280" Width="130" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+        <!--总降低配-->
+        <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round(([5103014]-[5103081])/([5103014]),2)" StringFormat="{0:p}" X="360" Y="315" Width="130" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+            <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="1"/>
+            <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+            <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+        </Item>
+    </Tag>
+    <!--Line对象-->
+    <Line>
+        <!--饼图色块1-->
+        <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="0,102,000" Width="20" LineStyle="Solid">
+            <Points>
+                <Point X="380" Y="78"/>
+                <Point X="380" Y="98"/>
+            </Points>
+        </Item>
+        <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="122,180,005" Width="20" LineStyle="Solid">
+            <Points>
+                <Point X="380" Y="113"/>
+                <Point X="380" Y="133"/>
+            </Points>
+        </Item>
+        <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="242,160,023" Width="20" LineStyle="Solid">
+            <Points>
+                <Point X="380" Y="148"/>
+                <Point X="380" Y="168"/>
+            </Points>
+        </Item>
+        <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="204,051,000" Width="20" LineStyle="Solid">
+            <Points>
+                <Point X="380" Y="183"/>
+                <Point X="380" Y="203"/>
+            </Points>
+        </Item>
+        <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="024,078,180" Width="20" LineStyle="Solid">
+            <Points>
+                <Point X="380" Y="218"/>
+                <Point X="380" Y="238"/>
+            </Points>
+        </Item>
+        <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="131,197,109" Width="20" LineStyle="Solid">
+            <Points>
+                <Point X="380" Y="253"/>
+                <Point X="380" Y="273"/>
+            </Points>
+        </Item>
+        <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="116,105,172" Width="20" LineStyle="Solid">
+            <Points>
+                <Point X="380" Y="288"/>
+                <Point X="380" Y="308"/>
+            </Points>
+        </Item>
+        <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="216,122,117" Width="20" LineStyle="Solid">
+            <Points>
+                <Point X="380" Y="323"/>
+                <Point X="380" Y="343"/>
+            </Points>
+        </Item>
+    </Line>
+
+</Configuration>

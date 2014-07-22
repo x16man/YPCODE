@@ -155,15 +155,15 @@ namespace WebMM.Storage
             {
                 switch (OpMode)
                 {
-                    case MZHMM.Common.OP.FirstAudit:
-                    case MZHMM.Common.OP.SecondAudit:
-                    case MZHMM.Common.OP.ThirdAudit:
+                    case Shmzh.MM.Common.OP.FirstAudit:
+                    case Shmzh.MM.Common.OP.SecondAudit:
+                    case Shmzh.MM.Common.OP.ThirdAudit:
                         this.editRow.Visible = false;
                         this.editRowHeader.Visible = false;
                         this.btnRefuse.Visible = false;
                         this.btnPresent.Visible = false;
                         break;
-                    case MZHMM.Common.OP.View:
+                    case Shmzh.MM.Common.OP.View:
                         this.editRow.Visible = false;
                         this.editRowHeader.Visible = false;
                         this.btnRefuse.Visible = false;
@@ -171,7 +171,7 @@ namespace WebMM.Storage
                         this.btnCancel.Text = "关闭";
                         this.btnPresent.Visible = false;
                         break;
-                    case MZHMM.Common.OP.O:
+                    case Shmzh.MM.Common.OP.O:
                         #region 收料
                         this.txtItemCode.Visible = true;
                         this.txtItemCode.ReadOnly = true;
@@ -223,7 +223,7 @@ namespace WebMM.Storage
                         this.btnRefuse.Enabled = true;
                         this.btnRefuse.Visible = false;
                         break;
-                    case MZHMM.Common.OP.Red:
+                    case Shmzh.MM.Common.OP.Red:
                         this.txtItemCode.Visible = true;
                         this.txtItemCode.Enabled = true;
                         this.txtItemName.Visible = true;
@@ -263,28 +263,28 @@ namespace WebMM.Storage
         {
             switch (OpMode)
             {
-                case MZHMM.Common.OP.New://新建。
-                case MZHMM.Common.OP.Red://红字。
-                case MZHMM.Common.OP.Bor://由批次进货单生成。
-                case MZHMM.Common.OP.NewAndPresent://新建并且提交。
-                case MZHMM.Common.OP.Edit://编辑。
-                case MZHMM.Common.OP.EditAndPresent://编辑并且提交。
+                case Shmzh.MM.Common.OP.New://新建。
+                case Shmzh.MM.Common.OP.Red://红字。
+                case Shmzh.MM.Common.OP.Bor://由批次进货单生成。
+                case Shmzh.MM.Common.OP.NewAndPresent://新建并且提交。
+                case Shmzh.MM.Common.OP.Edit://编辑。
+                case Shmzh.MM.Common.OP.EditAndPresent://编辑并且提交。
                     this.InventoryShortage.AuthorCode = Master.CurrentUser.thisUserInfo.EmpCode;
                     this.InventoryShortage.AuthorName = Master.CurrentUser.thisUserInfo.EmpName;
                     this.InventoryShortage.AuthorLoginId = Master.CurrentUser.thisUserInfo.LoginName;
                     this.InventoryShortage.AuthorDept = Master.CurrentUser.thisUserInfo.DeptCode;
                     this.InventoryShortage.AuthorDeptName = Master.CurrentUser.thisUserInfo.DeptName;
                     break;
-                case MZHMM.Common.OP.FirstAudit://一级审批。
+                case Shmzh.MM.Common.OP.FirstAudit://一级审批。
                     this.InventoryShortage.Assessor1 = Master.CurrentUser.thisUserInfo.EmpName;
                     break;
-                case MZHMM.Common.OP.SecondAudit://二级审批。
+                case Shmzh.MM.Common.OP.SecondAudit://二级审批。
                     this.InventoryShortage.Assessor2 = Master.CurrentUser.thisUserInfo.EmpName;
                     break;
-                case MZHMM.Common.OP.ThirdAudit://三级审批。
+                case Shmzh.MM.Common.OP.ThirdAudit://三级审批。
                     this.InventoryShortage.Assessor3 = Master.CurrentUser.thisUserInfo.EmpName;
                     break;
-                case MZHMM.Common.OP.O://发料。
+                case Shmzh.MM.Common.OP.O://发料。
                     this.InventoryShortage.StoManagerCode = Master.CurrentUser.thisUserInfo.EmpCode;
                     this.InventoryShortage.StoManager = Master.CurrentUser.thisUserInfo.EmpName;
                     break;
@@ -300,26 +300,26 @@ namespace WebMM.Storage
             var auditLevel = new SysSystem().GetAuditLevel(this.InventoryShortage.DocCode);
             switch(OpMode)
             {
-                case MZHMM.Common.OP.New:
-                case MZHMM.Common.OP.Edit:
-                case MZHMM.Common.OP.Red:
+                case Shmzh.MM.Common.OP.New:
+                case Shmzh.MM.Common.OP.Edit:
+                case Shmzh.MM.Common.OP.Red:
                     this.InventoryShortage.EntryState = DocStatus.New;
                     break;
-                case MZHMM.Common.OP.Submit:
-                case MZHMM.Common.OP.NewAndPresent:
-                case MZHMM.Common.OP.EditAndPresent:
+                case Shmzh.MM.Common.OP.Submit:
+                case Shmzh.MM.Common.OP.NewAndPresent:
+                case Shmzh.MM.Common.OP.EditAndPresent:
                     this.InventoryShortage.EntryState = DocStatus.Present;
                     break;
-                case MZHMM.Common.OP.FirstAudit:
+                case Shmzh.MM.Common.OP.FirstAudit:
                     this.InventoryShortage.EntryState = auditLevel == 1 ? (this.DocAuditWebControl1.Audit1 == AuditResult.Passed ? DocStatus.TrdPass : DocStatus.FstNoPass) : (this.DocAuditWebControl1.Audit1 == AuditResult.Passed ? DocStatus.FstPass : DocStatus.FstNoPass);
                     break;
-                case MZHMM.Common.OP.SecondAudit:
+                case Shmzh.MM.Common.OP.SecondAudit:
                     this.InventoryShortage.EntryState = auditLevel == 2 ? (this.DocAuditWebControl1.Audit1 == AuditResult.Passed ? DocStatus.TrdPass : DocStatus.SecNoPass) : (this.DocAuditWebControl1.Audit1 == AuditResult.Passed ? DocStatus.SecPass : DocStatus.SecNoPass);
                     break;
-                case MZHMM.Common.OP.ThirdAudit:
+                case Shmzh.MM.Common.OP.ThirdAudit:
                     this.InventoryShortage.EntryState = this.DocAuditWebControl1.Audit3 == AuditResult.Passed ? DocStatus.TrdPass : DocStatus.TrdNoPass;
                     break;
-                case MZHMM.Common.OP.O:
+                case Shmzh.MM.Common.OP.O:
                     this.InventoryShortage.EntryState = DocStatus.Drawed;
                     break;
             }
@@ -400,42 +400,42 @@ namespace WebMM.Storage
             if(!IsPostBack)
             {
                 #region Check Right
-                if(this.OP == MZHMM.Common.OP.New || this.OP == MZHMM.Common.OP.Edit)
+                if (this.OP == Shmzh.MM.Common.OP.New || this.OP == Shmzh.MM.Common.OP.Edit)
                 {
                     if(!Master.CurrentUser.HasRight(SysRight.InventoryShortageMaintain))
                     {
                         this.Response.Redirect("../Common/NoRight.aspx",true);
                     }
                 }
-                else if(this.OP==MZHMM.Common.OP.FirstAudit)
+                else if (this.OP == Shmzh.MM.Common.OP.FirstAudit)
                 {
                     if(!Master.CurrentUser.HasRight(SysRight.InventoryShortageFirstAudit))
                     {
                         this.Response.Redirect("../Common/NoRight.aspx", true);
                     }
                 }
-                else if(this.OP == MZHMM.Common.OP.SecondAudit)
+                else if (this.OP == Shmzh.MM.Common.OP.SecondAudit)
                 {
                     if (!Master.CurrentUser.HasRight(SysRight.InventoryShortageSecondAudit))
                     {
                         this.Response.Redirect("../Common/NoRight.aspx", true);
                     }
                 }
-                else if(this.OP == MZHMM.Common.OP.ThirdAudit)
+                else if (this.OP == Shmzh.MM.Common.OP.ThirdAudit)
                 {
                     if (!Master.CurrentUser.HasRight(SysRight.InventoryShortageThirdAudit))
                     {
                         this.Response.Redirect("../Common/NoRight.aspx", true);
                     }
                 }
-                else if(this.OP == MZHMM.Common.OP.I)
+                else if (this.OP == Shmzh.MM.Common.OP.I)
                 {
                     if(!Master.CurrentUser.HasRight(SysRight.StockIn))
                     {
                         this.Response.Redirect("../Common/NoRight.aspx",true);
                     }
                 }
-                else if(this.OP == MZHMM.Common.OP.Red)
+                else if (this.OP == Shmzh.MM.Common.OP.Red)
                 {
                     if(!Master.CurrentUser.HasRight(SysRight.InventoryShortageMaintain))
                     {
@@ -450,7 +450,7 @@ namespace WebMM.Storage
                     this.InventoryShortageDetail = new InventoryShortageDetails().GetByEntryNo(this.EntryNo);
 
                     #region Check Status
-                    if (this.OP == MZHMM.Common.OP.Edit)
+                    if (this.OP == Shmzh.MM.Common.OP.Edit)
                     {
                         if( this.InventoryShortage.EntryState!=DocStatus.New && 
                             this.InventoryShortage.EntryState!=DocStatus.Cancel&&
@@ -462,7 +462,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if(this.OP == MZHMM.Common.OP.FirstAudit)
+                    else if (this.OP == Shmzh.MM.Common.OP.FirstAudit)
                     {
                         if(this.InventoryShortage.EntryState != DocStatus.Present)
                         {
@@ -470,7 +470,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if(this.OP == MZHMM.Common.OP.SecondAudit)
+                    else if (this.OP == Shmzh.MM.Common.OP.SecondAudit)
                     {
                         if(this.InventoryShortage.EntryState != DocStatus.FstPass)
                         {
@@ -478,7 +478,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if(this.OP == MZHMM.Common.OP.ThirdAudit)
+                    else if (this.OP == Shmzh.MM.Common.OP.ThirdAudit)
                     {
                         if(this.InventoryShortage.EntryState != DocStatus.SecPass)
                         {
@@ -486,7 +486,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if(this.OP == MZHMM.Common.OP.O)
+                    else if (this.OP == Shmzh.MM.Common.OP.O)
                     {
                         if(this.InventoryShortage.EntryState != DocStatus.TrdPass)
                         {
@@ -494,7 +494,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if(this.OP == MZHMM.Common.OP.Red)
+                    else if (this.OP == Shmzh.MM.Common.OP.Red)
                     {
                         if (this.InventoryShortage.EntryState != DocStatus.Drawed)
                         {
@@ -512,7 +512,7 @@ namespace WebMM.Storage
                     }
                     #endregion
 
-                    if(this.OP == MZHMM.Common.OP.Red)
+                    if (this.OP == Shmzh.MM.Common.OP.Red)
                     {
                         this.InventoryShortage.ParentEntryNo = this.InventoryShortage.EntryNo;
                         this.InventoryShortage.EntryNo = 0;
@@ -583,7 +583,7 @@ namespace WebMM.Storage
                         }
                     }
 
-                    if (this.OP == MZHMM.Common.OP.Red)
+                    if (this.OP == Shmzh.MM.Common.OP.Red)
                     {
                         this.doc1.DataBindNew();
                     }
@@ -677,7 +677,7 @@ namespace WebMM.Storage
         protected void btnSave_Click(object sender, EventArgs e)
         {
             //没有内容
-            if (this.InventoryShortageDetail.Count == 0 && (this.OP == MZHMM.Common.OP.New || this.OP == MZHMM.Common.OP.Edit || this.OP == MZHMM.Common.OP.Submit|| this.OP == MZHMM.Common.OP.O) )
+            if (this.InventoryShortageDetail.Count == 0 && (this.OP == Shmzh.MM.Common.OP.New || this.OP == Shmzh.MM.Common.OP.Edit || this.OP == Shmzh.MM.Common.OP.Submit || this.OP == Shmzh.MM.Common.OP.O))
             {
                 ClientScript.RegisterStartupScript( this.GetType(), "Error", "alert('没有物料内容!');", true);
                 return;
@@ -694,8 +694,8 @@ namespace WebMM.Storage
             switch (this.OP)
             {
                 #region New Red
-                case MZHMM.Common.OP.New:
-                case MZHMM.Common.OP.Red:
+                case Shmzh.MM.Common.OP.New:
+                case Shmzh.MM.Common.OP.Red:
                     using(var conn = new SqlConnection(ConnectionString.MM))
                     {
                         conn.Open();
@@ -717,7 +717,7 @@ namespace WebMM.Storage
                                 }
                             }
                             //TODOList
-                            if (new DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1090, "T", Master.CurrentUser.LoginName))
+                            if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1090, "T", Master.CurrentUser.LoginName))
                             {
                                 trans.Commit();
                                 ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);
@@ -739,8 +739,8 @@ namespace WebMM.Storage
                     break;
                 #endregion
                 #region Edit Submit
-                case MZHMM.Common.OP.Submit:
-                case MZHMM.Common.OP.Edit:
+                case Shmzh.MM.Common.OP.Submit:
+                case Shmzh.MM.Common.OP.Edit:
                     using (var conn = new SqlConnection(ConnectionString.MM))
                     {
                         conn.Open();
@@ -761,7 +761,7 @@ namespace WebMM.Storage
                                     }
                                 }
                                 //TODOList
-                                if (new DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1100, "T", Master.CurrentUser.LoginName))
+                                if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1100, "T", Master.CurrentUser.LoginName))
                                 {
                                     trans.Commit();
                                     ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);
@@ -786,7 +786,7 @@ namespace WebMM.Storage
                     break;
                 #endregion
                 #region FirstAudit
-                case MZHMM.Common.OP.FirstAudit:
+                case Shmzh.MM.Common.OP.FirstAudit:
                     if(this.DocAuditWebControl1.Audit1 !="Y" && this.DocAuditWebControl1.Audit1!="N")
                     {
                         ClientScript.RegisterStartupScript( this.GetType(), "Error", "alert('请确认审批通过或是不通过!');", true);
@@ -804,7 +804,7 @@ namespace WebMM.Storage
                             if (new InventoryShortages().Update(trans,this.InventoryShortage))
                             {
                                 //TODOList
-                                if (new DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1110, this.InventoryShortage.Audit1=="Y"?"T":"F", Master.CurrentUser.LoginName))
+                                if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1110, this.InventoryShortage.Audit1=="Y"?"T":"F", Master.CurrentUser.LoginName))
                                 {
                                     trans.Commit();
                                     ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);
@@ -825,7 +825,7 @@ namespace WebMM.Storage
                     break;
                 #endregion
                 #region SecondAudit
-                case MZHMM.Common.OP.SecondAudit:
+                case Shmzh.MM.Common.OP.SecondAudit:
                     
                     if (this.DocAuditWebControl1.Audit2 != "Y" && this.DocAuditWebControl1.Audit2 != "N")
                     {
@@ -844,7 +844,7 @@ namespace WebMM.Storage
                             if (new InventoryShortages().Update(trans, this.InventoryShortage))
                             {
                                 //TODOList
-                                if (new DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1120, this.InventoryShortage.Audit2=="Y"?"T":"F", Master.CurrentUser.LoginName))
+                                if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1120, this.InventoryShortage.Audit2=="Y"?"T":"F", Master.CurrentUser.LoginName))
                                 {
                                     trans.Commit();
                                     ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);
@@ -865,7 +865,7 @@ namespace WebMM.Storage
                     break;
                 #endregion
                 #region ThirdAudit
-                case MZHMM.Common.OP.ThirdAudit:
+                case Shmzh.MM.Common.OP.ThirdAudit:
                     if (this.DocAuditWebControl1.Audit3 != "Y" && this.DocAuditWebControl1.Audit3 != "N")
                     {
                         ClientScript.RegisterStartupScript( this.GetType(), "Error", "alert('请确认审批通过或是不通过!');", true);
@@ -883,7 +883,7 @@ namespace WebMM.Storage
                             if (new InventoryShortages().Update(this.InventoryShortage))
                             {
                                 //TODOList
-                                if (new DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1130, this.InventoryShortage.Audit3=="Y"?"T":"F", Master.CurrentUser.LoginName))
+                                if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1130, this.InventoryShortage.Audit3=="Y"?"T":"F", Master.CurrentUser.LoginName))
                                 {
                                     trans.Commit();
                                     ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);
@@ -904,7 +904,7 @@ namespace WebMM.Storage
                     break;
                 #endregion
                 #region O
-                case MZHMM.Common.OP.O:
+                case Shmzh.MM.Common.OP.O:
                     if (this.InventoryShortage.ParentEntryNo > 0)
                     {
                         var ret = new InventoryShortages().DrawOutStock(this.InventoryShortage.EntryNo, "", "", "", "", Master.CurrentUser.EmpCode, Master.CurrentUser.EmpName, Master.CurrentUser.LoginName);
@@ -925,11 +925,11 @@ namespace WebMM.Storage
                         {
                             if (this.IsFromTodo)
                             {
-                                this.Response.Redirect("ConChooser.aspx?DocCode=20&EntryNo=" + this.doc1.EntryNo.ToString() + "&Op=" + MZHMM.Common.OP.O + "&TODO=Y");
+                                this.Response.Redirect("ConChooser.aspx?DocCode=20&EntryNo=" + this.doc1.EntryNo.ToString() + "&Op=" + Shmzh.MM.Common.OP.O + "&TODO=Y");
                             }
                             else
                             {
-                                this.Response.Redirect("Conchooser.aspx?DocCode=20&EntryNo=" + this.doc1.EntryNo.ToString() + "&Op=" + MZHMM.Common.OP.O);
+                                this.Response.Redirect("Conchooser.aspx?DocCode=20&EntryNo=" + this.doc1.EntryNo.ToString() + "&Op=" + Shmzh.MM.Common.OP.O);
                             }
                         }
                     }
@@ -963,14 +963,14 @@ namespace WebMM.Storage
 
                 this.InventoryShortage.SubTotal = subTotal;
                 bool ret = false;
-                if (this.OP == MZHMM.Common.OP.New || this.OP == MZHMM.Common.OP.Red)
+                if (this.OP == Shmzh.MM.Common.OP.New || this.OP == Shmzh.MM.Common.OP.Red)
                     ret = new InventoryShortages().Insert(trans, this.InventoryShortage);
-                else if (this.OP == MZHMM.Common.OP.Edit || this.OP==MZHMM.Common.OP.Submit)
+                else if (this.OP == Shmzh.MM.Common.OP.Edit || this.OP == Shmzh.MM.Common.OP.Submit)
                     ret = new InventoryShortages().Update(trans, this.InventoryShortage);
                 if (ret)
                 {
                     var da = new InventoryShortageDetails();
-                    if (this.OP == MZHMM.Common.OP.Edit || this.OP == MZHMM.Common.OP.Submit)
+                    if (this.OP == Shmzh.MM.Common.OP.Edit || this.OP == Shmzh.MM.Common.OP.Submit)
                     {
                         if (!da.Delete(trans, this.InventoryShortage.EntryNo))
                         {
@@ -994,7 +994,7 @@ namespace WebMM.Storage
                         }
                     }
                     //TODOList
-                    if (new DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1100, "T", Master.CurrentUser.LoginName))
+                    if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1100, "T", Master.CurrentUser.LoginName))
                     {
                         trans.Commit();
                         ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);

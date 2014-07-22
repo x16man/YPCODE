@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!--组件配置文件-->
+<Components>
+	<Component Name="PubData" Version="V1.0">
+		<Purpose>PubData数据库</Purpose>
+    <DatabaseConnectionString>data source=.;initial catalog=Pubdata;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+	</Component>
+  <Component Name="Produce" Version="V1.0">
+    <Purpose>生产数据库</Purpose>
+    <DatabaseConnectionString>data source=.;initial catalog=Gather;User ID=sa;password=mzh.123;Connection Timeout=300;</DatabaseConnectionString>
+  </Component>
+  <Component Name="DEV" Version="V1.0">
+    <Purpose>设备数据库</Purpose>
+    <DatabaseConnectionString>data source=.;initial catalog=Gather;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+  </Component>
+  <Component Name="Monitor" Version="V1.0">
+    <Purpose>生产监控据库</Purpose>
+    <DatabaseConnectionString>data source=.;initial catalog=MonitorDB;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+  </Component>
+</Components>
+

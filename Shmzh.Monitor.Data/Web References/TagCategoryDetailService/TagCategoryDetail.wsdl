@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetByCategoryId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByCategoryIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByCategoryIdResult" type="tns:ArrayOfTagCategoryDetailInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTagCategoryDetailInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TagCategoryDetailInfo" nillable="true" type="tns:TagCategoryDetailInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TagCategoryDetailInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CategoryId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TagId" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTagsByCategoryId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTagsByCategoryIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTagsByCategoryIdResult" type="tns:ArrayOfTagInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTagInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TagInfo" nillable="true" type="tns:TagInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TagInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="I_Tag_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="I_Tag_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="I_Dig_Num" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="I_Unit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="I_Tag_Type" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Calc_Type_Before_Hour" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Calc_Type_After_Hour" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Second_To_Minute" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Minute_To_Min5" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Minute_To_Hour" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Hour_To_Day" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Day_To_Month" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Month_To_Year" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Func" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dev_Code" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Max_Value" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Min_Value" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Reset">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="tagIds" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ResetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ResetResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetByCategoryIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByCategoryId" />
+  </wsdl:message>
+  <wsdl:message name="GetByCategoryIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByCategoryIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTagsByCategoryIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTagsByCategoryId" />
+  </wsdl:message>
+  <wsdl:message name="GetTagsByCategoryIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTagsByCategoryIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ResetSoapIn">
+    <wsdl:part name="parameters" element="tns:Reset" />
+  </wsdl:message>
+  <wsdl:message name="ResetSoapOut">
+    <wsdl:part name="parameters" element="tns:ResetResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TagCategoryDetailSoap">
+    <wsdl:operation name="GetByCategoryId">
+      <wsdl:input message="tns:GetByCategoryIdSoapIn" />
+      <wsdl:output message="tns:GetByCategoryIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTagsByCategoryId">
+      <wsdl:input message="tns:GetTagsByCategoryIdSoapIn" />
+      <wsdl:output message="tns:GetTagsByCategoryIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <wsdl:input message="tns:ResetSoapIn" />
+      <wsdl:output message="tns:ResetSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TagCategoryDetailSoap" type="tns:TagCategoryDetailSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetByCategoryId">
+      <soap:operation soapAction="http://tempuri.org/GetByCategoryId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTagsByCategoryId">
+      <soap:operation soapAction="http://tempuri.org/GetTagsByCategoryId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <soap:operation soapAction="http://tempuri.org/Reset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TagCategoryDetailSoap12" type="tns:TagCategoryDetailSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetByCategoryId">
+      <soap12:operation soapAction="http://tempuri.org/GetByCategoryId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTagsByCategoryId">
+      <soap12:operation soapAction="http://tempuri.org/GetTagsByCategoryId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <soap12:operation soapAction="http://tempuri.org/Reset" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TagCategoryDetail">
+    <wsdl:port name="TagCategoryDetailSoap" binding="tns:TagCategoryDetailSoap">
+      <soap:address location="http://localhost/Shmzh.Monitor.DataService/TagCategoryDetail.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TagCategoryDetailSoap12" binding="tns:TagCategoryDetailSoap12">
+      <soap12:address location="http://localhost/Shmzh.Monitor.DataService/TagCategoryDetail.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

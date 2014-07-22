@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>  
+  <!--DataType可选值：Second/Min/Min15/Hour/Day/Month/Year.-->
+  <!--窗体的背景图-->
+  <BackGround>
+    <!--只使用第一个 Item，多个时将忽略其它的。-->
+    <!--Item Color="200,200,200" Src="" IsTiled="True"/-->
+    <!--Item Color="200,200,200" Src="Image\rule.png" IsTiled="False" /-->
+    <!--<Item Color="200,200,200" Src="CompanyElectricalVoltage\bg.png" IsTiled="False" />-->
+  </BackGround>
+    <BasePoint>
+        <Item Name="grid" X="700" Y="50"></Item>
+    </BasePoint>
+  <Clock Visible="True" StringFormat="{0}" TimeFormat="yyyy-MM-dd" Font="Times New Roman" FontSize="10" X="870" Y="20" IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255" /><!---->
+  <!--Image对象-->
+  <Image>
+	<!-- 
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="955" Y="115" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>  -->   
+    
+  </Image>
+  <!--Text对象-->
+  <Text>
+    <Item Text="总降站生产用电总成本(日)" Font="宋体" FontSize="23" IsVertical="False" X="300" Y="10" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--单位-->
+    <Item Text="单位：KWh" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="360" Width="130" Height="24" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    
+    <!--名称-->
+    <Item Text="名称" BasePointName="grid" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="0" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--总降站-->
+    <Item Text="总降站" BasePointName="grid" Font="宋体" FontSize="10" IsVertical="False" X="162" Y="0" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    
+    <!--电量-->
+    <Item Text="电量" BasePointName="grid" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="25" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--峰-->
+    <Item Text="峰" BasePointName="grid" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="50" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--谷-->
+    <Item Text="谷" BasePointName="grid" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="75" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--平-->
+    <Item Text="平" BasePointName="grid" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="100" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+  </Text>
+  <!--指标对象-->
+  <Tag>
+    <!--总降站-->
+    <!--电量-->
+    <Item Font="宋体" BasePointName="grid" FontSize="10" DataType="Day" TagId="Round([5103013],0)" StringFormat="{0}" X="162" Y="25" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--峰-->
+    <Item Font="宋体" BasePointName="grid" FontSize="10" DataType="Day" TagId="Round([5103022],0)" StringFormat="{0}" X="162" Y="50" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--谷-->
+    <Item Font="宋体" BasePointName="grid" FontSize="10" DataType="Day" TagId="Round([5103031],0)" StringFormat="{0}" X="162" Y="75" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平-->
+    <Item Font="宋体" BasePointName="grid" FontSize="10" DataType="Day" TagId="Round([5103040],0)" StringFormat="{0}" X="162" Y="100" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+  </Tag>
+  <!--饼图-->
+  <Pie>
+  <!--总降站饼图-->
+    <Item X="10" Y="50" Width="700" Height="600">
+		<PaneFill FillAngle="45.0">
+			<Color>100,255,255,255</Color>
+			<Color>100,255,255,255</Color>
+			<Color>100,255,255,255</Color>
+		</PaneFill>
+		<ChartFill FillAngle="60.0">
+			<Color>100,255,255,255</Color>
+			<Color>100,255,255,255</Color>
+			<Color>100,255,255,255</Color>
+		</ChartFill>
+		<Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="16" ForeColor="0,0,255">总降站\n峰谷平占比饼图</Title>
+		<!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+		<!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+		<!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->
+		<!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+		<Legend Visible="True" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="1.0" Y="0.06" AlignH="Center" AlignV="Top" IsHStack="False"/>
+		<!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+		<!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+		<Tag TagId="[5103022]" DataType="Day" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="024,078,180" Color2="0,102,000" FillAngle="45.0" Displacement="0.0" LabelType="Name_Value_Percent">峰</Tag>
+		<Tag TagId="[5103031]" DataType="Day" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="131,197,109" Color2="122,180,005" FillAngle="45.0" Displacement="0.0" LabelType="Name_Value_Percent">谷</Tag>
+		<Tag TagId="[5103040]" DataType="Day" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="116,105,172" Color2="242,160,023" FillAngle="45.0" Displacement="0.0" LabelType="Name_Value_Percent">平</Tag>
+		
+	</Item>
+	
+  </Pie>
+</Configuration>
+
+
+

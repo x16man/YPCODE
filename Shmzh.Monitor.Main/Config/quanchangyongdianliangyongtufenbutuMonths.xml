@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>  
+  <!--DataType可选值：Second/Min/Min15/Hour/Day/Month/Year.-->
+  <!--窗体的背景图-->
+  <BackGround>
+    <!--只使用第一个 Item，多个时将忽略其它的。-->
+    <Item Color="200,200,200" Src="" IsTiled="True"/>
+    <!--<Item Color="200,200,200" Src="Image\rule.png" IsTiled="False" />-->
+    <!--<Item Color="200,200,200" Src="CompanyElectricalVoltage\bg.png" IsTiled="False" />-->
+  </BackGround>
+  
+  <!--Image对象-->
+  <Image>
+	<!-- 
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="955" Y="115" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>  -->   
+    
+  </Image>
+  <!--Text对象-->
+  <Text>
+    <Item Text="全厂月用电量用途分布图" Font="宋体" FontSize="23" IsVertical="False" X="300" Y="10" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="220,220,220" BackColor="0,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--单位-->
+    <Item Text="单位：KWh" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="100" Width="130" Height="24" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--总降压站-->
+    <Item Text="总降压站" Font="宋体" FontSize="12" IsVertical="False" X="50" Y="120" Width="160" Height="36" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="总电量" Font="宋体" FontSize="12" IsVertical="False" X="50" Y="157" Width="80" Height="36" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="2" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--生产用电-->
+    <Item Text="生产用电" Font="宋体" FontSize="12" IsVertical="False" X="50" Y="350" Width="160" Height="36" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    
+    <Item Text="总电量" Font="宋体" FontSize="12" IsVertical="False" X="50" Y="387" Width="80" Height="36" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="2" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--生活用电-->
+    <Item Text="生活用电" Font="宋体" FontSize="12" IsVertical="False" X="310" Y="350" Width="160" Height="36" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    
+    <Item Text="总电量" Font="宋体" FontSize="12" IsVertical="False" X="310" Y="387" Width="80" Height="36" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="2" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--非生活用电-->
+    <Item Text="非生活用电" Font="宋体" FontSize="12" IsVertical="False" X="570" Y="350" Width="160" Height="36" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="总电量" Font="宋体" FontSize="12" IsVertical="False" X="570" Y="387" Width="80" Height="36" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="2" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--损耗-->
+    <Item Text="损耗" Font="宋体" FontSize="12" IsVertical="False" X="830" Y="350" Width="160" Height="36" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    
+    <Item Text="总电量" Font="宋体" FontSize="12" IsVertical="False" X="830" Y="387" Width="80" Height="36" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="2" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+        
+  </Text>
+  <!--指标对象-->
+  <Tag>
+    <!--总降压站-->
+   
+    <!--总降压站 总电量-->
+    <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round([1703086]+[1703087],0)" StringFormat="{0}" X="130" Y="157" Width="80" Height="36" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="2" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--生产用电-->
+    <!--生产用电 总电量-->
+    <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round([1703086]+[1703087]-[1703060]-[1703072]-[1703096],0)" StringFormat="{0}" X="130" Y="387" Width="80" Height="36" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="2" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--生活用电-->
+    
+    <!--生活用电 总电量-->
+    <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round([1703060],0)" StringFormat="{0}" X="390" Y="387" Width="80" Height="36" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="2" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--非生活用电-->
+    <!--非生活用电 总电量-->
+    <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round([1703072],0)" StringFormat="{0}" X="650" Y="387" Width="80" Height="36" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="2" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--损耗-->
+    <!--损耗 总电量-->
+    <Item Font="宋体" FontSize="12" DataType="Month" TagId="Round([1703096],0)" StringFormat="{0}" X="910" Y="387" Width="80" Height="36" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="2" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+  </Tag>
+  <!--Line对象-->
+  <Line>
+    <!--总降压站到生产用电-->
+    <Item StartArrow="False" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="10" LineStyle="Solid" ArrowFactor="0.2">
+      <Points>
+        <Point X="125" Y="198"/>
+        <Point X="125" Y="350"/>
+      </Points>
+    </Item>
+    <!--总降压站到生活用电-->
+    <Item StartArrow="False" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="10" LineStyle="Solid" ArrowFactor="0.2">
+      <Points>
+        <Point X="125" Y="268"/>
+        <Point X="125" Y="300"/>
+        <Point X="395" Y="300"/>
+        <Point X="395" Y="350"/>
+      </Points>
+    </Item>
+    <!--总降压站到非生活用电-->
+    <Item StartArrow="False" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="10" LineStyle="Solid" ArrowFactor="0.2">
+      <Points>
+        <Point X="125" Y="268"/>
+        <Point X="125" Y="300"/>
+        <Point X="655" Y="300"/>
+        <Point X="655" Y="350"/>
+      </Points>
+    </Item>
+    <!--总降压站到损耗-->
+    <Item StartArrow="False" EndArrow="True" TagId="" DataType="" Color="0,0,0" Width="10" LineStyle="Solid" ArrowFactor="0.2">
+      <Points>
+        <Point X="125" Y="268"/>
+        <Point X="125" Y="300"/>
+        <Point X="915" Y="300"/>
+        <Point X="915" Y="350"/>
+      </Points>
+    </Item>
+    
+  </Line>
+  <!--饼图-->
+  <Pie>
+    <Item X="350" Y="50" Width="600" Height="200">
+      <PaneFill FillAngle="45.0">
+        <Color>100,255,255,255</Color>
+        <Color>100,255,255,255</Color>
+        <Color>100,255,255,255</Color>
+      </PaneFill>
+      <ChartFill FillAngle="60.0">
+        <Color>100,255,255,255</Color>
+        <Color>100,255,255,255</Color>
+        <Color>100,255,255,255</Color>
+      </ChartFill>
+      <Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,255">用电用途占比饼图</Title>
+      <!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+      <!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+      <!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->      
+      <!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+      <Legend Visible="True" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="1.0" Y="0.06" AlignH="Center" AlignV="Top" IsHStack="False" />
+      <!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+      <!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+      <Tag TagId="Round([1703086]+[1703087]-[1703060]-[1703072]-[1703096],0)" DataType="Month" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="0,0,255" Color2="0,255,0" FillAngle="45.0" Displacement="0.0" LabelType="Value">生产用电</Tag>
+      <Tag TagId="[1703060]" DataType="Month" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="255,0,0" Color2="0,255,0" FillAngle="45.0" Displacement="0.0" LabelType="Value">生活用电</Tag>
+      <Tag TagId="[1703072]" DataType="Month" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="255,0,255" Color2="0,255,0" FillAngle="45.0" Displacement="0.0" LabelType="Value">非生活用电</Tag>
+      <Tag TagId="[1703096]" DataType="Month" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,255" Color1="0,0,255" Color2="0,255,0" FillAngle="45.0" Displacement="0.0" LabelType="Value">损耗</Tag>
+    </Item>
+  </Pie>
+</Configuration>
+
+
+

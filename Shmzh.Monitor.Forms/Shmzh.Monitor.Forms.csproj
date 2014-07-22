@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A08E54F-3628-421B-8A80-ECA954BE64DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shmzh.Monitor.Forms</RootNamespace>
+    <AssemblyName>Shmzh.Monitor.Forms</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ciloci.Flee, Version=0.9.24.0, Culture=neutral, PublicKeyToken=c8526a021ef298ed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\公共库\Reference\Ciloci.Flee.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\公共库\Reference\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0" />
+    <Reference Include="Shmzh.Components.SystemComponent, Version=2.0.0.8, Culture=neutral, PublicKeyToken=67191c9e5456fa33, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\公共库\Reference\Shmzh.Components.SystemComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="Shmzh.Components.Util, Version=1.0.0.0, Culture=neutral, PublicKeyToken=67191c9e5456fa33, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\公共库\Reference\Shmzh.Components.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCode\ActionType.cs" />
+    <Compile Include="AppCode\CacheInfo.cs" />
+    <Compile Include="AppCode\CacheProvider.cs" />
+    <Compile Include="AppCode\ILoadState.cs" />
+    <Compile Include="AppCode\Common.cs" />
+    <Compile Include="AppCode\DailyTaskConfig.cs" />
+    <Compile Include="AppCode\PointListCollection.cs" />
+    <Compile Include="AppCode\RightType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppCode\ToolTipHandler.cs" />
+    <Compile Include="AppCode\UpdateBase.cs" />
+    <Compile Include="AppCode\UpdateData.cs" />
+    <Compile Include="AppCode\IBaseForm.cs" />
+    <Compile Include="AppCode\LoadState.cs" />
+    <Compile Include="BaseGraphForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCategory.Designer.cs">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCategoryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCategoryEdit.Designer.cs">
+      <DependentUpon>FrmCategoryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCategoryItemEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCategoryItemEdit.Designer.cs">
+      <DependentUpon>FrmCategoryItemEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDailyTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDailyTask.Designer.cs">
+      <DependentUpon>FrmDailyTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFloatingBlock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFloatingBlock.Designer.cs">
+      <DependentUpon>FrmFloatingBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFloatingBlockEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFloatingBlockEdit.Designer.cs">
+      <DependentUpon>FrmFloatingBlockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFloatingBlockItemEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFloatingBlockItemEdit.Designer.cs">
+      <DependentUpon>FrmFloatingBlockItemEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGraphSchema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraphSchema.Designer.cs">
+      <DependentUpon>FrmGraphSchema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGraphSchemaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraphSchemaEdit.Designer.cs">
+      <DependentUpon>FrmGraphSchemaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGraphSchemaItemEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraphSchemaItemEdit.Designer.cs">
+      <DependentUpon>FrmGraphSchemaItemEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGraphSchemaSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraphSchemaSearch.Designer.cs">
+      <DependentUpon>FrmGraphSchemaSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGraphSchemaTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraphSchemaTab.Designer.cs">
+      <DependentUpon>FrmGraphSchemaTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGraphSchemaStage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraphSchemaStage.Designer.cs">
+      <DependentUpon>FrmGraphSchemaStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGraphSchemaTabEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraphSchemaTabEdit.Designer.cs">
+      <DependentUpon>FrmGraphSchemaTabEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGraphSchemaTagEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraphSchemaTagEdit.Designer.cs">
+      <DependentUpon>FrmGraphSchemaTagEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProcessFlowsheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProcessFlowsheet.Designer.cs">
+      <DependentUpon>FrmProcessFlowsheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuickGraphSchema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuickGraphSchema.Designer.cs">
+      <DependentUpon>FrmQuickGraphSchema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScaleFormatSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScaleFormatSample.Designer.cs">
+      <DependentUpon>FrmScaleFormatSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSchemaPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSchemaPicker.Designer.cs">
+      <DependentUpon>FrmSchemaPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSortTags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSortTags.Designer.cs">
+      <DependentUpon>FrmSortTags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTagAndTemperature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTagAndTemperature.Designer.cs">
+      <DependentUpon>FrmTagAndTemperature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTagCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTagCategory.Designer.cs">
+      <DependentUpon>FrmTagCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTagCategoryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTagCategoryEdit.Designer.cs">
+      <DependentUpon>FrmTagCategoryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTagSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTagSearch.Designer.cs">
+      <DependentUpon>FrmTagSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTagsPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTagsPicker.Designer.cs">
+      <DependentUpon>FrmTagsPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmToolTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmToolTip.Designer.cs">
+      <DependentUpon>FrmToolTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWebBrowser.Designer.cs">
+      <DependentUpon>FrmWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\FrmMonitorObjEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\FrmMonitorObjEdit.Designer.cs">
+      <DependentUpon>FrmMonitorObjEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\FrmObjTypeAttr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\FrmObjTypeAttr.Designer.cs">
+      <DependentUpon>FrmObjTypeAttr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\FrmObjTypeAttrEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\FrmObjTypeAttrEdit.Designer.cs">
+      <DependentUpon>FrmObjTypeAttrEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\FrmObjTypeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting\FrmObjTypeEdit.Designer.cs">
+      <DependentUpon>FrmObjTypeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGraphSchemaRTagEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraphSchemaRTagEdit.Designer.cs">
+      <DependentUpon>FrmGraphSchemaRTagEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\UpdateDataRTag.cs">
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shmzh.Monitor.Config\Shmzh.Monitor.Config.csproj">
+      <Project>{E45564BD-60C3-409F-8A1F-B86AEDB352FB}</Project>
+      <Name>Shmzh.Monitor.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Monitor.Data\Shmzh.Monitor.Data.csproj">
+      <Project>{B96FCE8C-F4B4-4567-ACEF-E6D208EB280A}</Project>
+      <Name>Shmzh.Monitor.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Monitor.Entity\Shmzh.Monitor.Entity.csproj">
+      <Project>{8F94FD06-11D7-4A26-A860-160862586DD0}</Project>
+      <Name>Shmzh.Monitor.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Monitor.Gadget\Shmzh.Monitor.Gadget.csproj">
+      <Project>{DE036FB8-706E-40D5-9E84-12BEFECC1062}</Project>
+      <Name>Shmzh.Monitor.Gadget</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Project.Data.SqlClient\Shmzh.Project.Data.SqlClient.csproj">
+      <Project>{E9921BCB-9106-4E64-884C-E04157FCAA99}</Project>
+      <Name>Shmzh.Project.Data.SqlClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Project.DataAcess\Shmzh.Project.DataAcess.csproj">
+      <Project>{678A3A9A-9100-40F9-9702-3E1FC9900F42}</Project>
+      <Name>Shmzh.Project.DataAcess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Project.Entity\Shmzh.Project.Entity.csproj">
+      <Project>{509FEA9B-A706-4BF1-883E-6FB632B6ED82}</Project>
+      <Name>Shmzh.Project.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shmzh.Windows.Forms\Shmzh.Windows.Forms.csproj">
+      <Project>{0011FA33-D8B3-458C-B9D0-98CF6E4A4AEB}</Project>
+      <Name>Shmzh.Windows.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ZedGraph\ZedGraph.csproj">
+      <Project>{2541686B-1673-43BF-AF89-3163945DB009}</Project>
+      <Name>ZedGraph</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmBase.resx">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCategory.resx">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCategoryEdit.resx">
+      <DependentUpon>FrmCategoryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCategoryItemEdit.resx">
+      <DependentUpon>FrmCategoryItemEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDailyTask.resx">
+      <DependentUpon>FrmDailyTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFloatingBlock.resx">
+      <DependentUpon>FrmFloatingBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFloatingBlockEdit.resx">
+      <DependentUpon>FrmFloatingBlockEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFloatingBlockItemEdit.resx">
+      <DependentUpon>FrmFloatingBlockItemEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraphSchema.resx">
+      <DependentUpon>FrmGraphSchema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraphSchemaEdit.resx">
+      <DependentUpon>FrmGraphSchemaEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraphSchemaItemEdit.resx">
+      <DependentUpon>FrmGraphSchemaItemEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraphSchemaSearch.resx">
+      <DependentUpon>FrmGraphSchemaSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraphSchemaTab.resx">
+      <DependentUpon>FrmGraphSchemaTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraphSchemaStage.resx">
+      <DependentUpon>FrmGraphSchemaStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraphSchemaTabEdit.resx">
+      <DependentUpon>FrmGraphSchemaTabEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraphSchemaTagEdit.resx">
+      <DependentUpon>FrmGraphSchemaTagEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProcessFlowsheet.resx">
+      <DependentUpon>FrmProcessFlowsheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuickGraphSchema.resx">
+      <DependentUpon>FrmQuickGraphSchema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScaleFormatSample.resx">
+      <DependentUpon>FrmScaleFormatSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSchemaPicker.resx">
+      <DependentUpon>FrmSchemaPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSortTags.resx">
+      <DependentUpon>FrmSortTags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTagAndTemperature.resx">
+      <DependentUpon>FrmTagAndTemperature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTagCategory.resx">
+      <DependentUpon>FrmTagCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTagCategoryEdit.resx">
+      <DependentUpon>FrmTagCategoryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTagSearch.resx">
+      <DependentUpon>FrmTagSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTagsPicker.resx">
+      <DependentUpon>FrmTagsPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmToolTip.resx">
+      <DependentUpon>FrmToolTip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWebBrowser.resx">
+      <DependentUpon>FrmWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\FrmMonitorObjEdit.resx">
+      <DependentUpon>FrmMonitorObjEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\FrmObjTypeAttr.resx">
+      <DependentUpon>FrmObjTypeAttr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\FrmObjTypeAttrEdit.resx">
+      <DependentUpon>FrmObjTypeAttrEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting\FrmObjTypeEdit.resx">
+      <DependentUpon>FrmObjTypeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraphSchemaRTagEdit.resx">
+      <DependentUpon>FrmGraphSchemaRTagEdit.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_side_boxes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PREFERENCES.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sbuddy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPEEDMIN.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OWC.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
