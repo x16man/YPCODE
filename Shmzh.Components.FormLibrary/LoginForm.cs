@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.Net;
-using System.Diagnostics;
 using System.Xml;
 using System.IO;
-using Shmzh.Components.SystemComponent.DALFactory;
 using Shmzh.Components.SystemComponent;
 
 namespace Shmzh.Components.FormLibrary
@@ -108,10 +102,10 @@ namespace Shmzh.Components.FormLibrary
         /// <returns></returns>
         private String GetIPAddress()
         {
-            string HostName = Dns.GetHostName(); //得到主机名
-            IPHostEntry IpEntry = Dns.GetHostEntry(HostName); //得到主机IP
-            String strIPAddr = IpEntry.AddressList[0].ToString();
-            return strIPAddr;
+            var hostName = Dns.GetHostName(); //得到主机名
+            var ipEntry = Dns.GetHostEntry(hostName); //得到主机IP
+            var ipAddress = ipEntry.AddressList[0].ToString();
+            return ipAddress;
         }
 
         /// <summary>
@@ -122,7 +116,7 @@ namespace Shmzh.Components.FormLibrary
             String path = GetFolderPath() + "login.xml";
             if (System.IO.File.Exists(path))
             {
-                XmlDocument doc = new XmlDocument();                
+                var doc = new XmlDocument();                
                 doc.Load(path);
                 XmlNode rootNode = doc.DocumentElement;
                 if (rootNode.ChildNodes.Count > 0)
@@ -158,9 +152,8 @@ namespace Shmzh.Components.FormLibrary
         private void StoreLoginName(String loginName)
         {
             String path = GetFolderPath() + "login.xml";
-            XmlDocument doc = new XmlDocument();
+            var doc = new XmlDocument();
             XmlNode rootNode;
-            XmlNode userNode;
             XmlNode node;
             if (System.IO.File.Exists(path))
             {
@@ -175,17 +168,17 @@ namespace Shmzh.Components.FormLibrary
             else
             {
                 rootNode = doc.CreateElement("Users");  
-                XmlDeclaration xmldecl = doc.CreateXmlDeclaration("1.0", "UTF-8", null);
+                var xmldecl = doc.CreateXmlDeclaration("1.0", "UTF-8", null);
                 doc.AppendChild(rootNode);
                 doc.InsertBefore(xmldecl, rootNode);                
             }
-            userNode = doc.CreateElement("User");
+            XmlNode userNode = doc.CreateElement("User");
             rootNode.InsertBefore(userNode, rootNode.FirstChild);
             node = doc.CreateElement("LoginName");
             node.InnerText = loginName;
             userNode.AppendChild(node);
 
-            Int32 count = rootNode.ChildNodes.Count;
+            var count = rootNode.ChildNodes.Count;
             if (count > USER_MAX_COUNT)
             {
                 for (Int32 i = count - 1; i >= USER_MAX_COUNT; i--)
@@ -203,9 +196,8 @@ namespace Shmzh.Components.FormLibrary
         private void StoreLoginNameAndPassword(string loginName,string password)
         {
             String path = GetFolderPath() + "login.xml";
-            XmlDocument doc = new XmlDocument();
+            var doc = new XmlDocument();
             XmlNode rootNode;
-            XmlNode userNode;
             XmlNode node;
             if (System.IO.File.Exists(path))
             {
@@ -224,7 +216,7 @@ namespace Shmzh.Components.FormLibrary
                 doc.AppendChild(rootNode);
                 doc.InsertBefore(xmldecl, rootNode);
             }
-            userNode = doc.CreateElement("User");
+            XmlNode userNode = doc.CreateElement("User");
             rootNode.InsertBefore(userNode, rootNode.FirstChild);
             node = doc.CreateElement("LoginName");
             node.InnerText = loginName;
@@ -233,7 +225,7 @@ namespace Shmzh.Components.FormLibrary
             node.InnerText = password;
             userNode.AppendChild(node);
 
-            Int32 count = rootNode.ChildNodes.Count;
+            var count = rootNode.ChildNodes.Count;
             if (count > USER_MAX_COUNT)
             {
                 for (Int32 i = count - 1; i >= USER_MAX_COUNT; i--)
