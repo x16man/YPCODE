@@ -45,7 +45,7 @@
     <TargetCulture>zh-CHS</TargetCulture>
     <ProductName>生产监控工程师分析系统</ProductName>
     <PublisherName>上海名之赫科技有限公司</PublisherName>
-    <ApplicationRevision>17</ApplicationRevision>
+    <ApplicationRevision>18</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
