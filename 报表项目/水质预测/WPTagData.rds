@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>WPTagData</Name>
+  <DataSourceID>dc3e7c05-2756-422a-ab10-b45351d5a1d4</DataSourceID>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>data source=db;initial catalog=gather</ConnectString>
+  </ConnectionProperties>
+</RptDataSource>

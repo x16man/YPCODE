@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <Body>
+    <ReportItems>
+      <Matrix Name="matrix1">
+        <Corner>
+          <ReportItems>
+            <Textbox Name="textbox1">
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <FontFamily>宋体</FontFamily>
+                <BorderStyle>
+                  <Right>Solid</Right>
+                </BorderStyle>
+                <PaddingBottom>2pt</PaddingBottom>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+              <ZIndex>6</ZIndex>
+              <rd:DefaultName>textbox1</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <Value />
+            </Textbox>
+          </ReportItems>
+        </Corner>
+        <Height>1.26984cm</Height>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <MatrixRows>
+          <MatrixRow>
+            <MatrixCells>
+              <MatrixCell>
+                <ReportItems>
+                  <Textbox Name="ItemMoney">
+                    <Style>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <FontFamily>宋体</FontFamily>
+                      <BorderStyle>
+                        <Top>Solid</Top>
+                        <Right>Solid</Right>
+                      </BorderStyle>
+                      <TextAlign>Right</TextAlign>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingRight>2pt</PaddingRight>
+                    </Style>
+                    <rd:DefaultName>ItemMoney</rd:DefaultName>
+                    <CanGrow>true</CanGrow>
+                    <Value>=Sum(Fields!ItemMoney.Value)</Value>
+                  </Textbox>
+                </ReportItems>
+              </MatrixCell>
+            </MatrixCells>
+            <Height>0.63492cm</Height>
+          </MatrixRow>
+        </MatrixRows>
+        <MatrixColumns>
+          <MatrixColumn>
+            <Width>2.75cm</Width>
+          </MatrixColumn>
+        </MatrixColumns>
+        <DataSetName>DS_StoCatABC</DataSetName>
+        <ColumnGroupings>
+          <ColumnGrouping>
+            <DynamicColumns>
+              <Grouping Name="matrix1_ABC">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!ABC.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="ABC">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <BorderStyle>
+                      <Right>Solid</Right>
+                    </BorderStyle>
+                    <TextAlign>Center</TextAlign>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>5</ZIndex>
+                  <rd:DefaultName>ABC</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!ABC.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicColumns>
+            <Height>0.63492cm</Height>
+          </ColumnGrouping>
+        </ColumnGroupings>
+        <Width>12.75cm</Width>
+        <Top>0.5cm</Top>
+        <Left>0.5cm</Left>
+        <RowGroupings>
+          <RowGrouping>
+            <DynamicRows>
+              <Grouping Name="matrix1_StoCode">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!StoCode.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="StoCode">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <BorderStyle>
+                      <Top>Solid</Top>
+                      <Right>Solid</Right>
+                    </BorderStyle>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>4</ZIndex>
+                  <rd:DefaultName>StoCode</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!StoCode.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicRows>
+            <Width>1.625cm</Width>
+          </RowGrouping>
+          <RowGrouping>
+            <DynamicRows>
+              <Grouping Name="matrix1_RowGroup2">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!StoName.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="textbox2">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <BorderStyle>
+                      <Top>Solid</Top>
+                      <Right>Solid</Right>
+                    </BorderStyle>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>3</ZIndex>
+                  <rd:DefaultName>textbox2</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!StoName.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicRows>
+            <Width>3cm</Width>
+          </RowGrouping>
+          <RowGrouping>
+            <DynamicRows>
+              <Grouping Name="matrix1_RowGroup3">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!CatCode.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Visibility>
+                <ToggleItem>StoCode</ToggleItem>
+                <Hidden>true</Hidden>
+              </Visibility>
+              <ReportItems>
+                <Textbox Name="textbox3">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <BorderStyle>
+                      <Top>Solid</Top>
+                      <Right>Solid</Right>
+                    </BorderStyle>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>2</ZIndex>
+                  <rd:DefaultName>textbox3</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!CatCode.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicRows>
+            <Width>1.625cm</Width>
+          </RowGrouping>
+          <RowGrouping>
+            <DynamicRows>
+              <Grouping Name="matrix1_RowGroup4">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!CatName.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Visibility>
+                <ToggleItem>StoCode</ToggleItem>
+                <Hidden>true</Hidden>
+              </Visibility>
+              <ReportItems>
+                <Textbox Name="textbox4">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <BorderStyle>
+                      <Top>Solid</Top>
+                      <Right>Solid</Right>
+                    </BorderStyle>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>1</ZIndex>
+                  <rd:DefaultName>textbox4</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!CatName.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicRows>
+            <Width>3.75cm</Width>
+          </RowGrouping>
+        </RowGroupings>
+      </Matrix>
+    </ReportItems>
+    <Style />
+    <Height>5.19444cm</Height>
+    <ColumnSpacing>1cm</ColumnSpacing>
+  </Body>
+  <DataSources>
+    <DataSource Name="MMDB">
+      <rd:DataSourceID>d6aee2de-e072-46f4-8dfd-2d0441d978d0</rd:DataSourceID>
+      <DataSourceReference>MMDB</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Width>16cm</Width>
+  <DataSets>
+    <DataSet Name="DS_StoCatABC">
+      <Fields>
+        <Field Name="StoCode">
+          <DataField>StoCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="StoName">
+          <DataField>StoName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CatCode">
+          <DataField>CatCode</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="CatName">
+          <DataField>CatName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ABC">
+          <DataField>ABC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ItemMoney">
+          <DataField>ItemMoney</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>MMDB</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>CurrentStoStockABC</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@StoCode">
+            <Value>=Parameters!StoCode.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+    <DataSet Name="DS_Storage">
+      <Fields>
+        <Field Name="Code">
+          <DataField>Code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Locked">
+          <DataField>Locked</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="StorageACC">
+          <DataField>StorageACC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TransferAcc">
+          <DataField>TransferAcc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReturnAcc">
+          <DataField>ReturnAcc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Relation">
+          <DataField>Relation</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>MMDB</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Sto_StoGetAll</CommandText>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <PageHeight>29.7cm</PageHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <PageWidth>21cm</PageWidth>
+  <rd:ReportID>12e501e8-5083-44c3-9e75-cfb6e842c401</rd:ReportID>
+  <PageFooter>
+    <ReportItems>
+      <Textbox Name="textbox12">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontFamily>宋体</FontFamily>
+          <TextAlign>Right</TextAlign>
+          <Color>RoyalBlue</Color>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <Top>0.5cm</Top>
+        <rd:DefaultName>textbox12</rd:DefaultName>
+        <Height>0.63492cm</Height>
+        <Width>3.75cm</Width>
+        <CanGrow>true</CanGrow>
+        <Value>="打印日期:"+cstr(Now())</Value>
+        <Left>12cm</Left>
+      </Textbox>
+      <Textbox Name="textbox11">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontFamily>宋体</FontFamily>
+          <TextAlign>Center</TextAlign>
+          <Color>RoyalBlue</Color>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Top>0.5cm</Top>
+        <rd:DefaultName>textbox11</rd:DefaultName>
+        <Height>0.63492cm</Height>
+        <Width>6.25cm</Width>
+        <CanGrow>true</CanGrow>
+        <Value>="第 "+cstr( Globals!PageNumber )+" 页 共 "+cstr( Globals!TotalPages )+" 页"</Value>
+        <Left>5cm</Left>
+      </Textbox>
+      <Textbox Name="textbox10">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontFamily>宋体</FontFamily>
+          <TextAlign>Left</TextAlign>
+          <Color>RoyalBlue</Color>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <Top>0.5cm</Top>
+        <rd:DefaultName>textbox10</rd:DefaultName>
+        <Height>0.63492cm</Height>
+        <Width>4.25cm</Width>
+        <Action>
+          <Hyperlink>http://www.ypwater.com</Hyperlink>
+        </Action>
+        <CanGrow>true</CanGrow>
+        <Value>www.ypwater.com</Value>
+        <Left>0.25cm</Left>
+      </Textbox>
+      <Line Name="line1">
+        <Top>0.25cm</Top>
+        <Height>0cm</Height>
+        <Width>15.5cm</Width>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <BorderColor>
+            <Default>Firebrick</Default>
+          </BorderColor>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Left>0.25cm</Left>
+      </Line>
+    </ReportItems>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <Style />
+    <Height>1.5cm</Height>
+  </PageFooter>
+  <ReportParameters>
+    <ReportParameter Name="StoCode">
+      <DataType>String</DataType>
+      <Prompt>仓库</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DS_Storage</DataSetName>
+          <ValueField>Code</ValueField>
+          <LabelField>Description</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>zh-CN</Language>
+</Report>

@@ -1,0 +1,116 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "资源管理", "资源管理\资源管理.rptproj", "{3718C4C6-B646-4CCC-A402-8494262BA736}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "物料管理", "物料管理\物料管理.rptproj", "{C60EFCFB-44DB-4B98-9194-41B88CC883CC}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "生产管理", "生产管理\生产管理.rptproj", "{9FFC9389-5761-4AB4-8441-A9C83A905A63}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "水质分析", "水质分析\水质分析.rptproj", "{9DB2EBF0-4069-4FAF-B3A2-1C38D99E9415}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "食堂管理", "食堂管理\食堂管理.rptproj", "{0BF5C60C-11FB-47D6-8493-B715FB249E10}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "工作流", "工作流\工作流.rptproj", "{794C430C-DDE9-4B39-AAB5-7184C45DF35D}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "门禁管理", "门禁管理\门禁管理.rptproj", "{4E9B9EE0-4008-4E1B-BD4E-1FDE1BAB4642}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "项目管理", "项目管理\项目管理.rptproj", "{51B82C29-7D49-4586-A18D-F5ECA8905D33}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "水质预测", "水质预测\水质预测.rptproj", "{9A13D57F-E33C-4E44-942A-B29F3A44A10D}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "简朴森物料报表", "简朴森物料报表\简朴森物料报表.rptproj", "{D4ADF23F-144F-461A-A9F9-AACFF65AF5FB}"
+EndProject
+Global
+	
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Production|Default = Production|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3718C4C6-B646-4CCC-A402-8494262BA736}.Debug|Default.ActiveCfg = Debug
+		{3718C4C6-B646-4CCC-A402-8494262BA736}.Debug|Default.Build.0 = Debug
+		{3718C4C6-B646-4CCC-A402-8494262BA736}.Debug|Default.Deploy.0 = Debug
+		{3718C4C6-B646-4CCC-A402-8494262BA736}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{3718C4C6-B646-4CCC-A402-8494262BA736}.DebugLocal|Default.Build.0 = DebugLocal
+		{3718C4C6-B646-4CCC-A402-8494262BA736}.Production|Default.ActiveCfg = Production
+		{3718C4C6-B646-4CCC-A402-8494262BA736}.Production|Default.Build.0 = Production
+		{3718C4C6-B646-4CCC-A402-8494262BA736}.Production|Default.Deploy.0 = Production
+		{C60EFCFB-44DB-4B98-9194-41B88CC883CC}.Debug|Default.ActiveCfg = Debug
+		{C60EFCFB-44DB-4B98-9194-41B88CC883CC}.Debug|Default.Build.0 = Debug
+		{C60EFCFB-44DB-4B98-9194-41B88CC883CC}.Debug|Default.Deploy.0 = Debug
+		{C60EFCFB-44DB-4B98-9194-41B88CC883CC}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{C60EFCFB-44DB-4B98-9194-41B88CC883CC}.DebugLocal|Default.Build.0 = DebugLocal
+		{C60EFCFB-44DB-4B98-9194-41B88CC883CC}.Production|Default.ActiveCfg = Production
+		{C60EFCFB-44DB-4B98-9194-41B88CC883CC}.Production|Default.Build.0 = Production
+		{C60EFCFB-44DB-4B98-9194-41B88CC883CC}.Production|Default.Deploy.0 = Production
+		{9FFC9389-5761-4AB4-8441-A9C83A905A63}.Debug|Default.ActiveCfg = Debug
+		{9FFC9389-5761-4AB4-8441-A9C83A905A63}.Debug|Default.Build.0 = Debug
+		{9FFC9389-5761-4AB4-8441-A9C83A905A63}.Debug|Default.Deploy.0 = Debug
+		{9FFC9389-5761-4AB4-8441-A9C83A905A63}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{9FFC9389-5761-4AB4-8441-A9C83A905A63}.DebugLocal|Default.Build.0 = DebugLocal
+		{9FFC9389-5761-4AB4-8441-A9C83A905A63}.Production|Default.ActiveCfg = Production
+		{9FFC9389-5761-4AB4-8441-A9C83A905A63}.Production|Default.Build.0 = Production
+		{9FFC9389-5761-4AB4-8441-A9C83A905A63}.Production|Default.Deploy.0 = Production
+		{9DB2EBF0-4069-4FAF-B3A2-1C38D99E9415}.Debug|Default.ActiveCfg = Debug
+		{9DB2EBF0-4069-4FAF-B3A2-1C38D99E9415}.Debug|Default.Build.0 = Debug
+		{9DB2EBF0-4069-4FAF-B3A2-1C38D99E9415}.Debug|Default.Deploy.0 = Debug
+		{9DB2EBF0-4069-4FAF-B3A2-1C38D99E9415}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{9DB2EBF0-4069-4FAF-B3A2-1C38D99E9415}.DebugLocal|Default.Build.0 = DebugLocal
+		{9DB2EBF0-4069-4FAF-B3A2-1C38D99E9415}.Production|Default.ActiveCfg = Production
+		{9DB2EBF0-4069-4FAF-B3A2-1C38D99E9415}.Production|Default.Build.0 = Production
+		{9DB2EBF0-4069-4FAF-B3A2-1C38D99E9415}.Production|Default.Deploy.0 = Production
+		{0BF5C60C-11FB-47D6-8493-B715FB249E10}.Debug|Default.ActiveCfg = Debug
+		{0BF5C60C-11FB-47D6-8493-B715FB249E10}.Debug|Default.Build.0 = Debug
+		{0BF5C60C-11FB-47D6-8493-B715FB249E10}.Debug|Default.Deploy.0 = Debug
+		{0BF5C60C-11FB-47D6-8493-B715FB249E10}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{0BF5C60C-11FB-47D6-8493-B715FB249E10}.DebugLocal|Default.Build.0 = DebugLocal
+		{0BF5C60C-11FB-47D6-8493-B715FB249E10}.Production|Default.ActiveCfg = Production
+		{0BF5C60C-11FB-47D6-8493-B715FB249E10}.Production|Default.Build.0 = Production
+		{0BF5C60C-11FB-47D6-8493-B715FB249E10}.Production|Default.Deploy.0 = Production
+		{794C430C-DDE9-4B39-AAB5-7184C45DF35D}.Debug|Default.ActiveCfg = Debug
+		{794C430C-DDE9-4B39-AAB5-7184C45DF35D}.Debug|Default.Build.0 = Debug
+		{794C430C-DDE9-4B39-AAB5-7184C45DF35D}.Debug|Default.Deploy.0 = Debug
+		{794C430C-DDE9-4B39-AAB5-7184C45DF35D}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{794C430C-DDE9-4B39-AAB5-7184C45DF35D}.DebugLocal|Default.Build.0 = DebugLocal
+		{794C430C-DDE9-4B39-AAB5-7184C45DF35D}.Production|Default.ActiveCfg = Production
+		{794C430C-DDE9-4B39-AAB5-7184C45DF35D}.Production|Default.Build.0 = Production
+		{794C430C-DDE9-4B39-AAB5-7184C45DF35D}.Production|Default.Deploy.0 = Production
+		{4E9B9EE0-4008-4E1B-BD4E-1FDE1BAB4642}.Debug|Default.ActiveCfg = Debug
+		{4E9B9EE0-4008-4E1B-BD4E-1FDE1BAB4642}.Debug|Default.Build.0 = Debug
+		{4E9B9EE0-4008-4E1B-BD4E-1FDE1BAB4642}.Debug|Default.Deploy.0 = Debug
+		{4E9B9EE0-4008-4E1B-BD4E-1FDE1BAB4642}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{4E9B9EE0-4008-4E1B-BD4E-1FDE1BAB4642}.DebugLocal|Default.Build.0 = DebugLocal
+		{4E9B9EE0-4008-4E1B-BD4E-1FDE1BAB4642}.Production|Default.ActiveCfg = Production
+		{4E9B9EE0-4008-4E1B-BD4E-1FDE1BAB4642}.Production|Default.Build.0 = Production
+		{4E9B9EE0-4008-4E1B-BD4E-1FDE1BAB4642}.Production|Default.Deploy.0 = Production
+		{51B82C29-7D49-4586-A18D-F5ECA8905D33}.Debug|Default.ActiveCfg = Debug
+		{51B82C29-7D49-4586-A18D-F5ECA8905D33}.Debug|Default.Build.0 = Debug
+		{51B82C29-7D49-4586-A18D-F5ECA8905D33}.Debug|Default.Deploy.0 = Debug
+		{51B82C29-7D49-4586-A18D-F5ECA8905D33}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{51B82C29-7D49-4586-A18D-F5ECA8905D33}.DebugLocal|Default.Build.0 = DebugLocal
+		{51B82C29-7D49-4586-A18D-F5ECA8905D33}.DebugLocal|Default.Deploy.0 = DebugLocal
+		{51B82C29-7D49-4586-A18D-F5ECA8905D33}.Production|Default.ActiveCfg = Production
+		{51B82C29-7D49-4586-A18D-F5ECA8905D33}.Production|Default.Build.0 = Production
+		{51B82C29-7D49-4586-A18D-F5ECA8905D33}.Production|Default.Deploy.0 = Production
+		{9A13D57F-E33C-4E44-942A-B29F3A44A10D}.Debug|Default.ActiveCfg = Debug
+		{9A13D57F-E33C-4E44-942A-B29F3A44A10D}.Debug|Default.Build.0 = Debug
+		{9A13D57F-E33C-4E44-942A-B29F3A44A10D}.Debug|Default.Deploy.0 = Debug
+		{9A13D57F-E33C-4E44-942A-B29F3A44A10D}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{9A13D57F-E33C-4E44-942A-B29F3A44A10D}.DebugLocal|Default.Build.0 = DebugLocal
+		{9A13D57F-E33C-4E44-942A-B29F3A44A10D}.Production|Default.ActiveCfg = Production
+		{9A13D57F-E33C-4E44-942A-B29F3A44A10D}.Production|Default.Build.0 = Production
+		{9A13D57F-E33C-4E44-942A-B29F3A44A10D}.Production|Default.Deploy.0 = Production
+		{D4ADF23F-144F-461A-A9F9-AACFF65AF5FB}.Debug|Default.ActiveCfg = Debug
+		{D4ADF23F-144F-461A-A9F9-AACFF65AF5FB}.Debug|Default.Build.0 = Debug
+		{D4ADF23F-144F-461A-A9F9-AACFF65AF5FB}.Debug|Default.Deploy.0 = Debug
+		{D4ADF23F-144F-461A-A9F9-AACFF65AF5FB}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{D4ADF23F-144F-461A-A9F9-AACFF65AF5FB}.DebugLocal|Default.Build.0 = DebugLocal
+		{D4ADF23F-144F-461A-A9F9-AACFF65AF5FB}.Production|Default.ActiveCfg = Production
+		{D4ADF23F-144F-461A-A9F9-AACFF65AF5FB}.Production|Default.Build.0 = Production
+		{D4ADF23F-144F-461A-A9F9-AACFF65AF5FB}.Production|Default.Deploy.0 = Production
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

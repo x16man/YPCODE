@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <RightMargin>2.5cm</RightMargin>
+  <Body>
+    <ReportItems>
+      <Matrix Name="matrix1">
+        <Corner>
+          <ReportItems>
+            <Textbox Name="textbox1">
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <FontFamily>宋体</FontFamily>
+                <PaddingBottom>2pt</PaddingBottom>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+              <ZIndex>5</ZIndex>
+              <rd:DefaultName>textbox1</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <Value />
+            </Textbox>
+          </ReportItems>
+        </Corner>
+        <Height>1.90476cm</Height>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <MatrixRows>
+          <MatrixRow>
+            <MatrixCells>
+              <MatrixCell>
+                <ReportItems>
+                  <Textbox Name="Money">
+                    <Style>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <FontFamily>宋体</FontFamily>
+                      <TextAlign>Right</TextAlign>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingRight>2pt</PaddingRight>
+                    </Style>
+                    <ZIndex>1</ZIndex>
+                    <rd:DefaultName>Money</rd:DefaultName>
+                    <CanGrow>true</CanGrow>
+                    <Value>=Sum(Fields!Money.Value)</Value>
+                  </Textbox>
+                </ReportItems>
+              </MatrixCell>
+            </MatrixCells>
+            <Height>0.63492cm</Height>
+          </MatrixRow>
+        </MatrixRows>
+        <MatrixColumns>
+          <MatrixColumn>
+            <Width>2.53968cm</Width>
+          </MatrixColumn>
+        </MatrixColumns>
+        <DataSetName>Northwind</DataSetName>
+        <ColumnGroupings>
+          <ColumnGrouping>
+            <DynamicColumns>
+              <Grouping Name="matrix1_Month">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Month.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="Month">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <TextAlign>Right</TextAlign>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>4</ZIndex>
+                  <rd:DefaultName>Month</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!Month.Value</Value>
+                </Textbox>
+              </ReportItems>
+              <Subtotal>
+                <ReportItems>
+                  <Textbox Name="textbox2">
+                    <Style>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <FontFamily>宋体</FontFamily>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingRight>2pt</PaddingRight>
+                    </Style>
+                    <ZIndex>3</ZIndex>
+                    <rd:DefaultName>textbox2</rd:DefaultName>
+                    <CanGrow>true</CanGrow>
+                    <Value>合计</Value>
+                  </Textbox>
+                </ReportItems>
+              </Subtotal>
+            </DynamicColumns>
+            <Height>0.63492cm</Height>
+          </ColumnGrouping>
+        </ColumnGroupings>
+        <Width>7.61905cm</Width>
+        <Top>0.25cm</Top>
+        <Left>0.75cm</Left>
+        <RowGroupings>
+          <RowGrouping>
+            <DynamicRows>
+              <Grouping Name="matrix1_Name">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Name.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="Name">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>2</ZIndex>
+                  <rd:DefaultName>Name</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!Name.Value</Value>
+                </Textbox>
+              </ReportItems>
+              <Subtotal>
+                <ReportItems>
+                  <Textbox Name="textbox3">
+                    <Style>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <FontFamily>宋体</FontFamily>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingRight>2pt</PaddingRight>
+                    </Style>
+                    <rd:DefaultName>textbox3</rd:DefaultName>
+                    <CanGrow>true</CanGrow>
+                    <Value>合计</Value>
+                  </Textbox>
+                </ReportItems>
+              </Subtotal>
+            </DynamicRows>
+            <Width>2.53968cm</Width>
+          </RowGrouping>
+        </RowGroupings>
+      </Matrix>
+    </ReportItems>
+    <Style />
+    <Height>5cm</Height>
+    <ColumnSpacing>1cm</ColumnSpacing>
+  </Body>
+  <TopMargin>2.5cm</TopMargin>
+  <DataSources>
+    <DataSource Name="Northwind">
+      <rd:DataSourceID>6e8f71bf-5dc6-4c2b-bb36-e99965e74491</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>data source=db;initial catalog=Northwind</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <Width>16cm</Width>
+  <DataSets>
+    <DataSet Name="Northwind">
+      <Fields>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Month">
+          <DataField>Month</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Money">
+          <DataField>Money</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>Northwind</DataSourceName>
+        <CommandText>Select 'Tom' as [Name],1 as [Month],100 as Money
+union
+Select 'Tom' as [Name],2 as [Month],100 as Money
+union
+Select 'Tom' as [Name],3 as [Month],100 as Money
+union
+Select 'Tom' as [Name],4 as [Month],100 as Money
+union
+Select 'Tom' as [Name],5 as [Month],100 as Money
+union
+Select 'Tom' as [Name],6 as [Month],100 as Money
+union
+Select 'Tom' as [Name],7 as [Month],100 as Money
+union
+Select 'Tom' as [Name],8 as [Month],100 as Money
+union
+Select 'Tom' as [Name],9 as [Month],100 as Money
+union
+Select 'Jerry' as [Name],1 as [Month],100 as Money
+union
+Select 'Jerry' as [Name],2 as [Month],100 as Money
+union
+Select 'Jerry' as [Name],3 as [Month],100 as Money
+union
+Select 'Jerry' as [Name],4 as [Month],100 as Money
+union
+Select 'Jerry' as [Name],5 as [Month],100 as Money
+union
+Select 'Jerry' as [Name],6 as [Month],100 as Money
+union
+Select 'Jerry' as [Name],7 as [Month],100 as Money
+union
+Select 'Jerry' as [Name],8 as [Month],100 as Money
+union
+Select 'Jerry' as [Name],9 as [Month],100 as Money</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <LeftMargin>2.5cm</LeftMargin>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <PageHeight>29.7cm</PageHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <PageWidth>21cm</PageWidth>
+  <rd:ReportID>2087caa0-6347-40ea-b43a-7d24500a8958</rd:ReportID>
+  <BottomMargin>2.5cm</BottomMargin>
+  <Language>zh-CN</Language>
+</Report>

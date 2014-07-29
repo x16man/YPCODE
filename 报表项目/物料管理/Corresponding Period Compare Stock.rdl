@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <RightMargin>2.5cm</RightMargin>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox4">
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <FontFamily>楷体_GB2312</FontFamily>
+          <FontSize>14pt</FontSize>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingRight>2pt</PaddingRight>
+          <FontWeight>700</FontWeight>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <rd:DefaultName>textbox4</rd:DefaultName>
+        <Height>0.75cm</Height>
+        <Width>7.75cm</Width>
+        <CanGrow>true</CanGrow>
+        <Value>存货同期比较表</Value>
+        <Left>0.25cm</Left>
+      </Textbox>
+      <Matrix Name="matrix1">
+        <Corner>
+          <ReportItems>
+            <Textbox Name="textbox1">
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <FontFamily>宋体</FontFamily>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+                <VerticalAlign>Middle</VerticalAlign>
+                <TextAlign>Center</TextAlign>
+                <PaddingBottom>2pt</PaddingBottom>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+              <ZIndex>5</ZIndex>
+              <rd:DefaultName>textbox1</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <Value>=IIF( Parameters!Flag.Value =0,"仓库","分类")</Value>
+            </Textbox>
+          </ReportItems>
+        </Corner>
+        <Height>1.90476cm</Height>
+        <Style>
+          <FontFamily>Verdana</FontFamily>
+        </Style>
+        <MatrixRows>
+          <MatrixRow>
+            <MatrixCells>
+              <MatrixCell>
+                <ReportItems>
+                  <Textbox Name="EndMoney">
+                    <Style>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <FontFamily>宋体</FontFamily>
+                      <BorderStyle>
+                        <Default>Solid</Default>
+                      </BorderStyle>
+                      <TextAlign>Right</TextAlign>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingRight>2pt</PaddingRight>
+                    </Style>
+                    <rd:DefaultName>EndMoney</rd:DefaultName>
+                    <CanGrow>true</CanGrow>
+                    <Value>=Sum(Fields!EndMoney.Value)</Value>
+                  </Textbox>
+                </ReportItems>
+              </MatrixCell>
+            </MatrixCells>
+            <Height>0.63492cm</Height>
+          </MatrixRow>
+        </MatrixRows>
+        <MatrixColumns>
+          <MatrixColumn>
+            <Width>2.06492cm</Width>
+          </MatrixColumn>
+        </MatrixColumns>
+        <DataSetName>DS_CorrespondingPeriodCompareStock</DataSetName>
+        <ColumnGroupings>
+          <ColumnGrouping>
+            <DynamicColumns>
+              <Grouping Name="matrix1_Month">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Month.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="Month">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <BorderStyle>
+                      <Default>Solid</Default>
+                    </BorderStyle>
+                    <TextAlign>Center</TextAlign>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>4</ZIndex>
+                  <rd:DefaultName>Month</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=cstr(Fields!Month.Value)+"月"</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicColumns>
+            <Height>0.63492cm</Height>
+          </ColumnGrouping>
+          <ColumnGrouping>
+            <DynamicColumns>
+              <Grouping Name="matrix1_ColumnGroup2">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Year.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="textbox3">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <BorderStyle>
+                      <Default>Solid</Default>
+                    </BorderStyle>
+                    <TextAlign>Center</TextAlign>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>3</ZIndex>
+                  <rd:DefaultName>textbox3</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!Year.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicColumns>
+            <Height>0.63492cm</Height>
+          </ColumnGrouping>
+        </ColumnGroupings>
+        <Width>7.52646cm</Width>
+        <Top>1cm</Top>
+        <Left>0.25cm</Left>
+        <RowGroupings>
+          <RowGrouping>
+            <DynamicRows>
+              <Grouping Name="matrix1_Code">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Code.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="StoCode">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <BorderStyle>
+                      <Default>Solid</Default>
+                    </BorderStyle>
+                    <TextAlign>Center</TextAlign>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>2</ZIndex>
+                  <rd:DefaultName>StoCode</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!Code.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicRows>
+            <Width>1.48951cm</Width>
+          </RowGrouping>
+          <RowGrouping>
+            <DynamicRows>
+              <Grouping Name="matrix1_RowGroup2">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Name.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="textbox2">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <BorderStyle>
+                      <Default>Solid</Default>
+                    </BorderStyle>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>1</ZIndex>
+                  <rd:DefaultName>textbox2</rd:DefaultName>
+                  <Action>
+                    <Drillthrough>
+                      <Parameters>
+                        <Parameter Name="StartYear">
+                          <Value>=Parameters!StartYear.Value</Value>
+                        </Parameter>
+                        <Parameter Name="EndYear">
+                          <Value>=Parameters!EndYear.Value</Value>
+                        </Parameter>
+                        <Parameter Name="StartMonth">
+                          <Value>=Parameters!StartMonth.Value</Value>
+                        </Parameter>
+                        <Parameter Name="EndMonth">
+                          <Value>=Parameters!EndMonth.Value</Value>
+                        </Parameter>
+                        <Parameter Name="Flag">
+                          <Value>= Parameters!Flag.Value</Value>
+                        </Parameter>
+                        <Parameter Name="Item">
+                          <Value>=cstr(Fields!Code.Value)</Value>
+                        </Parameter>
+                      </Parameters>
+                      <ReportName>Corresponding Period Compare Stock Chart</ReportName>
+                    </Drillthrough>
+                  </Action>
+                  <CanGrow>true</CanGrow>
+                  <Value>=IIF( Parameters!Flag.Value =2,cstr(Fields!Name.Value)+"类",Fields!Name.Value
+)</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicRows>
+            <Width>3.97203cm</Width>
+          </RowGrouping>
+        </RowGroupings>
+      </Matrix>
+    </ReportItems>
+    <Style />
+    <Height>10.86905cm</Height>
+    <ColumnSpacing>1cm</ColumnSpacing>
+  </Body>
+  <TopMargin>2.5cm</TopMargin>
+  <DataSources>
+    <DataSource Name="MMDB">
+      <rd:DataSourceID>156ae8bb-b7fa-417e-aadf-82f041f57e19</rd:DataSourceID>
+      <DataSourceReference>MMDB</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Width>17.86905cm</Width>
+  <DataSets>
+    <DataSet Name="DS_CorrespondingPeriodCompareStock">
+      <Fields>
+        <Field Name="Code">
+          <DataField>Code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EndMoney">
+          <DataField>EndMoney</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Month">
+          <DataField>Month</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>MMDB</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Analysis_CorrespondingPeriodCompareStock</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@StartYear">
+            <Value>=Parameters!StartYear.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@EndYear">
+            <Value>=Parameters!EndYear.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@StartMonth">
+            <Value>=Parameters!StartMonth.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@EndMonth">
+            <Value>=Parameters!EndMonth.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Flag">
+            <Value>=Parameters!Flag.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <LeftMargin>2.5cm</LeftMargin>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <PageHeight>29.7cm</PageHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <PageWidth>21cm</PageWidth>
+  <rd:ReportID>bd96c051-12ff-43d9-8683-c8d024a3e15a</rd:ReportID>
+  <BottomMargin>2.5cm</BottomMargin>
+  <ReportParameters>
+    <ReportParameter Name="StartYear">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>2005</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>开始年份</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EndYear">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>2006</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>结束年份</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="StartMonth">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>1</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>开始月份</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EndMonth">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>12</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>结束月份</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Flag">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>0</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>对象</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>0</Value>
+            <Label>仓库</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>1</Value>
+            <Label>分类</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>2</Value>
+            <Label>ABC</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>zh-CN</Language>
+</Report>

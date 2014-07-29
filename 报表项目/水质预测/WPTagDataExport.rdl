@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <RightMargin>2.5cm</RightMargin>
+  <Body>
+    <ReportItems>
+      <Matrix Name="matrix1">
+        <Corner>
+          <ReportItems>
+            <Textbox Name="textbox1">
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <FontFamily>宋体</FontFamily>
+                <PaddingBottom>2pt</PaddingBottom>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+              <ZIndex>3</ZIndex>
+              <rd:DefaultName>textbox1</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <Value />
+            </Textbox>
+          </ReportItems>
+        </Corner>
+        <Height>1.26984cm</Height>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <MatrixRows>
+          <MatrixRow>
+            <MatrixCells>
+              <MatrixCell>
+                <ReportItems>
+                  <Textbox Name="I_Value_Man">
+                    <Style>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <FontFamily>宋体</FontFamily>
+                      <TextAlign>Right</TextAlign>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingRight>2pt</PaddingRight>
+                    </Style>
+                    <rd:DefaultName>I_Value_Man</rd:DefaultName>
+                    <CanGrow>true</CanGrow>
+                    <Value>=Sum(Fields!I_Value_Man.Value)</Value>
+                  </Textbox>
+                </ReportItems>
+              </MatrixCell>
+            </MatrixCells>
+            <Height>0.63492cm</Height>
+          </MatrixRow>
+        </MatrixRows>
+        <MatrixColumns>
+          <MatrixColumn>
+            <Width>2.53968cm</Width>
+          </MatrixColumn>
+        </MatrixColumns>
+        <DataSetName>DataSet1</DataSetName>
+        <ColumnGroupings>
+          <ColumnGrouping>
+            <DynamicColumns>
+              <Grouping Name="matrix1_I_Tag_ID">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!I_Tag_ID.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="I_Tag_ID">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>2</ZIndex>
+                  <rd:DefaultName>I_Tag_ID</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!I_Tag_ID.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicColumns>
+            <Height>0.63492cm</Height>
+          </ColumnGrouping>
+        </ColumnGroupings>
+        <Width>5.07937cm</Width>
+        <Top>0.25cm</Top>
+        <Left>0.5cm</Left>
+        <RowGroupings>
+          <RowGrouping>
+            <DynamicRows>
+              <Grouping Name="matrix1_I_Cycle_ID">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!I_Cycle_ID.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="I_Cycle_ID">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>1</ZIndex>
+                  <rd:DefaultName>I_Cycle_ID</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!I_Cycle_ID.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicRows>
+            <Width>2.53968cm</Width>
+          </RowGrouping>
+        </RowGroupings>
+      </Matrix>
+    </ReportItems>
+    <Style />
+    <Height>5cm</Height>
+    <ColumnSpacing>1cm</ColumnSpacing>
+  </Body>
+  <TopMargin>2.5cm</TopMargin>
+  <DataSources>
+    <DataSource Name="WPTagData">
+      <rd:DataSourceID>01d15f4c-7036-4faa-b2ae-1d9b5c7a35e9</rd:DataSourceID>
+      <DataSourceReference>WPTagData</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Width>16cm</Width>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="I_Tag_ID">
+          <DataField>I_Tag_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="I_Tag_Name">
+          <DataField>I_Tag_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="I_Unit">
+          <DataField>I_Unit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="I_Cycle_ID">
+          <DataField>I_Cycle_ID</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="I_Value_Man">
+          <DataField>I_Value_Man</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>WPTagData</DataSourceName>
+        <CommandText>Select 	T_Tag_MS.I_Tag_ID,T_Tag_MS.I_Tag_Name,T_Tag_MS.I_Unit,
+	T_Tag_Hour.I_Cycle_ID ,T_Tag_Hour.I_Value_Man
+From 	T_Tag_MS,T_Tag_Hour
+Where 	T_Tag_MS.I_Tag_ID = T_Tag_Hour.I_Tag_ID And
+T_Tag_MS.I_Tag_ID in 
+(
+'1105001',--DN3500-1管加氨量
+'1105002',--DN3500-2管加氨量
+'1105003',--DN3500-3管加氨量
+'1105004',--DN3500备用机加氨量
+'5204002',--DN3500加氨量(不含备用)
+'1402008',--上游水氨氮
+'1502005',--上游水氨氮
+'1504005',--上游水氨氮PLC
+'1403008',--下游水氨氮
+'1503008',--下游水氨氮
+'1502016',--DN3500加氨后氨氮
+'1504016',--DN3500加氨后氨氮PLC
+'1305002',--3.5上游进水量
+'1502001',--上游水浊度
+'1502002',--上游水水温
+'1502004',--上游水溶解氧
+'1502006',--上游水亚硝酸盐
+'1502007',--上游水污染指数
+'1402014',--上游水总碱度
+'1403014',--下游水总碱度
+'1401020',--出厂水总碱度
+'1401001',--出厂水1#浊度
+'1401002',--出厂水2#浊度
+'1401003',--出厂水3#浊度
+'1401004',--出厂水4#浊度
+'1401005',--出厂水1#余氯
+'1401006',--出厂水2#余氯
+'1401007',--出厂水3#余氯
+'1401008',--出厂水4#余氯
+'1402002',--上游水水温
+'1403002',--下游水水温
+'1402006',--上游水PH值
+'1403006',--下游水PH值
+'1402016',--上游水耗氧量
+'1403016',--下游水耗氧量
+'1401022',--出厂水耗氧量
+'1101001',--1#沉淀池2.3标加矾量
+'1101002',--1#沉淀池备用系统加矾量
+'1102001',--1#沉淀池加氯量
+'1106001',--1#沉淀池出口浊度
+'1107001',--1#沉淀池出口余氯
+'1304001',--1#沉淀池水量
+'1101003',--2#沉淀池2.3标加矾量
+'1101004',--2#沉淀池备用系统加矾量
+'1102003',--2#沉淀池加氯量
+'1103001',--2#沉淀池水玻璃加注量
+'1106002',--2#沉淀池出口浊度
+'1107002',--2#沉淀池出口余氯
+'1304002',--2#沉淀池水量
+'1101005',--3#沉淀池2.3标加矾量
+'1101006',--3#沉淀池备用系统加矾量
+'1102005',--3#沉淀池加氯量
+'1103002',--3#沉淀池水玻璃加注量
+'1106003',--3#沉淀池出口浊度
+'1107003',--3#沉淀池出口余氯
+'1304003',--3#沉淀池水量
+'1101007',--5#沉淀池2.3标加矾量
+'1101008',--5#沉淀池备用系统加矾量
+'1101029',--5#沉淀池总加矾量
+'5201005',--5#沉淀池加矾量
+'1102007',--5#沉淀池加氯量
+'1102008',--5#沉淀池备用机加氯量
+'5203008',--5#沉淀池加氯
+'1103003',--5#沉淀池水玻璃加注量
+'1107004',--5#沉淀池出口余氯
+'1106004',--5#沉淀池出口浊度
+'1304004',--5#沉淀池水量
+'1101009',--6#沉淀池2.3标加矾量
+'1101010',--6#沉淀池备用系统加矾量
+'5201006',--6#沉淀池加矾量
+'1102009',--6#沉淀池加氯量
+'1102010',--6#沉淀池备用机加氯量
+'5203009',--6#沉淀池加氯
+'1103004',--6#沉淀池水玻璃加注量
+'1106005',--6#沉淀池出口浊度
+'1107005',--6#沉淀池出口余氯
+'1304005',--6#沉淀池水量
+'1101011',--7#沉淀池2.3标加矾量-1（DN1400）
+'1101012',--7#沉淀池2.3标加矾量-2（DN1400）
+'1101013',--7#沉淀池备用系统加矾量（DN1400）
+'1102011',--7#沉淀池加氯量-1(DN1400)
+'1102012',--7#沉淀池加氯量-2(DN1400)
+'1102013',--7#沉淀池加氯量-3(DN1400)
+'1102014',--7#沉淀池备用机加氯量
+'1103005',--7#沉淀池水玻璃加注量
+'1106006',--7#沉淀池出口浊度
+'1107006',--7#沉淀池出口余氯
+'1304006',--7#沉淀池水量
+'1106007',--8#沉淀池出口浊度
+'1107007',--8#沉淀池出口余氯
+'1101014',--8/9#沉淀池2.3标加矾量
+'1101015',--8/9#沉淀池备用系统加矾量
+'1102015',--8/9#沉淀池加氯量
+'1102016',--8/9#沉淀池备用机加氯量
+'1304007',--8/9#沉淀池水量
+'1106008',--9#沉淀池出口浊度
+'1107008',--9#沉淀池出口余氯
+'1101016',--10#沉淀池2.3标加矾量
+'1101017',--10#沉淀池备用系统加矾量
+'1102017',--10#沉淀池加氯量
+'1102018',--10#沉淀池备用机加氯量
+'1103006',--10#沉淀池水玻璃加注量
+'1106009',--10#沉淀池出口浊度
+'1107009',--10#沉淀池出口余氯
+'1304008',--10#沉淀池水量
+'1101018',--11#沉淀池2.3标加矾量
+'1101019',--11#沉淀池备用系统加矾量
+'1102019',--11#沉淀池加氯量
+'1102020',--11#沉淀池备用机加氯量
+'1103007',--11#沉淀池水玻璃加注量
+'1106010',--11#沉淀池出口浊度
+'1107010',--11#沉淀池出口余氯
+'1304009'--11#沉淀池水量
+)
+Order By T_Tag_Hour.I_Cycle_ID</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <LeftMargin>2.5cm</LeftMargin>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <PageHeight>29.7cm</PageHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <PageWidth>21cm</PageWidth>
+  <rd:ReportID>5577d254-9ebe-4369-bf63-466bc50e37a6</rd:ReportID>
+  <BottomMargin>2.5cm</BottomMargin>
+  <Language>zh-CN</Language>
+</Report>

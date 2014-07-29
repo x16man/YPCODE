@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>project</Name>
+  <DataSourceID>018ab8e4-1cc4-4c79-97a1-f22930ec6bb2</DataSourceID>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>data source=db;initial catalog=project</ConnectString>
+  </ConnectionProperties>
+</RptDataSource>

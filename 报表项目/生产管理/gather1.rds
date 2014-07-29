@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>gather1</Name>
+  <DataSourceID>8cb361f9-92b4-4314-99f6-fe55fdcdeee9</DataSourceID>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>data source=vista-dell;initial catalog=gather</ConnectString>
+  </ConnectionProperties>
+</RptDataSource>

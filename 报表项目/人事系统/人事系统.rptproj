@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <State>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SourceControl xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;Enabled&gt;true&lt;/Enabled&gt;
+  &lt;ProjectName&gt;$/杨树浦水厂/报表项目&lt;/ProjectName&gt;
+  &lt;AuxPath /&gt;
+  &lt;LocalPath&gt;..&lt;/LocalPath&gt;
+  &lt;Provider&gt;MSSCCI:Team Foundation Server MSSCCI Provider&lt;/Provider&gt;
+&lt;/SourceControl&gt;</State>
+  <DataSources>
+    <ProjectItem>
+      <Name>HrData.rds</Name>
+      <FullPath>HrData.rds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <Reports>
+    <ProjectItem>
+      <Name>UserContent.rdl</Name>
+      <FullPath>UserContent.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PlanbeaingContent.rdl</Name>
+      <FullPath>PlanbeaingContent.rdl</FullPath>
+    </ProjectItem>
+  </Reports>
+  <Configurations>
+    <Configuration>
+      <Name>Debug</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <TargetServerURL>http://192.168.1.7/reportserver</TargetServerURL>
+        <TargetFolder>HrReport</TargetFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>DebugLocal</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <TargetFolder>人事系统</TargetFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Production</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <TargetFolder>人事系统</TargetFolder>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>NetDoor</Name>
+  <DataSourceID>ceb8d608-a93f-44e0-b1b0-7c820622c468</DataSourceID>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>data source=db;initial catalog=NetDoor</ConnectString>
+  </ConnectionProperties>
+</RptDataSource>

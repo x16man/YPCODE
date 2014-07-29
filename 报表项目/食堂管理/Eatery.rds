@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Eatery</Name>
+  <DataSourceID>7339d7f8-246a-4bad-9714-54ce0f4eafc0</DataSourceID>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>data source=.;initial catalog=Eatery</ConnectString>
+  </ConnectionProperties>
+</RptDataSource>
