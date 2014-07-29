@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://service.ypwater.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://service.ypwater.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">指标的秒数据的WebService接口.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://service.ypwater.com/">
+      <s:element name="Get_Latest_By_TagId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tagId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Latest_By_TagIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Latest_By_TagIdResult" type="tns:TagSecondInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TagSecondInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="I_Cycle_Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="I_Tag_Id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="I_Value_0" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="I_Value_1" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Get_Latest_By_TagIds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tagIds" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Latest_By_TagIdsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Latest_By_TagIdsResult" type="tns:ArrayOfTagSecondInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTagSecondInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TagSecondInfo" nillable="true" type="tns:TagSecondInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Get_Latest_All">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_Latest_AllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Latest_AllResult" type="tns:ArrayOfTagSecondInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Get_Latest_By_TagIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Latest_By_TagId" />
+  </wsdl:message>
+  <wsdl:message name="Get_Latest_By_TagIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Latest_By_TagIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Latest_By_TagIdsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Latest_By_TagIds" />
+  </wsdl:message>
+  <wsdl:message name="Get_Latest_By_TagIdsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Latest_By_TagIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Latest_AllSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Latest_All" />
+  </wsdl:message>
+  <wsdl:message name="Get_Latest_AllSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Latest_AllResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TagSecondSoap">
+    <wsdl:operation name="Get_Latest_By_TagId">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指标Id获取指标最新的秒数据.</wsdl:documentation>
+      <wsdl:input message="tns:Get_Latest_By_TagIdSoapIn" />
+      <wsdl:output message="tns:Get_Latest_By_TagIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_By_TagIds">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指标Id串(例如:'1001001','1001002')来获取多个指标的最新的秒数据.</wsdl:documentation>
+      <wsdl:input message="tns:Get_Latest_By_TagIdsSoapIn" />
+      <wsdl:output message="tns:Get_Latest_By_TagIdsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_All">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取所有自动采集指标的最新的秒数据.</wsdl:documentation>
+      <wsdl:input message="tns:Get_Latest_AllSoapIn" />
+      <wsdl:output message="tns:Get_Latest_AllSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TagSecondSoap" type="tns:TagSecondSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_Latest_By_TagId">
+      <soap:operation soapAction="http://service.ypwater.com/Get_Latest_By_TagId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_By_TagIds">
+      <soap:operation soapAction="http://service.ypwater.com/Get_Latest_By_TagIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_All">
+      <soap:operation soapAction="http://service.ypwater.com/Get_Latest_All" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TagSecondSoap12" type="tns:TagSecondSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_Latest_By_TagId">
+      <soap12:operation soapAction="http://service.ypwater.com/Get_Latest_By_TagId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_By_TagIds">
+      <soap12:operation soapAction="http://service.ypwater.com/Get_Latest_By_TagIds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_All">
+      <soap12:operation soapAction="http://service.ypwater.com/Get_Latest_All" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TagSecond">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">指标的秒数据的WebService接口.</wsdl:documentation>
+    <wsdl:port name="TagSecondSoap" binding="tns:TagSecondSoap">
+      <soap:address location="http://localhost/Shmzh.Monitor.DataService/TagSecond.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TagSecondSoap12" binding="tns:TagSecondSoap12">
+      <soap12:address location="http://localhost/Shmzh.Monitor.DataService/TagSecond.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

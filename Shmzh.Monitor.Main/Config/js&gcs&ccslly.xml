@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>  
+  <!--DataType可选值：Second/Min/Min15/Hour/Day/Month/Year.-->
+  <!--窗体的背景图-->
+  <BackGround>
+    <!--只使用第一个 Item，多个时将忽略其它的。-->
+    <Item Color="200,200,200" Src="" IsTiled="True"/>
+    <!--<Item Color="200,200,200" Src="Image\rule.png" IsTiled="False" />-->
+    <!--<Item Color="200,200,200" Src="CompanyElectricalVoltage\bg.png" IsTiled="False" />-->
+  </BackGround>
+  <Clock Visible="True" StringFormat="{0}" TimeFormat="yyyy-MM-dd" Font="Times New Roman" FontSize="10" X="870" Y="40" IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255" /><!---->
+  <!--Image对象-->
+  <Image>
+	<!-- 
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="955" Y="115" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>  -->   
+    
+  </Image>
+    <BasePoint>
+        <Item Name="YS" X="50" Y="150"/>
+        <Item Name="CDC" X="50" Y="340"/>
+    </BasePoint>
+  <!--Text对象-->
+  <Text>
+    <Item Text="各进水、过程水、出厂水流量仪运行情况" Font="宋体" FontSize="23" IsVertical="False" X="200" Y="10" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+      <Item Text="周期：小时" Font="宋体" FontSize="14" IsVertical="False" X="50" Y="40" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+          <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+      </Item>
+    <!--原水进水流量-->
+    <Item BasePointName="YS" Text="原水" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="0" Width="190" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+      <!--DN3500 原水-->
+      <Item BasePointName="YS" Text="DN3500" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="30" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+      </Item>
+      <!--DN1800 原水-->
+      <Item BasePointName="YS" Text="DN1800" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="60" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+      </Item>
+      <!--新7# I线进水-->
+      <Item BasePointName="YS" Text="7# I线" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="90" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+      </Item>
+      <!--新7# II线进水-->
+      <Item BasePointName="YS" Text="7# II线" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="120" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+      </Item>
+      <!--原水合计-->
+      <Item BasePointName="YS" Text="原水合计" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="150" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+      </Item>
+      <!--沉淀池进水流量-->
+      <Item BasePointName="CDC" Text="沉淀池进水流量" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="0" Width="190" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+      </Item>
+    <!--1#沉淀池-->
+    <Item BasePointName="CDC" Text="1#沉淀池" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="30" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--2#沉淀池-->
+    <Item BasePointName="CDC" Text="2#沉淀池" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="60" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--3#沉淀池-->
+    <Item BasePointName="CDC" Text="3#沉淀池" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="90" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--5#沉淀池-->
+    <Item BasePointName="CDC" Text="5#沉淀池" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="120" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--6#沉淀池-->
+    <Item BasePointName="CDC"  Text="6#沉淀池" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="150" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--7#沉淀池-->
+    <Item BasePointName="CDC" Text="7#沉淀池" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="180" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--8/9#沉淀池-->
+    <Item BasePointName="CDC" Text="8/9#沉淀池" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="210" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--10#沉淀池-->
+    <Item BasePointName="CDC" Text="10#沉淀池" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="240" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--11#沉淀池-->
+    <Item BasePointName="CDC" Text="11#沉淀池" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="270" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--新7#系统一线-->
+    <Item BasePointName="CDC" Text="新7#一号沉淀池" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="300" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--新7#系统二线-->
+    <Item BasePointName="CDC" Text="新7#二号沉淀池" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="330" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--总合计-->
+    <Item BasePointName="CDC" Text="总合计" Font="宋体" FontSize="10" IsVertical="False" X="0" Y="360" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+  
+    <!--过程水流量-->
+    <Item Text="过程水流量" Font="宋体" FontSize="10" IsVertical="False" X="280" Y="150" Width="200" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--甲组滤池-->
+    <Item Text="甲组滤池" Font="宋体" FontSize="10" IsVertical="False" X="280" Y="181" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--乙组滤池-->
+    <Item Text="乙组滤池" Font="宋体" FontSize="10" IsVertical="False" X="280" Y="212" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--丙组滤池-->
+    <Item Text="丙组滤池" Font="宋体" FontSize="10" IsVertical="False" X="280" Y="243" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--127/128滤池-->
+    <Item Text="127/128滤池" Font="宋体" FontSize="10" IsVertical="False" X="280" Y="274" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--128滤池-->
+    <Item Text="128滤池" Font="宋体" FontSize="10" IsVertical="False" X="280" Y="305" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--129滤池-->
+    <Item Text="129滤池" Font="宋体" FontSize="10" IsVertical="False" X="280" Y="336" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--东区滤池-->
+    <Item Text="东区滤池" Font="宋体" FontSize="10" IsVertical="False" X="280" Y="367" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--提升泵房-->
+    <Item Text="提升泵房" Font="宋体" FontSize="10" IsVertical="False" X="280" Y="398" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+
+	<!--出厂水流量-->
+    <Item Text="出厂水流量" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="150" Width="380" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--1#机泵-->
+    <Item Text="1#机泵" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="181" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--5#机泵-->
+    <Item Text="5#机泵" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="212" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--8#机泵-->
+    <Item Text="8#机泵" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="243" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--9#机泵-->
+    <Item Text="9#机泵" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="274" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--19#机泵-->
+    <Item Text="19#机泵" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="305" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--1#车间合计-->
+    <Item Text="1#车间合计" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="336" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--3#机泵-->
+    <Item Text="3#机泵" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="367" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--4#机泵-->
+    <Item Text="4#机泵" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="398" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--12#机泵-->
+    <Item Text="12#机泵" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="429" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--13#机泵-->
+    <Item Text="13#机泵" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="460" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--14#机泵-->
+    <Item Text="14#机泵" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="491" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--3#车间合计-->
+    <Item Text="3#车间合计" Font="宋体" FontSize="10" IsVertical="False" X="510" Y="522" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+
+	<!--25#机泵-->
+    <Item Text="25#机泵" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="181" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--26#机泵-->
+    <Item Text="26#机泵" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="212" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--27#机泵-->
+    <Item Text="27#机泵" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="243" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--28#机泵-->
+    <Item Text="28#机泵" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="274" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--2#车间合计-->
+    <Item Text="2#车间合计" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="305" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--21#机泵-->
+    <Item Text="21#机泵" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="336" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--22#机泵-->
+    <Item Text="22#机泵" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="367" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--23#机泵-->
+    <Item Text="23#机泵" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="398" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--24#机泵-->
+    <Item Text="24#机泵" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="429" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+	<!--6#车间合计-->
+    <Item Text="6#车间合计" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="460" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+      <!--15#机泵-->
+      <Item Text="15#机泵" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="491" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+      </Item>
+      <!--16#机泵-->
+      <Item Text="16#机泵" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="522" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+      </Item>
+      <!--17#机泵-->
+      <Item Text="17#机泵" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="553" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+      </Item>
+      <!--18#机泵-->
+      <Item Text="18#机泵" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="584" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+      </Item>
+      <!--7#车间-->
+      <Item Text="7#车间合计" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="615" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+      </Item>
+	<!--总合计-->
+    <Item Text="总合计" Font="宋体" FontSize="10" IsVertical="False" X="700" Y="646" Width="90" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+  </Text>
+  <!--指标对象-->
+  <Tag>
+      <!--3.5米-->
+      <Item BasePointName="YS" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1305002],0)" TagName="3.5米进水流量" StringFormat="{0} m3/h" X="90" Y="30" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+      </Item>
+      <!--1.8米-->
+      <Item BasePointName="YS" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1305001],0)" TagName="1.8米进水流量" StringFormat="{0} m3/h" X="90" Y="60" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+      </Item>
+      <!--7#I线-->
+      <Item BasePointName="YS" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1305003],0)" TagName="7#I线进水流量" StringFormat="{0} m3/h" X="90" Y="90" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+      </Item>
+      <!--7#II线-->
+      <Item BasePointName="YS" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1305004],0)" TagName="7#II线进水流量" StringFormat="{0} m3/h" X="90" Y="120" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+      </Item>
+      <!--原水合计-->
+      <Item BasePointName="YS" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([5001001],0)" TagName="上游进水总量" StringFormat="{0} m3/h" X="90" Y="150" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+      </Item>
+      
+    <!--1#沉淀池-->
+    <Item BasePointName="CDC" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1304001],0)" TagName="1#沉淀池进水流量" StringFormat="{0} m3/h" X="90" Y="30" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--2#沉淀池-->
+    <Item BasePointName="CDC" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1304002],0)" TagName="2#沉淀池进水流量" StringFormat="{0} m3/h" X="90" Y="60" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--3#沉淀池-->
+    <Item BasePointName="CDC" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1304003],0)" TagName="3#沉淀池进水流量" StringFormat="{0} m3/h" X="90" Y="90" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+   <!--5#沉淀池-->
+    <Item BasePointName="CDC" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1304004],0)" TagName="5#沉淀池进水流量" StringFormat="{0} m3/h" X="90" Y="120" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--6#沉淀池-->
+    <Item BasePointName="CDC" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1304005],0)" TagName="6#沉淀池进水流量" StringFormat="{0} m3/h" X="90" Y="150" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--7#沉淀池-->
+    <Item BasePointName="CDC" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1304006],0)" TagName="7#沉淀池进水流量" StringFormat="{0} m3/h" X="90" Y="180" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+   <!--8/9#沉淀池-->
+    <Item BasePointName="CDC" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1304007],0)" TagName="8/9#沉淀池进水流量" StringFormat="{0} m3/h" X="90" Y="210" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--10#沉淀池-->
+    <Item BasePointName="CDC" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1304008],0)" TagName="10#沉淀池进水流量" StringFormat="{0} m3/h" X="90" Y="240" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+   <!--11#沉淀池-->
+    <Item BasePointName="CDC" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1304009],0)" TagName="11#沉淀池进水流量" StringFormat="{0} m3/h" X="90" Y="270" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+	
+	<!--新7#系统一线-->
+    <Item BasePointName="CDC" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1304010],0)" TagName="新7#系统一号沉淀池流量" StringFormat="{0} m3/h" X="90" Y="300" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+	<!--新7#系统二线-->
+    <Item BasePointName="CDC" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1304011],0)" TagName="新7#系统二号沉淀池流量" StringFormat="{0} m3/h" X="90" Y="330" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+	<!--总合计-->
+    <Item BasePointName="CDC" Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1303002],0)" TagName="总合计进水流量" StringFormat="{0} m3/h" X="90" Y="360" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+
+	<!--甲组滤池-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1315001],2)" TagName="甲组滤池进水流量" StringFormat="{0} m3/h" X="370" Y="181" Width="110" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--乙组滤池-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1315002],2)" TagName="乙组滤池进水流量" StringFormat="{0} m3/h" X="370" Y="212" Width="110" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--丙组滤池-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1304006],2)" TagName="丙组滤池进水流量" StringFormat="{0} m3/h" X="370" Y="243" Width="110" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+   <!--127/128滤池-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1315027]+[1315028]+[1315029]+[1315030]+[1315031]+[1315032]+[1315033]+[1315034],2)" TagName="127/128滤池进水流量" StringFormat="{0} m3/h" X="370" Y="274" Width="110" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--128滤池-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1315019]+[1315020]+[1315021]+[1315022]+[1315023]+[1315024]+[1315025]+[1315026],2)" TagName="128滤池进水流量" StringFormat="{0} m3/h" X="370" Y="305" Width="110" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--129滤池-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1315035]+[1315036]+[1315037]+[1315038]+[1315039]+[1315040]+[1315041]+[1315042],2)" TagName="129滤池进水流量" StringFormat="{0} m3/h" X="370" Y="336" Width="110" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+     <!--东区滤池-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1315043]+[1315044]+[1315045]+[1315046]+[1315047]+[1315048]+[1315049]+[1315050]+[1315051]+[1315052]+[1315053]+[1315054]+[1315055]+[1315056],2)" TagName="东区滤池进水流量" StringFormat="{0} m3/h" X="370" Y="367" Width="110" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--提升泵房-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1315001]+[1315002],2)" TagName="提升泵房流量" StringFormat="{0} m3/h" X="370" Y="398" Width="110" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+
+    <!--1#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306001],2)" TagName="1#机泵出厂水流量" StringFormat="{0} m3/h" X="600" Y="181" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--5#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306002],2)" TagName="5#机泵出厂水流量" StringFormat="{0} m3/h" X="600" Y="212" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--8#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306003],2)" TagName="8#机泵出厂水流量" StringFormat="{0} m3/h" X="600" Y="243" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+   <!--9#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306004],2)" TagName="9#机泵出厂水流量" StringFormat="{0} m3/h" X="600" Y="274" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--19#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306005],2)" TagName="19#机泵出厂水流量" StringFormat="{0} m3/h" X="600" Y="305" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--1#车间-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306002]+[1306005]+[1306003]+[1306001]+[1306004],2)" TagName="1#车间出厂水流量合计" StringFormat="{0} m3/h" X="600" Y="336" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+   <!--3#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306010],2)" TagName="3#机泵出厂水流量" StringFormat="{0} m3/h" X="600" Y="367" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--4#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306011],2)" TagName="4#机泵出厂水流量" StringFormat="{0} m3/h" X="600" Y="398" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+   <!--12#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306012],2)" TagName="12#机泵出厂水流量" StringFormat="{0} m3/h" X="600" Y="429" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+	<!--13#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306013],2)" TagName="13#机泵出厂水流量" StringFormat="{0} m3/h" X="600" Y="460" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+	<!--14#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306014],2)" TagName="14#机泵出厂水流量" StringFormat="{0} m3/h" X="600" Y="491" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+	<!--3#车间-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306012]+[1306013]+[1306014]+[1306010]+[1306011],2)" TagName="3#车间出厂水流量合计" StringFormat="{0} m3/h" X="600" Y="522" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+
+	<!--25#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306028],2)" TagName="25#机泵出厂水流量" StringFormat="{0} m3/h" X="790" Y="181" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--26#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306022],2)" TagName="26#机泵出厂水流量" StringFormat="{0} m3/h" X="790" Y="212" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--27#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306024],2)" TagName="27#机泵出厂水流量" StringFormat="{0} m3/h" X="790" Y="243" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+   <!--28#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306026],2)" TagName="28#机泵出厂水流量" StringFormat="{0} m3/h" X="790" Y="274" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--2#车间-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306022]+[1306024]+[1306026]+[1306028],2)" TagName="2#车间出厂水流量合计" StringFormat="{0} m3/h" X="790" Y="305" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--21#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306017],2)" TagName="21#机泵出厂水流量" StringFormat="{0} m3/h" X="790" Y="336" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+   <!--22#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306018],2)" TagName="22#机泵出厂水流量" StringFormat="{0} m3/h" X="790" Y="367" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--23#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306019],2)" TagName="23#机泵出厂水流量" StringFormat="{0} m3/h" X="790" Y="398" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+   <!--24#机泵-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306020],2)" TagName="24#机泵出厂水流量" StringFormat="{0} m3/h" X="790" Y="429" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+	<!--6#车间-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([1306020]+[1306019]+[1306018]+[1306017],2)" TagName="6#车间出厂水流量合计" StringFormat="{0} m3/h" X="790" Y="460" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--15#机泵-->
+      <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([13010715],2)" TagName="15#机泵出厂水流量合计" StringFormat="{0} m3/h" X="790" Y="491" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+      </Item>
+      <!--16#机泵-->
+      <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([13010716],2)" TagName="16#机泵出厂水流量合计" StringFormat="{0} m3/h" X="790" Y="522" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+      </Item>
+      <!--17#机泵-->
+      <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([13010717],2)" TagName="17#机泵出厂水流量合计" StringFormat="{0} m3/h" X="790" Y="553" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+      </Item>
+      <!--18#机泵-->
+      <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([13010718],2)" TagName="18#机泵出厂水流量合计" StringFormat="{0} m3/h" X="790" Y="584" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+      </Item>
+      <!--7#车间合计-->
+      <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([5003010],2)" TagName="7#车间出厂水流量合计" StringFormat="{0} m3/h" X="790" Y="615" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+          <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+      </Item>
+	<!--总合计-->
+    <Item Font="宋体" FontSize="10" DataType="Hour" TagId="Round([5003001],2)" TagName="总合计出厂水流量合计" StringFormat="{0} m3/h" X="790" Y="646" Width="100" Height="30" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="198,198,198" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+  </Tag>
+  <!--Line对象-->
+  <Line>
+  <!--红线-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="255,0,0" Width="2" LineStyle="Solid">
+      <Points>
+        <Point X="50" Y="90"/>
+        <Point X="950" Y="90"/>
+      </Points>
+    </Item>
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="255,0,0" Width="8" LineStyle="Solid">
+      <Points>
+        <Point X="50" Y="93"/>
+        <Point X="550" Y="93"/>
+      </Points>
+    </Item>
+  </Line>
+  
+</Configuration>
+
+
+

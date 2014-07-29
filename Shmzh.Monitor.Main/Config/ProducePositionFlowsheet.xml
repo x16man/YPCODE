@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 sp2 (http://www.altova.com) by ZhangXin (EMBRACE) -->
+<Configuration>
+	<ConfigSections>
+		<section name="BackGround" type="System.Configuration.IgnoreSectionHandler"/>
+		<section name="Image" type="System.Configuration.IgnoreSectionHandler"/>
+		<section name="Line" type="System.Configuration.IgnoreSectionHandler"/>
+		<section name="Text" type="System.Configuration.IgnoreSectionHandler"/>
+		<section name="Tag" type="System.Configuration.IgnoreSectionHandler"/>
+		<section name="Dev" type="System.Configuration.IgnoreSectionHandler"/>
+	</ConfigSections>
+	<!--窗体的背景图-->
+	<BackGround>
+		<Item Color="200,200,200" Src="" IsTiled="True"/>
+		<!--<Item Color="200,200,200" Src="Image\rule.png" IsTiled="False"/>-->
+		<!--<Item Color="200,200,200" Src="CompanyWaterBalanceFlowsheet\图片1.jpg" IsTiled="True"/>-->
+	</BackGround>
+	<!--Image对象-->
+	<Image>
+		<!--<Item Src="" HoverSrc="Image\生产位置图\Water.png" X="290" Y="724" Width="0" Height="0" TriggerEvent=""/>
+		<Item Src="" HoverSrc="Image\生产位置图\Water.png" X="290" Y="648" Width="0" Height="0" TriggerEvent=""/>-->
+	</Image>
+	<!--Text对象-->
+	<Text>
+
+		<Item Text="杨厂老系统生产情况位置图" Font="宋体" FontSize="14" IsVertical="True" X="10" Y="10" Width="40" Height="260" Align="Center" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="90,90,90" LeftWidth="3" RightWidth="3" TopWidth="3" BottomWidth="3"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="255,255,255" BackColor="180,0,0"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="总降站" Font="宋体" FontSize="18" IsVertical="False" X="730" Y="20" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="1#清水库" Font="宋体" FontSize="14" IsVertical="False" X="80" Y="40" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="6#清水库" Font="宋体" FontSize="14" IsVertical="False" X="860" Y="170" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="7#清水库" Font="宋体" FontSize="14" IsVertical="False" X="860" Y="130" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="1#车间" Font="宋体" FontSize="14" IsVertical="True" X="220" Y="20" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="2#车间" Font="宋体" FontSize="18" IsVertical="False" X="510" Y="30" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="3#车间" Font="宋体" FontSize="12" IsVertical="False" X="375" Y="40" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="6#车间" Font="宋体" FontSize="12" IsVertical="False" X="860" Y="85" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="甲组快滤池" Font="宋体" FontSize="10" IsVertical="False" X="480" Y="120" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="乙组快滤池" Font="宋体" FontSize="10" IsVertical="False" X="610" Y="120" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="丙组滤池" Font="宋体" FontSize="14" IsVertical="False" X="110" Y="140" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="东区滤池" Font="宋体" FontSize="12" IsVertical="False" X="860" Y="210" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="51-58" Font="宋体" FontSize="12" IsVertical="False" X="875" Y="245" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="东区滤池" Font="宋体" FontSize="12" IsVertical="False" X="860" Y="300" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="59-64" Font="宋体" FontSize="12" IsVertical="False" X="875" Y="335" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="127#滤池" Font="宋体" FontSize="10" IsVertical="False" X="680" Y="210" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="128#滤池" Font="宋体" FontSize="10" IsVertical="False" X="580" Y="210" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="129#滤池" Font="宋体" FontSize="10" IsVertical="False" X="480" Y="210" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="1#沉淀池" Font="宋体" FontSize="18" IsVertical="False" X="80" Y="485" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="2#沉淀池" Font="宋体" FontSize="18" IsVertical="True" X="310" Y="350" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="3#沉淀池" Font="宋体" FontSize="18" IsVertical="True" X="380" Y="350" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="4#沉淀池" Font="宋体" FontSize="10" IsVertical="False" X="330" Y="150" Width="0" Height="0" Align="Center" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="5#沉淀池" Font="宋体" FontSize="14" IsVertical="True" X="460" Y="400" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="6#沉淀池" Font="宋体" FontSize="14" IsVertical="True" X="575" Y="400" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="7#沉淀池" Font="宋体" FontSize="14" IsVertical="False" X="110" Y="300" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="8#沉淀池" Font="宋体" FontSize="12" IsVertical="False" X="590" Y="290" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="9#沉淀池" Font="宋体" FontSize="12" IsVertical="False" X="710" Y="290" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="10#沉淀池" Font="宋体" FontSize="14" IsVertical="True" X="680" Y="400" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="11#沉淀池" Font="宋体" FontSize="14" IsVertical="True" X="795" Y="400" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="2#\n污水\n泵房" Font="宋体" FontSize="9" IsVertical="False" X="265" Y="480" Width="0" Height="0" Align="Center" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="6#污水泵房" Font="宋体" FontSize="8" IsVertical="False" X="670" Y="595" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="8-9#\n污水\n泵房" Font="宋体" FontSize="8" IsVertical="False" X="665" Y="275" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="东区污水泵房" Font="宋体" FontSize="8" IsVertical="False" X="868" Y="278" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="129#\n污水\n泵房" Font="宋体" FontSize="8" IsVertical="False" X="755" Y="220" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="2#接收井" Font="宋体" FontSize="10" IsVertical="False" X="35" Y="635" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="加药楼" Font="宋体" FontSize="18" IsVertical="False" X="75" Y="530" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="加氨" Font="宋体" FontSize="18" IsVertical="False" X="105" Y="630" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="前加氯" Font="宋体" FontSize="18" IsVertical="False" X="165" Y="630" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="后加氯" Font="宋体" FontSize="18" IsVertical="True" X="700" Y="2" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="初步唧机室" Font="宋体" FontSize="10" IsVertical="False" X="320" Y="635" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="新泵房" Font="宋体" FontSize="10" IsVertical="False" X="550" Y="632" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="4#提升泵房" Font="宋体" FontSize="10" IsVertical="False" X="320" Y="210" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+		<Item Text="次步唧机室" Font="宋体" FontSize="10" IsVertical="False" X="465" Y="306" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor=""/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+		</Item>
+	</Text>
+	<!--指标对象-->
+	<Tag/>
+	<!--设备对象-->
+	<Device>
+	</Device>
+	<TagImage>
+		<!--总降站-->
+		<Item TagId="" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="Image\生产位置图\总降站-run.png" HoverSrc="" IsHoverEffect="False" X="735" Y="2" Width="0" Height="70" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--1#清水库-->
+		<Item TagId="if({01-R-001}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\1#清水库-run.png','Image\生产位置图\1#清水库-stop.png')" HoverSrc="" IsHoverEffect="False" X="60" Y="20" Width="0" Height="0" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--6#清水库-->
+		<Item TagId="if({01-R-006}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\7#清水库-run.png','Image\生产位置图\7#清水库-stop.png')" HoverSrc="" IsHoverEffect="False" X="830" Y="160" Width="150" Height="40" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--7#清水库-->
+		<Item TagId="if({01-R-007}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\6#清水库-run.png','Image\生产位置图\6#清水库-stop.png')" HoverSrc="" IsHoverEffect="False" X="830" Y="120" Width="140" Height="40" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--1#车间-->
+		<Item TagId="if({01-661-01}=1 or {01-661-05}=1 or {01-661-08}=1 or {01-661-09}=1 or {01-661-19}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\1#车间-run.png','Image\生产位置图\1#车间-stop.png')" HoverSrc="" IsHoverEffect="False" X="180" Y="15" Width="30" Height="70" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--2#车间-->
+		<Item TagId="if({01-661-25}=1 or {01-661-26}=1 or {01-661-27}=1 or {01-661-28}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\2#车间-run.png','Image\生产位置图\2#车间-stop.png')" HoverSrc="" IsHoverEffect="False" X="448" Y="15" Width="200" Height="70" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--3#车间-->
+		<Item TagId="if({01-661-03}=1 or {01-661-04}=1 or {01-661-12}=1 or {01-661-13}=1 or {01-661-14}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\3#车间-run.png','Image\生产位置图\3#车间-stop.png')" HoverSrc="" IsHoverEffect="False" X="350" Y="16" Width="100" Height="70" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--6#车间-->
+		<Item TagId="if({01-661-21}=1 or {01-661-22}=1 or {01-661-23}=1 or {01-661-24A}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\6#车间-run.png','Image\生产位置图\6#车间-stop.png')" HoverSrc="" IsHoverEffect="False" X="840" Y="80" Width="130" Height="0" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--甲组快滤池-->
+		<Item TagId="[1315003]+[1315004]+[1315005]+[1315006]+[1315007]+[1315008]+[1315009]+[1315010]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\甲组滤池-run.png','Image\生产位置图\甲组滤池-stop.png')" HoverSrc="" IsHoverEffect="False" X="470" Y="90" Width="100" Height="80" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--乙组快滤池-->
+		<Item TagId="[1315010]+[1315011]+[1315012]+[1315013]+[1315014]+[1315015]+[1315016]+[1315017]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\乙组滤池-run.png','Image\生产位置图\乙组滤池-stop.png')" HoverSrc="" IsHoverEffect="False" X="600" Y="90" Width="100" Height="80" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--丙组滤池-->
+		<Item TagId="[1304006]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\丙组滤池-run.png','Image\生产位置图\丙组滤池-stop.png')" HoverSrc="" IsHoverEffect="False" X="80" Y="100" Width="140" Height="100" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--东区滤池51-58-->
+		<Item TagId="[1315043]+[1315044]+[1315045]+[1315046]+[1315047]+[1315048]+[1315049]+[1315050]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\东区滤池51-58-run.png','Image\生产位置图\东区滤池51-58-stop.png')" HoverSrc="" IsHoverEffect="False" X="830" Y="200" Width="150" Height="70" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--东区滤池59-64-->
+		<Item TagId="[1315051]+[1315052]+[1315053]+[1315054]+[1315055]+[1315056]+[1315057]+[1315058]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\东区滤池59-64-run.png','Image\生产位置图\东区滤池59-64-stop.png')" HoverSrc="" IsHoverEffect="False" X="830" Y="270" Width="130" Height="90" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--127#滤池-->
+		<Item TagId="[1315027]+[1315028]+[1315029]+[1315030]+[1315031]+[1315032]+[1315033]+[1315034]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\127#滤池-run.png','Image\生产位置图\127#滤池-stop.png')" HoverSrc="" IsHoverEffect="False" X="660" Y="179" Width="100" Height="80" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--128#滤池-->
+		<Item TagId="[1315019]+[1315020]+[1315021]+[1315022]+[1315023]+[1315024]+[1315025]+[1315026]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\128#滤池-run.png','Image\生产位置图\128#滤池-stop.png')" HoverSrc="" IsHoverEffect="False" X="560" Y="180" Width="100" Height="80" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--129#滤池-->
+		<Item TagId="[1315035]+[1315036]+[1315037]+[1315038]+[1315039]+[1315040]+[1315041]+[1315042]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\129#滤池-run.png','Image\生产位置图\129#滤池-stop.png')" HoverSrc="" IsHoverEffect="False" X="460" Y="180" Width="100" Height="80" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--1#沉淀池-->
+		<Item TagId="[1304001]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\1#沉淀池-run.png','Image\生产位置图\1#沉淀池-stop.png')" HoverSrc="" IsHoverEffect="False" X="20" Y="460" Width="220" Height="110" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--2#沉淀池-->
+		<Item TagId="[1304002]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\2#沉淀池-run.png','Image\生产位置图\2#沉淀池-stop.png')" HoverSrc="" IsHoverEffect="False" X="260" Y="267" Width="100" Height="300" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--3#沉淀池-->
+		<Item TagId="[1304003]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\3#沉淀池-run.png','Image\生产位置图\3#沉淀池-stop.png')" HoverSrc="" IsHoverEffect="False" X="360" Y="267" Width="70" Height="300" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--4#沉淀池-->
+		<Item TagId="" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\4#沉淀池-run.png','Image\生产位置图\4#沉淀池-stop.png')" HoverSrc="" IsHoverEffect="False" X="310" Y="130" Width="100" Height="60" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--5#沉淀池-->
+		<Item TagId="[1304004]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\5#沉淀池-run.png','Image\生产位置图\5#沉淀池-stop.png')" HoverSrc="" IsHoverEffect="False" X="450" Y="375" Width="100" Height="220" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--6#沉淀池-->
+		<Item TagId="[1304005]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\6#沉淀池-run.png','Image\生产位置图\6#沉淀池-stop.png')" HoverSrc="" IsHoverEffect="False" X="550" Y="374" Width="100" Height="220" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--7#沉淀池-->
+		<Item TagId="[1304006]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\7#沉淀池-run.png','Image\生产位置图\7#沉淀池-stop.png')" HoverSrc="" IsHoverEffect="False" X="80" Y="200" Width="140" Height="0" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--8#沉淀池-->
+		<Item TagId="[1304007]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\8#沉淀池-run.png','Image\生产位置图\8#沉淀池-stop.png')" HoverSrc="" IsHoverEffect="False" X="560" Y="270" Width="130" Height="90" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--9#沉淀池-->
+		<Item TagId="[1304007]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\9#沉淀池-run.png','Image\生产位置图\9#沉淀池-stop.png')" HoverSrc="" IsHoverEffect="False" X="688" Y="269" Width="130" Height="90" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--10#沉淀池-->
+		<Item TagId="[1304008]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\10#沉淀池-run.png','Image\生产位置图\10#沉淀池-stop.png')" HoverSrc="" IsHoverEffect="False" X="670" Y="375" Width="100" Height="220" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--11#沉淀池-->
+		<Item TagId="[1304009]" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>500,'Image\生产位置图\11#沉淀池-run.png','Image\生产位置图\11#沉淀池-stop.png')" HoverSrc="" IsHoverEffect="False" X="770" Y="375" Width="100" Height="220" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--2#污水泵房-->
+		<Item TagId="if({01-662-23}=1 or {01-662-24}=1 or {01-662-25}=1 or {01-662-26}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\2#污水泵房-run.png','Image\生产位置图\2#污水泵房-stop.png')" HoverSrc="" IsHoverEffect="False" X="260" Y="480" Width="40" Height="40" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--6#污水泵房-->
+		<Item TagId="if({01-662-10}=1 or {01-662-27}=1 or {01-662-28}=1 or {01-662-29}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\6#污水泵房-run.png','Image\生产位置图\6#污水泵房-stop.png')" HoverSrc="" IsHoverEffect="False" X="670" Y="586" Width="0" Height="0" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--8-9#污水泵房-->
+		<Item TagId="if({01-662-30}=1 or {01-662-31}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\8-9#污水泵房-run.png','Image\生产位置图\8-9#污水泵房-stop.png')" HoverSrc="" IsHoverEffect="False" X="670" Y="276" Width="20" Height="46" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--东区污水泵房-->
+		<Item TagId="" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\东区污水泵房-run.png','Image\生产位置图\东区污水泵房-stop.png')" HoverSrc="" IsHoverEffect="False" X="880" Y="270" Width="60" Height="0" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--129#污水泵房-->
+		<Item TagId="if({01-662-71}=1 or {01-662-72}=1 or {01-662-73}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\129#污水泵房-run.png','Image\生产位置图\129#污水泵房-stop.png')" HoverSrc="" IsHoverEffect="False" X="755" Y="220" Width="30" Height="40" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--2#接收井-->
+		<Item TagId="" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value>8,'Image\生产位置图\2#接收井-run.png','Image\生产位置图\2#接收井-stop.png')" HoverSrc="" IsHoverEffect="False" X="0" Y="605" Width="140" Height="70" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--加药楼-->
+		<Item TagId="" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="Image\生产位置图\加药楼-run.png" HoverSrc="" IsHoverEffect="False" X="70" Y="525" Width="0" Height="0" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--加氨-->
+		<Item TagId="if({01-491-01}=1 or {01-491-02}=1 or {01-491-03}=1 or {01-491-04}=1 or {01-491-05}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\加氨-run.png','Image\生产位置图\加氨-stop.png')" HoverSrc="" IsHoverEffect="False" X="100" Y="620" Width="0" Height="0" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--前加氯-->
+		<Item TagId="" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\前加氯-run.png','Image\生产位置图\前加氯-stop.png')" HoverSrc="" IsHoverEffect="False" X="150" Y="620" Width="0" Height="0" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--后加氯-->
+		<Item TagId="" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\后加氯-run.png','Image\生产位置图\后加氯-stop.png')" HoverSrc="" IsHoverEffect="False" X="680" Y="3" Width="0" Height="70" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		
+		<!--初步唧机室-->
+		<Item TagId="if({01-661-61}=1 or {01-661-62}=1 or {01-661-64}=1 or {01-661-65}=1 or {01-661-66}=1 or {01-661-67}=1 or {01-661-68}=1 or {01-661-69}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\初步唧机室-run.png','Image\生产位置图\初步唧机室-stop.png')" HoverSrc="" IsHoverEffect="False" X="270" Y="630" Width="150" Height="0" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--新泵房-->
+		<Item TagId="if({01-661-81a}=1 or {01-661-82a}=1 or {01-661-83a}=1 or {01-661-84a}=1 or {01-661-85a}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\新泵房-run.png','Image\生产位置图\新泵房-stop.png')" HoverSrc="" IsHoverEffect="False" X="450" Y="630" Width="260" Height="0" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--4#提升泵房-->
+		<Item TagId="if({01-661-54}=1 or {01-661-55}=1 or {01-661-56}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\4#提升泵房-run.png','Image\生产位置图\4#提升泵房-stop.png')" HoverSrc="" IsHoverEffect="False" X="310" Y="190" Width="100" Height="60" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+	<!--塔楼-->
+		<Item TagId="" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="Image\生产位置图\塔楼.png" HoverSrc="" IsHoverEffect="False" X="450" Y="270" Width="0" Height="0" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--塔楼-->
+		<Item TagId="" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="Image\生产位置图\塔楼.png" HoverSrc="" IsHoverEffect="False" X="530" Y="270" Width="0" Height="0" TriggerEvent=""></Item>
+	</TagImage>
+	<TagImage>
+		<!--次步唧机室-->
+		<Item TagId="if({01-661-31A}=1 or {01-661-32A}=1 or {01-661-33A}=1 or {01-661-34A}=1 or {01-661-35A}=1 or {01-661-36A}=1,1,0)" DataType="Min15" BorderWidth="0" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=1,'Image\生产位置图\次步唧机室-run.png','Image\生产位置图\次步唧机室-stop.png')" HoverSrc="" IsHoverEffect="False" X="450" Y="300" Width="100" Height="60" TriggerEvent=""></Item>
+	</TagImage>
+</Configuration>

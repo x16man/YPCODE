@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="TagService.asmx.cs" Class="Shmzh.Gather.DataService.TagService" %>

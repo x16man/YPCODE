@@ -1,0 +1,78 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Shmzh.Monitor.Data.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Shmzh_Monitor_Data_RunStatusService_RunStatus" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/RunStatus.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_TagDayService_TagDay" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/TagDay.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_TagHourService_TagHour" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/TagHour.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_TagService_Tag" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/Tag.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_TagMinuteService_TagMinute" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/TagMinute.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_TagMin15Service_TagMin15" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/TagMin15.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_TagMonthService_TagMonth" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/TagMonth.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_TagYearService_TagYear" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/TagYear.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_TagSecondService_TagSecond" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/TagSecond.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_FloatingBlock_FloatingBlock" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/FloatingBlock.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_FloatingBlockItem_FloatingBlockItem" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/shmzh.monitor.dataservice/FloatingBlockItem.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_GraphSchemaItem_GraphSchemaItem" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/shmzh.monitor.dataservice/graphschemaItem.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_GraphSchemaRTag_GraphSchemaRTag" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/shmzh.monitor.dataservice/graphschemartag.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_GraphSchemaTab_GraphSchemaTab" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/shmzh.monitor.dataservice/GraphSchemaTab.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_GraphSchemaTag_GraphSchemaTag" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/shmzh.monitor.dataservice/graphschematag.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_MonitorObj_MonitorObj" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/shmzh.monitor.dataservice/monitorobj.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_ObjType_ObjType" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/shmzh.monitor.dataservice/objtype.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_ObjTypeAttrService_ObjTypeAttr" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/shmzh.monitor.dataservice/objtypeattr.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_TagGatherService_TagGather" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/TagGather.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_GraphSchemaService_GraphSchema" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/GraphSchema.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_CategoryService_Category" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/Category.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_CategoryItemService_CategoryItem" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/CategoryItem.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_TagCategoryService_TagCategory" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/TagCategory.asmx</Value>
+    </Setting>
+    <Setting Name="Shmzh_Monitor_Data_TagCategoryDetailService_TagCategoryDetail" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Shmzh.Monitor.DataService/TagCategoryDetail.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

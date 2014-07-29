@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B96FCE8C-F4B4-4567-ACEF-E6D208EB280A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shmzh.Monitor.Data</RootNamespace>
+    <AssemblyName>Shmzh.Monitor.Data</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ciloci.Flee, Version=0.9.24.0, Culture=neutral, PublicKeyToken=c8526a021ef298ed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\公共库\Reference\Ciloci.Flee.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\公共库\Reference\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Shmzh.Components.SystemComponent, Version=2.0.0.8, Culture=neutral, PublicKeyToken=67191c9e5456fa33, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\公共库\Reference\Shmzh.Components.SystemComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="Shmzh.Components.Util, Version=1.0.0.0, Culture=neutral, PublicKeyToken=67191c9e5456fa33, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\公共库\Reference\Shmzh.Components.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="IDAL\IRunStatus.cs" />
+    <Compile Include="IDAL\ITag.cs" />
+    <Compile Include="IDAL\ITagDay.cs" />
+    <Compile Include="IDAL\ITagHour.cs" />
+    <Compile Include="IDAL\ITagMin15.cs" />
+    <Compile Include="IDAL\ITagMinute.cs" />
+    <Compile Include="IDAL\ITagMonth.cs" />
+    <Compile Include="IDAL\ITagSecond.cs" />
+    <Compile Include="IDAL\ITagYear.cs" />
+    <Compile Include="IDAL\IGraphSchema.cs" />
+    <Compile Include="IDAL\IGraphSchemaItem.cs" />
+    <Compile Include="IDAL\IGraphSchemaTag.cs" />
+    <Compile Include="IDAL\IObjType.cs" />
+    <Compile Include="IDAL\IObjTypeAttr.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service\RunStatus.cs" />
+    <Compile Include="Service\Tag.cs" />
+    <Compile Include="Service\TagDay.cs" />
+    <Compile Include="Service\TagHour.cs" />
+    <Compile Include="Service\TagMin15.cs" />
+    <Compile Include="Service\TagMinute.cs" />
+    <Compile Include="Service\TagMonth.cs" />
+    <Compile Include="Service\TagSecond.cs" />
+    <Compile Include="Service\TagYear.cs" />
+    <Compile Include="SqlClient\GraphSchema.cs" />
+    <Compile Include="SqlClient\GraphSchemaItem.cs" />
+    <Compile Include="SqlClient\GraphSchemaTag.cs" />
+    <Compile Include="SqlClient\RunStatus.cs" />
+    <Compile Include="SqlClient\Tag.cs" />
+    <Compile Include="SqlClient\TagDay.cs" />
+    <Compile Include="SqlClient\TagHour.cs" />
+    <Compile Include="SqlClient\TagMin15.cs" />
+    <Compile Include="SqlClient\TagMinute.cs" />
+    <Compile Include="SqlClient\TagMonth.cs" />
+    <Compile Include="SqlClient\TagSecond.cs" />
+    <Compile Include="SqlClient\TagYear.cs" />
+    <Compile Include="Web References\RunStatusService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TagDayService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TagHourService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TagMin15Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TagMinuteService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TagMonthService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TagSecondService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TagService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TagYearService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shmzh.Monitor.Entity\Shmzh.Monitor.Entity.csproj">
+      <Project>{8F94FD06-11D7-4A26-A860-160862586DD0}</Project>
+      <Name>Shmzh.Monitor.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/Category.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CategoryService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/Category.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_CategoryService_Category</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/CategoryItem.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CategoryItemService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/CategoryItem.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_CategoryItemService_CategoryItem</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/FloatingBlock.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FloatingBlockService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/FloatingBlock.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_FloatingBlock_FloatingBlock</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/shmzh.monitor.dataservice/FloatingBlockItem.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FloatingBlockItemService\</RelPath>
+      <UpdateFromURL>http://localhost/shmzh.monitor.dataservice/FloatingBlockItem.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_FloatingBlockItem_FloatingBlockItem</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/shmzh.monitor.dataservice/graphschemaItem.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GraphSchemaItemService\</RelPath>
+      <UpdateFromURL>http://localhost/shmzh.monitor.dataservice/graphschemaItem.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_GraphSchemaItem_GraphSchemaItem</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/shmzh.monitor.dataservice/graphschemartag.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GraphSchemaRTagService\</RelPath>
+      <UpdateFromURL>http://localhost/shmzh.monitor.dataservice/graphschemartag.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_GraphSchemaRTag_GraphSchemaRTag</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/shmzh.monitor.dataservice/GraphSchemaTab.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GraphSchemaTabService\</RelPath>
+      <UpdateFromURL>http://localhost/shmzh.monitor.dataservice/GraphSchemaTab.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_GraphSchemaTab_GraphSchemaTab</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/shmzh.monitor.dataservice/graphschematag.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GraphSchemaTagService\</RelPath>
+      <UpdateFromURL>http://localhost/shmzh.monitor.dataservice/graphschematag.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_GraphSchemaTag_GraphSchemaTag</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/shmzh.monitor.dataservice/monitorobj.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MonitorObjService\</RelPath>
+      <UpdateFromURL>http://localhost/shmzh.monitor.dataservice/monitorobj.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_MonitorObj_MonitorObj</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/shmzh.monitor.dataservice/objtype.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ObjTypeService\</RelPath>
+      <UpdateFromURL>http://localhost/shmzh.monitor.dataservice/objtype.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_ObjType_ObjType</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/shmzh.monitor.dataservice/objtypeattr.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ObjTypeAttrService\</RelPath>
+      <UpdateFromURL>http://localhost/shmzh.monitor.dataservice/objtypeattr.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_ObjTypeAttrService_ObjTypeAttr</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/RunStatus.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RunStatusService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/RunStatus.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_RunStatusService_RunStatus</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/TagCategory.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TagCategoryService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/TagCategory.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_TagCategoryService_TagCategory</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/TagCategoryDetail.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TagCategoryDetailService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/TagCategoryDetail.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_TagCategoryDetailService_TagCategoryDetail</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/Tag.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TagService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/Tag.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_TagService_Tag</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/TagDay.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TagDayService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/TagDay.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_TagDayService_TagDay</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/TagGather.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TagGatherService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/TagGather.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_TagGatherService_TagGather</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/TagHour.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TagHourService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/TagHour.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_TagHourService_TagHour</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/TagMin15.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TagMin15Service\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/TagMin15.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_TagMin15Service_TagMin15</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/TagMinute.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TagMinuteService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/TagMinute.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_TagMinuteService_TagMinute</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/TagMonth.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TagMonthService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/TagMonth.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_TagMonthService_TagMonth</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/TagSecond.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TagSecondService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/TagSecond.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_TagSecondService_TagSecond</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/TagYear.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TagYearService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/TagYear.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_TagYearService_TagYear</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/Shmzh.Monitor.DataService/GraphSchema.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GraphSchemaService\</RelPath>
+      <UpdateFromURL>http://localhost/Shmzh.Monitor.DataService/GraphSchema.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Shmzh_Monitor_Data_GraphSchemaService_GraphSchema</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Web References\RunStatusService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RunStatusService\RunStatus.disco" />
+    <None Include="Web References\RunStatusService\RunStatus.wsdl" />
+    <None Include="Web References\RunStatusService\RunStatusInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\TagDayService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TagDayService\TagDay.disco" />
+    <None Include="Web References\TagDayService\TagDay.wsdl" />
+    <None Include="Web References\TagDayService\TagDayInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\TagHourService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TagHourService\TagHour.disco" />
+    <None Include="Web References\TagHourService\TagHour.wsdl" />
+    <None Include="Web References\TagHourService\TagHourInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\TagService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TagService\Tag.disco" />
+    <None Include="Web References\TagService\Tag.wsdl" />
+    <None Include="Web References\TagService\TagInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\TagMin15Service\TagMin15.wsdl" />
+    <None Include="Web References\TagMinuteService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TagMinuteService\TagMinute.disco" />
+    <None Include="Web References\TagMinuteService\TagMinute.wsdl" />
+    <None Include="Web References\TagMinuteService\TagMinuteInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\TagMin15Service\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TagMin15Service\TagMin15.disco" />
+    <None Include="Web References\TagMin15Service\TagMin15Info.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\TagMonthService\TagMonth.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\TagMonthService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TagMonthService\TagMonth.disco" />
+    <None Include="Web References\TagMonthService\TagMonthInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\TagYearService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TagYearService\TagYear.disco" />
+    <None Include="Web References\TagYearService\TagYear.wsdl" />
+    <None Include="Web References\TagYearService\TagYearInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCode\GlobleVariables.cs" />
+    <Compile Include="IDAL\IMonitorObj.cs" />
+    <Compile Include="IDAL\IGraphSchemaRTag.cs" />
+    <Compile Include="IDAL\IGraphSchemaTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDAL\IFloatingBlock.cs" />
+    <Compile Include="IDAL\IFloatingBlockItem.cs" />
+    <Compile Include="IDAL\ITagGather.cs" />
+    <Compile Include="IDAL\ICategory.cs" />
+    <Compile Include="IDAL\ICategoryItem.cs" />
+    <Compile Include="IDAL\ITagCategory.cs" />
+    <Compile Include="IDAL\ITagCategoryDetail.cs" />
+    <Compile Include="Service\FloatingBlock.cs" />
+    <Compile Include="Service\FloatingBlockItem.cs" />
+    <Compile Include="Service\GraphSchema.cs" />
+    <Compile Include="Service\GraphSchemaItem.cs" />
+    <Compile Include="Service\GraphSchemaRTag.cs" />
+    <Compile Include="Service\GraphSchemaTab.cs" />
+    <Compile Include="Service\GraphSchemaTag.cs" />
+    <Compile Include="Service\MonitorObj.cs" />
+    <Compile Include="Service\ObjType.cs" />
+    <Compile Include="Service\ObjTypeAttr.cs" />
+    <Compile Include="Service\TagGather.cs" />
+    <Compile Include="Service\Category.cs" />
+    <Compile Include="Service\CategoryItem.cs" />
+    <Compile Include="Service\TagCategory.cs" />
+    <Compile Include="Service\TagCategoryDetail.cs" />
+    <Compile Include="SqlClient\GraphSchemaTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlClient\MonitorObj.cs" />
+    <Compile Include="SqlClient\ObjType.cs" />
+    <Compile Include="SqlClient\ObjTypeAttr.cs" />
+    <Compile Include="SqlClient\GraphSchemaRTag.cs" />
+    <Compile Include="SqlClient\FloatingBlock.cs" />
+    <Compile Include="SqlClient\FloatingBlockItem.cs" />
+    <Compile Include="SqlClient\TagGather.cs" />
+    <Compile Include="SqlClient\Category.cs" />
+    <Compile Include="SqlClient\CategoryItem.cs" />
+    <Compile Include="SqlClient\TagCategory.cs" />
+    <Compile Include="SqlClient\TagCategoryDetail.cs" />
+    <Compile Include="Web References\CategoryItemService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CategoryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FloatingBlockItemService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FloatingBlockService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GraphSchemaItemService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GraphSchemaRTagService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GraphSchemaService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GraphSchemaTabService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GraphSchemaTagService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MonitorObjService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ObjTypeAttrService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ObjTypeService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TagCategoryDetailService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TagCategoryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TagGatherService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <None Include="Web References\TagSecondService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TagSecondService\TagSecond.disco" />
+    <None Include="Web References\TagSecondService\TagSecond.wsdl" />
+    <None Include="Web References\TagSecondService\TagSecondInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\FloatingBlockItemService\FloatingBlockItem.wsdl" />
+    <None Include="Web References\FloatingBlockService\FloatingBlock.disco" />
+    <None Include="Web References\FloatingBlockService\FloatingBlock.wsdl" />
+    <None Include="Web References\FloatingBlockService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\FloatingBlockItemService\FloatingBlockItem.disco" />
+    <None Include="Web References\FloatingBlockItemService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\GraphSchemaItemService\graphschemaItem.disco" />
+    <None Include="Web References\GraphSchemaItemService\graphschemaItem.wsdl" />
+    <None Include="Web References\GraphSchemaItemService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\GraphSchemaRTagService\graphschemartag.disco" />
+    <None Include="Web References\GraphSchemaRTagService\graphschemartag.wsdl" />
+    <None Include="Web References\GraphSchemaRTagService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\GraphSchemaTabService\GraphSchemaTab.disco" />
+    <None Include="Web References\GraphSchemaTabService\GraphSchemaTab.wsdl" />
+    <None Include="Web References\GraphSchemaTabService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\GraphSchemaTagService\graphschematag.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\GraphSchemaTagService\graphschematag.disco" />
+    <None Include="Web References\GraphSchemaTagService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\MonitorObjService\monitorobj.disco" />
+    <None Include="Web References\MonitorObjService\monitorobj.wsdl" />
+    <None Include="Web References\MonitorObjService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\ObjTypeService\objtype.disco" />
+    <None Include="Web References\ObjTypeService\objtype.wsdl" />
+    <None Include="Web References\ObjTypeService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\FloatingBlockItemService\FloatingBlockItemInfo1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FloatingBlockService\FloatingBlockInfo1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GraphSchemaItemService\GraphSchemaItemInfo1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GraphSchemaRTagService\GraphSchemaRTagInfo1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GraphSchemaTabService\GraphSchemaTabInfo1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GraphSchemaTagService\GraphSchemaTagInfo1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MonitorObjService\MonitorObjInfo1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ObjTypeAttrService\objtypeattr.disco" />
+    <None Include="Web References\ObjTypeAttrService\objtypeattr.wsdl" />
+    <None Include="Web References\ObjTypeAttrService\ObjTypeAttrInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ObjTypeAttrService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ObjTypeService\ObjTypeInfo1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\TagGatherService\TagGather.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\TagGatherService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TagGatherService\TagGather.disco" />
+    <None Include="Web References\TagGatherService\TagGatherInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\GraphSchemaService\GraphSchema.disco" />
+    <None Include="Web References\GraphSchemaService\GraphSchema.wsdl" />
+    <None Include="Web References\GraphSchemaService\GraphSchemaInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GraphSchemaService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\CategoryService\Category.disco" />
+    <None Include="Web References\CategoryService\Category.wsdl" />
+    <None Include="Web References\CategoryService\CategoryInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CategoryService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\CategoryItemService\CategoryItem.disco" />
+    <None Include="Web References\CategoryItemService\CategoryItem.wsdl" />
+    <None Include="Web References\CategoryItemService\CategoryItemInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CategoryItemService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TagCategoryService\TagCategory.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\TagCategoryService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TagCategoryService\TagCategory.disco" />
+    <None Include="Web References\TagCategoryService\TagCategoryInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\TagCategoryDetailService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TagCategoryDetailService\TagCategoryDetail.disco" />
+    <None Include="Web References\TagCategoryDetailService\TagCategoryDetail.wsdl" />
+    <None Include="Web References\TagCategoryDetailService\TagCategoryDetailInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\TagCategoryDetailService\TagInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

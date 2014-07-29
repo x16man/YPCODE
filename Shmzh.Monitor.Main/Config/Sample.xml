@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>  
+  <!--DataType可选值：Second/Min/Min15/Hour/Day/Month/Year.-->
+  <!--窗体的背景图-->
+  <BackGround>
+    <!--只使用第一个 Item，多个时将忽略其它的。-->
+    <!--<Item Color="200,200,200" Src="Image\rule.png" IsTiled="False" />-->
+    <Item Color="200,200,200" Src="" IsTiled="True" />
+  </BackGround>
+  <Clock Visible="True" StringFormat="当前时间 {0}" TimeFormat="M月d日 HH:mm:ss" Font="Times New Roman" FontSize="18" X="50" Y="20" IsBold="True" IsUnderLine="False" IsItalic="False" Color="255,0,0" BackColor="100,0,255,255" />
+  <!--Image对象-->
+  <Image>
+    <Item Src="Device\jb_running.gif" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="True" X="0" Y="0" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="False" X="30" Y="0" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="False" X="60" Y="0" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="False" X="90" Y="0" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="False" X="120" Y="0" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="False" X="0" Y="30" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="False" X="0" Y="60" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="False" X="0" Y="90" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="False" X="0" Y="120" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+
+    <Item Src="Device\jb_running.gif" HoverSrc="" IsHoverEffect="False" X="330" Y="120" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="" IsHoverEffect="False" X="360" Y="120" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="" IsHoverEffect="False" X="390" Y="120" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="" IsHoverEffect="False" X="420" Y="120" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+
+    <Item Src="Device\jb_running.gif" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="False" X="540" Y="270" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="False" X="570" Y="270" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <Item Src="Device\jb_running.gif" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="False" X="600" Y="270" Width="0" Height="0" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <!--<Item Src="Image\rule.png" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="False" X="50" Y="50" Width="600" Height="450" BorderWidth="10" BorderColor="0,0,255" TriggerEvent=""></Item>-->
+  </Image>
+  <!--TagImage对象-->
+  <TagImage>
+    <!--TagId,Src,BorderColor 可写成表达式。如：Src="if(value>0,'Image\rule.png','Image\rule2.png')"-->
+    <!--TagId {}表示是设备编号，[]表示是指标编号，必须加有{}或[]-->
+    <Item TagId="{01-661-09}" DataType="Min15" BorderWidth="8" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=-1,'Image\rule.png','Device\jb_running.gif')" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="True" X="150" Y="200" Width="300" Height="225" TriggerEvent="LeftClick:出厂水余氯与加氯量对比图"></Item>
+  </TagImage>
+  <!--Text对象-->
+  <Text>
+    <Item Text="全厂工艺流程监\n视图" Font="宋体" FontSize="18" IsVertical="False" X="350" Y="20" Width="0" Height="0" Align="Left" IsHoverEffect="True" TriggerEvent="">
+      <BorderStyle Color="255,255,255" LeftWidth="10" RightWidth="10" TopWidth="10" BottomWidth="10" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="Hello World 壹二参四" Font="宋体" FontSize="14" IsVertical="True" X="100" Y="150" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="255,255,255" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="True" Color="0,255,0" BackColor="" />
+    </Item>
+    <Item Text="表格测试居左" Font="宋体" FontSize="16" IsVertical="False" X="350" Y="200" Width="200" Height="30" Align="Left" IsHoverEffect="True" TriggerEvent="">
+      <BorderStyle Color="255,255,255" LeftWidth="2" RightWidth="2" TopWidth="2" BottomWidth="2" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="表格测试居中" Font="宋体" FontSize="16" IsVertical="False" X="350" Y="230" Width="200" Height="30" Align="Center" IsHoverEffect="True" TriggerEvent="">
+      <BorderStyle Color="255,255,255" LeftWidth="2" RightWidth="2" TopWidth="2" BottomWidth="2" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="表格测试居右" Font="宋体" FontSize="16" IsVertical="False" X="350" Y="260" Width="200" Height="30" Align="Right" IsHoverEffect="True" TriggerEvent="">
+      <BorderStyle Color="255,255,255" LeftWidth="2" RightWidth="2" TopWidth="2" BottomWidth="2" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="表格测试居中" Font="宋体" FontSize="16" IsVertical="False" X="550" Y="230" Width="200" Height="30" Align="Center" IsHoverEffect="True" TriggerEvent="">
+      <BorderStyle Color="255,255,255" LeftWidth="2" RightWidth="2" TopWidth="2" BottomWidth="2" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="表格测试居中" Font="宋体" FontSize="16" IsVertical="False" X="150" Y="230" Width="200" Height="60" Align="Center" IsHoverEffect="True" TriggerEvent="">
+      <BorderStyle Color="255,255,0" LeftWidth="30" RightWidth="30" TopWidth="30" BottomWidth="30" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+  </Text>
+  <!--指标对象-->
+  <Tag>
+    <!--TagId,Color 可写成表达式。如：Color="if(value>0,'0,0,0','255,255,255')"-->
+    <Item MonitorObj="YW-01" Font="宋体" FontSize="10" DataType="Second" TagId="[1001009]-[1003009]" StringFormat="Q: {0} m3/h" X="100" Y="100" Width="200" Height="20" Align="Left" IsHoverEffect="True" TriggerEvent="RightClick:Test">
+      <BorderStyle Color="255,255,255" LeftWidth="2" RightWidth="2" TopWidth="2" BottomWidth="2" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="if(value&lt;[AttrField01],'255,255,0','0,0,255')" BackColor="" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="10" DataType="Second" TagId="[1001009]" StringFormat="P: {0} m3/h" X="100" Y="120" Width="200" Height="20" Align="Left" IsHoverEffect="True" TriggerEvent="">
+      <BorderStyle Color="255,255,255" LeftWidth="2" RightWidth="2" TopWidth="2" BottomWidth="2" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="255,255,255" BackColor="" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="10" DataType="Second" TagId="[1003009]" StringFormat="P: {0} m3/h" X="100" Y="140" Width="200" Height="20" Align="Left" IsHoverEffect="True" TriggerEvent="">
+      <BorderStyle Color="255,255,255" LeftWidth="2" RightWidth="2" TopWidth="2" BottomWidth="2" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="255,255,255" BackColor="" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="10" DataType="Second" TagId="[1401003]" StringFormat="P: {0} m3/h" X="100" Y="160" Width="200" Height="20" Align="Left" IsHoverEffect="True" TriggerEvent="">
+      <BorderStyle Color="255,255,255" LeftWidth="2" RightWidth="2" TopWidth="2" BottomWidth="2" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="255,255,255" BackColor="" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!-- 19号机泵 电流、功率 配水单耗 -->
+    <!--<Item Font="Franklin Gothic Medium" FontSize="18" DataType="Hour" TagId="round(1000000*0.2/([1306005]*([1001017] -([1003017]))),2)" StringFormat="{0}" X="452" Y="300" Width="150" Height="20" Align="left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+    </Item>-->
+    <Item Font="Franklin Gothic Medium" FontSize="18" DataType="Second" TagId="[1702018]" StringFormat="{0}" X="452" Y="300" Width="150" Height="20" Align="left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+    </Item>
+  </Tag>
+  <!--设备对象-->
+  <Device>
+    <Item RunSrc="Device\jb_running.gif" StopSrc="Device\jb_stoped.gif" MalfunctionSrc="Device\jb_stoped.gif" RepairSrc="Device\jb_stoped.gif" IsVertical="False" Text="150" Font="宋体" FontSize="10.5" Width="0" Height="0" PaddingTop="10" PaddingLeft="10" DevCode="{01-661-05}" DataType="Second/Min/Min15/Hour/Day/DevStatus/Switch" X="580" Y="50" IsHoverEffect="True" TriggerEvent="">
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="255,0,0" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,0" />
+      <Text>
+        <Item Text="此文字仅当150设备运行时显示" Font="宋体" FontSize="16" IsVertical="False" X="580" Y="75" Width="0" Height="30" Align="Center" IsHoverEffect="True" TriggerEvent="">
+          <BorderStyle Color="255,255,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+          <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255" />
+          <SelectedStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="" />
+        </Item>
+      </Text>
+      <Tag>
+        <Item Font="Franklin Gothic Medium" FontSize="18" DataType="Second" TagId="[1702018]" StringFormat="{0}" X="580" Y="100" Width="150" Height="20" Align="left" IsHoverEffect="False" TriggerEvent="">
+          <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+          <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+          <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor=""/>
+        </Item>
+      </Tag>
+    </Item>
+  </Device>
+  <!--Line对象-->
+  <Line>
+    <!--LineStyle可选值:Solid/Dash/DashDot/DashDotDot/Dot/DashDash-->
+    <!--TagId,Color,Width,LineStyle 可写成表达式。如：LineStyle="if(value>0,'Solid','DashDash')"-->
+    <!--ArrowFactor:箭头大小与线宽的比例，默认为2.0。-->
+    <Item StartArrow="false" EndArrow="false" TagId="{01-661-04}" DataType="" Color="if(value=1,'0,255,0','255,0,0')" Width="20" LineStyle="Solid">
+      <Points>
+        <Point X="200" Y="60"/>
+        <Point X="200" Y="110"/>
+        <Point X="300" Y="110"/>
+        <Point X="300" Y="180"/>
+        <Point X="350" Y="180"/>
+      </Points>
+    </Item>
+    <Item StartArrow="false" EndArrow="false" TagId="{01-661-04}" DataType="" Color="if(value=1,'0,255,0','255,0,0')" Width="20" LineStyle="Solid">
+      <Points>
+        <Point X="650" Y="30"/>
+        <Point X="650" Y="180"/>
+      </Points>
+    </Item>
+    <Item StartArrow="false" EndArrow="false" TagId="{01-661-04}" DataType="" Color="if(value=1,'0,255,0','255,0,0')" Width="20" LineStyle="Solid">
+      <Points>
+        <Point X="680" Y="30"/>
+        <Point X="800" Y="30"/>
+      </Points>
+    </Item>
+    <Item StartArrow="False" EndArrow="True" TagId="" DataType="" Color="255,255,0" Width="2" LineStyle="Solid">
+      <Points>
+        <Point X="50" Y="100"/>
+        <Point X="300" Y="100"/>
+        <Arc X="300" Y="75" Width="50" Height="50" StartAngle="180" SweepAngle="-180" />
+        <Point X="350" Y="100"/>
+        <Point X="600" Y="100"/>
+      </Points>
+    </Item>
+  </Line>
+  <!--吸水井-->
+  <Pool>
+    <!--MaxScale(最大刻度), PieceScale(单位刻度所代表的大小), Unit(单位), 可设置为属性。-->
+    <Item Font="宋体" MonitorObj="YW-01" MaxScale="[AttrField03]" PieceScale="1.0" Unit="M" TagId="[1702018] - [1702018] + 1.6" DataType="Second"  X="360" Y="450" Width="80" Height="200" TriggerEvent="RightClick:1234567">
+      <!--池样式 BorderColor 程序中暂时未用到。如果设置了FillImage, 则忽略 FillColor1和FillColor2-->
+      <PoolStyle BorderWidth="6" BorderColor="0,0,0" BackColor="200,255,255,255" FillImage="Image\rule.png" FillColor1="50,50,100" FillColor2="200,200,255" />
+      <!--值样式 LineColor, Color 和 BackColor 支持带属性的表达式。如：if(value&lt;[AttrField01],'255,255,0','0,0,255')-->
+      <!--DecimalDigits(小数位数), 可设置为属性。-->
+      <!--ArrowFactor:箭头大小与线宽的比例，默认为1.5。-->
+      <ValueStyle DecimalDigits="4" LineColor="if(value&lt;[AttrField01],'255,0,0','0,0,255')" LineWidth="2" ArrowFactor="1.5" FontSize="9" IsBold="True" IsUnderLine="False" IsItalic="False" Color="if(value&gt;[AttrField01],'255,0,0','0,0,255')" BackColor="0,0,100,100" />
+      <!--DecimalDigits(小数位数), 可设置为属性。-->
+      <!--刻度样式-->
+      <ScaleStyle DecimalDigits="2" LineColor="255,255,0" LineWidth="3" FontSize="9" IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="100, 0,200,100" />
+      <!--最大最小值等样式, Align：相对于池的显示位置，可选值为Left,Center,Right, 默认为Left，刻度的显示位置与此位置相反。-->
+      <!--DecimalDigits(小数位数), 可设置为属性。-->
+      <!--ArrowFactor:箭头大小与线宽的比例，默认为1.5。-->
+      <LabelStyle DecimalDigits="3" Align="Left" LineColor="0,0,100" LineWidth="2" ArrowFactor="1.5" FontSize="9" IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="0, 0,200,100">
+        <!--Value可设置为属性。-->
+        <Label Value="[AttrField01]" LabelName="Min" />
+        <Label Value="[AttrField02]" LabelName="Max" />
+        <Label Value="[AttrField04]" LabelName="HH" />
+        <Label Value="0.01" LabelName="LL" />
+      </LabelStyle>
+    </Item>
+  </Pool>
+  <LitePool>
+    <!--Unit(单位), 可设置为属性。-->
+    <Item Font="宋体" MonitorObj="YW-01" Unit="M" TagId="[1702018] - [1702018] + 0.12" DataType="Second" X="100" Y="450" Width="60" Height="200" TriggerEvent="RightClick:1234567">
+      <!--池样式-->
+      <PoolStyle BorderWidth="2" BorderColor="0,0,0" />
+      <!--值样式 LineColor, Color 和 BackColor 支持带属性的表达式。如：if(value&lt;[AttrField01],'255,255,0','0,0,255')-->
+      <!--DecimalDigits(小数位数), 可设置为属性。 Align:显示位置,可选值有InnerLeft,InnerRight,OuterLeft,OuterRight-->
+      <!--ArrowFactor:箭头大小与线宽的比例，默认为1.5。-->
+      <ValueStyle DecimalDigits="2" LineColor="if(value&lt;[AttrField01],'255,0,0','0,0,255')" LineWidth="2" ArrowFactor="2" Align="OuterLeft" FontSize="9" IsBold="True" IsUnderLine="False" IsItalic="False" Color="if(value&gt;[AttrField01],'255,0,0','0,0,255')" BackColor="0,0,100,100" />
+      <!--最大最小值等样式, Align：相对于池的显示位置，可选值为Left,Center,Right, 默认为Left。-->
+      <!--DecimalDigits(小数位数), 可设置为属性。-->
+      <LabelStyle Visible="False" DecimalDigits="3" Align="Right" LineColor="0,0,100" LineWidth="2" FontSize="9" IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="0, 0,200,100">
+        <!--Value和FillColor可设置为属性。-->
+        <Label FillColor="0,255,255" Value="[AttrField01]" LabelName="Min" />
+        <Label FillColor="255,0,255" Value="[AttrField02]" LabelName="Max" />
+        <Label FillColor="0,255,0" Value="[AttrField04]" LabelName="HH" />
+        <!--<Label FillColor="255,0,0" Value="0.01" LabelName="LL" />-->
+      </LabelStyle>
+    </Item>
+  </LitePool>
+  <!--饼图-->
+  <Pie>
+    <Item X="550" Y="300" Width="400" Height="400">
+      <PaneFill FillAngle="45.0">
+        <Color>0,255,0,255</Color>
+        <Color>0,255,0,0</Color>
+        <Color>0,0,0,255</Color>
+      </PaneFill>
+      <ChartFill FillAngle="45.0">
+        <Color>255,255,0,255</Color>
+        <Color>255,255,0,0</Color>
+        <Color>255,0,0,255</Color>
+      </ChartFill>
+      <Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,255">这里是55555555555555555\n换行Title</Title>
+      <!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+      <!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+      <!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->      
+      <!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+      <Legend Visible="True" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="0.80" Y="0.06" AlignH="Center" AlignV="Top" IsHStack="False" />
+      <!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+      <!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+      <Tag TagId="[1001009]" DataType="Min15" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="0,0,255" Color2="0,255,0" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">111111</Tag>
+      <Tag TagId="[1001008]" DataType="Min15" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="255,0,255" Color2="0,255,0" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">333333</Tag>
+      <Tag TagId="[1001001]" DataType="Min15" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="255,255,255" Color2="0,255,0" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">444444</Tag>
+      <Tag TagId="[1001009]" DataType="Min15" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,255" Color1="0,0,255" Color2="0,255,0" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">1111119</Tag>
+      <Tag TagId="[1001008]" DataType="Min15" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="255,0,255" Color2="0,255,0" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">3333339</Tag>
+      <Tag TagId="[1001001]" DataType="Min15" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="14" ForeColor="0,0,0" Color1="255,255,255" Color2="0,255,0" FillAngle="45.0" Displacement="0.0" LabelType="Name_Percent">4444944</Tag>
+    </Item>
+  </Pie>
+  <!--仪表图-->
+  <Gauge>
+    <Item TagId="[1001009]" DataType="Min15" X="50" Y="80" Width="120" Height="120" Center="15,105" BackColor="30,255,255,255" MaxValue="400" MinValue="0">
+      <!--The base arc.-->
+      <BaseArc BaseArcColor="037,037,032" BaseArcRadius="80" BaseArcStart="0" BaseArcSweep="-90" BaseArcWidth="2" />
+      <!--The major scale lines.-->
+      <ScaleLinesMajor ScaleLinesMajorColor="0,0,0" ScaleLinesMajorWidth="2" ScaleLinesMajorInnerRadius="70" ScaleLinesMajorOuterRadius="80" ScaleLinesMajorStepValue="50" />
+      <!--The inter scale lines which are the middle scale lines for an uneven number of minor scale lines.-->
+      <ScaleLinesInter ScaleLinesInterColor="0,0,0" ScaleLinesInterWidth="1" ScaleLinesInterInnerRadius="73" ScaleLinesInterOuterRadius="80" />
+      <!--The minor scale lines.-->
+      <ScaleLinesMinor ScaleLinesMinorColor="100,100,100" ScaleLinesMinorWidth="1" ScaleLinesMinorInnerRadius="75" ScaleLinesMinorOuterRadius="80" ScaleLinesMinorNumOf="9" />
+      <!--The scale numbers.-->
+      <ScaleNumbers ScaleNumbersColor="0,0,0" ScaleNumbersFormat="" ScaleNumbersRadius="95" ScaleNumbersRotation="1" Font="Times New Roman" FontSize="8.5" IsBold="False" IsUnderLine="False" IsItalic="False" />
+      <!--指针 NeedleType:The type of the needle, currently only type 0 and 1 are supported. Type 0 looks nicers but if you experience performance problems you might consider using type 1.-->
+      <!--NeedleColor1 可选值为:Gray,Red,Green,Blue,Yellow,Violet,Magenta-->
+      <Needle NeedleColor1="Gray" NeedleColor2="56,045,3" NeedleRadius="68" NeedleType="0" NeedleWidth="2" />
+      <!--支持0到5个Range。-->
+      <Ranges>
+        <Range Enabled="true" Color="100,255,0,0" StartValue="0" EndValue="400" InnerRadius="1" OuterRadius="80" />
+        <Range Enabled="false" Color="0,255,0" StartValue="50" EndValue="100" InnerRadius="70" OuterRadius="80" />
+        <Range Enabled="true" Color="0,255,0" StartValue="100" EndValue="200" InnerRadius="70" OuterRadius="80" />
+        <Range Enabled="false" Color="255,0,255" StartValue="200" EndValue="300" InnerRadius="70" OuterRadius="80" />
+        <Range Enabled="false" Color="255,255,0" StartValue="300" EndValue="400" InnerRadius="70" OuterRadius="80" />
+      </Ranges>
+    </Item>
+  </Gauge>
+</Configuration>
+
+
+

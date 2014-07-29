@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <!--DataType可选值：Second/Min/Min15/Hour/Day/Month/Year.-->
+  <!--窗体的背景图-->
+  <BackGround>
+    <!--只使用第一个 Item，多个时将忽略其它的。-->
+      <Item Color="200,200,200" Src="CompanyElectricalVoltage\bg.png" IsTiled="False" />
+      <Item Color="200,200,200" Src="Image\rule.png" IsTiled="False" />
+      
+  </BackGround>
+    <BasePoint>
+        <Item Name="Weather" X="900" Y="10"></Item>
+    </BasePoint>
+  <Clock Visible="True" StringFormat="当前时间 {0}" TimeFormat="M月d日 HH:mm:ss" Font="Times New Roman" FontSize="18" X="20" Y="10" IsBold="True" IsUnderLine="False" IsItalic="False" Color="255,255,255" BackColor="0,255,255,255" />
+  <!--Image对象-->
+  <Image>
+    <!-- 六号车间高配 -->
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="955" Y="115" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <!--总降站-->
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="840" Y="75" Width="40" Height="40" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <!--二号车间-->
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="685" Y="100" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <!--总降站低配-->
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="860" Y="96" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <!--楼宇低配-->
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="495" Y="120" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <!--一号车间高配-->
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="425" Y="130" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <!--新7#出水泵房-->
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="40" Y="180" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <!--次唧配电室-->
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="700" Y="440" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <!--新7#进水-->
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="64" Y="557" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+    <!--初唧配电室-->
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="610" Y="648" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>
+
+  </Image>
+  <!--Text对象-->
+  <Text>
+    <Item Text="全厂配电系统潮流图" Font="宋体" FontSize="23" IsVertical="False" X="380" Y="10" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="255,255,255" BackColor="0,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--温度-->
+    <Item BasePointName="Weather" Text="温度" Font="宋体" FontSize="14" IsVertical="False" IsBold="True" X="0" Y="0" Width="130" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item BasePointName="Weather" Text="最高:" Font="宋体" FontSize="12" IsVertical="False" X="0" Y="24" Width="50" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item BasePointName="Weather" Text="最低:" Font="宋体" FontSize="12" IsVertical="False" X="0" Y="44" Width="50" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item BasePointName="Weather" Text="℃" Font="宋体" FontSize="12" IsVertical="False" X="95" Y="24" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item BasePointName="Weather" Text="℃" Font="宋体" FontSize="12" IsVertical="False" X="95" Y="44" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--总降站-->
+    <Item Text="总降站(当日累计)" Font="宋体" FontSize="14" IsVertical="False" X="695" Y="170" Width="200" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="总用量:" Font="宋体" FontSize="12" IsVertical="False" X="695" Y="194" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="峰:" Font="宋体" FontSize="12" IsVertical="False" X="695" Y="214" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="平:" Font="宋体" FontSize="12" IsVertical="False" X="695" Y="234" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="谷:" Font="宋体" FontSize="12" IsVertical="False" X="695" Y="254" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="功率(时):" Font="宋体" FontSize="12" IsVertical="False" X="695" Y="274" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+
+    <Item Text="损耗率:" Font="宋体" FontSize="12" IsVertical="False" X="695" Y="294" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="860" Y="194" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="860" Y="214" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="860" Y="234" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="860" Y="254" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kw" Font="宋体" FontSize="12" IsVertical="False" X="860" Y="274" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+
+    <Item Text="%" Font="宋体" FontSize="12" IsVertical="False" X="860" Y="294" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--总降站低配-->
+    <Item Text="总降站低配(当日累计)" Font="宋体" FontSize="14" IsVertical="False" X="735" Y="420" Width="200" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="总用量:" Font="宋体" FontSize="12" IsVertical="False" X="735" Y="444" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="峰:" Font="宋体" FontSize="12" IsVertical="False" X="735" Y="464" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="平:" Font="宋体" FontSize="12" IsVertical="False" X="735" Y="484" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="谷:" Font="宋体" FontSize="12" IsVertical="False" X="735" Y="504" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="功率(时):" Font="宋体" FontSize="12" IsVertical="False" X="735" Y="524" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="900" Y="444" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="900" Y="464" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="900" Y="484" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="900" Y="504" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kw" Font="宋体" FontSize="12" IsVertical="False" X="900" Y="524" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--六号车间高配-->
+    <Item Text="六号车间高配(当日累计)" Font="宋体" FontSize="12" IsVertical="False" X="735" Y="600" Width="200" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="总用量:" Font="宋体" FontSize="12" IsVertical="False" X="735" Y="624" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="峰:" Font="宋体" FontSize="12" IsVertical="False" X="735" Y="644" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="平:" Font="宋体" FontSize="12" IsVertical="False" X="735" Y="664" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="谷:" Font="宋体" FontSize="12" IsVertical="False" X="735" Y="684" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="功率(时):" Font="宋体" FontSize="12" IsVertical="False" X="735" Y="704" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="900" Y="624" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="900" Y="644" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="900" Y="664" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="900" Y="684" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kw" Font="宋体" FontSize="12" IsVertical="False" X="900" Y="704" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--二号车间-->
+    <Item Text="二号车间(当日累计)" Font="宋体" FontSize="14" IsVertical="False" X="335" Y="190" Width="200" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="总用量:" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="214" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="峰:" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="234" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="平:" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="254" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="谷:" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="274" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="功率(时):" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="294" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="214" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="234" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="254" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="274" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kw" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="294" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--次唧配电室-->
+    <Item Text="次唧配电室(当日累计)" Font="宋体" FontSize="14" IsVertical="False" X="335" Y="420" Width="200" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="总用量:" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="444" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="峰:" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="464" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="平:" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="484" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="谷:" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="504" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="功率(时):" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="524" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="444" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="464" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="484" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="504" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kw" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="524" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--初唧配电室-->
+    <Item Text="初唧配电室(当日累计)" Font="宋体" FontSize="14" IsVertical="False" X="335" Y="600" Width="200" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="总用量:" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="624" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="峰:" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="644" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="平:" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="664" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="谷:" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="684" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="功率(时):" Font="宋体" FontSize="12" IsVertical="False" X="335" Y="704" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="624" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="644" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="664" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="684" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kw" Font="宋体" FontSize="12" IsVertical="False" X="500" Y="704" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--楼宇低配-->
+    <Item Text="楼宇低配(当日累计)" Font="宋体" FontSize="14" IsVertical="False" X="40" Y="45" Width="200" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="总用量:" Font="宋体" FontSize="12" IsVertical="False" X="40" Y="69" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="峰:" Font="宋体" FontSize="12" IsVertical="False" X="40" Y="89" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="平:" Font="宋体" FontSize="12" IsVertical="False" X="40" Y="109" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="谷:" Font="宋体" FontSize="12" IsVertical="False" X="40" Y="129" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="功率(时):" Font="宋体" FontSize="12" IsVertical="False" X="40" Y="149" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="205" Y="69" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="205" Y="89" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="205" Y="109" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="205" Y="129" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kw" Font="宋体" FontSize="12" IsVertical="False" X="205" Y="149" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--新7#出水泵房-->
+    <Item Text="7#车间进线(当日累计)" Font="宋体" FontSize="14" IsVertical="False" X="70" Y="210" Width="200" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="总用量:" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="234" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="峰:" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="254" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="平:" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="274" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="谷:" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="294" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="功率(时):" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="314" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="234" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="254" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="274" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="294" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kw" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="314" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--一号车间高配-->
+    <Item Text="一号车间进线(当日累计)" Font="宋体" FontSize="13" IsVertical="False" X="70" Y="390" Width="200" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="总用量:" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="414" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="峰:" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="434" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="平:" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="454" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="谷:" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="474" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="功率(时):" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="494" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="414" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="434" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="454" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="474" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kw" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="494" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--新7#进水-->
+    <Item Text="新7#提升泵房(当日累计)" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="610" Width="200" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="总用量:" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="634" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="峰:" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="654" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="平:" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="674" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="谷:" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="694" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="功率(时):" Font="宋体" FontSize="12" IsVertical="False" X="70" Y="714" Width="90" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="634" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="654" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="674" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kwh" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="694" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <Item Text="kw" Font="宋体" FontSize="12" IsVertical="False" X="235" Y="714" Width="35" Height="20" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="1" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+
+
+  </Text>
+  <!--指标对象-->
+  <Tag>
+    <!--温度-->
+    <Item BasePointName="Weather" Font="宋体" FontSize="12" DataType="Day" TagName="温度最高"  TagId="Round([1208002],0)" StringFormat="{0}" X="50" Y="24" Width="45" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item BasePointName="Weather" Font="宋体" FontSize="12" DataType="Day" TagName="温度最低"  TagId="Round([1208003],0)" StringFormat="{0}" X="50" Y="44" Width="45" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--总降站-->
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="总降站 日总用电量"  TagId="Round([5103013],0)" StringFormat="{0}" X="785" Y="194" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="总降站 峰"  TagId="Round([5103022],0)" StringFormat="{0}" X="785" Y="214" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="总降站 平"  TagId="Round([5103040],0)" StringFormat="{0}" X="785" Y="234" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="总降站 谷"  TagId="Round([5103031],0)" StringFormat="{0}" X="785" Y="254" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagName="总降站 功率"  TagId="Round([9002038]+[9002047],0)" StringFormat="{0}" X="785" Y="274" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="总降站 统计损耗率"  TagId="Round(100*([5103013]-[5103014]-[5103049]-[5103061]-[5103016]-[5103017]-[5103018]-[5103019]-[5103020]-[5103021])/[5103013],2)" StringFormat="{0}" X="785" Y="294" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--总降站低配-->
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="总降站低配 总用电量"  TagId="Round([5103014],0)" StringFormat="{0}" X="825" Y="444" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="总降站低配 峰"   TagId="Round([5103023],0)" StringFormat="{0}" X="825" Y="464" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day"  TagName="总降站低配 平"    TagId="Round([5103041],0)" StringFormat="{0}" X="825" Y="484" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="总降站低配 谷"   TagId="Round([5103032],0)" StringFormat="{0}" X="825" Y="504" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagName="总降站低配 功率"   TagId="Round([9002053]+[9002155],0)" StringFormat="{0}" X="825" Y="524" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--六号车间高配-->
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="六号车间高配 总用电量"   TagId="Round([5103017],0)" StringFormat="{0}" X="825" Y="624" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="六号车间高配 峰"  TagId="Round([5103026],0)" StringFormat="{0}" X="825" Y="644" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="六号车间高配 平"  TagId="Round([5103044],0)" StringFormat="{0}" X="825" Y="664" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="六号车间高配 谷"  TagId="Round([5103035],0)" StringFormat="{0}" X="825" Y="684" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagName="六号车间高配 功率"  TagId="Round([9002122]+[9002077],2)" StringFormat="{0}" X="825" Y="704" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--二号车间-->
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="二号车间 总用量"  TagId="Round([5103016],0)" StringFormat="{0}" X="425" Y="214" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="二号车间 峰"  TagId="Round([5103025],0)" StringFormat="{0}" X="425" Y="234" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="二号车间 平"  TagId="Round([5103043],0)" StringFormat="{0}" X="425" Y="254" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="二号车间 谷"  TagId="Round([5103034],0)" StringFormat="{0}" X="425" Y="274" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagName="二号车间 功率"  TagId="Round([9002113]+[9002059],0)" StringFormat="{0}" X="425" Y="294" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--次唧配电室-->
+    <Item Font="宋体" FontSize="12" DataType="Day"  TagName="次唧配电室 总用量" TagId="Round([5103019],0)" StringFormat="{0}" X="425" Y="444" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="次唧配电室 峰"  TagId="Round([5103028],0)" StringFormat="{0}" X="425" Y="464" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="次唧配电室 平"  TagId="Round([5103046],0)" StringFormat="{0}" X="425" Y="484" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="次唧配电室 谷"  TagId="Round([5103037],0)" StringFormat="{0}" X="425" Y="504" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagName="次唧配电室 功率"  TagId="Round([9002071]+[9002131],0)" StringFormat="{0}" X="425" Y="524" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--初唧配电室-->
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="初唧配电室 总用量"  TagId="Round([5103018],0)" StringFormat="{0}" X="425" Y="624" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="初唧配电室 峰"  TagId="Round([5103027],0)" StringFormat="{0}" X="425" Y="644" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="初唧配电室 平"  TagId="Round([5103045],0)" StringFormat="{0}" X="425" Y="664" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="初唧配电室 谷"  TagId="Round([5103036],0)" StringFormat="{0}" X="425" Y="684" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagName="初唧配电室 功率"  TagId="Round([9002065]+[9002140],0)" StringFormat="{0}" X="425" Y="704" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--楼宇低配-->
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="楼宇低配 总用量"  TagId="Round([5103020],0)" StringFormat="{0}" X="130" Y="69" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="楼宇低配 峰"  TagId="Round([5103029],0)" StringFormat="{0}" X="130" Y="89" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="楼宇低配 平"  TagId="Round([5103047],0)" StringFormat="{0}" X="130" Y="109" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="楼宇低配 谷"  TagId="Round([5103038],0)" StringFormat="{0}" X="130" Y="129" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagName="楼宇低配 功率"  TagId="Round([9002092],0)" StringFormat="{0}" X="130" Y="149" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--新7#出水泵房-->
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="新7#车间进线 总用量"  TagId="Round([5103061],0)" StringFormat="{0}" X="160" Y="234" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="新7#车间进线 峰"  TagId="Round([5103062],0)" StringFormat="{0}" X="160" Y="254" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="新7#车间进线 平"  TagId="Round([5103064],0)" StringFormat="{0}" X="160" Y="274" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="新7#车间进线 谷"  TagId="Round([5103063],0)" StringFormat="{0}" X="160" Y="294" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagName="新7#车间进线 功率"  TagId="Round([1714007]+[1714008],0)" StringFormat="{0}" X="160" Y="314" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--一号车间高配-->
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="一号车间进线总电量"  TagId="Round([5103049],0)" StringFormat="{0}" X="160" Y="414" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="一号车间进线电量 峰"  TagId="Round([5103050],0)" StringFormat="{0}" X="160" Y="434" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="一号车间进线电量 平"  TagId="Round([5103052],0)" StringFormat="{0}" X="160" Y="454" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0"  RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="一号车间进线电量 谷"  TagId="Round([5103051],0)" StringFormat="{0}" X="160" Y="474" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagName="一号车间进线 功率"  TagId="Round([1714001]+[1714002],0)" StringFormat="{0}" X="160" Y="494" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--新7#提升泵房-->
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="新7#提升泵房 总用量"  TagId="Round([5103021],0)" StringFormat="{0}" X="160" Y="634" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="新7#提升泵房 峰"    TagId="Round([5103030],0)" StringFormat="{0}" X="160" Y="654" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day"  TagName="新7#提升泵房 平"  TagId="Round([5103048],0)" StringFormat="{0}" X="160" Y="674" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Day" TagName="新7#提升泵房 谷"   TagId="Round([5103039],0)" StringFormat="{0}" X="160" Y="694" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagName="新7#提升泵房 功率"   TagId="Round([9002086]+[9002098],0)" StringFormat="{0}" X="160" Y="714" Width="75" Height="20" Align="Right" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+  </Tag>
+  <!--Line对象-->
+  <Line>
+    <!--黄线-->
+    <!--总降站-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="252,235,152" Width="2" LineStyle="Solid">
+      <Points>
+        <Point X="844" Y="97"/>
+        <Point X="780" Y="97"/>
+        <Point X="780" Y="169"/>
+      </Points>
+    </Item>
+    <!--总降站低配-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="252,235,152" Width="2" LineStyle="Solid">
+      <Points>
+        <Point X="880" Y="115"/>
+        <Point X="956" Y="183"/>
+        <Point X="956" Y="480"/>
+        <Point X="935" Y="480"/>
+      </Points>
+    </Item>
+    <!--六号车间高配-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="252,235,152" Width="2" LineStyle="Solid">
+      <Points>
+        <Point X="969" Y="136"/>
+        <Point X="987" Y="163"/>
+        <Point X="987" Y="662"/>
+        <Point X="935" Y="662"/>
+      </Points>
+    </Item>
+    <!--二号车间-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="252,235,152" Width="2" LineStyle="Solid">
+      <Points>
+        <Point X="686" Y="110"/>
+        <Point X="600" Y="110"/>
+        <Point X="600" Y="253"/>
+        <Point X="535" Y="253"/>
+      </Points>
+    </Item>
+    <!--次唧配电室-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="252,235,152" Width="2" LineStyle="Solid">
+      <Points>
+        <Point X="715" Y="464"/>
+        <Point X="715" Y="489"/>
+        <Point X="535" Y="489"/>
+      </Points>
+    </Item>
+    <!--初唧配电室-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="252,235,152" Width="2" LineStyle="Solid">
+      <Points>
+        <Point X="535" Y="660"/>
+        <Point X="610" Y="660"/>
+      </Points>
+    </Item>
+    <!--楼宇低配-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="252,235,152" Width="2" LineStyle="Solid">
+      <Points>
+        <Point X="139" Y="78"/>
+        <Point X="469" Y="78"/>
+        <Point X="469" Y="120"/>
+        <Point X="496" Y="127"/>
+      </Points>
+    </Item>
+    <!--新7#出水泵房-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="252,235,152" Width="2" LineStyle="Solid">
+      <Points>
+        <Point X="52" Y="203"/>
+        <Point X="52" Y="282"/>
+        <Point X="70" Y="282"/>
+      </Points>
+    </Item>
+    <!--一号车间高配-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="252,235,152" Width="2" LineStyle="Solid">
+      <Points>
+        <Point X="425" Y="142"/>
+        <Point X="325" Y="142"/>
+        <Point X="325" Y="450"/>
+        <Point X="260" Y="450"/>
+      </Points>
+    </Item>
+    <!--新7#进水-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="252,235,152" Width="2" LineStyle="Solid">
+      <Points>
+        <Point X="64" Y="570"/>
+        <Point X="46" Y="570"/>
+        <Point X="46" Y="680"/>
+        <Point X="70" Y="680"/>
+      </Points>
+    </Item>
+    <!--绿线-->
+    <!--总降站到六号车间高配-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="0,255,0" Width="3" LineStyle="Solid">
+      <Points>
+        <Point X="877" Y="90"/>
+        <Point X="958" Y="120"/>
+      </Points>
+    </Item>
+    <!--总降站到二号车间-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="0,255,0" Width="3" LineStyle="Solid">
+      <Points>
+        <Point X="850" Y="110"/>
+        <Point X="820" Y="140"/>
+        <Point X="700" Y="152"/>
+        <Point X="698" Y="122"/>
+      </Points>
+    </Item>
+    <!--总降站到楼宇低配-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="0,255,0" Width="3" LineStyle="Solid">
+      <Points>
+        <Point X="850" Y="110"/>
+        <Point X="820" Y="140"/>
+        <Point X="488" Y="175"/>
+        <Point X="480" Y="160"/>
+        <Point X="528" Y="155"/>
+        <Point X="512" Y="140"/>
+      </Points>
+    </Item>
+    <!--总降站到一号车间高配-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="0,255,0" Width="3" LineStyle="Solid">
+      <Points>
+        <Point X="850" Y="110"/>
+        <Point X="820" Y="140"/>
+        <Point X="488" Y="175"/>
+        <Point X="480" Y="160"/>
+        <Point X="454" Y="163"/>
+        <Point X="444" Y="150"/>
+      </Points>
+    </Item>
+    <!--总降站到次唧配电室-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="0,255,0" Width="3" LineStyle="Solid">
+      <Points>
+        <Point X="850" Y="110"/>
+        <Point X="820" Y="140"/>
+        <Point X="672" Y="156"/>
+        <Point X="682" Y="380"/>
+        <Point X="670" Y="400"/>
+        <Point X="677" Y="462"/>
+        <Point X="702" Y="456"/>
+      </Points>
+    </Item>
+    <!--总降站到初唧配电室-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="0,255,0" Width="3" LineStyle="Solid">
+      <Points>
+        <Point X="850" Y="110"/>
+        <Point X="820" Y="140"/>
+        <Point X="672" Y="156"/>
+        <Point X="682" Y="380"/>
+        <Point X="670" Y="400"/>
+        <Point X="696" Y="646"/>
+        <Point X="633" Y="656"/>
+      </Points>
+    </Item>
+    <!--总降站到新7#出水泵房-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="0,255,0" Width="3" LineStyle="Solid">
+      <Points>
+        <Point X="850" Y="78"/>
+        <Point X="760" Y="68"/>
+        <Point X="310" Y="120"/>
+        <Point X="310" Y="180"/>
+        <Point X="63" Y="190"/>
+      </Points>
+    </Item>
+    <!--总降站到新7#进水-->
+    <Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="0,255,0" Width="3" LineStyle="Solid">
+      <Points>
+        <Point X="850" Y="78"/>
+        <Point X="760" Y="68"/>
+        <Point X="310" Y="120"/>
+        <Point X="310" Y="560"/>
+        <Point X="86" Y="568"/>
+      </Points>
+    </Item>
+  </Line>
+</Configuration>
+
+
+

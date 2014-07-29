@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://service.ypwater.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://service.ypwater.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">指标分钟数据的WebService接口.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://service.ypwater.com/">
+      <s:element name="Get_By_Date_TagId_CycleId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="tagId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="beginCycleId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="endCycleId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_By_Date_TagId_CycleIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_By_Date_TagId_CycleIdResult" type="tns:ArrayOfTagMinuteInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTagMinuteInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TagMinuteInfo" nillable="true" type="tns:TagMinuteInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TagMinuteInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="I_Cycle_Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="I_Tag_Id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="I_Value_Org" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="I_Value_Man" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Max_Value" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Min_Value" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Upper_Seconds" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Lower_Seconds" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Get_By_Date_TagId_DateTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="tagId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="beginTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_By_Date_TagId_DateTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_By_Date_TagId_DateTimeResult" type="tns:ArrayOfTagMinuteInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_By_Date_TagIds_CycleId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="tagIds" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="beginCycleId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="endCycleId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_By_Date_TagIds_CycleIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_By_Date_TagIds_CycleIdResult" type="tns:ArrayOfTagMinuteInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_By_Date_TagIds_DateTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="tagIds" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="beginTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_By_Date_TagIds_DateTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_By_Date_TagIds_DateTimeResult" type="tns:ArrayOfTagMinuteInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Latest_By_TagId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tagId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Latest_By_TagIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Latest_By_TagIdResult" type="tns:TagMinuteInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Latest_By_TagIds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tagIds" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Latest_By_TagIdsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Latest_By_TagIdsResult" type="tns:ArrayOfTagMinuteInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Latest_All">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_Latest_AllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Latest_AllResult" type="tns:ArrayOfTagMinuteInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Get_By_Date_TagId_CycleIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_By_Date_TagId_CycleId" />
+  </wsdl:message>
+  <wsdl:message name="Get_By_Date_TagId_CycleIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_By_Date_TagId_CycleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_By_Date_TagId_DateTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_By_Date_TagId_DateTime" />
+  </wsdl:message>
+  <wsdl:message name="Get_By_Date_TagId_DateTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_By_Date_TagId_DateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_By_Date_TagIds_CycleIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_By_Date_TagIds_CycleId" />
+  </wsdl:message>
+  <wsdl:message name="Get_By_Date_TagIds_CycleIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_By_Date_TagIds_CycleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_By_Date_TagIds_DateTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_By_Date_TagIds_DateTime" />
+  </wsdl:message>
+  <wsdl:message name="Get_By_Date_TagIds_DateTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_By_Date_TagIds_DateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Latest_By_TagIdSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Latest_By_TagId" />
+  </wsdl:message>
+  <wsdl:message name="Get_Latest_By_TagIdSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Latest_By_TagIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Latest_By_TagIdsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Latest_By_TagIds" />
+  </wsdl:message>
+  <wsdl:message name="Get_Latest_By_TagIdsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Latest_By_TagIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Latest_AllSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Latest_All" />
+  </wsdl:message>
+  <wsdl:message name="Get_Latest_AllSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Latest_AllResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TagMinuteSoap">
+    <wsdl:operation name="Get_By_Date_TagId_CycleId">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指标Id和日期以及日期的从第几分钟(整型)到第几分钟(整型)所指定的时间范围,来获取指标的分钟数据.</wsdl:documentation>
+      <wsdl:input message="tns:Get_By_Date_TagId_CycleIdSoapIn" />
+      <wsdl:output message="tns:Get_By_Date_TagId_CycleIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_By_Date_TagId_DateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指标Id和日期以及日期的开始时间(日期型)到结束时间(日期型)所指定的时间范围,来获取指标的分钟数据.</wsdl:documentation>
+      <wsdl:input message="tns:Get_By_Date_TagId_DateTimeSoapIn" />
+      <wsdl:output message="tns:Get_By_Date_TagId_DateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_By_Date_TagIds_CycleId">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指标Id串(例如:'1001001','1001002')和日期以及日期的从第几分钟(整型)到第几分钟(整型)所指定的时间范围,来获取指标的分钟数据.</wsdl:documentation>
+      <wsdl:input message="tns:Get_By_Date_TagIds_CycleIdSoapIn" />
+      <wsdl:output message="tns:Get_By_Date_TagIds_CycleIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_By_Date_TagIds_DateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指标Id串(例如:'1001001','1001002')和日期以及日期的开始时间(日期型)到结束时间(日期型)所指定的时间范围,来获取指标的分钟数据.</wsdl:documentation>
+      <wsdl:input message="tns:Get_By_Date_TagIds_DateTimeSoapIn" />
+      <wsdl:output message="tns:Get_By_Date_TagIds_DateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_By_TagId">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指标Id获取指标的最新的分钟数据.</wsdl:documentation>
+      <wsdl:input message="tns:Get_Latest_By_TagIdSoapIn" />
+      <wsdl:output message="tns:Get_Latest_By_TagIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_By_TagIds">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指标Id串(例如:'1001001','1001002'),来获取多个指标的最新的分钟数据.</wsdl:documentation>
+      <wsdl:input message="tns:Get_Latest_By_TagIdsSoapIn" />
+      <wsdl:output message="tns:Get_Latest_By_TagIdsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_All">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取所有指标(有分钟数据的指标)的最新的分钟数据.</wsdl:documentation>
+      <wsdl:input message="tns:Get_Latest_AllSoapIn" />
+      <wsdl:output message="tns:Get_Latest_AllSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TagMinuteSoap" type="tns:TagMinuteSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_By_Date_TagId_CycleId">
+      <soap:operation soapAction="http://service.ypwater.com/Get_By_Date_TagId_CycleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_By_Date_TagId_DateTime">
+      <soap:operation soapAction="http://service.ypwater.com/Get_By_Date_TagId_DateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_By_Date_TagIds_CycleId">
+      <soap:operation soapAction="http://service.ypwater.com/Get_By_Date_TagIds_CycleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_By_Date_TagIds_DateTime">
+      <soap:operation soapAction="http://service.ypwater.com/Get_By_Date_TagIds_DateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_By_TagId">
+      <soap:operation soapAction="http://service.ypwater.com/Get_Latest_By_TagId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_By_TagIds">
+      <soap:operation soapAction="http://service.ypwater.com/Get_Latest_By_TagIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_All">
+      <soap:operation soapAction="http://service.ypwater.com/Get_Latest_All" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TagMinuteSoap12" type="tns:TagMinuteSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_By_Date_TagId_CycleId">
+      <soap12:operation soapAction="http://service.ypwater.com/Get_By_Date_TagId_CycleId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_By_Date_TagId_DateTime">
+      <soap12:operation soapAction="http://service.ypwater.com/Get_By_Date_TagId_DateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_By_Date_TagIds_CycleId">
+      <soap12:operation soapAction="http://service.ypwater.com/Get_By_Date_TagIds_CycleId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_By_Date_TagIds_DateTime">
+      <soap12:operation soapAction="http://service.ypwater.com/Get_By_Date_TagIds_DateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_By_TagId">
+      <soap12:operation soapAction="http://service.ypwater.com/Get_Latest_By_TagId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_By_TagIds">
+      <soap12:operation soapAction="http://service.ypwater.com/Get_Latest_By_TagIds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Latest_All">
+      <soap12:operation soapAction="http://service.ypwater.com/Get_Latest_All" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TagMinute">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">指标分钟数据的WebService接口.</wsdl:documentation>
+    <wsdl:port name="TagMinuteSoap" binding="tns:TagMinuteSoap">
+      <soap:address location="http://localhost/Shmzh.Monitor.DataService/TagMinute.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TagMinuteSoap12" binding="tns:TagMinuteSoap12">
+      <soap12:address location="http://localhost/Shmzh.Monitor.DataService/TagMinute.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

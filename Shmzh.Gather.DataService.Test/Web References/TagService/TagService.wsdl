@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.ypwater.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.ypwater.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.ypwater.com/">
+      <s:complexType name="ArrayOfTagHourInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TagHourInfo" nillable="true" type="tns:TagHourInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TagHourInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="I_Cycle_Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="I_Tag_Id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="I_Value_Org" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="I_Value_Man" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Max_Value" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Min_Value" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Upper_Seconds" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Lower_Seconds" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Begin_Value" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="End_Value" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTagDayInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TagDayInfo" nillable="true" type="tns:TagDayInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TagDayInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="I_Cycle_Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="I_Tag_Id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="I_Value_Org" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="I_Value_Man" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Max_Value" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Min_Value" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Begin_Value" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="End_Value" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetHourData_By_TagId_DateTimeSoapIn">
+    <wsdl:part name="tagId" type="s:string" />
+    <wsdl:part name="beginTime" type="s:dateTime" />
+    <wsdl:part name="endTime" type="s:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetHourData_By_TagId_DateTimeSoapOut">
+    <wsdl:part name="GetHourData_By_TagId_DateTimeResult" type="tns:ArrayOfTagHourInfo" />
+  </wsdl:message>
+  <wsdl:message name="Get1HourData_By_TagId_DateTimeSoapIn">
+    <wsdl:part name="tagId" type="s:string" />
+    <wsdl:part name="time" type="s:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="Get1HourData_By_TagId_DateTimeSoapOut">
+    <wsdl:part name="Get1HourData_By_TagId_DateTimeResult" type="tns:TagHourInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetHourValue_By_TagId_DateTimeSoapIn">
+    <wsdl:part name="tagId" type="s:string" />
+    <wsdl:part name="time" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetHourValue_By_TagId_DateTimeSoapOut">
+    <wsdl:part name="GetHourValue_By_TagId_DateTimeResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetHourData_By_TagIds_DateTimeSoapIn">
+    <wsdl:part name="tagIds" type="s:string" />
+    <wsdl:part name="beginTime" type="s:dateTime" />
+    <wsdl:part name="endTime" type="s:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetHourData_By_TagIds_DateTimeSoapOut">
+    <wsdl:part name="GetHourData_By_TagIds_DateTimeResult" type="tns:ArrayOfTagHourInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetDayData_By_TagId_DateTimeSoapIn">
+    <wsdl:part name="tagId" type="s:string" />
+    <wsdl:part name="beginTime" type="s:dateTime" />
+    <wsdl:part name="endTime" type="s:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetDayData_By_TagId_DateTimeSoapOut">
+    <wsdl:part name="GetDayData_By_TagId_DateTimeResult" type="tns:ArrayOfTagDayInfo" />
+  </wsdl:message>
+  <wsdl:message name="Get1DayData_By_TagId_DateTimeSoapIn">
+    <wsdl:part name="tagId" type="s:string" />
+    <wsdl:part name="time" type="s:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="Get1DayData_By_TagId_DateTimeSoapOut">
+    <wsdl:part name="Get1DayData_By_TagId_DateTimeResult" type="tns:TagDayInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetDayValue_By_TagId_DataTimeSoapIn">
+    <wsdl:part name="tagId" type="s:string" />
+    <wsdl:part name="time" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDayValue_By_TagId_DataTimeSoapOut">
+    <wsdl:part name="GetDayValue_By_TagId_DataTimeResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDayData_By_TagIds_DateTimeSoapIn">
+    <wsdl:part name="tagIds" type="s:string" />
+    <wsdl:part name="beginTime" type="s:dateTime" />
+    <wsdl:part name="endTime" type="s:dateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetDayData_By_TagIds_DateTimeSoapOut">
+    <wsdl:part name="GetDayData_By_TagIds_DateTimeResult" type="tns:ArrayOfTagDayInfo" />
+  </wsdl:message>
+  <wsdl:portType name="TagServiceSoap">
+    <wsdl:operation name="GetHourData_By_TagId_DateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指定的指标Id、开始时间、结束时间来获取小时数据集合。</wsdl:documentation>
+      <wsdl:input message="tns:GetHourData_By_TagId_DateTimeSoapIn" />
+      <wsdl:output message="tns:GetHourData_By_TagId_DateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get1HourData_By_TagId_DateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指定的指标Id、时间点来获取单个指标在指定小时点数据对象</wsdl:documentation>
+      <wsdl:input message="tns:Get1HourData_By_TagId_DateTimeSoapIn" />
+      <wsdl:output message="tns:Get1HourData_By_TagId_DateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHourValue_By_TagId_DateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指定的指标Id、时间点来获取单个指标在指定小时点数据对象的修正值。</wsdl:documentation>
+      <wsdl:input message="tns:GetHourValue_By_TagId_DateTimeSoapIn" />
+      <wsdl:output message="tns:GetHourValue_By_TagId_DateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHourData_By_TagIds_DateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指定的指标Id串、开始时间、结束时间来获取小时数据集合。</wsdl:documentation>
+      <wsdl:input message="tns:GetHourData_By_TagIds_DateTimeSoapIn" />
+      <wsdl:output message="tns:GetHourData_By_TagIds_DateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDayData_By_TagId_DateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指定的指标Id、开始时间、结束时间来获取天表的数据集合。</wsdl:documentation>
+      <wsdl:input message="tns:GetDayData_By_TagId_DateTimeSoapIn" />
+      <wsdl:output message="tns:GetDayData_By_TagId_DateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get1DayData_By_TagId_DateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指定的指标Id、开始时间、结束时间来获取天表的数据对象。</wsdl:documentation>
+      <wsdl:input message="tns:Get1DayData_By_TagId_DateTimeSoapIn" />
+      <wsdl:output message="tns:Get1DayData_By_TagId_DateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDayValue_By_TagId_DataTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指定的指标Id、开始时间、结束时间来获取天表的数据对象的修正值。</wsdl:documentation>
+      <wsdl:input message="tns:GetDayValue_By_TagId_DataTimeSoapIn" />
+      <wsdl:output message="tns:GetDayValue_By_TagId_DataTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDayData_By_TagIds_DateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据指定的指标Id串、开始时间、结束时间来获取天表的数据集合。</wsdl:documentation>
+      <wsdl:input message="tns:GetDayData_By_TagIds_DateTimeSoapIn" />
+      <wsdl:output message="tns:GetDayData_By_TagIds_DateTimeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TagServiceSoap" type="tns:TagServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetHourData_By_TagId_DateTime">
+      <soap:operation soapAction="http://www.ypwater.com/GetHourData_By_TagId_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get1HourData_By_TagId_DateTime">
+      <soap:operation soapAction="http://www.ypwater.com/Get1HourData_By_TagId_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHourValue_By_TagId_DateTime">
+      <soap:operation soapAction="http://www.ypwater.com/GetHourValue_By_TagId_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHourData_By_TagIds_DateTime">
+      <soap:operation soapAction="http://www.ypwater.com/GetHourData_By_TagIds_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDayData_By_TagId_DateTime">
+      <soap:operation soapAction="http://www.ypwater.com/GetDayData_By_TagId_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get1DayData_By_TagId_DateTime">
+      <soap:operation soapAction="http://www.ypwater.com/Get1DayData_By_TagId_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDayValue_By_TagId_DataTime">
+      <soap:operation soapAction="http://www.ypwater.com/GetDayValue_By_TagId_DataTime" style="rpc" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDayData_By_TagIds_DateTime">
+      <soap:operation soapAction="http://www.ypwater.com/GetDayData_By_TagIds_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TagServiceSoap12" type="tns:TagServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetHourData_By_TagId_DateTime">
+      <soap12:operation soapAction="http://www.ypwater.com/GetHourData_By_TagId_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get1HourData_By_TagId_DateTime">
+      <soap12:operation soapAction="http://www.ypwater.com/Get1HourData_By_TagId_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHourValue_By_TagId_DateTime">
+      <soap12:operation soapAction="http://www.ypwater.com/GetHourValue_By_TagId_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHourData_By_TagIds_DateTime">
+      <soap12:operation soapAction="http://www.ypwater.com/GetHourData_By_TagIds_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDayData_By_TagId_DateTime">
+      <soap12:operation soapAction="http://www.ypwater.com/GetDayData_By_TagId_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get1DayData_By_TagId_DateTime">
+      <soap12:operation soapAction="http://www.ypwater.com/Get1DayData_By_TagId_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDayValue_By_TagId_DataTime">
+      <soap12:operation soapAction="http://www.ypwater.com/GetDayValue_By_TagId_DataTime" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDayData_By_TagIds_DateTime">
+      <soap12:operation soapAction="http://www.ypwater.com/GetDayData_By_TagIds_DateTime" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" namespace="http://www.ypwater.com/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TagService">
+    <wsdl:port name="TagServiceSoap" binding="tns:TagServiceSoap">
+      <soap:address location="http://localhost/Shmzh.Gather.DataService/TagService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TagServiceSoap12" binding="tns:TagServiceSoap12">
+      <soap12:address location="http://localhost/Shmzh.Gather.DataService/TagService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

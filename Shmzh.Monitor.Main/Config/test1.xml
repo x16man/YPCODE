@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <ConfigSections>
+    <section name="BackGround" type="System.Configuration.IgnoreSectionHandler"/>
+    <section name="Image" type="System.Configuration.IgnoreSectionHandler"/>
+    <section name="Line" type="System.Configuration.IgnoreSectionHandler"/>
+    <section name="Text" type="System.Configuration.IgnoreSectionHandler"/>
+    <section name="Tag" type="System.Configuration.IgnoreSectionHandler"/>
+    <section name="Dev" type="System.Configuration.IgnoreSectionHandler"/>
+  </ConfigSections>
+  <!--窗体的背景图-->
+  <BackGround>
+    <Item Color="200,200,200" Src="" IsTiled="True"/>
+    <!--<Item Color="200,200,200" Src="Image\rule.png" IsTiled="False"/>-->
+    <!--<Item Color="200,200,200" Src="WaterQualityFlowsheet\bg_T1.png" IsTiled="True"/>-->
+  </BackGround>
+  <!--Image对象-->
+  <Image>
+  </Image>
+  <!--TagImage对象-->
+  <TagImage>
+    <!--TagId,Src,BorderColor 可写成表达式。如：Src="if(value>0,'Image\rule.png','Image\rule2.png')"-->
+    <!--<Item TagId="if({01-661-09}>100,-1,1)" DataType="Min15" BorderWidth="2" BorderColor="if(value=-1,'0,0,255','0,0,0')" Src="if(value=-1,'Image\rule.png','Device\jb_running.gif')" HoverSrc="Device\jb_stoped.gif" IsHoverEffect="True" X="150" Y="200" Width="300" Height="225" TriggerEvent=""></Item>-->
+  </TagImage>
+  <!--Text对象-->
+  <Text>
+    <Item Text="5003003" Font="宋体" FontSize="10" IsVertical="False" X="10" Y="10" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="222,223,222"/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="" BackColor=""/>
+    </Item>
+    <Item Text="2#车间压力" Font="宋体" FontSize="10" IsVertical="False" X="10" Y="60" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="222,223,222"/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="" BackColor=""/>
+    </Item>
+    <Item Text="2#车间电基" Font="宋体" FontSize="10" IsVertical="False" X="10" Y="110" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="222,223,222"/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="" BackColor=""/>
+    </Item>
+    <Item Text="2#车间单耗" Font="宋体" FontSize="10" IsVertical="False" X="10" Y="160" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="222,223,222"/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="" BackColor=""/>
+    </Item>
+    <Item Text="5006023" Font="宋体" FontSize="10" IsVertical="False" X="10" Y="210" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="222,223,222"/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="" BackColor=""/>
+    </Item>
+    <Item Text="5006021" Font="宋体" FontSize="10" IsVertical="False" X="10" Y="260" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="222,223,222"/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="" BackColor=""/>
+    </Item>
+    <Item Text="5006022" Font="宋体" FontSize="10" IsVertical="False" X="10" Y="310" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="222,223,222"/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="" BackColor=""/>
+    </Item>
+    <Item Text="5006024" Font="宋体" FontSize="10" IsVertical="False" X="10" Y="360" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="222,223,222"/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="" BackColor=""/>
+    </Item>
+    <Item Text="1301004" Font="宋体" FontSize="10" IsVertical="False" X="10" Y="410" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="1"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="222,223,222"/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="" BackColor=""/>
+    </Item>
+  </Text>
+  <!--=======================================================Text对象结束，指标对象开始=====================================================-->
+  <Tag>
+    <!--25号机泵水量-->
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagId="Round([5003003],0)"  StringFormat="{0}" X="110" Y="10" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="012,045,140" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagId="Round(([5006023]+[5006021]+[5006022]+[5006024])/[5003003]*1000,2)"  StringFormat="{0}" X="110" Y="60" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="012,045,140" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagId="Round(([5103003])/([5003003])*1000,2)"  StringFormat="{0}" X="110" Y="110" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="012,045,140" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagId="Round([5103003]/([5006023]+[5006021]+[5006022]+[5006024]),2)"  StringFormat="{0}" X="100" Y="160" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="012,045,140" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagId="Round([5006023],2)"  StringFormat="{0}" X="110" Y="210" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="012,045,140" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagId="Round([5006021],2)"  StringFormat="{0}" X="110" Y="260" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="012,045,140" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagId="Round([5006022],2)"  StringFormat="{0}" X="110" Y="310" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="012,045,140" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagId="Round([5006024],2)"  StringFormat="{0}" X="110" Y="360" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="012,045,140" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+    </Item>
+    <Item Font="宋体" FontSize="12" DataType="Hour" TagId="Round((([5006023]+[5006021]+[5006022]+[5006024])/[5003003]*1000),2)"  StringFormat="{0}" X="110" Y="410" Width="100" Height="50" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="012,045,140" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0"/>
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor=""/>
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+    </Item>
+  </Tag>
+</Configuration>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!--组件配置文件-->
+<Components>
+	<Component Name="PubData" Version="V1.0">
+		<Purpose>PubData数据库</Purpose>
+    <DatabaseConnectionString>data source=db2;initial catalog=Pubdata;User ID=sa;password=mzh;</DatabaseConnectionString>
+	</Component>
+  <Component Name="PubDataAccess" Version="V1.0">
+    <Purpose>PubData数据库</Purpose>
+    <DatabaseConnectionString>Provider =Microsoft.Jet.OLEDB.4.0;Data Source =c:\pubdata.mdb</DatabaseConnectionString>
+  </Component>
+  <Component Name="Produce" Version="V1.0">
+    <Purpose>生产数据库</Purpose>
+    <DatabaseConnectionString>data source=db;initial catalog=Gather;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+  </Component>
+  <Component Name="DEV" Version="V1.0">
+    <Purpose>设备数据库</Purpose>
+    <DatabaseConnectionString>data source=db;initial catalog=Gather;User ID=sa;password=mzh.123;</DatabaseConnectionString>
+  </Component>
+  <Component Name="Monitor" Version="V1.0">
+    <Purpose>监控数据库</Purpose>
+    <DatabaseConnectionString>data source=db2;initial catalog=MonitorDB;User ID=sa;password=mzh;</DatabaseConnectionString>
+  </Component>
+</Components>
+

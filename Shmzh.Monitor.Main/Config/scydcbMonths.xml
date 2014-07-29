@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>  
+  <!--DataType可选值：Second/Min/Min15/Hour/Day/Month/Year.-->
+  <!--窗体的背景图-->
+  <BackGround>
+    <!--只使用第一个 Item，多个时将忽略其它的。-->
+    <Item Color="200,200,200" Src="" IsTiled="True"/>
+    <!--<Item Color="200,200,200" Src="Image\rule.png" IsTiled="False" />-->
+    <!--<Item Color="200,200,200" Src="CompanyElectricalVoltage\bg.png" IsTiled="False" />-->
+  </BackGround>
+  <Clock Visible="True" StringFormat="{0}" TimeFormat="yyyy-MM-dd" Font="Times New Roman" FontSize="10" X="870" Y="20" IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255" /><!---->
+  <!--Image对象-->
+  <Image>
+	<!-- 
+    <Item Src="CompanyElectricalVoltage\node.emf" HoverSrc="CompanyElectricalVoltage\node.emf" IsHoverEffect="False" X="955" Y="115" Width="25" Height="25" BorderWidth="0" BorderColor="0,0,255" TriggerEvent=""></Item>  -->   
+    
+  </Image>
+  <!--Text对象-->
+  <Text>
+    <Item Text="生产用电成本(月)" Font="宋体" FontSize="23" IsVertical="False" X="300" Y="10" Width="0" Height="0" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="255,255,255" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--单位-->
+    <Item Text="单位：KWh" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="360" Width="130" Height="24" Align="Left" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="0" RightWidth="0" TopWidth="0" BottomWidth="0" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="0,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--名称-->
+    <Item Text="名称" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="400" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--1#/7#车间-->
+    <Item Text="1#/7#车间" Font="宋体" FontSize="10" IsVertical="False" X="162" Y="400" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--2#/3#/4#车间-->
+    <Item Text="2#/3#/4#车间" Font="宋体" FontSize="10" IsVertical="False" X="274" Y="400" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--6#车间-->
+    <Item Text="6#车间" Font="宋体" FontSize="10" IsVertical="False" X="386" Y="400" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--次唧车间-->
+    <Item Text="次唧车间" Font="宋体" FontSize="10" IsVertical="False" X="498" Y="400" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--7#提升泵房-->
+    <Item Text="7#提升泵房" Font="宋体" FontSize="10" IsVertical="False" X="610" Y="400" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--楼宇低配-->
+    <Item Text="楼宇低配" Font="宋体" FontSize="10" IsVertical="False" X="722" Y="400" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--初唧车间-->
+    <Item Text="初唧车间" Font="宋体" FontSize="10" IsVertical="False" X="834" Y="400" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--总降站低配-->
+    <Item Text="总降站低配" Font="宋体" FontSize="10" IsVertical="False" X="946" Y="400" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="252,235,152" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--电量-->
+    <Item Text="电量" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="425" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--峰-->
+    <Item Text="峰" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="449" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--谷-->
+    <Item Text="谷" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="473" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--平1-->
+    <Item Text="平1" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="497" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--平2-->
+    <Item Text="平2" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="521" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+    <!--成本-->
+    <Item Text="成本" Font="宋体" FontSize="10" IsVertical="False" X="50" Y="545" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="False" IsUnderLine="False" IsItalic="False" Color="0,0,0" BackColor="255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,0,0" BackColor="" />
+    </Item>
+        
+  </Text>
+  <!--指标对象-->
+  <Tag>
+    <!--1#/7#车间-->
+    <!--电量-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18560901]+[18560922],0)" StringFormat="{0}" X="162" Y="425" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--峰-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551401],0)" StringFormat="{0}" X="162" Y="449" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--谷-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551501],0)" StringFormat="{0}" X="162" Y="473" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平1-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551601]/2,0)" StringFormat="{0}" X="162" Y="497" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平2-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551601]/2,0)" StringFormat="{0}" X="162" Y="521" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--成本-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(([18560901]+[18560922])*[9901005],0)" StringFormat="{0}" X="162" Y="545" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--2#/3#/4#车间-->
+    <!--电量-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18560903]+[18560916],0)" StringFormat="{0}" X="274" Y="425" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--峰-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551402],0)" StringFormat="{0}" X="274" Y="449" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--谷-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551502],0)" StringFormat="{0}" X="274" Y="473" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平1-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551602]/2,0)" StringFormat="{0}" X="274" Y="497" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平2-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551602]/2,0)" StringFormat="{0}" X="274" Y="521" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--成本-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(([18560903]+[18560916])*[9901005],0)" StringFormat="{0}" X="274" Y="545" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--6#车间-->
+    <!--电量-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18560904]+[18560919],0)" StringFormat="{0}" X="386" Y="425" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--峰-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551403],0)" StringFormat="{0}" X="386" Y="449" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--谷-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551503],0)" StringFormat="{0}" X="386" Y="473" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平1-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551603]/2,0)" StringFormat="{0}" X="386" Y="497" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平2-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551603]/2,0)" StringFormat="{0}" X="386" Y="521" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--成本-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(([18560904]+[18560919])*[9901005],0)" StringFormat="{0}" X="386" Y="545" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--次唧车间-->
+    <!--电量-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18560905]+[18560918],0)" StringFormat="{0}" X="498" Y="425" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--峰-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551404],0)" StringFormat="{0}" X="498" Y="449" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--谷-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551504],0)" StringFormat="{0}" X="498" Y="473" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平1-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551604]/2,0)" StringFormat="{0}" X="498" Y="497" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平2-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551604]/2,0)" StringFormat="{0}" X="498" Y="521" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--成本-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(([18560905]+[18560918])*[9901005],0)" StringFormat="{0}" X="498" Y="545" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--7#提升泵房-->
+    <!--电量-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18560902]+[18560921],0)" StringFormat="{0}" X="610" Y="425" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--峰-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551405],0)" StringFormat="{0}" X="610" Y="449" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--谷-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551505],0)" StringFormat="{0}" X="610" Y="473" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平1-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551605]/2,0)" StringFormat="{0}" X="610" Y="497" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平2-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551605]/2,0)" StringFormat="{0}" X="610" Y="521" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--成本-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(([18560902]+[18560921])*[9901005],0)" StringFormat="{0}" X="610" Y="545" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--楼宇低配-->
+    <!--电量-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18560907]+[18560920],0)" StringFormat="{0}" X="722" Y="425" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--峰-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551407],0)" StringFormat="{0}" X="722" Y="449" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--谷-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551507],0)" StringFormat="{0}" X="722" Y="473" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平1-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551607]/2,0)" StringFormat="{0}" X="722" Y="497" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平2-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551607]/2,0)" StringFormat="{0}" X="722" Y="521" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--成本-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(([18560907]+[18560920])*[9901005],0)" StringFormat="{0}" X="722" Y="545" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--初唧车间-->
+    <!--电量-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18560906]+[18560917],0)" StringFormat="{0}" X="834" Y="425" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--峰-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551406],0)" StringFormat="{0}" X="834" Y="449" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--谷-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551506],0)" StringFormat="{0}" X="834" Y="473" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平1-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551606]/2,0)" StringFormat="{0}" X="834" Y="497" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平2-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551606]/2,0)" StringFormat="{0}" X="834" Y="521" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--成本-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(([18560906]+[18560917])*[9901005],0)" StringFormat="{0}" X="834" Y="545" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--总降站低配-->
+    <!--电量-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18560915]+[18560908],0)" StringFormat="{0}" X="946" Y="425" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--峰-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551408],0)" StringFormat="{0}" X="946" Y="449" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--谷-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551508],0)" StringFormat="{0}" X="946" Y="473" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平1-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551608]/2,0)" StringFormat="{0}" X="946" Y="497" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--平2-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551608]/2,0)" StringFormat="{0}" X="946" Y="521" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--成本-->
+    <Item Font="宋体" FontSize="10" DataType="Month" TagId="Round(([18560915]+[18560908])*[9901005],0)" StringFormat="{0}" X="946" Y="545" Width="112" Height="24" Align="Center" IsHoverEffect="False" TriggerEvent="">
+      <BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="1" />
+      <ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255" />
+      <SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor="" />
+    </Item>
+    <!--第一排-->
+    <!-- 1#/7#车间饼图指标 -->		
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551401],0)" StringFormat="{0}" X="160" Y="50" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551501],0)" StringFormat="{0}" X="160" Y="85" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551601]/2,0)" StringFormat="{0}" X="160" Y="120" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551601]/2,0)" StringFormat="{0}" X="160" Y="155" Width="90" Height="45" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="1"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<!-- 2#/3#/4#车间饼图指标 -->		
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551402],0)" StringFormat="{0}" X="410" Y="50" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551502],0)" StringFormat="{0}" X="410" Y="85" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551602]/2,0)" StringFormat="{0}" X="410" Y="120" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551602]/2,0)" StringFormat="{0}" X="410" Y="155" Width="90" Height="45" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="1"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<!-- 6#车间饼图指标 -->		
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551403],0)" StringFormat="{0}" X="660" Y="50" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551503],0)" StringFormat="{0}" X="660" Y="85" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551603]/2,0)" StringFormat="{0}" X="660" Y="120" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551603]/2,0)" StringFormat="{0}" X="660" Y="155" Width="90" Height="45" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="1"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<!-- 次唧车间饼图指标 -->		
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551404],0)" StringFormat="{0}" X="910" Y="50" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551504],0)" StringFormat="{0}" X="910" Y="85" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551604]/2,0)" StringFormat="{0}" X="910" Y="120" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551604]/2,0)" StringFormat="{0}" X="910" Y="155" Width="90" Height="45" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="1"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<!--第二排-->
+	 <!-- 7#提升泵房饼图指标 -->		
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551405],0)" StringFormat="{0}" X="160" Y="210" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551505],0)" StringFormat="{0}" X="160" Y="245" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551605]/2,0)" StringFormat="{0}" X="160" Y="280" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551605]/2,0)" StringFormat="{0}" X="160" Y="315" Width="90" Height="45" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="1"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<!-- 楼宇低配饼图指标 -->		
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551407],0)" StringFormat="{0}" X="410" Y="210" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551507],0)" StringFormat="{0}" X="410" Y="245" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551607]/2,0)" StringFormat="{0}" X="410" Y="280" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551607]/2,0)" StringFormat="{0}" X="410" Y="315" Width="90" Height="45" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="1"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<!-- 初唧车间饼图指标 -->		
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551406],0)" StringFormat="{0}" X="660" Y="210" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551506],0)" StringFormat="{0}" X="660" Y="245" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551606]/2,0)" StringFormat="{0}" X="660" Y="280" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551606]/2,0)" StringFormat="{0}" X="660" Y="315" Width="90" Height="45" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="1"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<!-- 总降压站低配饼图指标 -->		
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551408],0)" StringFormat="{0}" X="910" Y="210" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="1" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551508],0)" StringFormat="{0}" X="910" Y="245" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551608]/2,0)" StringFormat="{0}" X="910" Y="280" Width="90" Height="35" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="0"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+		<Item Font="宋体" FontSize="10" DataType="Month" TagId="Round([18551608]/2,0)" StringFormat="{0}" X="910" Y="315" Width="90" Height="45" Align="Right" IsHoverEffect="False" TriggerEvent="">
+			<BorderStyle Color="0,0,0" LeftWidth="1" RightWidth="1" TopWidth="0" BottomWidth="1"/>
+			<ItemStyle IsBold="True" IsUnderLine="False" IsItalic="False" Color="0,0,255" BackColor="100,255,255,255"/>
+			<SelectedStyle IsBold="True" IsUnderLine="True" IsItalic="False" Color="0,255,255" BackColor=""/>
+		</Item>
+  </Tag>
+  <!--Line对象-->
+  <Line>
+  <!--第一排-->
+  <!--1#/7#车间饼图色块-->		
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="024,078,180" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="180" Y="58"/>
+				<Point X="180" Y="78"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="131,197,109" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="180" Y="92"/>
+				<Point X="180" Y="112"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="116,105,172" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="180" Y="128"/>
+				<Point X="180" Y="148"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="216,122,117" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="180" Y="163"/>
+				<Point X="180" Y="183"/>
+			</Points>
+		</Item>
+		<!--2#/3#/4#车间饼图色块-->		
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="024,078,180" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="430" Y="58"/>
+				<Point X="430" Y="78"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="131,197,109" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="430" Y="92"/>
+				<Point X="430" Y="112"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="116,105,172" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="430" Y="128"/>
+				<Point X="430" Y="148"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="216,122,117" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="430" Y="163"/>
+				<Point X="430" Y="183"/>
+			</Points>
+		</Item>
+		<!--6#车间饼图色块-->		
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="024,078,180" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="680" Y="58"/>
+				<Point X="680" Y="78"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="131,197,109" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="680" Y="92"/>
+				<Point X="680" Y="112"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="116,105,172" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="680" Y="128"/>
+				<Point X="680" Y="148"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="216,122,117" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="680" Y="163"/>
+				<Point X="680" Y="183"/>
+			</Points>
+		</Item>
+		<!--次唧车间饼图色块-->		
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="024,078,180" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="930" Y="58"/>
+				<Point X="930" Y="78"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="131,197,109" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="930" Y="92"/>
+				<Point X="930" Y="112"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="116,105,172" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="930" Y="128"/>
+				<Point X="930" Y="148"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="216,122,117" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="930" Y="163"/>
+				<Point X="930" Y="183"/>
+			</Points>
+		</Item>
+	<!--第二排-->
+	<!--7#提升泵房饼图色块-->		
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="024,078,180" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="180" Y="218"/>
+				<Point X="180" Y="238"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="131,197,109" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="180" Y="252"/>
+				<Point X="180" Y="272"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="116,105,172" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="180" Y="288"/>
+				<Point X="180" Y="308"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="216,122,117" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="180" Y="323"/>
+				<Point X="180" Y="343"/>
+			</Points>
+		</Item>
+		<!--楼宇低配饼图色块-->		
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="024,078,180" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="430" Y="218"/>
+				<Point X="430" Y="238"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="131,197,109" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="430" Y="252"/>
+				<Point X="430" Y="272"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="116,105,172" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="430" Y="288"/>
+				<Point X="430" Y="308"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="216,122,117" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="430" Y="323"/>
+				<Point X="430" Y="343"/>
+			</Points>
+		</Item>
+		<!--初唧车间饼图色块-->		
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="024,078,180" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="680" Y="218"/>
+				<Point X="680" Y="238"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="131,197,109" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="680" Y="252"/>
+				<Point X="680" Y="272"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="116,105,172" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="680" Y="288"/>
+				<Point X="680" Y="308"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="216,122,117" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="680" Y="323"/>
+				<Point X="680" Y="343"/>
+			</Points>
+		</Item>
+		<!--总降站低配饼图色块-->		
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="024,078,180" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="930" Y="218"/>
+				<Point X="930" Y="238"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="131,197,109" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="930" Y="252"/>
+				<Point X="930" Y="272"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="116,105,172" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="930" Y="288"/>
+				<Point X="930" Y="308"/>
+			</Points>
+		</Item>
+		<Item StartArrow="False" EndArrow="False" TagId="" DataType="" Color="216,122,117" Width="20" LineStyle="Solid">
+			<Points>
+				<Point X="930" Y="323"/>
+				<Point X="930" Y="343"/>
+			</Points>
+		</Item>
+  </Line>
+  <!--饼图-->
+  <!--第一排-->
+  <Pie>
+  <!--1#/7#车间饼图-->
+    <Item X="10" Y="50" Width="150" Height="150">
+			<PaneFill FillAngle="45.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</PaneFill>
+			<ChartFill FillAngle="60.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</ChartFill>
+			<Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,255">1#/7#车间\n峰谷平占比饼图</Title>
+			<!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+			<!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+			<!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->
+			<!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+			<Legend Visible="False" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="1.0" Y="0.06" AlignH="Center" AlignV="Top" IsHStack="False"/>
+			<!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+			<!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+			<Tag TagId="[18551401]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="024,078,180" Color2="0,102,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">峰</Tag>
+			<Tag TagId="[18551501]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="131,197,109" Color2="122,180,005" FillAngle="45.0" Displacement="0.0" LabelType="Value">谷</Tag>
+			<Tag TagId="[18551601]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="116,105,172" Color2="242,160,023" FillAngle="45.0" Displacement="0.0" LabelType="Value">平1</Tag>
+			<Tag TagId="[18551601]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="216,122,117" Color2="204,051,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">平2</Tag>
+			
+		</Item>
+	<!--2#/3#/4#车间饼图饼图-->
+    <Item X="260" Y="50" Width="150" Height="150">
+			<PaneFill FillAngle="45.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</PaneFill>
+			<ChartFill FillAngle="60.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</ChartFill>
+			<Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,255">2#/3#/4#车间\n峰谷平占比饼图</Title>
+			<!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+			<!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+			<!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->
+			<!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+			<Legend Visible="False" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="1.0" Y="0.06" AlignH="Center" AlignV="Top" IsHStack="False"/>
+			<!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+			<!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+			<Tag TagId="[18551402]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="024,078,180" Color2="0,102,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">峰</Tag>
+			<Tag TagId="[18551502]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="131,197,109" Color2="122,180,005" FillAngle="45.0" Displacement="0.0" LabelType="Value">谷</Tag>
+			<Tag TagId="[18551602]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="116,105,172" Color2="242,160,023" FillAngle="45.0" Displacement="0.0" LabelType="Value">平1</Tag>
+			<Tag TagId="[18551602]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="216,122,117" Color2="204,051,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">平2</Tag>
+			
+		</Item>
+	<!--6#车间饼图-->
+    <Item X="510" Y="50" Width="150" Height="150">
+			<PaneFill FillAngle="45.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</PaneFill>
+			<ChartFill FillAngle="60.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</ChartFill>
+			<Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,255">6#车间\n峰谷平占比饼图</Title>
+			<!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+			<!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+			<!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->
+			<!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+			<Legend Visible="False" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="1.0" Y="0.06" AlignH="Center" AlignV="Top" IsHStack="False"/>
+			<!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+			<!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+			<Tag TagId="[18551403]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="024,078,180" Color2="0,102,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">峰</Tag>
+			<Tag TagId="[18551503]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="131,197,109" Color2="122,180,005" FillAngle="45.0" Displacement="0.0" LabelType="Value">谷</Tag>
+			<Tag TagId="[18551603]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="116,105,172" Color2="242,160,023" FillAngle="45.0" Displacement="0.0" LabelType="Value">平1</Tag>
+			<Tag TagId="[18551603]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="216,122,117" Color2="204,051,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">平2</Tag>
+			
+		</Item>
+	<!--次唧车间饼图-->
+    <Item X="760" Y="50" Width="150" Height="150">
+			<PaneFill FillAngle="45.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</PaneFill>
+			<ChartFill FillAngle="60.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</ChartFill>
+			<Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,255">次唧车间\n峰谷平占比饼图</Title>
+			<!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+			<!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+			<!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->
+			<!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+			<Legend Visible="False" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="1.0" Y="0.06" AlignH="Center" AlignV="Top" IsHStack="False"/>
+			<!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+			<!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+			<Tag TagId="[18551404]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="024,078,180" Color2="0,102,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">峰</Tag>
+			<Tag TagId="[18551504]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="131,197,109" Color2="122,180,005" FillAngle="45.0" Displacement="0.0" LabelType="Value">谷</Tag>
+			<Tag TagId="[18551604]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="116,105,172" Color2="242,160,023" FillAngle="45.0" Displacement="0.0" LabelType="Value">平1</Tag>
+			<Tag TagId="[18551604]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="216,122,117" Color2="204,051,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">平2</Tag>
+			
+		</Item>
+	<!--第二排-->
+	<!--7#提升泵房饼图-->
+    <Item X="10" Y="210" Width="150" Height="150">
+			<PaneFill FillAngle="45.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</PaneFill>
+			<ChartFill FillAngle="60.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</ChartFill>
+			<Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,255">7#提升泵房\n峰谷平占比饼图</Title>
+			<!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+			<!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+			<!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->
+			<!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+			<Legend Visible="False" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="1.0" Y="0.06" AlignH="Center" AlignV="Top" IsHStack="False"/>
+			<!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+			<!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+			<Tag TagId="[18551405]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="024,078,180" Color2="0,102,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">峰</Tag>
+			<Tag TagId="[18551505]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="131,197,109" Color2="122,180,005" FillAngle="45.0" Displacement="0.0" LabelType="Value">谷</Tag>
+			<Tag TagId="[18551605]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="116,105,172" Color2="242,160,023" FillAngle="45.0" Displacement="0.0" LabelType="Value">平1</Tag>
+			<Tag TagId="[18551605]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="216,122,117" Color2="204,051,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">平2</Tag>
+			
+		</Item>
+	<!--楼宇低配饼图-->
+    <Item X="260" Y="210" Width="150" Height="150">
+			<PaneFill FillAngle="45.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</PaneFill>
+			<ChartFill FillAngle="60.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</ChartFill>
+			<Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,255">楼宇低配\n峰谷平占比饼图</Title>
+			<!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+			<!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+			<!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->
+			<!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+			<Legend Visible="False" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="1.0" Y="0.06" AlignH="Center" AlignV="Top" IsHStack="False"/>
+			<!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+			<!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+			<Tag TagId="[18551407]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="024,078,180" Color2="0,102,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">峰</Tag>
+			<Tag TagId="[18551507]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="131,197,109" Color2="122,180,005" FillAngle="45.0" Displacement="0.0" LabelType="Value">谷</Tag>
+			<Tag TagId="[18551607]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="116,105,172" Color2="242,160,023" FillAngle="45.0" Displacement="0.0" LabelType="Value">平1</Tag>
+			<Tag TagId="[18551607]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="216,122,117" Color2="204,051,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">平2</Tag>
+			
+		</Item>
+	<!--初唧车间饼图-->
+    <Item X="510" Y="210" Width="150" Height="150">
+			<PaneFill FillAngle="45.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</PaneFill>
+			<ChartFill FillAngle="60.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</ChartFill>
+			<Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,255">初唧车间\n峰谷平占比饼图</Title>
+			<!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+			<!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+			<!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->
+			<!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+			<Legend Visible="False" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="1.0" Y="0.06" AlignH="Center" AlignV="Top" IsHStack="False"/>
+			<!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+			<!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+			<Tag TagId="[18551406]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="024,078,180" Color2="0,102,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">峰</Tag>
+			<Tag TagId="[18551506]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="131,197,109" Color2="122,180,005" FillAngle="45.0" Displacement="0.0" LabelType="Value">谷</Tag>
+			<Tag TagId="[18551606]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="116,105,172" Color2="242,160,023" FillAngle="45.0" Displacement="0.0" LabelType="Value">平1</Tag>
+			<Tag TagId="[18551606]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="216,122,117" Color2="204,051,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">平2</Tag>
+			
+		</Item>
+	<!--总降站低配饼图-->
+    <Item X="760" Y="210" Width="150" Height="150">
+			<PaneFill FillAngle="45.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</PaneFill>
+			<ChartFill FillAngle="60.0">
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+				<Color>100,255,255,255</Color>
+			</ChartFill>
+			<Title Visible="True" Font="宋体" IsBold="True" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,255">总降站低配\n峰谷平占比饼图</Title>
+			<!--图例 For the X coordinate, 0.0 is at the left edge of the Pane and 1.0 is at the right edge of the Pane;For the Y coordinate, 0.0 is the top and 1.0 is the bottom.-->
+			<!--AlignH:Left,Center,Right之一,the horizontal alignment of the Legend with respect to the (x,y) location-->
+			<!--AlignV:Top,Center,Bottom之一,the vertical alignment of the Legend with respect to the (x,y) location-->
+			<!--IsHStack:allows the Legend items to stack horizontally in addition to the vertical stacking, True to allow horizontal stacking, False otherwise.-->
+			<Legend Visible="False" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12.5" ForeColor="200,0,0,255" X="1.0" Y="0.06" AlignH="Center" AlignV="Top" IsHStack="False"/>
+			<!--Color1:渐变起始色，Color2渐变结束色，FillAngle:渐变角度。Displacement:The amount this PieItem instance will be displaced from the center point.-->
+			<!--LabelType:Enumeration that determines the type of label that is displayed for each pie slice.可选值:None,Name,Percent,Value,Name_Value,Name_Percent,Name_Value_Percent-->
+			<Tag TagId="[18551408]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="024,078,180" Color2="0,102,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">峰</Tag>
+			<Tag TagId="[18551508]" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="131,197,109" Color2="122,180,005" FillAngle="45.0" Displacement="0.0" LabelType="Value">谷</Tag>
+			<Tag TagId="[18551608]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="116,105,172" Color2="242,160,023" FillAngle="45.0" Displacement="0.0" LabelType="Value">平1</Tag>
+			<Tag TagId="[18551608]/2" DataType="Month" Font="宋体" IsBold="False" IsUnderLine="False" IsItalic="False" FontSize="12" ForeColor="0,0,0" Color1="216,122,117" Color2="204,051,000" FillAngle="45.0" Displacement="0.0" LabelType="Value">平2</Tag>
+			
+		</Item>
+  </Pie>
+</Configuration>
+
+
+

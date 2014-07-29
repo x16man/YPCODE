@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <AssemblyFile Name="Shmzh.Monitor.Forms.dll" />
+  <ConfigMode Debug="False" />
+  <Charts>    
+    <!--Sample-->
+    <Item Visible="False" ShowTime="60" UpdateTime="20" ClassName="Shmzh.Monitor.Forms.FrmProcessFlowsheet" ConfigFile="Sample.xml" Title="Sample图"></Item>
+    <!--杨厂68万吨水质流程监视图-->
+    <Item Visible="True" ShowTime="60" UpdateTime="20" ClassName="Shmzh.Monitor.Forms.FrmProcessFlowsheet" ConfigFile="WaterQualityFlowsheet.xml" Title="杨厂68万吨水质流程监视图"></Item>
+    <!--机泵运行状态图-->
+    <Item Visible="True" ShowTime="60" UpdateTime="20" ClassName="Shmzh.Monitor.Forms.FrmProcessFlowsheet" ConfigFile="DeviceRunStatus.xml" Title="机泵运行状态图"></Item>
+    <!--杨厂68万吨生产情况位置图-->
+    <Item Visible="True" ShowTime="60" UpdateTime="20" ClassName="Shmzh.Monitor.Forms.FrmProcessFlowsheet" ConfigFile="ProducePositionFlowsheet.xml" Title="杨厂68万吨生产情况位置图"></Item>
+    <!--全厂生产监控图-->
+	<Item Visible="True" ShowTime="60" UpdateTime="20" ClassName="Shmzh.Monitor.Forms.FrmProcessFlowsheet" ConfigFile="CompanyProduceFlowsheet.xml" Title="全厂生产监控图"></Item>
+    <!--全厂配电系统示意图-->
+    <Item Visible="True" ShowTime="160" UpdateTime="60" ClassName="Shmzh.Monitor.Forms.FrmProcessFlowsheet" ConfigFile="CompanyElectricalVoltage.xml" Title="全厂配电系统示意图"></Item>
+    <!--测试专用图-->
+    <Item Visible="True" ShowTime="160" UpdateTime="60" ClassName="Shmzh.Monitor.Forms.FrmProcessFlowsheet" ConfigFile="test.xml" Title="测试专用图"></Item>
+    <!--曲线-->
+    <Item Visible="True" ShowTime="60" UpdateTime="30" ClassName="Shmzh.Monitor.Forms.FrmGraphSchemaStage" ConfigFile="电基数曲线" Title="电基数曲线"></Item>
+    <Item Visible="True" ShowTime="60" UpdateTime="30" ClassName="Shmzh.Monitor.Forms.FrmGraphSchemaStage" ConfigFile="矾基数曲线" Title="矾基数曲线"></Item>
+    <Item Visible="True" ShowTime="60" UpdateTime="30" ClassName="Shmzh.Monitor.Forms.FrmGraphSchemaStage" ConfigFile="氯基数曲线(后加氯)" Title="氯基数曲线(后加氯)"></Item>
+    <Item Visible="True" ShowTime="60" UpdateTime="30" ClassName="Shmzh.Monitor.Forms.FrmGraphSchemaStage" ConfigFile="氯基数曲线(前加氯)" Title="氯基数曲线(前加氯)"></Item>
+  </Charts>
+</Config>

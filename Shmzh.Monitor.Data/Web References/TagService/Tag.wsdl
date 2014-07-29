@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://shuizhi.ypwater.org/DataService/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://shuizhi.ypwater.org/DataService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://shuizhi.ypwater.org/DataService/">
+      <s:element name="GetById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tagId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByIdResult" type="tns:TagInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TagInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="I_Tag_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="I_Tag_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="I_Dig_Num" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="I_Unit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="I_Tag_Type" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Calc_Type_Before_Hour" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Calc_Type_After_Hour" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Second_To_Minute" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Minute_To_Min5" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Minute_To_Hour" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Hour_To_Day" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Day_To_Month" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Month_To_Year" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Func" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dev_Code" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Max_Value" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Min_Value" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllResult" type="tns:ArrayOfTagInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTagInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TagInfo" nillable="true" type="tns:TagInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QuickSearch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCondition" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuickSearchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QuickSearchResult" type="tns:ArrayOfTagInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByType_TagId_TagName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tagType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tagId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tagName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByType_TagId_TagNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByType_TagId_TagNameResult" type="tns:ArrayOfTagInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDate">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetDateResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get3TagEligibleRate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="beginDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get3TagEligibleRateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Get3TagEligibleRateResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get4TagEligibleRate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="beginDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get4TagEligibleRateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Get4TagEligibleRateResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get7TagEligibleRate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="beginDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get7TagEligibleRateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Get7TagEligibleRateResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetById" />
+  </wsdl:message>
+  <wsdl:message name="GetByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAll" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="QuickSearchSoapIn">
+    <wsdl:part name="parameters" element="tns:QuickSearch" />
+  </wsdl:message>
+  <wsdl:message name="QuickSearchSoapOut">
+    <wsdl:part name="parameters" element="tns:QuickSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByType_TagId_TagNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByType_TagId_TagName" />
+  </wsdl:message>
+  <wsdl:message name="GetByType_TagId_TagNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByType_TagId_TagNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDate" />
+  </wsdl:message>
+  <wsdl:message name="GetDateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get3TagEligibleRateSoapIn">
+    <wsdl:part name="parameters" element="tns:Get3TagEligibleRate" />
+  </wsdl:message>
+  <wsdl:message name="Get3TagEligibleRateSoapOut">
+    <wsdl:part name="parameters" element="tns:Get3TagEligibleRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get4TagEligibleRateSoapIn">
+    <wsdl:part name="parameters" element="tns:Get4TagEligibleRate" />
+  </wsdl:message>
+  <wsdl:message name="Get4TagEligibleRateSoapOut">
+    <wsdl:part name="parameters" element="tns:Get4TagEligibleRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get7TagEligibleRateSoapIn">
+    <wsdl:part name="parameters" element="tns:Get7TagEligibleRate" />
+  </wsdl:message>
+  <wsdl:message name="Get7TagEligibleRateSoapOut">
+    <wsdl:part name="parameters" element="tns:Get7TagEligibleRateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TagSoap">
+    <wsdl:operation name="GetById">
+      <wsdl:input message="tns:GetByIdSoapIn" />
+      <wsdl:output message="tns:GetByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <wsdl:input message="tns:GetAllSoapIn" />
+      <wsdl:output message="tns:GetAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QuickSearch">
+      <wsdl:input message="tns:QuickSearchSoapIn" />
+      <wsdl:output message="tns:QuickSearchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByType_TagId_TagName">
+      <wsdl:input message="tns:GetByType_TagId_TagNameSoapIn" />
+      <wsdl:output message="tns:GetByType_TagId_TagNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDate">
+      <wsdl:input message="tns:GetDateSoapIn" />
+      <wsdl:output message="tns:GetDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get3TagEligibleRate">
+      <wsdl:input message="tns:Get3TagEligibleRateSoapIn" />
+      <wsdl:output message="tns:Get3TagEligibleRateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get4TagEligibleRate">
+      <wsdl:input message="tns:Get4TagEligibleRateSoapIn" />
+      <wsdl:output message="tns:Get4TagEligibleRateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get7TagEligibleRate">
+      <wsdl:input message="tns:Get7TagEligibleRateSoapIn" />
+      <wsdl:output message="tns:Get7TagEligibleRateSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TagSoap" type="tns:TagSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetById">
+      <soap:operation soapAction="http://shuizhi.ypwater.org/DataService/GetById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <soap:operation soapAction="http://shuizhi.ypwater.org/DataService/GetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuickSearch">
+      <soap:operation soapAction="http://shuizhi.ypwater.org/DataService/QuickSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByType_TagId_TagName">
+      <soap:operation soapAction="http://shuizhi.ypwater.org/DataService/GetByType_TagId_TagName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDate">
+      <soap:operation soapAction="http://shuizhi.ypwater.org/DataService/GetDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get3TagEligibleRate">
+      <soap:operation soapAction="http://shuizhi.ypwater.org/DataService/Get3TagEligibleRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get4TagEligibleRate">
+      <soap:operation soapAction="http://shuizhi.ypwater.org/DataService/Get4TagEligibleRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get7TagEligibleRate">
+      <soap:operation soapAction="http://shuizhi.ypwater.org/DataService/Get7TagEligibleRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TagSoap12" type="tns:TagSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetById">
+      <soap12:operation soapAction="http://shuizhi.ypwater.org/DataService/GetById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAll">
+      <soap12:operation soapAction="http://shuizhi.ypwater.org/DataService/GetAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuickSearch">
+      <soap12:operation soapAction="http://shuizhi.ypwater.org/DataService/QuickSearch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByType_TagId_TagName">
+      <soap12:operation soapAction="http://shuizhi.ypwater.org/DataService/GetByType_TagId_TagName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDate">
+      <soap12:operation soapAction="http://shuizhi.ypwater.org/DataService/GetDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get3TagEligibleRate">
+      <soap12:operation soapAction="http://shuizhi.ypwater.org/DataService/Get3TagEligibleRate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get4TagEligibleRate">
+      <soap12:operation soapAction="http://shuizhi.ypwater.org/DataService/Get4TagEligibleRate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get7TagEligibleRate">
+      <soap12:operation soapAction="http://shuizhi.ypwater.org/DataService/Get7TagEligibleRate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Tag">
+    <wsdl:port name="TagSoap" binding="tns:TagSoap">
+      <soap:address location="http://localhost/Shmzh.Monitor.DataService/Tag.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TagSoap12" binding="tns:TagSoap12">
+      <soap12:address location="http://localhost/Shmzh.Monitor.DataService/Tag.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
