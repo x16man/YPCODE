@@ -507,7 +507,8 @@ namespace Shmzh.Web.UI.Controls
                                           ID = "First",
                                           CommandName = "FirstPAGE",
                                           ToolTip = "Go to first page",
-                                          Text = "|<",//"首页",
+                                          //Text = "|<",
+                                          Text = "首页",
                                           CausesValidation = this.CauseValidationWhenPaging,
                                           Enabled = (!bIsBuildNextPrevUI ? false : bIsFirstPage),
                                           CssClass = "First",
@@ -527,7 +528,8 @@ namespace Shmzh.Web.UI.Controls
                                          ID = "Prev",
                                          CommandName = "PrevPAGE",
                                          ToolTip = "Go to pre page",
-                                         Text = "<",//"上一页",
+                                         //Text = "<",
+                                         Text = "上一页",
                                          CausesValidation = this.CauseValidationWhenPaging,
                                          Enabled = (!bIsBuildNextPrevUI ? false : bIsFirstPage),
                                          CssClass = "Prev",
@@ -544,7 +546,8 @@ namespace Shmzh.Web.UI.Controls
                                          ID = "Next",
                                          CommandName = "NextPAGE",
                                          ToolTip = "Go to next page",
-                                         Text = ">",//"下一页",
+                                         //Text = ">",
+                                         Text = "下一页",
                                          CausesValidation = this.CauseValidationWhenPaging,
                                          Enabled = (!bIsBuildNextPrevUI ? false : bIsLastPage),
                                          CssClass = "Next",
@@ -562,8 +565,8 @@ namespace Shmzh.Web.UI.Controls
                                          ID = "Last",
                                          CommandName = "LastPAGE",
                                          ToolTip = "Go to last page",
-                                         Text = ">|",
-                                         //Text = "尾页",
+                                         //Text = ">|",
+                                         Text = "尾页",
                                          CausesValidation = this.CauseValidationWhenPaging,
                                          Enabled = (!bIsBuildNextPrevUI ? false : bIsLastPage),
                                          CssClass = "Last",
@@ -594,8 +597,8 @@ namespace Shmzh.Web.UI.Controls
             // 如果没有分页则给PageList控件里面添加一个条没有其他页的信息
             if ((this.PageCount <= 0) || (this.CurrentPageIndex == -1))
             {
-                //pageIndexList.Items.Add("没有其他的页");
-                pageIndexList.Items.Add("No page");
+                pageIndexList.Items.Add("没有其他的页");
+                //pageIndexList.Items.Add("No page");
                 pageIndexList.Enabled = false;
                 pageIndexList.SelectedIndex = 0;
             }

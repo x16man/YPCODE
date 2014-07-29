@@ -59,6 +59,7 @@
                     <asp:BoundColumn DataField="ConName" SortExpression="ConName" HeaderText="架位"></asp:BoundColumn>
                     <asp:BoundColumn DataField="AcceptDate" SortExpression="AcceptDate" HeaderText="收料日期">
                     </asp:BoundColumn>
+                    <asp:BoundColumn DataField="ContractCode" SortExpression="ContractCode" HeaderText="合同号"></asp:BoundColumn>
                 </Columns>
             </mzh:MzhDataGrid>
         </td>

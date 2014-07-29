@@ -222,7 +222,7 @@ namespace WebMM.Storage
                         this.btnRefuse.Enabled = true;
                         this.btnRefuse.Visible = false;
                         break;
-                    case MZHMM.Common.OP.Red:
+                    case Shmzh.MM.Common.OP.Red:
                         this.txtItemCode.Visible = true;
                         this.txtItemCode.Enabled = true;
                         this.txtItemName.Visible = true;
@@ -358,42 +358,42 @@ namespace WebMM.Storage
             if(!IsPostBack)
             {
                 #region Check Right
-                if(this.OP == MZHMM.Common.OP.New || this.OP == MZHMM.Common.OP.Edit)
+                if (this.OP == Shmzh.MM.Common.OP.New || this.OP == Shmzh.MM.Common.OP.Edit)
                 {
                     if(!Master.CurrentUser.HasRight(SysRight.InventoryProfitMaintain))
                     {
                         this.Response.Redirect("../Common/NoRight.aspx",true);
                     }
                 }
-                else if(this.OP==MZHMM.Common.OP.FirstAudit)
+                else if (this.OP == Shmzh.MM.Common.OP.FirstAudit)
                 {
                     if(!Master.CurrentUser.HasRight(SysRight.InventoryProfitFirstAudit))
                     {
                         this.Response.Redirect("../Common/NoRight.aspx", true);
                     }
                 }
-                else if(this.OP == MZHMM.Common.OP.SecondAudit)
+                else if (this.OP == Shmzh.MM.Common.OP.SecondAudit)
                 {
                     if (!Master.CurrentUser.HasRight(SysRight.InventoryProfitSecondAudit))
                     {
                         this.Response.Redirect("../Common/NoRight.aspx", true);
                     }
                 }
-                else if(this.OP == MZHMM.Common.OP.ThirdAudit)
+                else if(this.OP == Shmzh.MM.Common.OP.ThirdAudit)
                 {
                     if (!Master.CurrentUser.HasRight(SysRight.InventoryProfitThirdAudit))
                     {
                         this.Response.Redirect("../Common/NoRight.aspx", true);
                     }
                 }
-                else if(this.OP == MZHMM.Common.OP.I)
+                else if(this.OP == Shmzh.MM.Common.OP.I)
                 {
                     if(!Master.CurrentUser.HasRight(SysRight.StockIn))
                     {
                         this.Response.Redirect("../Common/NoRight.aspx",true);
                     }
                 }
-                else if(this.OP == MZHMM.Common.OP.Red)
+                else if(this.OP == Shmzh.MM.Common.OP.Red)
                 {
                     if(!Master.CurrentUser.HasRight(SysRight.InventoryProfitMaintain))
                     {
@@ -408,7 +408,7 @@ namespace WebMM.Storage
                     this.InventoryProfitDetail = new InventoryProfitDetails().GetByEntryNo(this.EntryNo);
 
                     #region Check Status
-                    if (this.OP == MZHMM.Common.OP.Edit)
+                    if (this.OP == Shmzh.MM.Common.OP.Edit)
                     {
                         if( this.InventoryProfit.EntryState!=DocStatus.New && 
                             this.InventoryProfit.EntryState!=DocStatus.Cancel&&
@@ -420,7 +420,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if(this.OP == MZHMM.Common.OP.FirstAudit)
+                    else if(this.OP == Shmzh.MM.Common.OP.FirstAudit)
                     {
                         if(this.InventoryProfit.EntryState != DocStatus.Present)
                         {
@@ -428,7 +428,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if(this.OP == MZHMM.Common.OP.SecondAudit)
+                    else if(this.OP == Shmzh.MM.Common.OP.SecondAudit)
                     {
                         if(this.InventoryProfit.EntryState != DocStatus.FstPass)
                         {
@@ -436,7 +436,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if(this.OP == MZHMM.Common.OP.ThirdAudit)
+                    else if(this.OP == Shmzh.MM.Common.OP.ThirdAudit)
                     {
                         if(this.InventoryProfit.EntryState != DocStatus.SecPass)
                         {
@@ -444,7 +444,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if(this.OP == MZHMM.Common.OP.I)
+                    else if(this.OP == Shmzh.MM.Common.OP.I)
                     {
                         if(this.InventoryProfit.EntryState != DocStatus.TrdPass)
                         {
@@ -452,7 +452,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if(this.OP == MZHMM.Common.OP.Red)
+                    else if(this.OP == Shmzh.MM.Common.OP.Red)
                     {
                         if (this.InventoryProfit.EntryState != DocStatus.Received)
                         {
@@ -470,7 +470,7 @@ namespace WebMM.Storage
                     }
                     #endregion
 
-                    if(this.OP == MZHMM.Common.OP.Red)
+                    if(this.OP == Shmzh.MM.Common.OP.Red)
                     {
                         this.InventoryProfit.ParentEntryNo = this.InventoryProfit.EntryNo;
                         this.InventoryProfit.EntryNo = 0;
@@ -541,7 +541,7 @@ namespace WebMM.Storage
                         }
                     }
 
-                    if (this.OP == MZHMM.Common.OP.Red)
+                    if (this.OP == Shmzh.MM.Common.OP.Red)
                     {
                         this.doc1.DataBindNew();
                     }
@@ -633,7 +633,7 @@ namespace WebMM.Storage
         protected void btnSave_Click(object sender, EventArgs e)
         {
             //没有内容
-            if (this.InventoryProfitDetail.Count == 0 && (this.OP == MZHMM.Common.OP.New || this.OP == MZHMM.Common.OP.Edit || this.OP == MZHMM.Common.OP.Submit|| this.OP == MZHMM.Common.OP.I) )
+            if (this.InventoryProfitDetail.Count == 0 && (this.OP == Shmzh.MM.Common.OP.New || this.OP == Shmzh.MM.Common.OP.Edit || this.OP == Shmzh.MM.Common.OP.Submit|| this.OP == Shmzh.MM.Common.OP.I) )
             {
                 ClientScript.RegisterStartupScript( this.GetType(), "Error", "alert('没有物料内容!');", true);
                 return;
@@ -655,8 +655,8 @@ namespace WebMM.Storage
             switch (this.OP)
             {
                 #region New Red
-                case MZHMM.Common.OP.New:
-                case MZHMM.Common.OP.Red:
+                case Shmzh.MM.Common.OP.New:
+                case Shmzh.MM.Common.OP.Red:
                     using(var conn = new SqlConnection(ConnectionString.MM))
                     {
                         conn.Open();
@@ -678,7 +678,7 @@ namespace WebMM.Storage
                                 }
                             }
                             //TODOList
-                            if (new DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1030, "T", Master.CurrentUser.LoginName))
+                            if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1030, "T", Master.CurrentUser.LoginName))
                             {
                                 trans.Commit();
                                 ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);
@@ -700,8 +700,8 @@ namespace WebMM.Storage
                     break;
                 #endregion
                 #region Edit Submit
-                case MZHMM.Common.OP.Submit:
-                case MZHMM.Common.OP.Edit:
+                case Shmzh.MM.Common.OP.Submit:
+                case Shmzh.MM.Common.OP.Edit:
                     using (var conn = new SqlConnection(ConnectionString.MM))
                     {
                         conn.Open();
@@ -723,7 +723,7 @@ namespace WebMM.Storage
                                     }
                                 }
                                 //TODOList
-                                if (new DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1030, "T", Master.CurrentUser.LoginName))
+                                if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1030, "T", Master.CurrentUser.LoginName))
                                 {
                                     trans.Commit();
                                     ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);
@@ -750,7 +750,7 @@ namespace WebMM.Storage
                     break;
                 #endregion
                 #region FirstAudit
-                case MZHMM.Common.OP.FirstAudit:
+                case Shmzh.MM.Common.OP.FirstAudit:
                     if(this.DocAuditWebControl1.Audit1 !="Y" && this.DocAuditWebControl1.Audit1!="N")
                     {
                         ClientScript.RegisterStartupScript( this.GetType(), "Error", "alert('请确认审批通过或是不通过!');", true);
@@ -768,7 +768,7 @@ namespace WebMM.Storage
                             if (new InventoryProfits().Update(trans,this.InventoryProfit))
                             {
                                 //TODOList
-                                if (new DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1050, this.InventoryProfit.Audit1=="Y"?"T":"F", Master.CurrentUser.LoginName))
+                                if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1050, this.InventoryProfit.Audit1=="Y"?"T":"F", Master.CurrentUser.LoginName))
                                 {
                                     trans.Commit();
                                     ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);
@@ -788,7 +788,7 @@ namespace WebMM.Storage
                     break;
                 #endregion
                 #region SecondAudit
-                case MZHMM.Common.OP.SecondAudit:
+                case Shmzh.MM.Common.OP.SecondAudit:
                     
                     if (this.DocAuditWebControl1.Audit2 != "Y" && this.DocAuditWebControl1.Audit2 != "N")
                     {
@@ -807,7 +807,7 @@ namespace WebMM.Storage
                             if (new InventoryProfits().Update(trans, this.InventoryProfit))
                             {
                                 //TODOList
-                                if (new DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1060, this.InventoryProfit.Audit2=="Y"?"T":"F", Master.CurrentUser.LoginName))
+                                if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1060, this.InventoryProfit.Audit2=="Y"?"T":"F", Master.CurrentUser.LoginName))
                                 {
                                     trans.Commit();
                                     ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);
@@ -827,7 +827,7 @@ namespace WebMM.Storage
                     break;
                 #endregion
                 #region ThirdAudit
-                case MZHMM.Common.OP.ThirdAudit:
+                case Shmzh.MM.Common.OP.ThirdAudit:
                     if (this.DocAuditWebControl1.Audit3 != "Y" && this.DocAuditWebControl1.Audit3 != "N")
                     {
                         ClientScript.RegisterStartupScript( this.GetType(), "Error", "alert('请确认审批通过或是不通过!');", true);
@@ -845,7 +845,7 @@ namespace WebMM.Storage
                             if (new InventoryProfits().Update(this.InventoryProfit))
                             {
                                 //TODOList
-                                if (new DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1070, this.InventoryProfit.Audit3=="Y"?"T":"F", Master.CurrentUser.LoginName))
+                                if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1070, this.InventoryProfit.Audit3=="Y"?"T":"F", Master.CurrentUser.LoginName))
                                 {
                                     trans.Commit();
                                     ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);
@@ -866,7 +866,7 @@ namespace WebMM.Storage
                     break;
                 #endregion
                 #region I
-                case MZHMM.Common.OP.I:
+                case Shmzh.MM.Common.OP.I:
                     using (var conn = new SqlConnection(ConnectionString.MM))
                     {
                         conn.Open();
@@ -903,7 +903,7 @@ namespace WebMM.Storage
                                 return;
                             }
                             //TODOList
-                            if (new DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1080, "T", Master.CurrentUser.LoginName))
+                            if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1080, "T", Master.CurrentUser.LoginName))
                             {
                                 trans.Commit();
                                 ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);
@@ -955,14 +955,14 @@ namespace WebMM.Storage
 
                 this.InventoryProfit.SubTotal = subTotal;
                 bool ret = false;
-                if (this.OP == MZHMM.Common.OP.New || this.OP == MZHMM.Common.OP.Red)
+                if (this.OP == Shmzh.MM.Common.OP.New || this.OP == Shmzh.MM.Common.OP.Red)
                     ret = new InventoryProfits().Insert(trans, this.InventoryProfit);
-                else if (this.OP == MZHMM.Common.OP.Edit || this.OP==MZHMM.Common.OP.Submit)
+                else if (this.OP == Shmzh.MM.Common.OP.Edit || this.OP==Shmzh.MM.Common.OP.Submit)
                     ret = new InventoryProfits().Update(trans, this.InventoryProfit);
                 if (ret)
                 {
                     var da = new InventoryProfitDetails();
-                    if (this.OP == MZHMM.Common.OP.Edit || this.OP == MZHMM.Common.OP.Submit)
+                    if (this.OP == Shmzh.MM.Common.OP.Edit || this.OP == Shmzh.MM.Common.OP.Submit)
                     {
                         if (!da.Delete(trans, this.InventoryProfit.EntryNo))
                         {
@@ -986,7 +986,7 @@ namespace WebMM.Storage
                         }
                     }
                     //TODOList
-                    if (new DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1040, "T", Master.CurrentUser.LoginName))
+                    if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 19, this.InventoryProfit.EntryNo, 1040, "T", Master.CurrentUser.LoginName))
                     {
                         trans.Commit();
                         ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);

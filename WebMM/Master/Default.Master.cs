@@ -684,7 +684,7 @@ namespace MZHMM.WebMM.Master
 
         private string GetCatCodeByItemCode(string strItemCode)
         {
-            dtCatCode = (new MZHMM.Facade.ItemSystem()).GetItemByCode(strItemCode).Tables[0];
+            dtCatCode = (new Shmzh.MM.Facade.ItemSystem()).GetItemByCode(strItemCode).Tables[0];
 
             if (dtCatCode.Rows.Count > 0)
             {

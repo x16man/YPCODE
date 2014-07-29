@@ -356,8 +356,8 @@ namespace Shmzh.Web.UI.Controls
                         ItemId = "SEToggle",
                         IconClass = "collapse",
                         OnClientClick = "toggle(this);",
-                        //Text = "高级查询",
-                        Text = "Advanced Search",
+                        Text = "高级查询",
+                        //Text = "Advanced Search",
                         IsShowText = true,
                         ToolTip = "点击展开或收缩查询区域"
                     };

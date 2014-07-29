@@ -62,7 +62,7 @@ namespace MZHMM.WebMM.Modules
 					decimal Temp_ItemNum  = Convert.ToDecimal(this.txtItemNum.Text);
 					if (Temp_ItemNum > Temp_StockNum)
 					{
-                        Page.RegisterStartupScript(  "Error", "<script>alert('发料数超出了库存数!');</script>");
+                        Page.ClientScript.RegisterStartupScript( this.GetType(), "Error", "alert('发料数超出了库存数!');",true);
 						ret = false;
 					}
 				}
@@ -73,7 +73,7 @@ namespace MZHMM.WebMM.Modules
 			}
 			catch
 			{
-                Page.RegisterStartupScript(  "Error", "<script>alert('请输入正确的数据类型!');</script>");
+                Page.ClientScript.RegisterStartupScript( this.GetType(), "Error", "alert('请输入正确的数据类型!');",true);
 						
 				ret=false;
 			}

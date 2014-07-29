@@ -211,35 +211,35 @@
                         break;
                     case DocType.BRB:
                         {
-                            this.rptToolTipBRB.DataSource = (new Facade.COM.ToolTip()).GetBRBData(int.Parse(EntryNo));
+                            this.rptToolTipBRB.DataSource = (new Shmzh.MM.Facade.ToolTip()).GetBRBData(int.Parse(EntryNo));
                             this.rptToolTipBRB.DataBind();
                             this.rptToolTipBRB.Visible = true;
                         }
                         break;
                     case DocType.PAY:
                         {
-                            this.rptToolTipPAY.DataSource = (new Facade.COM.ToolTip()).GetPAYData(int.Parse(EntryNo));
+                            this.rptToolTipPAY.DataSource = (new Shmzh.MM.Facade.ToolTip()).GetPAYData(int.Parse(EntryNo));
                             this.rptToolTipPAY.DataBind();
                             this.rptToolTipPAY.Visible = true;
                         }
                         break;
                     case DocType.WTOW:
                         {
-                            this.rptToolTipWTOW.DataSource = (new Facade.COM.ToolTip()).GetWTOWData(int.Parse(EntryNo));
+                            this.rptToolTipWTOW.DataSource = (new Shmzh.MM.Facade.ToolTip()).GetWTOWData(int.Parse(EntryNo));
                             this.rptToolTipWTOW.DataBind();
                             this.rptToolTipWTOW.Visible = true;
                         }
                         break;
                     case DocType.WINW:
                         {
-                            this.rptToolTipWINW.DataSource = (new Facade.COM.ToolTip()).GetWINWData(int.Parse(EntryNo));
+                            this.rptToolTipWINW.DataSource = (new Shmzh.MM.Facade.ToolTip()).GetWINWData(int.Parse(EntryNo));
                             this.rptToolTipWINW.DataBind();
                             this.rptToolTipWINW.Visible = true;
                         }
                         break;
                     case DocType.CANCEL:
                         {
-                            this.rptToolTipCANCEL.DataSource = (new Facade.COM.ToolTip()).GetCANCELData(int.Parse(EntryNo));
+                            this.rptToolTipCANCEL.DataSource = (new Shmzh.MM.Facade.ToolTip()).GetCANCELData(int.Parse(EntryNo));
                             this.rptToolTipCANCEL.DataBind();
                             this.rptToolTipCANCEL.Visible = true;
                         }
@@ -247,7 +247,7 @@
                     case DocType.INVENTRYPROFIT:
                         {
                             this.rptToolTipInventoryProfit.DataSource =
-                                new Facade.COM.ToolTip().GetInventoryProfitData(int.Parse(EntryNo));
+                                new Shmzh.MM.Facade.ToolTip().GetInventoryProfitData(int.Parse(EntryNo));
                             this.rptToolTipInventoryProfit.DataBind();
                             this.rptToolTipInventoryProfit.Visible = true;
                         }
@@ -255,7 +255,7 @@
                     case DocType.INVENTORYSHORTAGE:
                         {
                             this.rptToolTipInventoryShortage.DataSource =
-                                new Facade.COM.ToolTip().GetInventoryShortageData(int.Parse(EntryNo));
+                                new Shmzh.MM.Facade.ToolTip().GetInventoryShortageData(int.Parse(EntryNo));
                             this.rptToolTipInventoryShortage.DataBind();
                             this.rptToolTipInventoryShortage.Visible = true;
                         }

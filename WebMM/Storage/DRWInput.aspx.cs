@@ -202,7 +202,7 @@ namespace MZHMM.WebMM.Storage
 			}
 			#endregion
 			#region If Red
-            if (this.OP == MZHMM.Common.OP.Red)
+            if (this.OP == Shmzh.MM.Common.OP.Red)
 			{
 				DataTable oDT;
 				WDRWData oWDRWData;
@@ -326,7 +326,7 @@ namespace MZHMM.WebMM.Storage
 			this.doc1.DataBindUpdate();
 			this.DocAuditWebControl1.DocCode = DocType.DRW;
 			this.ddlDept.AutoPostBack = true;
-            if (this.OP == MZHMM.Common.OP.Edit || this.OP == MZHMM.Common.OP.Submit)
+            if (this.OP == Shmzh.MM.Common.OP.Edit || this.OP == Shmzh.MM.Common.OP.Submit)
 				this.ddlDept.Module_Tag = (int)SDDLTYPE.OWNDEPT;
 			else
 			{
@@ -349,7 +349,7 @@ namespace MZHMM.WebMM.Storage
 //			this.ddlCon.Module_Tag = (int)SDDLTYPE.CONTAINER;
 //			this.ddlCon.StoCode = this.ddlStorage.SelectedValue;
 			//将单据填充到数据集,DataGrid绑定数据源。
-            if (this.OP == MZHMM.Common.OP.O)
+            if (this.OP == Shmzh.MM.Common.OP.O)
 			{
 				oWDRWData = oItemSystem.GetWDRWByEntryNoOutMode(EntryNo);
 			}
@@ -432,7 +432,7 @@ namespace MZHMM.WebMM.Storage
 				//备注。
 				this.item1.Remark = oDT.Rows[0][InItemData.REMARK_FIELD].ToString();
 				//发料模式下初始化发料人和日期。
-                if (this.OP == MZHMM.Common.OP.O)
+                if (this.OP == Shmzh.MM.Common.OP.O)
 				{
                     this.TextBox1.Text = Master.CurrentUser.thisUserInfo.EmpName;
 					this.TextBox2.Text = DateTime.Now.ToString("yyyy-MM-dd");
@@ -447,11 +447,11 @@ namespace MZHMM.WebMM.Storage
 		{
 			switch (this.OP)
 			{
-                case MZHMM.Common.OP.FirstAudit:
+                case Shmzh.MM.Common.OP.FirstAudit:
 					break;
-                case MZHMM.Common.OP.SecondAudit:
+                case Shmzh.MM.Common.OP.SecondAudit:
 					break;
-                case MZHMM.Common.OP.ThirdAudit:
+                case Shmzh.MM.Common.OP.ThirdAudit:
 					break;
 			}
 		}
@@ -540,54 +540,54 @@ namespace MZHMM.WebMM.Storage
 
 				switch (OpMode)
 				{
-                    case MZHMM.Common.OP.New://新建。
+                    case Shmzh.MM.Common.OP.New://新建。
 						oDataRow[InItemData.AUTHORCODE_FIELD] = Master.CurrentUser.thisUserInfo.EmpCode;
                         oDataRow[InItemData.AUTHORNAME_FIELD] = Master.CurrentUser.thisUserInfo.EmpName;
                         oDataRow[InItemData.AUTHORLOGINID_FIELD] = Master.CurrentUser.thisUserInfo.LoginName;
 						oDataRow[InItemData.AUTHORDEPT_FIELD] = Master.CurrentUser.thisUserInfo.DeptCode;
                         oDataRow[InItemData.AUTHORDEPTNAME_FIELD] = Master.CurrentUser.thisUserInfo.DeptName;
 						break;
-                    case MZHMM.Common.OP.Red:  //红字。
+                    case Shmzh.MM.Common.OP.Red:  //红字。
                         oDataRow[InItemData.AUTHORCODE_FIELD] = Master.CurrentUser.thisUserInfo.EmpCode;
                         oDataRow[InItemData.AUTHORNAME_FIELD] = Master.CurrentUser.thisUserInfo.EmpName;
                         oDataRow[InItemData.AUTHORLOGINID_FIELD] = Master.CurrentUser.thisUserInfo.LoginName;
                         oDataRow[InItemData.AUTHORDEPT_FIELD] = Master.CurrentUser.thisUserInfo.DeptCode;
                         oDataRow[InItemData.AUTHORDEPTNAME_FIELD] = Master.CurrentUser.thisUserInfo.DeptName;
 						break;
-                    case MZHMM.Common.OP.NewAndPresent:
+                    case Shmzh.MM.Common.OP.NewAndPresent:
                         oDataRow[InItemData.AUTHORCODE_FIELD] = Master.CurrentUser.thisUserInfo.EmpCode;
                         oDataRow[InItemData.AUTHORNAME_FIELD] = Master.CurrentUser.thisUserInfo.EmpName;
                         oDataRow[InItemData.AUTHORLOGINID_FIELD] = Master.CurrentUser.thisUserInfo.LoginName;
                         oDataRow[InItemData.AUTHORDEPT_FIELD] = Master.CurrentUser.thisUserInfo.DeptCode;
                         oDataRow[InItemData.AUTHORDEPTNAME_FIELD] = Master.CurrentUser.thisUserInfo.DeptName;
 						break;
-                    case MZHMM.Common.OP.Edit://编辑。
+                    case Shmzh.MM.Common.OP.Edit://编辑。
                         oDataRow[InItemData.AUTHORCODE_FIELD] = Master.CurrentUser.thisUserInfo.EmpCode;
                         oDataRow[InItemData.AUTHORNAME_FIELD] = Master.CurrentUser.thisUserInfo.EmpName;
                         oDataRow[InItemData.AUTHORLOGINID_FIELD] = Master.CurrentUser.thisUserInfo.LoginName;
                         oDataRow[InItemData.AUTHORDEPT_FIELD] = Master.CurrentUser.thisUserInfo.DeptCode;
                         oDataRow[InItemData.AUTHORDEPTNAME_FIELD] = Master.CurrentUser.thisUserInfo.DeptName;
 						break;
-                    case MZHMM.Common.OP.EditAndPresent:
+                    case Shmzh.MM.Common.OP.EditAndPresent:
                         oDataRow[InItemData.AUTHORCODE_FIELD] = Master.CurrentUser.thisUserInfo.EmpCode;
                         oDataRow[InItemData.AUTHORNAME_FIELD] = Master.CurrentUser.thisUserInfo.EmpName;
                         oDataRow[InItemData.AUTHORLOGINID_FIELD] = Master.CurrentUser.thisUserInfo.LoginName;
                         oDataRow[InItemData.AUTHORDEPT_FIELD] = Master.CurrentUser.thisUserInfo.DeptCode;
                         oDataRow[InItemData.AUTHORDEPTNAME_FIELD] = Master.CurrentUser.thisUserInfo.DeptName;
 						break;
-                    case MZHMM.Common.OP.FirstAudit://一级审批。
+                    case Shmzh.MM.Common.OP.FirstAudit://一级审批。
                         oDataRow[InItemData.ASSESSOR1_FIELD] = Master.CurrentUser.thisUserInfo.EmpName;
                         oDataRow[InItemData.AUTHORLOGINID_FIELD] = Master.CurrentUser.thisUserInfo.LoginName;
 						break;
-                    case MZHMM.Common.OP.SecondAudit://二级审批。
+                    case Shmzh.MM.Common.OP.SecondAudit://二级审批。
                         oDataRow[InItemData.ASSESSOR2_FIELD] = Master.CurrentUser.thisUserInfo.EmpName;
                         oDataRow[InItemData.AUTHORLOGINID_FIELD] = Master.CurrentUser.thisUserInfo.LoginName;
 						break;
-                    case MZHMM.Common.OP.ThirdAudit://三级审批。
+                    case Shmzh.MM.Common.OP.ThirdAudit://三级审批。
                         oDataRow[InItemData.ASSESSOR3_FIELD] = Master.CurrentUser.thisUserInfo.EmpName;
                         oDataRow[InItemData.AUTHORLOGINID_FIELD] = Master.CurrentUser.thisUserInfo.LoginName;
 						break;
-                    case MZHMM.Common.OP.O:
+                    case Shmzh.MM.Common.OP.O:
 						oDataRow[WDRWData.STOMANAGERCODE_FIELD] = Master.CurrentUser.thisUserInfo.EmpCode;
 						oDataRow[WDRWData.STOMANAGER_FIELD] = Master.CurrentUser.thisUserInfo.EmpName;
 						break;
@@ -689,56 +689,56 @@ namespace MZHMM.WebMM.Storage
 		{
 			switch (OP)
 			{
-                case MZHMM.Common.OP.New:
+                case Shmzh.MM.Common.OP.New:
 					if (!Master.HasBrowseRight(SysRight.DRWMaintain))
 					{
 						//this.Response.Redirect("../ErrorPage.aspx?ErrorInfo="+SysRight.NoRight);
 						return;
 					}
 					break;
-                case MZHMM.Common.OP.Edit:
+                case Shmzh.MM.Common.OP.Edit:
                     if (!Master.HasBrowseRight(SysRight.DRWMaintain))
 					{
 						//this.Response.Redirect("../ErrorPage.aspx?ErrorInfo="+SysRight.NoRight);
 						return;
 					}
 					break;
-                case MZHMM.Common.OP.Red:
+                case Shmzh.MM.Common.OP.Red:
                     if (!Master.HasBrowseRight(SysRight.DRWRed))
 					{
 						//this.Response.Redirect("../ErrorPage.aspx?ErrorInfo="+SysRight.NoRight);
 						return;
 					}
 					break;
-                case MZHMM.Common.OP.Submit:
+                case Shmzh.MM.Common.OP.Submit:
                     if (!Master.HasBrowseRight(SysRight.DRWPresent))
 					{
 						//this.Response.Redirect("../ErrorPage.aspx?ErrorInfo="+SysRight.NoRight);
 						return;
 					}
 					break;
-                case MZHMM.Common.OP.FirstAudit:
+                case Shmzh.MM.Common.OP.FirstAudit:
                     if (!Master.HasBrowseRight(SysRight.DRWFirstAudit))
 					{
 						//this.Response.Redirect("../ErrorPage.aspx?ErrorInfo="+SysRight.NoRight);
 						return;
 					}
 					break;
-                case MZHMM.Common.OP.SecondAudit:
+                case Shmzh.MM.Common.OP.SecondAudit:
                     if (!Master.HasBrowseRight(SysRight.DRWSecondAudit))
 					{
 						//this.Response.Redirect("../ErrorPage.aspx?ErrorInfo="+SysRight.NoRight);
 						return;
 					}
 					break;
-                case MZHMM.Common.OP.ThirdAudit:
+                case Shmzh.MM.Common.OP.ThirdAudit:
                     if (!Master.HasBrowseRight(SysRight.DRWThirdAudit))
 					{
 						//this.Response.Redirect("../ErrorPage.aspx?ErrorInfo="+SysRight.NoRight);
 						return;
 					}
 					break;
-                case MZHMM.Common.OP.O:
+                case Shmzh.MM.Common.OP.O:
                     if (!Master.HasBrowseRight(SysRight.StockOut))
 					{
 						//this.Response.Redirect("../ErrorPage.aspx?ErrorInfo="+SysRight.NoRight);
@@ -768,13 +768,13 @@ namespace MZHMM.WebMM.Storage
 					this.CheckRight(this.OP);//检查用户对于当前操作的权限允许，如果没有则直接跳转错误页面，下面的操作将忽略。
 					switch (OP)
 					{
-                        case MZHMM.Common.OP.New:
+                        case Shmzh.MM.Common.OP.New:
 							this.BindDataNew();
 							this.btnRefuse.Visible = false;
 							this.btnSave.Text = OPName.New;
 							this.btnToRos.Visible = false;
 							break;
-                        case MZHMM.Common.OP.Red:
+                        case Shmzh.MM.Common.OP.Red:
 							this.BindDataNew();
 							this.btnAddByDoc.Visible = false;
 							this.btnRefuse.Visible = false;
@@ -783,13 +783,13 @@ namespace MZHMM.WebMM.Storage
                             this.ddlDept.Enable = false;
                             this.ddlProposer.Enable = false;
 							break;
-                        case MZHMM.Common.OP.Edit:
+                        case Shmzh.MM.Common.OP.Edit:
 							this.BindDataUpdate();
 							this.btnSave.Text = OPName.Edit;
 							this.btnRefuse.Visible = false;
 							this.btnToRos.Visible = false;
 							break;
-                        case MZHMM.Common.OP.Submit:
+                        case Shmzh.MM.Common.OP.Submit:
 							this.BindDataUpdate();
 							this.btnSave.Text = OPName.Submit;
 							this.btnPresent.Visible = false;
@@ -798,7 +798,7 @@ namespace MZHMM.WebMM.Storage
 							this.btnRefuse.Visible = false;
 							this.btnToRos.Visible = false;
 							break;
-                        case MZHMM.Common.OP.FirstAudit:
+                        case Shmzh.MM.Common.OP.FirstAudit:
 							this.BindDataUpdate();
 							this.btnSave.Text = OPName.FirstAudit;
 							this.btnPresent.Visible = false;
@@ -808,7 +808,7 @@ namespace MZHMM.WebMM.Storage
 							this.btnRefuse.Visible = false;
                             this.ddlProposer.Enable = false;
 							break;
-                        case MZHMM.Common.OP.SecondAudit:
+                        case Shmzh.MM.Common.OP.SecondAudit:
 							this.BindDataUpdate();
 							this.btnSave.Text = OPName.SecondAudit;
 							this.btnPresent.Visible = false;
@@ -818,7 +818,7 @@ namespace MZHMM.WebMM.Storage
 							this.btnRefuse.Visible = false;
                             this.ddlProposer.Enable = false;
 							break;
-                        case MZHMM.Common.OP.ThirdAudit:
+                        case Shmzh.MM.Common.OP.ThirdAudit:
 							this.BindDataUpdate();
 							this.btnSave.Text = OPName.ThirdAudit;
 							this.btnPresent.Visible = false;
@@ -828,7 +828,7 @@ namespace MZHMM.WebMM.Storage
 							this.btnRefuse.Visible = false;
                             this.ddlProposer.Enable = false;
 							break;
-                        case MZHMM.Common.OP.O:
+                        case Shmzh.MM.Common.OP.O:
 							this.BindDataUpdate();
 							this.btnSave.Text = OPName.O;
 							this.btnPresent.Visible = false;
@@ -848,7 +848,7 @@ namespace MZHMM.WebMM.Storage
                     ClientScript.RegisterStartupScript(this.GetType(), "Error", "alert('单据的当前状态不允许进行当前操作!');window.history.go(-1);", true);
 				}
 
-                if ((strParentEntryNo != "" && strParentEntryNo != "0") || this.OP == MZHMM.Common.OP.Red)
+                if ((strParentEntryNo != "" && strParentEntryNo != "0") || this.OP == Shmzh.MM.Common.OP.Red)
                 {
                     item1.OperateRed = true;
                     ddlProposer.Enable = false;
@@ -966,20 +966,20 @@ namespace MZHMM.WebMM.Storage
 
 			switch (this.OP)
 			{
-                case MZHMM.Common.OP.New:	 //新建保存。
+                case Shmzh.MM.Common.OP.New:	 //新建保存。
 					ret = Master.HasRight(SysRight.DRWMaintain)?oItemSystem.AddWDRW(oWDRWData):false;
 					break;
-                case MZHMM.Common.OP.Red: //红字保存。
+                case Shmzh.MM.Common.OP.Red: //红字保存。
                     ret = Master.HasRight(SysRight.DRWRed) ? oItemSystem.AddWDRW(oWDRWData) : false;
 					break;
-                case MZHMM.Common.OP.Edit: //修改保存。		
+                case Shmzh.MM.Common.OP.Edit: //修改保存。		
                     ret = Master.HasRight(SysRight.DRWMaintain) ? oItemSystem.UpdateWDRW(oWDRWData) : false;
 					break;
-                case MZHMM.Common.OP.Submit:   //提交保存。
+                case Shmzh.MM.Common.OP.Submit:   //提交保存。
                     ret = Master.HasRight(SysRight.DRWPresent) ? oItemSystem.PresentWDRW(this.EntryNo, this.Master.CurrentUser.thisUserInfo.LoginName) : false;
 					break;
 					#region 一级审批
-                case MZHMM.Common.OP.FirstAudit:
+                case Shmzh.MM.Common.OP.FirstAudit:
                     if (Master.HasRight(SysRight.DRWFirstAudit))
 					{
 						if (oWDRWData.Tables[WDRWData.WDRW_TABLE].Rows[0][InItemData.AUDIT1_FIELD].ToString() !="Y" &&
@@ -1001,7 +1001,7 @@ namespace MZHMM.WebMM.Storage
 					break;
 					#endregion
 					#region SecondAudit
-                case MZHMM.Common.OP.SecondAudit:
+                case Shmzh.MM.Common.OP.SecondAudit:
                     if (Master.HasRight(SysRight.DRWSecondAudit))
 					{
 						if (oWDRWData.Tables[WDRWData.WDRW_TABLE].Rows[0][InItemData.AUDIT2_FIELD].ToString() !="Y" &&
@@ -1024,7 +1024,7 @@ namespace MZHMM.WebMM.Storage
 					break;
 					#endregion
 					#region ThirdAudit
-                case MZHMM.Common.OP.ThirdAudit:
+                case Shmzh.MM.Common.OP.ThirdAudit:
                     if (Master.HasRight(SysRight.DRWThirdAudit))
 					{
 						if (oWDRWData.Tables[WDRWData.WDRW_TABLE].Rows[0][InItemData.AUDIT3_FIELD].ToString() !="Y" &&
@@ -1047,7 +1047,7 @@ namespace MZHMM.WebMM.Storage
 					break;
 					#endregion
 					#region O
-                case MZHMM.Common.OP.O:
+                case Shmzh.MM.Common.OP.O:
                     if (Master.HasRight(SysRight.StockOut))
 					{
 						WDRWData MyWDRWData ;
@@ -1064,11 +1064,11 @@ namespace MZHMM.WebMM.Storage
 								Session[MySession.DrawDt] = this.item1.thisTable;
 								if (this.IsFromTodo)
 								{
-                                    this.Response.Redirect("ConChooser.aspx?DocCode=4&EntryNo=" + this.doc1.EntryNo.ToString() + "&Op=" + MZHMM.Common.OP.O + "&TODO=Y");
+                                    this.Response.Redirect("ConChooser.aspx?DocCode=4&EntryNo=" + this.doc1.EntryNo.ToString() + "&Op=" + Shmzh.MM.Common.OP.O + "&TODO=Y");
 								}
 								else
 								{
-                                    this.Response.Redirect("Conchooser.aspx?DocCode=4&EntryNo=" + this.doc1.EntryNo.ToString() + "&Op=" + MZHMM.Common.OP.O);
+                                    this.Response.Redirect("Conchooser.aspx?DocCode=4&EntryNo=" + this.doc1.EntryNo.ToString() + "&Op=" + Shmzh.MM.Common.OP.O);
 								}
 							}
 							else
@@ -1103,7 +1103,7 @@ namespace MZHMM.WebMM.Storage
 				}
 				else
 				{
-                    if (this.OP == MZHMM.Common.OP.O)
+                    if (this.OP == Shmzh.MM.Common.OP.O)
 					{
 						this.Response.Redirect("OUTBrowser.aspx");
 					}
@@ -1129,7 +1129,7 @@ namespace MZHMM.WebMM.Storage
 			}
 			else 
 			{
-                if (this.OP == MZHMM.Common.OP.O)
+                if (this.OP == Shmzh.MM.Common.OP.O)
 				{
                     this.Response.Redirect("DRWBrowser.aspx?DocCode=4");
 				}
@@ -1173,10 +1173,10 @@ namespace MZHMM.WebMM.Storage
 			bool ret = false;
 			switch (this.OP)
 			{
-                case MZHMM.Common.OP.New:
+                case Shmzh.MM.Common.OP.New:
 					if (Master.HasRight(SysRight.DRWMaintain) && Master.HasRight(SysRight.DRWPresent))
 					{
-                        this.OP = MZHMM.Common.OP.NewAndPresent;
+                        this.OP = Shmzh.MM.Common.OP.NewAndPresent;
 						this.SetEntryState(oWDRWData, this.OP);
 						this.SetEntryOperator(oWDRWData, this.OP);
 						ret = oItemSystem.AddAndPresentWDRW(oWDRWData);
@@ -1186,10 +1186,10 @@ namespace MZHMM.WebMM.Storage
 						ret = false;
 					}
 					break;
-                case MZHMM.Common.OP.Red:
+                case Shmzh.MM.Common.OP.Red:
                     if (Master.HasRight(SysRight.DRWMaintain) && Master.HasRight(SysRight.DRWPresent))
 					{
-                        this.OP = MZHMM.Common.OP.NewAndPresent;
+                        this.OP = Shmzh.MM.Common.OP.NewAndPresent;
 						this.SetEntryState(oWDRWData, this.OP);
 						this.SetEntryOperator(oWDRWData, this.OP);
 						ret = oItemSystem.AddAndPresentWDRW(oWDRWData);
@@ -1199,10 +1199,10 @@ namespace MZHMM.WebMM.Storage
 						ret = false;
 					}
 					break;
-                case MZHMM.Common.OP.Edit:
+                case Shmzh.MM.Common.OP.Edit:
                     if (Master.HasRight(SysRight.DRWMaintain) && Master.HasRight(SysRight.DRWPresent))
 					{
-                        this.OP = MZHMM.Common.OP.EditAndPresent;
+                        this.OP = Shmzh.MM.Common.OP.EditAndPresent;
 						this.SetEntryState(oWDRWData, this.OP);
 						this.SetEntryOperator(oWDRWData, this.OP);
 						ret = oItemSystem.UpdateAndPresentWDRW(oWDRWData);
