@@ -472,7 +472,7 @@ namespace MZHMM.WebMM.Storage
 			ret = true;
 			switch (this._OP)
 			{
-                case Shmzh.MM.Common.OP.New:	 //新建保存。
+                case OP.New:	 //新建保存。
 					ret = Master.HasRight(SysRight.SCRMaintain)?oItemSystem.AddWSCR(oSCR):false;
 					break;
 					case OP.Edit:

@@ -37,6 +37,7 @@ namespace MZHMM.WebMM.Storage
 	public partial class DRWBrowser : Page
 	{
 		#region 成员变量
+        private static readonly log4net.ILog Logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 		
 		//private int DocCode;
 		//private string AuthorCode;
@@ -198,6 +199,7 @@ namespace MZHMM.WebMM.Storage
 
         protected void MzhToolbar1_OnSEQuery_Click(object sender, EventArgs e, string sqlStatement)
         {
+            Logger.Debug(sqlStatement);
             this.MzhToolbar1.SE_SQL = sqlStatement;
             myDataBind();
         }

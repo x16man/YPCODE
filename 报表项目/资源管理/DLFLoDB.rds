@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>DLFLoDB</Name>
+  <DataSourceID>cb883a75-fd02-452e-ab1d-94e856e50a2c</DataSourceID>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>data source=(local);initial catalog=DLFLoDB</ConnectString>
+  </ConnectionProperties>
+</RptDataSource>

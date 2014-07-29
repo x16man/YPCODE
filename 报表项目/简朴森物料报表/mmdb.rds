@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>mmdb</Name>
+  <DataSourceID>e760450a-7589-4a9f-8ba9-ca4c62a82512</DataSourceID>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>data source=vista-dell;initial catalog=mmdb</ConnectString>
+  </ConnectionProperties>
+</RptDataSource>

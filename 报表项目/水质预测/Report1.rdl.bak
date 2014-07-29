@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <RightMargin>2.5cm</RightMargin>
+  <Body>
+    <ReportItems>
+      <Matrix Name="matrix1">
+        <Corner>
+          <ReportItems>
+            <Textbox Name="textbox1">
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <FontFamily>宋体</FontFamily>
+                <PaddingBottom>2pt</PaddingBottom>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingRight>2pt</PaddingRight>
+              </Style>
+              <ZIndex>4</ZIndex>
+              <rd:DefaultName>textbox1</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <Value />
+            </Textbox>
+          </ReportItems>
+        </Corner>
+        <Height>1.90476cm</Height>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <MatrixRows>
+          <MatrixRow>
+            <MatrixCells>
+              <MatrixCell>
+                <ReportItems>
+                  <Textbox Name="I_VALUE_MAN">
+                    <Style>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <FontFamily>宋体</FontFamily>
+                      <TextAlign>Right</TextAlign>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingRight>2pt</PaddingRight>
+                    </Style>
+                    <ZIndex>1</ZIndex>
+                    <rd:DefaultName>I_VALUE_MAN</rd:DefaultName>
+                    <CanGrow>true</CanGrow>
+                    <Value>=Sum(Fields!I_VALUE_MAN.Value)</Value>
+                  </Textbox>
+                </ReportItems>
+              </MatrixCell>
+            </MatrixCells>
+            <Height>0.63492cm</Height>
+          </MatrixRow>
+        </MatrixRows>
+        <MatrixColumns>
+          <MatrixColumn>
+            <Width>2.53968cm</Width>
+          </MatrixColumn>
+        </MatrixColumns>
+        <DataSetName>DataSet1</DataSetName>
+        <ColumnGroupings>
+          <ColumnGrouping>
+            <DynamicColumns>
+              <Grouping Name="matrix1_ItemID">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!ItemID.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="ItemID">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <TextAlign>Right</TextAlign>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>3</ZIndex>
+                  <rd:DefaultName>ItemID</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!ItemID.Value</Value>
+                </Textbox>
+              </ReportItems>
+            </DynamicColumns>
+            <Height>0.63492cm</Height>
+          </ColumnGrouping>
+        </ColumnGroupings>
+        <Width>5.07936cm</Width>
+        <Top>0.25cm</Top>
+        <Left>0.75cm</Left>
+        <RowGroupings>
+          <RowGrouping>
+            <DynamicRows>
+              <Grouping Name="matrix1_Hour">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Hour.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <ReportItems>
+                <Textbox Name="Hour">
+                  <Style>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <FontFamily>宋体</FontFamily>
+                    <TextAlign>Right</TextAlign>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingRight>2pt</PaddingRight>
+                  </Style>
+                  <ZIndex>2</ZIndex>
+                  <rd:DefaultName>Hour</rd:DefaultName>
+                  <CanGrow>true</CanGrow>
+                  <Value>=Fields!Hour.Value</Value>
+                </Textbox>
+              </ReportItems>
+              <Subtotal>
+                <ReportItems>
+                  <Textbox Name="textbox2">
+                    <Style>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <FontFamily>宋体</FontFamily>
+                      <TextAlign>Right</TextAlign>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingRight>2pt</PaddingRight>
+                    </Style>
+                    <rd:DefaultName>textbox2</rd:DefaultName>
+                    <CanGrow>true</CanGrow>
+                    <Value>合计</Value>
+                  </Textbox>
+                </ReportItems>
+              </Subtotal>
+	      <Max>
+                <ReportItems>
+                  <Textbox Name="textbox3">
+                    <Style>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <FontFamily>宋体</FontFamily>
+                      <TextAlign>Right</TextAlign>
+                      <PaddingBottom>2pt</PaddingBottom>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingRight>2pt</PaddingRight>
+                    </Style>
+                    <rd:DefaultName>textbox3</rd:DefaultName>
+                    <CanGrow>true</CanGrow>
+                    <Value>合计</Value>
+                  </Textbox>
+                </ReportItems>
+              </Max>
+            </DynamicRows>
+            <Width>2.53968cm</Width>
+          </RowGrouping>
+        </RowGroupings>
+      </Matrix>
+    </ReportItems>
+    <Style />
+    <Height>5cm</Height>
+    <ColumnSpacing>1cm</ColumnSpacing>
+  </Body>
+  <TopMargin>2.5cm</TopMargin>
+  <DataSources>
+    <DataSource Name="WPTagData">
+      <rd:DataSourceID>1ed10a75-5414-44ca-821e-f972dc547a07</rd:DataSourceID>
+      <DataSourceReference>WPTagData</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Width>16cm</Width>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="Hour">
+          <DataField>Hour</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ItemID">
+          <DataField>ItemID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ChenDianChi">
+          <DataField>ChenDianChi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShowName">
+          <DataField>ShowName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="I_UNIT">
+          <DataField>I_UNIT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="I_VALUE_MAN">
+          <DataField>I_VALUE_MAN</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>WPTagData</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>WQ_jingshuitouyao</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@ChenDianChiName">
+            <Value>=Parameters!ChenDianChiName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@SelectDate">
+            <Value>=Parameters!SelectDate.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <LeftMargin>2.5cm</LeftMargin>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <PageHeight>29.7cm</PageHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <PageWidth>21cm</PageWidth>
+  <rd:ReportID>a85e44fb-efe5-4c50-9038-4e285d237a36</rd:ReportID>
+  <BottomMargin>2.5cm</BottomMargin>
+  <ReportParameters>
+    <ReportParameter Name="ChenDianChiName">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>一号沉淀池</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ChenDianChiName</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SelectDate">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>2006-01-01</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SelectDate</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>zh-CN</Language>
+</Report>

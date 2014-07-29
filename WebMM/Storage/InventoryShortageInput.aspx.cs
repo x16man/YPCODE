@@ -844,7 +844,7 @@ namespace WebMM.Storage
                             if (new InventoryShortages().Update(trans, this.InventoryShortage))
                             {
                                 //TODOList
-                                if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1120, this.InventoryShortage.Audit2=="Y"?"T":"F", Master.CurrentUser.LoginName))
+                                if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1120, this.InventoryShortage.Audit2 == "Y" ? "T" : "F", Master.CurrentUser.LoginName))
                                 {
                                     trans.Commit();
                                     ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);
@@ -883,7 +883,7 @@ namespace WebMM.Storage
                             if (new InventoryShortages().Update(this.InventoryShortage))
                             {
                                 //TODOList
-                                if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1130, this.InventoryShortage.Audit3=="Y"?"T":"F", Master.CurrentUser.LoginName))
+                                if (new Shmzh.MM.DataAccess.Common.ToDoLists().Create(trans, 20, this.InventoryShortage.EntryNo, 1130, this.InventoryShortage.Audit3 == "Y" ? "T" : "F", Master.CurrentUser.LoginName))
                                 {
                                     trans.Commit();
                                     ClientScript.RegisterStartupScript( this.GetType(), "saveSuccess", "window.close();window.opener.refresh();", true);

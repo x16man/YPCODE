@@ -1,5 +1,17 @@
 系统名称 changelog
 =======================================================================================================
+07/08/2014
+	- 修改Common、DataAccess、BusinessRules、Facade四个类库的命名空间。
+	- 修改查询方案中设置的反射方法的命名空间。
+	- 发料选择中记录合同编号字段。
+	- 采购计划报表中增加新编号新字段。
+	- 发出材料分级明细报表中增加合同编号字段。
+	- DB Add GetContractCode Function.
+	- DB Add GetContractCodeByStkID Function。
+	- DB Add GetWDODKM1 Function
+	- DB Add GetWDODKM2 Function
+	- DB Add GetWDODKM3 Function
+	- DB Add GetWDODKM4 Function
 03/21/2013
 	- 紧急申购单增加NewCode字段。
 	- Pur_RequestOfStockGetByEntryNo 增加NewCode字段。

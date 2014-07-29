@@ -379,21 +379,21 @@ namespace WebMM.Storage
                         this.Response.Redirect("../Common/NoRight.aspx", true);
                     }
                 }
-                else if (this.OP == Shmzh.MM.Common.OP.ThirdAudit)
+                else if(this.OP == Shmzh.MM.Common.OP.ThirdAudit)
                 {
                     if (!Master.CurrentUser.HasRight(SysRight.InventoryProfitThirdAudit))
                     {
                         this.Response.Redirect("../Common/NoRight.aspx", true);
                     }
                 }
-                else if (this.OP == Shmzh.MM.Common.OP.I)
+                else if(this.OP == Shmzh.MM.Common.OP.I)
                 {
                     if(!Master.CurrentUser.HasRight(SysRight.StockIn))
                     {
                         this.Response.Redirect("../Common/NoRight.aspx",true);
                     }
                 }
-                else if (this.OP == Shmzh.MM.Common.OP.Red)
+                else if(this.OP == Shmzh.MM.Common.OP.Red)
                 {
                     if(!Master.CurrentUser.HasRight(SysRight.InventoryProfitMaintain))
                     {
@@ -420,7 +420,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if (this.OP == Shmzh.MM.Common.OP.FirstAudit)
+                    else if(this.OP == Shmzh.MM.Common.OP.FirstAudit)
                     {
                         if(this.InventoryProfit.EntryState != DocStatus.Present)
                         {
@@ -428,7 +428,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if (this.OP == Shmzh.MM.Common.OP.SecondAudit)
+                    else if(this.OP == Shmzh.MM.Common.OP.SecondAudit)
                     {
                         if(this.InventoryProfit.EntryState != DocStatus.FstPass)
                         {
@@ -436,7 +436,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if (this.OP == Shmzh.MM.Common.OP.ThirdAudit)
+                    else if(this.OP == Shmzh.MM.Common.OP.ThirdAudit)
                     {
                         if(this.InventoryProfit.EntryState != DocStatus.SecPass)
                         {
@@ -444,7 +444,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if (this.OP == Shmzh.MM.Common.OP.I)
+                    else if(this.OP == Shmzh.MM.Common.OP.I)
                     {
                         if(this.InventoryProfit.EntryState != DocStatus.TrdPass)
                         {
@@ -452,7 +452,7 @@ namespace WebMM.Storage
                             return;
                         }
                     }
-                    else if (this.OP == Shmzh.MM.Common.OP.Red)
+                    else if(this.OP == Shmzh.MM.Common.OP.Red)
                     {
                         if (this.InventoryProfit.EntryState != DocStatus.Received)
                         {
@@ -470,7 +470,7 @@ namespace WebMM.Storage
                     }
                     #endregion
 
-                    if (this.OP == Shmzh.MM.Common.OP.Red)
+                    if(this.OP == Shmzh.MM.Common.OP.Red)
                     {
                         this.InventoryProfit.ParentEntryNo = this.InventoryProfit.EntryNo;
                         this.InventoryProfit.EntryNo = 0;
@@ -633,7 +633,7 @@ namespace WebMM.Storage
         protected void btnSave_Click(object sender, EventArgs e)
         {
             //没有内容
-            if (this.InventoryProfitDetail.Count == 0 && (this.OP == Shmzh.MM.Common.OP.New || this.OP == Shmzh.MM.Common.OP.Edit || this.OP == Shmzh.MM.Common.OP.Submit || this.OP == Shmzh.MM.Common.OP.I))
+            if (this.InventoryProfitDetail.Count == 0 && (this.OP == Shmzh.MM.Common.OP.New || this.OP == Shmzh.MM.Common.OP.Edit || this.OP == Shmzh.MM.Common.OP.Submit|| this.OP == Shmzh.MM.Common.OP.I) )
             {
                 ClientScript.RegisterStartupScript( this.GetType(), "Error", "alert('没有物料内容!');", true);
                 return;
@@ -957,7 +957,7 @@ namespace WebMM.Storage
                 bool ret = false;
                 if (this.OP == Shmzh.MM.Common.OP.New || this.OP == Shmzh.MM.Common.OP.Red)
                     ret = new InventoryProfits().Insert(trans, this.InventoryProfit);
-                else if (this.OP == Shmzh.MM.Common.OP.Edit || this.OP == Shmzh.MM.Common.OP.Submit)
+                else if (this.OP == Shmzh.MM.Common.OP.Edit || this.OP==Shmzh.MM.Common.OP.Submit)
                     ret = new InventoryProfits().Update(trans, this.InventoryProfit);
                 if (ret)
                 {

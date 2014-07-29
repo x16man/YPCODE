@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2003/10/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <RightMargin>2.5cm</RightMargin>
+  <Body>
+    <ReportItems>
+      <Chart Name="chart1">
+        <ThreeDProperties>
+          <Rotation>30</Rotation>
+          <Inclination>30</Inclination>
+          <Shading>Simple</Shading>
+          <WallThickness>50</WallThickness>
+        </ThreeDProperties>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+          <BackgroundColor>White</BackgroundColor>
+        </Style>
+        <Legend>
+          <Visible>true</Visible>
+          <Style>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+          <Position>RightCenter</Position>
+        </Legend>
+        <Palette>Default</Palette>
+        <ChartData>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=Count(Fields!TagName.Value)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel />
+                <Marker />
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+        </ChartData>
+        <CategoryAxis>
+          <Axis>
+            <Title />
+            <MajorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Min>0</Min>
+            <Visible>true</Visible>
+          </Axis>
+        </CategoryAxis>
+        <DataSetName>DataSet1</DataSetName>
+        <PointWidth>0</PointWidth>
+        <Type>Pie</Type>
+        <Top>0.25cm</Top>
+        <Title />
+        <Width>15.25cm</Width>
+        <CategoryGroupings>
+          <CategoryGrouping>
+            <DynamicCategories>
+              <Grouping Name="chart1_CategoryGroup1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!TagName.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Label>=Fields!TagName.Value</Label>
+            </DynamicCategories>
+          </CategoryGrouping>
+        </CategoryGroupings>
+        <SeriesGroupings>
+          <SeriesGrouping>
+            <DynamicSeries>
+              <Grouping Name="chart1_SeriesGroup1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Year.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Label>=Fields!Year.Value</Label>
+            </DynamicSeries>
+          </SeriesGrouping>
+        </SeriesGroupings>
+        <Subtype>Plain</Subtype>
+        <PlotArea>
+          <Style>
+            <BackgroundColor>LightGrey</BackgroundColor>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+        </PlotArea>
+        <Left>0.25cm</Left>
+        <ValueAxis>
+          <Axis>
+            <Title />
+            <MajorGridLines>
+              <ShowGridLines>true</ShowGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Min>0</Min>
+            <Margin>true</Margin>
+            <Visible>true</Visible>
+            <Scalar>true</Scalar>
+          </Axis>
+        </ValueAxis>
+      </Chart>
+    </ReportItems>
+    <Style />
+    <Height>7.86905cm</Height>
+    <ColumnSpacing>1cm</ColumnSpacing>
+  </Body>
+  <TopMargin>2.5cm</TopMargin>
+  <DataSources>
+    <DataSource Name="gather1">
+      <rd:DataSourceID>280e3b9a-e2cf-4eff-9cc8-a57b4d79163b</rd:DataSourceID>
+      <DataSourceReference>gather1</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <Width>16cm</Width>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+          <rd:TypeName>System.Object</rd:TypeName>
+        </Field>
+        <Field Name="TagName">
+          <DataField>TagName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="I_Value_man">
+          <DataField>I_Value_man</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>gather1</DataSourceName>
+        <CommandText>Select @Year As Year,'供水量' as TagName,Sum(I_Value_Man) as I_Value_man 
+From T_Tag_Day 
+Where I_Tag_Id = '5003001' And I_Value_man &gt; 0 And Year(dbo.DayCycleId2DateTime(i_cycle_ID))=@Year
+Group By Year(dbo.DayCycleId2DateTime(i_cycle_ID))
+Union--电
+Select @Year As Year,'电力' as TagName,Sum(I_Value_Man*dbo.GetTagDayPrice('9901005',I_Cycle_Id)) as I_Value_man 
+From T_Tag_Day b
+Where I_Tag_Id = '1803011' And I_Value_Man &gt; 0 And Year(dbo.DayCycleId2DateTime(i_cycle_ID))=@Year
+Group By Year(dbo.DayCycleId2DateTime(i_cycle_ID))
+UNION--混凝剂
+Select @Year As Year,'混凝剂' as TagName,Sum(I_Value_Man*dbo.GetTagDayPrice('9901006',I_Cycle_Id)) as I_Value_man 
+From T_Tag_Day 
+Where I_Tag_Id = 'scrbd24' And I_Value_Man &gt; 0 And Year(dbo.DayCycleId2DateTime(i_cycle_ID))=@Year
+Group By Year(dbo.DayCycleId2DateTime(i_cycle_ID))
+UNION--液氨
+Select @Year As Year,'液氨' as TagName,Sum(I_Value_Man*dbo.GetTagDayPrice('9901009',I_Cycle_Id)) as I_Value_man 
+From T_Tag_Day 
+Where I_Tag_Id = '5204001' And I_Value_Man &gt; 0 And Year(dbo.DayCycleId2DateTime(i_cycle_ID))=@Year
+Group By Year(dbo.DayCycleId2DateTime(i_cycle_ID))
+UNION--液氧
+Select @Year As Year,'液氧' as TagName,Sum(I_Value_Man*dbo.GetTagDayPrice('9901010',I_Cycle_Id)) as I_Value_man 
+From T_Tag_Day 
+Where I_Tag_Id = '1131001' And I_Value_Man &gt; 0 And Year(dbo.DayCycleId2DateTime(i_cycle_ID))=@Year
+Group By Year(dbo.DayCycleId2DateTime(i_cycle_ID))
+UNION
+Select @Year As Year,'氯' As TagName,Sum(I_Value_Man) as I_Value_Man
+From 
+	(Select Year(dbo.DayCycleId2DateTime(i_cycle_ID)) As Year,Sum(I_Value_Man*dbo.GetTagDayPrice('9901007',I_Cycle_Id)) as I_Value_man 
+	From T_Tag_Day 
+	Where I_Tag_Id In( '1132030','1132031','1132032','1132033','1132034','1132035','1132036','1132038','1132037','1132040','1132041',
+	'1132039','1132004','1132005','1132001','1132002','1132003','1132042','1132043'
+	) And 
+	I_Value_Man &gt; 0 And I_Cycle_Id&gt;=20050101
+	Group By Year(dbo.DayCycleId2DateTime(i_cycle_ID)) 
+	Union All
+	Select Year(dbo.DayCycleId2DateTime(i_cycle_ID)) As Year,Sum(I_Value_Man*dbo.GetTagDayPrice('9901008',I_Cycle_Id)) as I_Value_man 
+	From T_Tag_Day 
+	Where I_Tag_Id In( 
+	--'1102001','1102002','1102003','1102004','1102005','1102006','1102007','1102008','1102009','1102010','1102011','1102012','1102013',
+	--'1102014','1102015','1102016','1102017','1102018','1102019','1102020','1102021','1102022',
+	--'1104001','1104002','1104003','1104004','1104005','1104006','1104007','1104008','1104009','1104010','1104011','1104012'
+	'scrbd31','scrbd32') And 
+	I_Value_Man &gt; 0 And Year(dbo.DayCycleId2DateTime(i_cycle_ID))=@Year
+	Group By Year(dbo.DayCycleId2DateTime(i_cycle_ID)) ) as Temp
+Group By Year
+UNION	
+Select @Year AS Year,'制水量' as TagName,Sum(I_Value_Man) as I_Value_man 
+From T_Tag_Day 
+Where I_Tag_Id In ( '5001001','5002001') And I_Value_man &gt; 0 And Year(dbo.DayCycleId2DateTime(i_cycle_ID))=@Year
+Group By Year(dbo.DayCycleId2DateTime(i_cycle_ID))</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@Year">
+            <Value>=Parameters!Year.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <LeftMargin>2.5cm</LeftMargin>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <PageHeight>29.7cm</PageHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <PageWidth>21cm</PageWidth>
+  <rd:ReportID>d69f4801-1aff-434a-9b79-378853a7841e</rd:ReportID>
+  <BottomMargin>2.5cm</BottomMargin>
+  <ReportParameters>
+    <ReportParameter Name="Year">
+      <DataType>String</DataType>
+      <Prompt>Year</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>zh-CN</Language>
+</Report>

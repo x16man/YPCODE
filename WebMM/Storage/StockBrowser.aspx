@@ -29,7 +29,7 @@
                
                     <Columns>
                         <asp:BoundColumn DataField="NewCode" SortExpression="NewCode" HeaderText="新编号">
-                            <HeaderStyle Width="80px" />
+                            <HeaderStyle Width="90px" />
                             <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle"></ItemStyle>
                         </asp:BoundColumn>
                         <asp:BoundColumn DataField="ItemCode" SortExpression="ItemCode" HeaderText="物料编号">
@@ -41,11 +41,11 @@
                             <ItemStyle HorizontalAlign="left" VerticalAlign="Middle"></ItemStyle>
                         </asp:BoundColumn>
                         <asp:BoundColumn DataField="ItemSpecial" SortExpression="ItemSpecial" HeaderText="规格型号">
-                            <HeaderStyle Width="100px" />
+                            <HeaderStyle Width="150px" />
                             <ItemStyle HorizontalAlign="left" VerticalAlign="Middle"></ItemStyle>
                         </asp:BoundColumn>
                         <asp:BoundColumn DataField="ItemUnitName" SortExpression="ItemUnitName" HeaderText="单位">
-                            <HeaderStyle Width="40px" />
+                            <HeaderStyle Width="60px" />
                             <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle"></ItemStyle>
                         </asp:BoundColumn>
                         <asp:BoundColumn DataField="ItemNum" SortExpression="ItemNum" HeaderText="数量">
@@ -53,18 +53,18 @@
                             <ItemStyle HorizontalAlign="Right" VerticalAlign="Middle"></ItemStyle>
                         </asp:BoundColumn>
                         <asp:BoundColumn DataField="ConName" SortExpression="ConName" HeaderText="架位">
-                            <HeaderStyle Width="60px" />
-                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle"></ItemStyle>
-                        </asp:BoundColumn>
-                        <asp:BoundColumn DataField="StoName" SortExpression="StoName" HeaderText="仓库">
                             <HeaderStyle Width="80px" />
                             <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle"></ItemStyle>
                         </asp:BoundColumn>
-                        <asp:BoundColumn DataField="AcceptDate" SortExpression="AcceptDate" HeaderText="入库日期" DataFormatString="{0:yy\/MM\/dd}">
-                            <HeaderStyle Width="60px" />
+                        <asp:BoundColumn DataField="StoName" SortExpression="StoName" HeaderText="仓库">
+                            <HeaderStyle Width="150px" />
+                            <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle"></ItemStyle>
+                        </asp:BoundColumn>
+                        <asp:BoundColumn DataField="AcceptDate" SortExpression="AcceptDate" HeaderText="入库日期" DataFormatString="{0:yyyy\/MM\/dd}">
+                            <HeaderStyle Width="80px" />
                         </asp:BoundColumn>
                         <asp:TemplateColumn>
-                            <HeaderStyle Width="20px" />
+                            <HeaderStyle  />
                             <ItemTemplate>
                                 <img alt="" src="../Images/History_info.gif" onclick="ShowIO('<%#  DataBinder.Eval(Container, "DataItem.ItemCode")%>')">
                             </ItemTemplate>

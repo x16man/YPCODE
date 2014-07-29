@@ -12,77 +12,77 @@ using Shmzh.Components.SystemComponent.DALFactory;
 
 namespace Shmzh.Web.UI.Controls
 {
-    /// <summary>
-    /// Renders a toolbar control which acts as a container
-    /// for <see cref="ToolbarItem"/> objects.
-    /// </summary>
-    [ParseChildren(true, "Items")]
+	/// <summary>
+	/// Renders a toolbar control which acts as a container
+	/// for <see cref="ToolbarItem"/> objects.
+	/// </summary>
+	[ParseChildren(true, "Items")]
     [PersistChildren(true)]
-    [Designer(typeof(ToolbarDesigner))]
-    [ToolboxData("<{0}:MzhToolbar runat=server></{0}:MzhToolbar>")]
-    [ToolboxBitmap(typeof(MzhToolbar),"Shmzh.Web.UI.MzhToolbar.bmp")]
-    [DefaultEvent("ItemPostBack")]
+	[Designer(typeof(ToolbarDesigner))]
+	[ToolboxData("<{0}:MzhToolbar runat=server></{0}:MzhToolbar>")]
+	[ToolboxBitmap(typeof(MzhToolbar),"Shmzh.Web.UI.MzhToolbar.bmp")]
+	[DefaultEvent("ItemPostBack")]
     [System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.InheritanceDemand,Name = "FullTrust")]
     [System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand,Name = "FullTrust")]
     public class MzhToolbar : WebControl, INamingContainer
-    {
-        #region members
+	{
+		#region members
         private static readonly log4net.ILog Logger = log4net.LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-        /// <summary>
-        /// ToolbarItem 集合。
-        /// </summary>
-        protected ToolbarItemCollection m_items;
-        private const string TOOLBAR_SCRIPT_ID ="MzhWeb_Toolbar_Script_1.00";
-        private readonly string TOOLBAR_SCRIPT = string.Format("<script src=\"{0}Toolbar.js\"></script>",ResourceRoot.URL);
+		/// <summary>
+		/// ToolbarItem 集合。
+		/// </summary>
+		protected ToolbarItemCollection m_items;
+		private const string TOOLBAR_SCRIPT_ID ="MzhWeb_Toolbar_Script_1.00";
+		private readonly string TOOLBAR_SCRIPT = string.Format("<script src=\"{0}Toolbar.js\"></script>",ResourceRoot.URL);
         private const string QueryItem_Width = "95%";
-        #endregion
+		#endregion
 
-        #region 属性
-        /// <summary>
-        /// Contains the items which were assigned to the toolbar.
-        /// </summary>
+		#region 属性
+		/// <summary>
+		/// Contains the items which were assigned to the toolbar.
+		/// </summary>
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         [PersistenceMode(PersistenceMode.InnerProperty)]
-        public ToolbarItemCollection Items
-        {
-            get { return this.m_items; }
-        }
+		public ToolbarItemCollection Items
+		{
+			get { return this.m_items; }
+		}
         
         /// <summary>
         /// 查询模块ID。
         /// </summary>
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         [PersistenceMode(PersistenceMode.Attribute)]
-        public string SEModuleID
-        {
-            get
-            {
-                object s = ViewState["SEModuleID"];
+	    public string SEModuleID
+	    {
+	        get
+	        {
+	            object s = ViewState["SEModuleID"];
                 return ((s == null) ? string.Empty : s.ToString());
-            }
+	        }
             set
             {
                 ViewState["SEModuleID"] = value;
             }
-        }
+	    }
 
         /// <summary>
         /// CheckBoxList的排列方向。
         /// </summary>
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         [PersistenceMode(PersistenceMode.Attribute)]
-        public RepeatDirection CheckBoxListRepeatDirection
-        {
-            get
-            {
-                object s = ViewState["CheckBoxListRepeatDirection"];
-                return ((s == null) ? RepeatDirection.Horizontal : (RepeatDirection) s);
-            }
+	    public RepeatDirection CheckBoxListRepeatDirection
+	    {
+	        get
+	        {
+	            object s = ViewState["CheckBoxListRepeatDirection"];
+	            return ((s == null) ? RepeatDirection.Horizontal : (RepeatDirection) s);
+	        }
             set
             {
                 ViewState["CheckBoxListRepeatDirection"] = value;
             }
-        }
+	    }
         
         /// <summary>
         /// CheckBoxList的迭代长度。
@@ -121,125 +121,125 @@ namespace Shmzh.Web.UI.Controls
         /// <summary>
         /// 查询引擎的SQL。
         /// </summary>
-        public string SE_SQL
-        {
-            get
-            {
-                object s = ViewState["SE_SQL"];
-                return ((s == null) ? string.Empty : s.ToString());
-            }
+	    public string SE_SQL
+	    {
+	        get
+	        {
+	            object s = ViewState["SE_SQL"];
+	            return ((s == null) ? string.Empty : s.ToString());
+	        }
             set
             {
                 ViewState["SE_SQL"] = value;
             }
-        }
+	    }
         /// <summary>
         /// 当前登录用户。
         /// </summary>
-        public User CurrentUser
-        {
+	    public User CurrentUser
+	    {
             get { return this.Page.Session["User"] as User; }
-        }
+	    }
         /// <summary>
         /// 是否允许保存查询方案。
         /// </summary>
-        public bool AllowSaveSchema
-        {
-            get 
+	    public bool AllowSaveSchema
+	    {
+	        get 
             { 
                 var s = ViewState["AllowSaveSchema"];
-                return ((s == null) || bool.Parse(ViewState["AllowSaveSchema"].ToString()));
-            }
+	            return ((s == null) || bool.Parse(ViewState["AllowSaveSchema"].ToString()));
+	        }
             set { ViewState["AllowSaveSchema"] = value; }
-        }
-        #endregion
+	    }
+		#endregion
 
-        #region item event
+		#region item event
 
-        /// <summary>
-        /// Raised if an item of the toolbar that posts back to
-        /// the server is being clicked.
-        /// </summary>
-        public event ItemEventHandler ItemPostBack;
+		/// <summary>
+		/// Raised if an item of the toolbar that posts back to
+		/// the server is being clicked.
+		/// </summary>
+		public event ItemEventHandler ItemPostBack;
         /// <summary>
         /// 查询引擎查询事件。
         /// </summary>
-        public event SEQueryEventHandler SEQuery_Click;
+	    public event SEQueryEventHandler SEQuery_Click;
         /// <summary>
         /// 查询引擎方案保存事件。
         /// </summary>
-        public event SESaveEventHandler SESave_Click;
-        #endregion
+	    public event SESaveEventHandler SESave_Click;
+		#endregion
 
-        #region intialization
+		#region intialization
 
-        /// <summary>
-        /// Inits the control.
-        /// </summary>
-        public MzhToolbar() : base("div")
-        {
-            //register event handler to synchronize the controls collection
-            //with the items
-            this.m_items = new ToolbarItemCollection();
-            m_items.ItemAdded += items_ItemAdded;
-            m_items.ItemRemoved += items_ItemRemoved;
-            m_items.ItemsCleared += items_ItemsCleared;
-        }
-        #endregion
+		/// <summary>
+		/// Inits the control.
+		/// </summary>
+		public MzhToolbar() : base("div")
+		{
+			//register event handler to synchronize the controls collection
+			//with the items
+			this.m_items = new ToolbarItemCollection();
+			m_items.ItemAdded += items_ItemAdded;
+			m_items.ItemRemoved += items_ItemRemoved;
+			m_items.ItemsCleared += items_ItemsCleared;
+		}
+		#endregion
 
-        #region rendering
-        /// <summary>
-        /// Adds table attributes to the rendered output.
-        /// </summary>
-        /// <param name="writer"></param>
-        protected override void AddAttributesToRender(HtmlTextWriter writer)
-        {
-            //<div class="paneToolbar clearfix" style="margin:0pt;height:auto;">
-            writer.AddAttribute(HtmlTextWriterAttribute.Class,"paneToolbar clearfix",true);
-            //writer.AddStyleAttribute("margin","0pt");
-            //writer.AddStyleAttribute("height","auto");
-            base.AddAttributesToRender(writer);
-        }
-        /// <summary>
-        /// Creates the table content with all items of the toolbar.
-        /// </summary>
-        /// <returns></returns>
-        protected override void RenderContents(HtmlTextWriter writer)
-        {
+		#region rendering
+		/// <summary>
+		/// Adds table attributes to the rendered output.
+		/// </summary>
+		/// <param name="writer"></param>
+		protected override void AddAttributesToRender(HtmlTextWriter writer)
+		{
+			//<div class="paneToolbar clearfix" style="margin:0pt;height:auto;">
+			writer.AddAttribute(HtmlTextWriterAttribute.Class,"paneToolbar clearfix",true);
+			//writer.AddStyleAttribute("margin","0pt");
+			//writer.AddStyleAttribute("height","auto");
+			base.AddAttributesToRender(writer);
+		}
+		/// <summary>
+		/// Creates the table content with all items of the toolbar.
+		/// </summary>
+		/// <returns></returns>
+		protected override void RenderContents(HtmlTextWriter writer)
+		{
             //Logger.Info("RenderContents");
-            this.RenderToolbar(writer);
-        }
-        /// <summary>
-        /// 呈现Toolbar的最外层包装。
-        /// </summary>
-        /// <param name="writer"></param>
-        protected void RenderToolbar(HtmlTextWriter writer)
-        {
+			this.RenderToolbar(writer);
+		}
+		/// <summary>
+		/// 呈现Toolbar的最外层包装。
+		/// </summary>
+		/// <param name="writer"></param>
+		protected void RenderToolbar(HtmlTextWriter writer)
+		{
             //Logger.Info("RenderToolbar");
-            //<div class="paneToolbarLeftCap">
-            writer.AddAttribute(HtmlTextWriterAttribute.Class,"paneToolbarLeftCap",true);
-            writer.RenderBeginTag("div");
-            writer.RenderEndTag();//</div>
-            //<div class="toolbar" style="height:auto; visibility:visible;">
-            writer.AddAttribute(HtmlTextWriterAttribute.Class,"toolbar clearfix");
-            //writer.AddStyleAttribute("height","auto");
-            writer.AddStyleAttribute("visibility","visible");
-            writer.RenderBeginTag("div");
+			//<div class="paneToolbarLeftCap">
+			writer.AddAttribute(HtmlTextWriterAttribute.Class,"paneToolbarLeftCap",true);
+			writer.RenderBeginTag("div");
+			writer.RenderEndTag();//</div>
+			//<div class="toolbar" style="height:auto; visibility:visible;">
+			writer.AddAttribute(HtmlTextWriterAttribute.Class,"toolbar clearfix");
+			//writer.AddStyleAttribute("height","auto");
+			writer.AddStyleAttribute("visibility","visible");
+			writer.RenderBeginTag("div");
             //Render Toolbar Item.
-            foreach(ToolbarItem item in this.m_items)
-            {
-                RenderToolbarItem(item,writer);
-            }
-            writer.RenderEndTag();//</div>
+			foreach(ToolbarItem item in this.m_items)
+			{
+				RenderToolbarItem(item,writer);
+			}
+			writer.RenderEndTag();//</div>
 
-            //<div class="paneToolbarRightCap">
-            writer.AddAttribute(HtmlTextWriterAttribute.Class,"paneToolbarRightCap",true);
-            writer.RenderBeginTag("div");
-            writer.RenderEndTag();//</div>
+			//<div class="paneToolbarRightCap">
+			writer.AddAttribute(HtmlTextWriterAttribute.Class,"paneToolbarRightCap",true);
+			writer.RenderBeginTag("div");
+			writer.RenderEndTag();//</div>
             
             //Rend Search Engin
             this.RenderSearchEngin(writer);
-        }
+		}
         /// <summary>
         /// 呈现搜索引擎。
         /// </summary>
@@ -278,13 +278,13 @@ namespace Shmzh.Web.UI.Controls
             writer.Write(this.GenerateToggleScript());
             writer.Write(this.GenerateSaveScript());
         }
-        /// <summary>
-        /// 呈现ToolbarItem.
-        /// </summary>
-        /// <param name="item">ToolbarItem</param>
-        /// <param name="writer">HtmlWriter</param>
-        protected void RenderToolbarItem(ToolbarItem item, HtmlTextWriter writer)
-        {
+		/// <summary>
+		/// 呈现ToolbarItem.
+		/// </summary>
+		/// <param name="item">ToolbarItem</param>
+		/// <param name="writer">HtmlWriter</param>
+		protected void RenderToolbarItem(ToolbarItem item, HtmlTextWriter writer)
+		{
             if (item.ItemId == "SEToggle")
             {
                 foreach (Control obj in this.Controls)
@@ -301,11 +301,11 @@ namespace Shmzh.Web.UI.Controls
                     }
                 }
             }
-            item.RenderControl(writer);
-        }
-        #endregion
+			item.RenderControl(writer);
+		}
+		#endregion
 
-        #region event handlers
+		#region event handlers
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
@@ -551,7 +551,7 @@ namespace Shmzh.Web.UI.Controls
                         }
                     }
 
-                    var btnQuery = new Button { ID = "btnQuery", Text = "搜索" };
+                    var btnQuery = new Button { ID = "btnQuery", Text = "Search" };
                     btnQuery.Click += btnQuery_Click;
                     
                     layoutTable.Rows[0].Cells[6].Controls.Add(btnQuery);
@@ -560,7 +560,7 @@ namespace Shmzh.Web.UI.Controls
                         var btnSave = new Button
                                           {
                                               ID = "btnSave",
-                                              Text = "保存",
+                                              Text = "Save",
                                               OnClientClick = "if(!saveSchema()) return;",
                                               UseSubmitBehavior = false
                                           };
@@ -658,64 +658,64 @@ namespace Shmzh.Web.UI.Controls
                 SEQuery_Click(sender, e, fullSQL);
             }
         }
-        /// <summary>
-        /// 在PreRender事件的时候,向页面上注册JS脚本块.
-        /// </summary>
-        /// <param name="e"></param>
-        protected override void OnPreRender(EventArgs e)
-        {
-            base.OnPreRender (e);
+	    /// <summary>
+		/// 在PreRender事件的时候,向页面上注册JS脚本块.
+		/// </summary>
+		/// <param name="e"></param>
+		protected override void OnPreRender(EventArgs e)
+		{
+			base.OnPreRender (e);
 
             if (!Page.ClientScript.IsClientScriptBlockRegistered(TOOLBAR_SCRIPT_ID))
                 Page.ClientScript.RegisterClientScriptBlock(this.GetType(),TOOLBAR_SCRIPT_ID, TOOLBAR_SCRIPT);
-        }
-        /// <summary>
-        /// Adds a new item to the internal <c>Controls</c>
-        /// collection.
-        /// </summary>
-        /// <param name="item"></param>
-        protected void items_ItemAdded(ToolbarItem item)
-        {
-            
-            this.Controls.Add(item);
+		}
+		/// <summary>
+		/// Adds a new item to the internal <c>Controls</c>
+		/// collection.
+		/// </summary>
+		/// <param name="item"></param>
+		protected void items_ItemAdded(ToolbarItem item)
+		{
+			
+			this.Controls.Add(item);
 
-            if (item is IPostBackToolbarItem)
-            {
-                ((IPostBackToolbarItem)item).ItemSubmitted += Items_ItemSubmitted;
-            }
-        }
+			if (item is IPostBackToolbarItem)
+			{
+				((IPostBackToolbarItem)item).ItemSubmitted += Items_ItemSubmitted;
+			}
+		}
 
-        /// <summary>
-        /// Removes an item from the internal <c>Controls</c>
-        /// collection.
-        /// </summary>
-        /// <param name="item"></param>
-        protected void items_ItemRemoved(ToolbarItem item)
-        {
-            this.Controls.Remove(item);
-        }
+		/// <summary>
+		/// Removes an item from the internal <c>Controls</c>
+		/// collection.
+		/// </summary>
+		/// <param name="item"></param>
+		protected void items_ItemRemoved(ToolbarItem item)
+		{
+			this.Controls.Remove(item);
+		}
 
-        /// <summary>
-        /// Removes all controls from the internal control collection.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void items_ItemsCleared(object sender, EventArgs e)
-        {
-            this.Controls.Clear();
-        }
+		/// <summary>
+		/// Removes all controls from the internal control collection.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void items_ItemsCleared(object sender, EventArgs e)
+		{
+			this.Controls.Clear();
+		}
 
-        /// <summary>
-        /// Handles toolbar item events.
-        /// </summary>
-        /// <param name="item">ToolbarItem</param>
-        protected void Items_ItemSubmitted(ToolbarItem item)
-        {     
-            //bubble event
-            if (ItemPostBack != null) ItemPostBack(item);
-        }
+		/// <summary>
+		/// Handles toolbar item events.
+		/// </summary>
+		/// <param name="item">ToolbarItem</param>
+		protected void Items_ItemSubmitted(ToolbarItem item)
+		{     
+			//bubble event
+			if (ItemPostBack != null) ItemPostBack(item);
+		}
 
-        #endregion
+		#endregion
 
         #region private method
         /// <summary>
@@ -794,7 +794,7 @@ namespace Shmzh.Web.UI.Controls
             return null;
         }
 
-        /// <summary>
+	    /// <summary>
         /// 生成Toggle的脚本。
         /// </summary>
         /// <returns></returns>
@@ -838,7 +838,7 @@ namespace Shmzh.Web.UI.Controls
             return sb.ToString();
         }
 
-        /// <summary>
+	    /// <summary>
         /// 生成查询的WhereClause部分的SQL语句。
         /// </summary>
         /// <returns></returns>
@@ -1103,7 +1103,7 @@ namespace Shmzh.Web.UI.Controls
             return inputString; 
         }
 
-        #endregion
+	    #endregion
     }
     /// <summary>
     /// 查询控件类型枚举。

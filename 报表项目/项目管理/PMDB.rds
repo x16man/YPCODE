@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>PMDB</Name>
+  <DataSourceID>8c732180-77cc-4f1c-b0a5-3cba81bd82b2</DataSourceID>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>data source=db2;initial catalog=PMDB</ConnectString>
+  </ConnectionProperties>
+</RptDataSource>
