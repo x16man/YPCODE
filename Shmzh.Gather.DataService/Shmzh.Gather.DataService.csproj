@@ -27,6 +27,10 @@
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,7 +54,7 @@
   <ItemGroup>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\公共库\Reference\log4net.dll</HintPath>
+      <HintPath>..\packages\log4net.2.0.3\lib\net20-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Shmzh.Components.SystemComponent, Version=2.0.0.8, Culture=neutral, PublicKeyToken=67191c9e5456fa33, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
